@@ -30,7 +30,7 @@
   </extension>
 </addon>
 
-<addon id="repository.psmc" name="PSMC Repository" version="1.0.3" provider-name="The Papaw">
+<addon id="repository.psmc" name="PSMC Repository" version="1.0.4" provider-name="The Papaw">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
     </requires>
@@ -53,7 +53,7 @@
     </extension>
 </addon>
 
-<addon id="skin.psmc.spiderman" version="1.0.3" name="PSMC's Spiderman" provider-name="The Papaw">
+<addon id="skin.psmc.spiderman" version="1.0.4" name="PSMC's Spiderman" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
@@ -66,8 +66,8 @@
 		<res width="1920" height="1080" aspect="16:9" default="true" folder="16x9" />
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en_US">Created by BigNoid, Modded by SiLVO, Widgets by Mr. V and themed by The Papaw</summary>
-		<description lang="en_US">Themed from Aeon Nox SiLVO v7.0.1. Please give credit to Mike and others that contributed.</description>
+		<summary lang="en">Created by BigNoid, Modded by SiLVO, Widgets by Mr. V and themed by The Papaw</summary>
+		<description lang="en">Themed from Aeon Nox SiLVO v7.0.1. Please give credit to Mike and others that contributed.</description>
 		<platform>all</platform>
 		<license></license>
 		<forum>http://forum.kodi.tv/showthread.php?tid=210069</forum>
@@ -82,7 +82,7 @@
 			<screenshot>resources/screenshots/screenshot-04.jpg</screenshot>
 			<screenshot>resources/screenshots/screenshot-05.jpg</screenshot>
 		</assets>
-		<news>[I][COLOR FFFF9800]v7.0.1[/COLOR][/I][CR]- This skin was cloned and modded from the Aeon Nox SiLVO v7.0.1. Please give credit to Mike and all others that contributed to the code used</news>
+		<news>This skin was cloned and modded from the Aeon Nox SiLVO v7.0.1. Please give credit to Mike and all others that contributed to the code used</news>
 	</extension>
 </addon>
 </addons>
