@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.psmc.spiderman" version="1.0.2" name="PSMC's Spiderman Skin" provider-name="The Papaw">
+<addon id="skin.psmc.spiderman" version="1.0.1" name="PSMC's Spiderman" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
@@ -13,44 +13,44 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">Erstellt von BigNoid, modifiziert von SiLVO, Widgets von Mr. V</summary>
-		<summary lang="el_GR">Created by BigNoid, Modded by SiLVO & The Papaw, and Widgets by Mr. V</summary>
-		<summary lang="en_AU">Created by BigNoid, Modded by SiLVO & The Papaw, and Widgets by Mr. V</summary>
-		<summary lang="en_GB">Created by BigNoid, Modded by SiLVO & The Papaw, and Widgets by Mr. V</summary>
-		<summary lang="en_NZ">Created by BigNoid, Modded by SiLVO & The Papaw, and Widgets by Mr. V</summary>
-		<summary lang="en_US">Created by BigNoid, Modded by SiLVO & The Papaw, and Widgets by Mr. V</summary>
+		<summary lang="el_GR">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V</summary>
+		<summary lang="en_AU">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V</summary>
+		<summary lang="en_GB">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V</summary>
+		<summary lang="en_NZ">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V</summary>
+		<summary lang="en_US">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V</summary>
 		<summary lang="es_ES">Creada por BigNoid, Modificada por SiLVO, y Widgets por Mr. V</summary>
 		<summary lang="et_EE">Looja: BigNoid, muutja: SiLVO, ja vidinad: Mr. V</summary>
 		<summary lang="fi_FI">BigNoidin tekemä ja SILVOn muokkaama. Widgetit Mr. V:ltä</summary>
 		<summary lang="fr_CA">Créé par BigNoid, modifié by SiLVO, et widgets par Mr. V</summary>
 		<summary lang="fr_FR">Créé par BigNoid, Moddé par SiLVO, avec les widgets de Mr V</summary>
-		<summary lang="gl_ES">Created by BigNoid, Modded by SiLVO & The Papaw, and Widgets by Mr. V</summary>
-		<summary lang="he_IL">המעטפת נוצרה על ידי BigNoid, Modded by SiLVO & The Papaw, and והיישומונים על ידי Mr. VLO</summary>
-		<summary lang="hu_HU">Created by BigNoid, Modded by SiLVO & The Papaw, and Widgets by Mr. V</summary>
+		<summary lang="gl_ES">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V</summary>
+		<summary lang="he_IL">המעטפת נוצרה על ידי BigNoid, Modded by SiLVO, and והיישומונים על ידי Mr. VLO</summary>
+		<summary lang="hu_HU">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V</summary>
 		<summary lang="is_IS">Útbúið af BigNoid, breytt af SiLVO, viðmótshlutar eftir Mr. V</summary>
-		<summary lang="it_IT">Created by BigNoid, Modded by SiLVO & The Papaw, and Widgets by Mr. V</summary>
-		<summary lang="ko_KR">Created by BigNoid, Modded by SiLVO & The Papaw, and Widgets by Mr. V</summary>
+		<summary lang="it_IT">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V</summary>
+		<summary lang="ko_KR">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V</summary>
 		<summary lang="lt_LT">Sukūrė BigNoid, modifikavo SiLVO bei valdiklius pridėjo Mr. V</summary>
-		<summary lang="ms_MY">Created by BigNoid, Modded by SiLVO & The Papaw, and Widgets by Mr. V</summary>
+		<summary lang="ms_MY">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V</summary>
 		<summary lang="nb_NO">Laget av BigNoid, modifisert av SiLVO, og miniprogrammer av Mr. V.</summary>
 		<summary lang="nl_NL">Ontwikkeld door BigNoid, aangepast door SiLVO, en Widgets door Mr. V</summary>
 		<summary lang="pl_PL">Stworzona przez BigNoid, zmodyfikowana przez SiLVO, a gadżety autorstwa Mr. V</summary>
-		<summary lang="pt_BR">Created by BigNoid, Modded by SiLVO & The Papaw, and Widgets by Mr. V</summary>
+		<summary lang="pt_BR">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V</summary>
 		<summary lang="pt_PT">Criado por BigNoid, Modded por SiLVO, e Widgets por Mr. V</summary>
 		<summary lang="ro_RO">Creat de BigNoid, Modificat de SiLVO, și widget-uri deMr. V</summary>
-		<summary lang="ru_RU">Created by BigNoid, Modded by SiLVO & The Papaw, and Widgets by Mr. V</summary>
-		<summary lang="sk_SK">Created by BigNoid, Modded by SiLVO & The Papaw, and Widgets by Mr. V</summary>
-		<summary lang="sv_SE">Created by BigNoid, Modded by SiLVO & The Papaw, and Widgets by Mr. V</summary>
-		<summary lang="th_TH">Created by BigNoid, Modded by SiLVO & The Papaw, and Widgets by Mr. V</summary>
+		<summary lang="ru_RU">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V</summary>
+		<summary lang="sk_SK">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V</summary>
+		<summary lang="sv_SE">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V</summary>
+		<summary lang="th_TH">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V</summary>
 		<summary lang="tr_TR">BigNoid tarafından oluşturuldu; Modlar SILVO'dan, Widget'lar Mr. V'den.</summary>
-		<summary lang="vi_VN">Created by BigNoid, Modded by SiLVO & The Papaw, and Widgets by Mr. V - Sự trở về</summary>
-		<summary lang="zh_CN">Created by BigNoid, Modded by SiLVO & The Papaw, and Widgets by Mr. V</summary>
+		<summary lang="vi_VN">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V - Sự trở về</summary>
+		<summary lang="zh_CN">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V</summary>
 		<summary lang="zh_TW">由BigNoid原創，SiLVO進行改造，以及由Mr. V製作的小工具</summary>
 		<description lang="de_DE">Komplett neu designed für ein modernes Aussehen und das klassische Aeon-Feeling beizubehalten.</description>
 		<description lang="el_GR">Πλήρως επανασχεδιασμένο για να προσφέρει μια μοντέρνα αισθητική, διατηρώντας ταυτόχρονα την κλασική ομορφιά του Aeon.</description>
-		<description lang="en_AU">Cloned from the Aeon Nox SiLVO skin. Please give credit to Mike and all that contributed. The Papaw</description>
-		<description lang="en_GB">Cloned from the Aeon Nox SiLVO skin. Please give credit to Mike and all that contributed. The Papaw</description>
-		<description lang="en_NZ">Cloned from the Aeon Nox SiLVO skin. Please give credit to Mike and all that contributed. The Papaw</description>
-		<description lang="en_US">Cloned from the Aeon Nox SiLVO skin. Please give credit to Mike and all that contributed. The Papaw</description>
+		<description lang="en_AU">Completely redesigned to create a modern look, while retaining the classic Aeon feel.</description>
+		<description lang="en_GB">Completely redesigned to create a modern look, while retaining the classic Aeon feel.</description>
+		<description lang="en_NZ">Completely redesigned to create a modern look, while retaining the classic Aeon feel.</description>
+		<description lang="en_US">Completely redesigned to create a modern look, while retaining the classic Aeon feel.</description>
 		<description lang="es_ES">Completamente rediseñado para crear un aspecto moderno, pero conservando el toque clásico Aeon.</description>
 		<description lang="et_EE">Täielikult uuesti disainitud, et luua tänapäevane välimus samas säilitades klassikaline Aeoni tunnetus.</description>
 		<description lang="fi_FI">Täysin uudelleensuunniteltu moderni ulkoasu, kuitenkin tuntuen klassiselta Aeonilta.</description>
@@ -92,6 +92,6 @@
 			<screenshot>resources/screenshots/screenshot-04.jpg</screenshot>
 			<screenshot>resources/screenshots/screenshot-05.jpg</screenshot>
 		</assets>
-		<news>[I][COLOR FFFF9800]v7.0.1[/COLOR][/I][CR]- This skin was Cloned from the Aeon Nox SiLVO skin. Please give credit to Mike and all that contributed</news>
+		<news>[I][COLOR FFFF9800]v7.0.1[/COLOR][/I][CR]- This skin was cloned and modded from the Aeon Nox SiLVO v7.0.1. Please give credit to Mike and all others that contributed to the code used</news>
 	</extension>
 </addon>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.psmc" name="PSMC Repository" version="1.0.1" provider-name="The Papaw">
+    <requires>
+        <import addon="xbmc.addon" version="12.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="PSMC Repository">
+        <info compressed="false">https://raw.githubusercontent.com/thepapaw/psmc/master/_zips/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/thepapaw/psmc/master/_zips/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/thepapaw/psmc/master/_zips/</datadir>
+        <hashes>false</hashes>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>The Official Repo for the PSMC (Papaw's Son Media Center), a Kodi Fork</summary>
+        <description>This is the repository for the "Official" PSMC (Papaw's Son Media Center). A Kodi fork.</description>
+        <platform>all</platform>
+        <genre>movies,usa</genre>
+		<assets>
+			<icon>icon.gif</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+    </extension>
+</addon>
