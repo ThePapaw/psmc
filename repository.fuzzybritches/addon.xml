@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+    <addon id="repository.fuzzybritches" name="Fuzzy Britches Repository" version="1.0.6" provider-name="The Papaw">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="Fuzzy Britches">
+            <info compressed="false">https://raw.githubusercontent.com/thepapaw/fuzzybritches/master/_zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/thepapaw/fuzzybritches/master/_zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/thepapaw/fuzzybritches/master/_zips/</datadir>
+            <hashes>false</hashes>
+		<dir>
+            <info compressed="false">https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/</datadir>
+            <hashes>false</hashes>
+        </dir>			
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>The Official Repo for the Fuzzy Britches Addon for Kodi</summary>
+            <description>This is the repository for the "Official" Fuzzy Britches addon for Kodi.</description>
+            <platform>all</platform>
+            <genre>movies,usa</genre>
+			<assets>
+			<icon>icon.gif</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/media/screenshot-01.jpg</screenshot>
+			<screenshot>resources/media/screenshot-02.jpg</screenshot>
+			<screenshot>resources/media/screenshot-03.jpg</screenshot>
+		</assets>
+        </extension>
+    </addon>
