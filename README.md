@@ -12,7 +12,10 @@ The addons here have been created, modded and/or themed for using with PSMC. The
 
 • PSMC Maintenance Tools - Features include: Auto delete of cache at start up (optional), notifies when packages and thumbs reach a set amount of wasted storage space (you can set and change sizes), cuts down on your devices read/writes on the ROM. Also has many Backup/Restore Options, Speed test, IP check and other features. Again, please give credit to their respective developers.
 
-• The various Skins were themed from Aeon Nox SiLVO 7.0.1
+The skins here have been created, modded and/or themed for using with PSMC. They also work fine with Kodi 18 and were all themed from Aeon Nox SiLVO 7.0.1. unless otherwise stated. They include:
+
+• <B>PSMC Silvo Skin</B> (Modded from Aeon Nox SiLVO 7.0.1 for PSMC/Kodi v18)<BR>
+• <B>PSMC's Spiderman</B> (Spiderman Theme for PSMC/Kodi v18)
 
 PSMC and the addons are considered 3rd party addons, so please do not seek help from Kodi, the Kodi forums, etc..
 
