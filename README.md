@@ -5,7 +5,7 @@ This repository is primarily for the development of PSMC (Papaw's Son Media Cent
 • <B>PSMC 18</B> (forked from Kodi 18.2)
 
 
-The addons here have been modded/themed for and tested tested with PSMC, as well as Kodi 18 and appear to be working fine unless otherwise stated. They include:
+The addons here have been modded and/or themed for PSMC. They also work fine with Kodi 18 unless otherwise stated. They include:
 
 • <B>PSMC Maintenance Tools</B> (Maintenance Program)
 • <B>Various Skins</B> (Skins themed for PSMC 18 and work fine with XBMC/Kodi 18)
