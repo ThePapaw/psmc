@@ -5,7 +5,9 @@ This repository is primarily for the development of PSMC (Papaw's Son Media Cent
 • <B>PSMC 18</B> (forked from Kodi 18.2) - coming soon
 
 
-• <B>ADDONS</B>The addons here have been created, modded and/or themed for using with PSMC. They also work fine with Kodi 18 unless otherwise stated. They include:
+• <B>ADDONS</B>
+(The addons here have been created, modded and/or themed for using with PSMC. They also work fine with Kodi 18 unless otherwise stated.)
+They include:
 
 • <B>PSMC Maintenance Tools</B> (Maintenance Program)<BR>
 Features include: Auto delete of cache at start up (optional), notifies when packages and thumbs reach a set amount of wasted storage space (you can set and change sizes), cuts down on your devices read/writes on the ROM. Also has many Backup/Restore Options, Speed test, IP check and other features. Again, please give credit to their respective developers.
