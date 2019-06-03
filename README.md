@@ -5,7 +5,7 @@ This repository is primarily for the development of PSMC (Papaw's Son Media Cent
 • <B>PSMC 18</B> (forked from Kodi 18.2)
 
 
-The addons here have been modded and/or themed for PSMC. They also work fine with Kodi 18 unless otherwise stated. They include:
+The addons here have been created, modded and/or themed for using with PSMC. They also work fine with Kodi 18 unless otherwise stated. They include:
 
 • <B>PSMC Maintenance Tools</B> (Maintenance Program)
 • <B>Various Skins</B> (Skins themed for PSMC 18 and work fine with XBMC/Kodi 18)
@@ -22,7 +22,7 @@ All items are still being developed and should only be used for testing purposes
 
   
 To Install:
-1. Download the repository. <a href="https://github.com/ThePapaw/psmc/blob/master/_zips/repository.psmc/repository.psmc-1.0.5.zip?raw=true">CLICK HERE</a>
+1. Download the repository. <a href="https://github.com/ThePapaw/psmc/blob/master/_zips/repository.psmc/repository.psmc-1.0.6.zip?raw=true">CLICK HERE</a>
 
 2. Install "from zip file" in Kodi as you would any other downloaded addon.
 
