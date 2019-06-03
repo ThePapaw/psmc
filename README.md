@@ -2,9 +2,9 @@
 
 This repository is for the development of PSMC (Papaw's Son Media Center), a fork of XBMC/Kodi Media Center.
 
-The addons here have been tested with PSMC (fork of XBMC/Kodi v18.2) and appear to be working fine unless otherwise stated.
+The addons here have been tested with PSMC & Kodi 18 and appear to be working fine unless otherwise stated.
 
-• <B>PSMC 18</B> (Based of of XBMC/Kodi 18.2)
+• <B>PSMC 18</B> (forked from Kodi 18.2)
 
 The addons include:
 
