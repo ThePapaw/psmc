@@ -12,10 +12,8 @@ Features include: Auto delete of cache at start up (optional), notifies when pac
 
 The SKINS here were created, modded and/or themed for using with PSMC 18. They also work with Kodi 18 and were all themed from Aeon Nox SiLVO 7.0.1. unless otherwise stated. They include:
 
-• <B>PSMC Silvo Skin</B>
- (General Aeon Nox SiLVO type skin for use with PSMC/Kodi v18)<BR>
-• <B>PSMC's Spiderman</B>
- (Spiderman Theme for PSMC/Kodi v18)
+• <B>PSMC Silvo Skin</B><BR>Aeon Nox SiLVO skin themed for PSMC<BR>
+• <B>PSMC's Spiderman</B><BR>Spiderman Theme for PSMC
 
 PSMC, the addons & skins are considered 3rd party, so please do not seek help from Kodi, the Kodi forums, etc..
 
