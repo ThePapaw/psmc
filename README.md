@@ -14,7 +14,7 @@ The addons here have been created, modded and/or themed for using with PSMC. The
 
 • The various Skins were themed from Aeon Nox SiLVO 7.0.1
 
-PSMC and the addons here are 3rd party addons, so please do not seek help from Kodi, the Kodi forums, etc..
+PSMC and the addons are considered 3rd party addons, so please do not seek help from Kodi, the Kodi forums, etc..
 
 If you have issues, please post them here. All items are still being developed and should only be used for testing purposes.
 
