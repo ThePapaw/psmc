@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.psmc.spiderman" version="1.0.5" name="PSMC's Spiderman" provider-name="The Papaw">
+<addon id="skin.psmc.spiderman" version="1.0.6" name="PSMC's Spiderman" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
@@ -13,12 +13,12 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Created by BigNoid, Modded by SiLVO, Widgets by Mr. V and themed by The Papaw</summary>
-		<description lang="en">Themed from Aeon Nox SiLVO v7.0.1. Please give credit to Mike and others that contributed.</description>
+		<description lang="en">Themed from Aeon Nox SiLVO v7.0.1 to better match PSMC. Please give credit to Mike, The Papaw and all others that contributed.</description>
 		<platform>all</platform>
 		<license></license>
-		<forum>http://forum.kodi.tv/showthread.php?tid=210069</forum>
-		<website>https://github.com/mikesilvo164/Aeon-Nox-SiLVO</website>
-		<source>https://github.com/mikesilvo164/Aeon-Nox-SiLVO</source>
+		<forum></forum>
+		<website>https://github.com/ThePapaw/psmc</website>
+		<source>https://github.com/ThePapaw/psmc</source>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>

@@ -13,7 +13,7 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Created by BigNoid, Modded by SiLVO, Widgets by Mr. V and themed by The Papawfor the PSMC theme</summary>
-		<description lang="en">Themed from Aeon Nox SiLVO v7.0.1. Please give credit to Mike and others that contributed.</description>
+		<description lang="en">Themed from Aeon Nox SiLVO v7.0.1 to better match PSMC. Please give credit to Mike, The Papaw and all others that contributed.</description>
 		<platform>all</platform>
 		<license></license>
 		<forum></forum>
