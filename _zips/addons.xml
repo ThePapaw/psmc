@@ -190,7 +190,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.psmc.silvo" version="1.0.8" name="PSMC Silvo Skin" provider-name="The Papaw">
+<addon id="skin.psmc.silvo" version="1.0.9" name="PSMC Silvo Skin" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
@@ -230,7 +230,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.psmc.spiderman" version="1.0.8" name="PSMC's Spiderman" provider-name="The Papaw">
+<addon id="skin.psmc.spiderman" version="1.0.9" name="PSMC's Spiderman" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
