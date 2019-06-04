@@ -95,7 +95,7 @@
         </extension>
     </addon>
 
-<addon id="repository.psmc" name="PSMC Repository" version="1.0.7" provider-name="The Papaw">
+<addon id="repository.psmc" name="PSMC Repository" version="1.0.8" provider-name="The Papaw">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
     </requires>
@@ -190,7 +190,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.psmc.silvo" version="1.0.4" name="PSMC Silvo Skin" provider-name="The Papaw">
+<addon id="skin.psmc.silvo" version="1.0.5" name="PSMC Silvo Skin" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
