@@ -135,6 +135,61 @@
 	</extension>
 </addon>
 
+<addon id="script.libraryeditor" name="Library Editor Script" version="0.9.0" provider-name="phil65">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.simplejson" version="2.0.10"/>
+	</requires>
+	<extension point="xbmc.python.library" library="default.py" />
+	<extension point="xbmc.addon.metadata">
+		<language/>
+		<summary lang="en">Library Editor Script</summary>
+		<description lang="en">This script makes it possible to edit movie details manually from within XBMC. Needs Skin Support</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
+		<forum>-</forum>
+		<source>-</source>
+		<email>-</email>
+	</extension>
+</addon>
+
+<addon id="script.moviesetart" name="Movie Set Artwork Automator" version="0.2.2" provider-name="Trent Fitzgibbon">
+	<extension point="xbmc.python.script" library="default.py">
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<language />
+		<platform>all</platform>
+		<summary>Movie Set Artwork Automator</summary>
+		<description>This addon will automatically set artwork for all movie sets in your library.
+
+			The addon can search for common parent folders of movies within a set or you can specify a single artwork folder containing artwork for all your movie sets (eg &lt;set name&gt;-poster.jpg).</description>
+		</extension>
+	</addon>
+
+<addon id="script.skin.info.service" name="Skin Info Service" version="1.0.3" provider-name="phil65">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+	</requires>
+	<extension point="xbmc.python.library"          library="default.py" />
+	<extension point="xbmc.python.script"           library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<language/>
+		<summary lang="en">Script used by skins to show extended media info.</summary>
+		<description lang="en">This script fetches extended information for several media types (artists, albums, movie sets etc.). Needs skin support.</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
+		<forum />
+		<source />
+		<email />
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+		<news>Kodi v18 updates</news>
+	</extension>
+</addon>
+
 <addon id="skin.psmc.silvo" version="1.0.2" name="PSMC Silvo Skin" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />

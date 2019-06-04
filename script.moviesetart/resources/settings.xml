@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="32000">
+        <setting label="32015" type="lsep"/>
+        <setting label="32025" type="bool" id="enable_force_update" default="false" />
+        <setting label="32001" type="bool" id="enable_search_folders" default="true" />
+        <setting label="32020" type="bool" id="include_set_prefix" default="false" enable="eq(-1,true)" />
+        <setting label="32002" type="bool" id="enable_artwork_folder" default="false" />
+        <setting label="32003" type="folder" id="artwork_folder_path" default="" enable="eq(-1,true)" source="auto" />
+        <setting label="32019" type="bool" id="recurse_artwork_folder" default="false" enable="eq(-2,true)" />
+        <setting label="32016" type="lsep"/>
+        <setting label="32017" type="text" id="filename_thumb" default="folder.jpg" />
+        <setting label="32024" type="text" id="filename_poster" default="poster.jpg" />
+        <setting label="32018" type="text" id="filename_fanart" default="fanart.jpg" />
+        <setting label="32021" type="text" id="filename_logo" default="logo.png" />
+        <setting label="32022" type="text" id="filename_clearart" default="clearart.png" />
+        <setting label="32023" type="text" id="filename_banner" default="banner.jpg" />
+        <setting label="32026" type="text" id="filename_extrafanart1" default="extrafanart1.jpg" />
+    </category>
+</settings>
