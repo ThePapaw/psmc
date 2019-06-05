@@ -16,7 +16,7 @@ The ADDONS hosted here were created, modded and/or themed for using with PSMC. T
 • <B>PSMC Maintenance Tools</B> (Maintenance Program)<BR>
 Features include: Auto delete of cache at start up (optional), notifies when packages and thumbs reach a set amount of wasted storage space (you can set and change sizes), cuts down on your devices read/writes on the ROM. Also has many Backup/Restore Options, Speed test, IP check and other features. Again, please give credit to their respective developers.
 
-The SKINS here were created, modded and/or themed for using with PSMC 18. They work with Kodi 18 as well. All were themed from Aeon Nox SiLVO 7.0.1. unless otherwise stated. They include:
+The SKINS here were created, modded and/or themed for using with PSMC 18. They work with Kodi 18 as well. All were themed from Aeon Nox SiLVO unless otherwise stated. They include:
 
 • <B>PSMC Silvo Skin</B><BR>Aeon Nox SiLVO skin themed for PSMC<BR>
 • <B>PSMC's Spiderman</B><BR>Spiderman Theme for PSMC
@@ -33,7 +33,7 @@ To Install:
 
 2. Install "from zip file" in Kodi as you would any other downloaded addon.
 
-3. After the repo is installed, install the addon(s) of your choosing. You can also install the Fuzzy Britches from this repo for more "media" type addons.
+3. After the repo is installed, install the addon(s) of your choosing. You can also install the Fuzzy Britches repo from this repo for more "media" type addons.
 
 
 Thanks & enjoy!<BR>
