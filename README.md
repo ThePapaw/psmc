@@ -21,7 +21,7 @@ The SKINS here were created, modded and/or themed for using with PSMC 18. They w
 • <B>PSMC Silvo Skin</B><BR>Aeon Nox SiLVO skin themed for PSMC<BR>
 • <B>PSMC's Spiderman</B><BR>Spiderman Theme for PSMC
 
-Install the Fuzzy Britches Repo for media type addons (https://github.com/ThePapaw/fuzzybritches)
+Install the Fuzzy Britches Repo for media type addons <a href="https://github.com/ThePapaw/psmc/blob/master/_zips/repository.fuzzybritches/repository.fuzzybritches-1.0.6.zip?raw=true">CLICK HERE</a>
 
 PSMC, the addons & skins are considered 3rd party, so please do not seek help from Kodi, the Kodi forums, etc..
 
