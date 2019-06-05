@@ -11,12 +11,12 @@ To Install PSMC:
 2. Install as you would any other apk file.
 
 
-The ADDONS here were created, modded and/or themed for using with PSMC. They also work fine with Kodi 18 unless otherwise stated. They include:
+The ADDONS hosted here were created, modded and/or themed for using with PSMC. They also work fine with Kodi 18 unless otherwise stated. They include:
 
 • <B>PSMC Maintenance Tools</B> (Maintenance Program)<BR>
 Features include: Auto delete of cache at start up (optional), notifies when packages and thumbs reach a set amount of wasted storage space (you can set and change sizes), cuts down on your devices read/writes on the ROM. Also has many Backup/Restore Options, Speed test, IP check and other features. Again, please give credit to their respective developers.
 
-The SKINS here were created, modded and/or themed for using with PSMC 18. They also work with Kodi 18 and were all themed from Aeon Nox SiLVO 7.0.1. unless otherwise stated. They include:
+The SKINS here were created, modded and/or themed for using with PSMC 18. They work with Kodi 18 as well. All were themed from Aeon Nox SiLVO 7.0.1. unless otherwise stated. They include:
 
 • <B>PSMC Silvo Skin</B><BR>Aeon Nox SiLVO skin themed for PSMC<BR>
 • <B>PSMC's Spiderman</B><BR>Spiderman Theme for PSMC
@@ -29,7 +29,7 @@ All items are still being developed and should only be used for testing purposes
 
   
 To Install:
-1. Download the repository. <a href="https://github.com/ThePapaw/psmc/blob/master/_zips/repository.psmc/repository.psmc-1.0.6.zip?raw=true">CLICK HERE</a>
+1. Download the repository. <a href="https://github.com/ThePapaw/psmc/blob/master/_zips/repository.psmc/repository.psmc-1.0.7.zip?raw=true">CLICK HERE</a>
 
 2. Install "from zip file" in Kodi as you would any other downloaded addon.
 
