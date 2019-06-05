@@ -28,7 +28,7 @@ If you have issues, please post them here. All items are still being developed a
 All items are still being developed and should only be used for testing purposes. Please do NOT post or link too Youtube, social media or any other web sites without gaining approval first.
 
   
-To Install:
+To Install this Repo:
 1. Download the repository. <a href="https://github.com/ThePapaw/psmc/blob/master/_zips/repository.psmc/repository.psmc-1.0.8.zip?raw=true">CLICK HERE</a>
 
 2. Install "from zip file" in Kodi as you would any other downloaded addon.
