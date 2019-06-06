@@ -16,10 +16,11 @@ The ADDONS hosted here were created, modded and/or themed for using with PSMC. T
 • <B>PSMC Maintenance Tools</B> (Maintenance Program)<BR>
 Features include: Auto delete of cache at start up (optional), notifies when packages and thumbs reach a set amount of wasted storage space (you can set and change sizes), cuts down on your devices read/writes on the ROM. Also has many Backup/Restore Options, Speed test, IP check and other features. Again, please give credit to their respective developers.
 
-The SKINS here were created, modded and/or themed for using with PSMC 18. They work with Kodi 18 as well. All were themed from Aeon Nox SiLVO unless otherwise stated. They include:
+The SKINS here were themed and/or modded for using with PSMC 18. They work with Kodi 18 as well. All were themed from Aeon Nox SiLVO (v7.0.1) unless otherwise stated. They include:
 
-• <B>PSMC Silvo Skin</B><BR>Aeon Nox SiLVO skin themed for PSMC<BR>
-• <B>PSMC's Spiderman</B><BR>Spiderman Theme for PSMC
+• <B>PSMC Silvo Skin</B><BR>General Aeon Nox SiLVO skin themed for PSMC<BR>
+• <B>PSMC's Spiderman</B><BR>Spiderman Theme modded and brought up-to-date for PSMC/Kodi 18
+• <B>PSMC's Man of Steel</B><BR>Man of Steel Theme modded and brought up-to-date for PSMC/Kodi 18
 
 PSMC, the addons & skins are considered 3rd party, so please do not seek help from Kodi, the Kodi forums, etc..
 
@@ -29,7 +30,7 @@ All items are still being developed and should only be used for testing purposes
 
   
 To Install this Repo:
-1. Download the repository. <a href="https://github.com/ThePapaw/psmc/blob/master/_zips/repository.psmc/repository.psmc-1.0.8.zip?raw=true">CLICK HERE</a>
+1. Download the repository. <a href="https://github.com/ThePapaw/psmc/blob/master/_zips/repository.psmc/repository.psmc-1.0.9.zip?raw=true">CLICK HERE</a>
 
 2. Install "from zip file" in Kodi as you would any other downloaded addon.
 
