@@ -18,9 +18,9 @@ Features include: Auto delete of cache at start up (optional), notifies when pac
 
 The SKINS here were themed and/or modded for using with PSMC 18. They work with Kodi 18 as well. All were themed from Aeon Nox SiLVO (v7.0.1) unless otherwise stated. They include:
 
-• <B>PSMC Silvo Skin</B><BR> - General Aeon Nox SiLVO skin themed for PSMC<BR>
+• <B>PSMC Silvo Skin</B> - General Aeon Nox SiLVO skin themed for PSMC<BR>
 • <B>PSMC's Spiderman</B> - Spiderman Theme modded and brought up-to-date for PSMC/Kodi 18<BR>
-• <B>PSMC's Man of Steel</B><BR>Man of Steel Theme modded and brought up-to-date for PSMC/Kodi 18
+• <B>PSMC's Man of Steel</B> - Man of Steel Theme modded and brought up-to-date for PSMC/Kodi 18
 
 PSMC, the addons & skins are considered 3rd party, so please do not seek help from Kodi, the Kodi forums, etc..
 
