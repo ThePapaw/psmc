@@ -34,7 +34,7 @@ To Install this Repo:
 
 2. Install "from zip file" in Kodi as you would any other downloaded addon.
 
-3. After the repo is installed, install the addon(s) of your choosing. You can also install the [B][COLOR red]Fuzzy Britches[/COLOR][/B] repo from this repo for more "media" type addons.
+3. After the repo is installed, install the addon(s) of your choosing. You can also install the <B><COLOR=red>Fuzzy Britches</COLOR></B> repo from this repo for more "media" type addons.
 
 
 Thanks & enjoy!<BR>
