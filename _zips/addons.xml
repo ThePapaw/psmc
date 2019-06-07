@@ -156,7 +156,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.psmc.man.of.steel" version="1.0.3" name="PSMC Man of Steel Skin" provider-name="The Papaw">
+<addon id="skin.psmc.man.of.steel" version="1.0.4" name="PSMC Man of Steel Skin" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
@@ -177,6 +177,7 @@
 		<forum></forum>
 		<website>https://github.com/ThePapaw/psmc</website>
 		<source>https://github.com/ThePapaw/psmc</source>
+		<video_guide></video_guide>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
@@ -186,8 +187,12 @@
 			<screenshot>resources/screenshots/screenshot-04.jpg</screenshot>
 			<screenshot>resources/screenshots/screenshot-05.jpg</screenshot>
 			<screenshot>resources/screenshots/screenshot-06.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-07.jpg</screenshot>
 		</assets>
-		<news>This skin was cloned and modded from the Aeon Nox SiLVO v7.0.1. Please give credit to Mike and all others that contributed to the code used.</news>
+		<news>
+[COLOR blue]• [/COLOR][/B]Added Languages
+[COLOR blue]• [/COLOR][/B]Cosmetic Fixes
+        </news>
 	</extension>
 </addon>
 
