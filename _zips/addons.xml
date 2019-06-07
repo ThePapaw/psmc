@@ -156,7 +156,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.psmc.man.of.steel" version="1.0.4" name="PSMC Man of Steel Skin" provider-name="The Papaw">
+<addon id="skin.psmc.man.of.steel" version="1.0.5" name="PSMC Man of Steel Skin" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
@@ -190,8 +190,8 @@
 			<screenshot>resources/screenshots/screenshot-07.jpg</screenshot>
 		</assets>
 		<news>
-[COLOR blue]• [/COLOR][/B]Added Languages
-[COLOR blue]• [/COLOR][/B]Cosmetic Fixes
+[COLOR blue]- [/COLOR][/B]Added Languages
+[COLOR blue]- [/COLOR][/B]Cosmetic Fixes
         </news>
 	</extension>
 </addon>
