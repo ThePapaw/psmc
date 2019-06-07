@@ -156,7 +156,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.psmc.man.of.steel" version="1.0.2" name="PSMC Man of Steel Skin" provider-name="The Papaw">
+<addon id="skin.psmc.man.of.steel" version="1.0.3" name="PSMC Man of Steel Skin" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
@@ -173,6 +173,7 @@
 		<description lang="en">Bringing The Man of Steel skin to PSMC/Kodi 18. Themed from Aeon Nox SiLVO v7.0.1 to better match PSMC. Please give credit to Mike, The Papaw and all others that contributed.</description>
 		<platform>all</platform>
 		<license></license>
+		<whatsnew>New.txt</whatsnew>
 		<forum></forum>
 		<website>https://github.com/ThePapaw/psmc</website>
 		<source>https://github.com/ThePapaw/psmc</source>
