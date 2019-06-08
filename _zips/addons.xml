@@ -190,14 +190,14 @@
 		</assets>
 		<news>
 [COLOR blue]• [/COLOR]Cosmetic Fixes
-[COLOR blue]• [/COLOR]New intro.mp4 added
+[COLOR blue]• [/COLOR]Redone Weather/Time
 
 Please give credit to all the devolopers that have and do contribute to this skin!
         </news>
 	</extension>
 </addon>
 
-<addon id="skin.psmc.silvo" version="1.0.10" name="PSMC Silvo Skin" provider-name="The Papaw">
+<addon id="skin.psmc.silvo" version="1.0.11" name="PSMC Silvo Skin" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
@@ -243,7 +243,7 @@ Please give credit to all the devolopers that have and do contribute to this ski
 	</extension>
 </addon>
 
-<addon id="skin.psmc.spiderman" version="1.0.11" name="PSMC's Spiderman" provider-name="The Papaw">
+<addon id="skin.psmc.spiderman" version="1.0.12" name="PSMC's Spiderman" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
@@ -281,7 +281,7 @@ Please give credit to all the devolopers that have and do contribute to this ski
 	</extension>
 </addon>
 
-<addon id="skin.psmc.super.mario.galaxy" version="1.0.1" name="PSMC Super Mario Galaxy Skin" provider-name="The Papaw">
+<addon id="skin.psmc.super.mario.galaxy" version="1.0.2" name="PSMC Super Mario Galaxy Skin" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
