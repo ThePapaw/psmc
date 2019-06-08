@@ -61,7 +61,7 @@
         </extension>
     </addon>
 
-<addon id="repository.psmc" name="PSMC Repository" version="1.0.10" provider-name="The Papaw">
+<addon id="repository.psmc" name="PSMC Repository" version="1.0.11" provider-name="The Papaw">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
     </requires>
@@ -99,6 +99,32 @@
 		<platform>all</platform>
 		<disclaimer />
 	</extension>
+</addon>
+
+<addon id="resource.uisounds.psmc-mario" version="1.0.0" name="PSMC Super Mario Galaxy UI Sounds" provider-name="The Papaw">
+  <requires>
+    <import addon="kodi.resource" version="1.0.0"/>
+  </requires>
+  <extension point="kodi.resource.uisounds"/>
+  <extension point="kodi.addon.metadata">
+    <summary lang="en">UI Sounds for the PSMC Super Mario Galaxy skin.</summary>
+	<description lang="en">These UI Sounds were created for use with the PSMC Super Mario Galaxy skin.</description>
+    <platform>all</platform>
+	<license></license>
+		<forum></forum>
+		<website>https://github.com/ThePapaw/psmc</website>
+		<source>https://github.com/ThePapaw/psmc</source>
+		<video_guide></video_guide>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>
+[COLOR blue]• [/COLOR]Created for the PSMC Super Mario Galaxy skin.
+
+Please give credit to all the devolopers that have and do contribute!
+        </news>
+  </extension>
 </addon>
 
 <addon id="script.libraryeditor" name="Library Editor Script" version="0.9.0" provider-name="phil65">
