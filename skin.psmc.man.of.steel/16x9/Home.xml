@@ -154,36 +154,5 @@
 			<include condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical)">VerticalSubMenu</include>
 			<include condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical)">VerticalMenuSystemBars</include>
 		</control>
-			<control type="label" >
-			<left>1785</left>
-		    <top>50</top>
-			<width>auto</width>
-			<height>41</height>
-			<label>$INFO[System.Time]</label>
-			<font>font300</font>
-			<textcolor>ffffffff</textcolor>
-			<shadowcolor>shadow</shadowcolor>
-		</control>
-		<control type="label" >
-			<left>60</left>
-		    <top>50</top>
-			<width>auto</width>
-			<height>41</height>
-			<label>$INFO[Weather.Temperature,,[COLOR grey]  [/COLOR]]</label>
-			<font>font400</font>
-			<textcolor>ffffffff</textcolor>
-			<shadowcolor>shadow</shadowcolor>
-		</control>
-		<control type="multiimage">
-		                <top>50</top>
-						<width>60</width>
-						<height>40</height>
-						<imagepath>$VAR[WeatherIconsPathVar]$INFO[Weather.FanartCode]$VAR[WeatherIconsExtVar]</imagepath>
-						<aspectratio>keep</aspectratio>
-						<timeperimage>70</timeperimage>
-						<fadetime>1</fadetime>
-						<randomize>false</randomize>
-						<visible>Weather.IsFetched + !String.IsEmpty(Weather.Plugin)</visible>
-					</control>
 	</controls>
 </window>

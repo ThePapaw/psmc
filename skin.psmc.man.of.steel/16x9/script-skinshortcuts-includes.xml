@@ -27,10 +27,10 @@
 			<label2 />
 			<icon>special://skin/extras/icons/DefaultMovies.png</icon>
 			<thumb />
-			<property name="widgetName">Unwatched Movies</property>
+			<property name="InfoLine">31052</property>
+			<property name="widgetName">20386</property>
 			<property name="widgetType">movies</property>
 			<property name="widgetStyle">Compact Panel</property>
-			<property name="widgetPanelInfo">Enabled</property>
 			<onclick condition="String.IsEqual(ListItem.Property(path),ActivateWindow(1129))">SetProperty(CustomSelectSearch,True,Home)</onclick>
 			<onclick condition="Library.HasContent(Movies)">ActivateWindow(Videos,videodb://movies/titles/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/titles/,return)</property>
@@ -45,10 +45,6 @@
 			<label2 />
 			<icon>special://skin/extras/icons/DefaultTVShows.png</icon>
 			<thumb />
-			<property name="widgetName">Unwatched Episodes</property>
-			<property name="widgetType">episodes</property>
-			<property name="widgetStyle">Compact Panel</property>
-			<property name="widgetPanelInfo">Enabled</property>
 			<onclick condition="String.IsEqual(ListItem.Property(path),ActivateWindow(1129))">SetProperty(CustomSelectSearch,True,Home)</onclick>
 			<onclick condition="Library.HasContent(TVShows)">ActivateWindow(Videos,videodb://tvshows/titles/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://tvshows/titles/,return)</property>
@@ -83,9 +79,6 @@
 			<label2 />
 			<icon>special://skin/extras/icons/DefaultProgram.png</icon>
 			<thumb />
-			<property name="widgetName">31397</property>
-			<property name="widgetType">custom</property>
-			<property name="widgetStyle">Compact Panel</property>
 			<onclick condition="String.IsEqual(ListItem.Property(path),ActivateWindow(1129))">SetProperty(CustomSelectSearch,True,Home)</onclick>
 			<onclick>ActivateWindow(1133)</onclick>
 			<property name="path">ActivateWindow(1133)</property>
@@ -109,9 +102,6 @@
 			<label2 />
 			<icon>special://skin/extras/icons/DefaultAddonService.png</icon>
 			<thumb />
-			<property name="widgetName">130</property>
-			<property name="widgetType">system</property>
-			<property name="widgetStyle">Compact Panel</property>
 			<onclick condition="String.IsEqual(ListItem.Property(path),ActivateWindow(1129))">SetProperty(CustomSelectSearch,True,Home)</onclick>
 			<onclick>ActivateWindow(Settings)</onclick>
 			<property name="path">ActivateWindow(Settings)</property>
@@ -172,9 +162,6 @@
 			<label2 />
 			<icon>special://skin/extras/icons/DefaultAddonWeather.png</icon>
 			<thumb />
-			<property name="widgetName">10508</property>
-			<property name="widgetType">weather</property>
-			<property name="widgetStyle">Compact Panel</property>
 			<onclick condition="String.IsEqual(ListItem.Property(path),ActivateWindow(1129))">SetProperty(CustomSelectSearch,True,Home)</onclick>
 			<onclick condition="!String.IsEmpty(Weather.Plugin)">ActivateWindow(Weather)</onclick>
 			<property name="path">ActivateWindow(Weather)</property>
@@ -425,19 +412,6 @@
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
 			<property name="mainmenuid">4</property>
-			<label>$LOCALIZE[744]</label>
-			<label2>item</label2>
-			<icon>special://skin/extras/icons/DefaultFolder.png</icon>
-			<thumb />
-			<property name="translatedPath">ActivateWindow(Videos,sources://video/,return)</property>
-			<onclick>ActivateWindow(Videos,sources://video/,return)</onclick>
-			<property name="path">ActivateWindow(Videos,sources://video/,return)</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="4">
-			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">4</property>
 			<label>$LOCALIZE[31328]</label>
 			<label2 />
 			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
@@ -447,8 +421,8 @@
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="5">
-			<property name="id">$NUMBER[5]</property>
+		<item id="4">
+			<property name="id">$NUMBER[4]</property>
 			<property name="mainmenuid">4</property>
 			<label>$LOCALIZE[135]</label>
 			<label2 />
@@ -460,8 +434,8 @@
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="6">
-			<property name="id">$NUMBER[6]</property>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
 			<property name="mainmenuid">4</property>
 			<label>$LOCALIZE[652]</label>
 			<label2 />
@@ -473,8 +447,8 @@
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="7">
-			<property name="id">$NUMBER[7]</property>
+		<item id="6">
+			<property name="id">$NUMBER[6]</property>
 			<property name="mainmenuid">4</property>
 			<label>$LOCALIZE[344]</label>
 			<label2 />
@@ -927,47 +901,7 @@
 		</item>
 	</include>
 	<include />
-	<include name="skinshortcuts-submenu-1">
-		<item id="1">
-			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">7</property>
-			<label>Fuzzy Britches</label>
-			<label2>Video Add-On</label2>
-			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
-			<thumb>image://C%3a%5cUsers%5cPapaw%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.fuzzybritches%5cicon.gif/</thumb>
-			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.fuzzybritches",return)</property>
-			<onclick>ActivateWindow(Videos,"plugin://plugin.video.fuzzybritches",return)</onclick>
-			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.fuzzybritches",return)</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-31957)</visible>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="2">
-			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">7</property>
-			<label>PSMC Maintenance</label>
-			<label2>Program</label2>
-			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
-			<thumb>image://C%3a%5cUsers%5cPapaw%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.program.psmcmaintenance%5cicon.png/</thumb>
-			<property name="translatedPath">ActivateWindow(Programs,"plugin://plugin.program.psmcmaintenance",return)</property>
-			<onclick>ActivateWindow(Programs,"plugin://plugin.program.psmcmaintenance",return)</onclick>
-			<property name="path">ActivateWindow(Programs,"plugin://plugin.program.psmcmaintenance",return)</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-31957)</visible>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="3">
-			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">7</property>
-			<label>Artwork Beef</label>
-			<label2>Program</label2>
-			<icon>special://skin/extras/icons/DefaultAddon.png</icon>
-			<thumb>image://C%3a%5cUsers%5cPapaw%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.artwork.beef%5cicon.png/</thumb>
-			<property name="translatedPath">RunAddOn(script.artwork.beef)</property>
-			<onclick>RunAddOn(script.artwork.beef)</onclick>
-			<property name="path">RunAddOn(script.artwork.beef)</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-31957)</visible>
-			<property name="isSubmenu">True</property>
-		</item>
-	</include>
+	<include name="skinshortcuts-submenu-1" />
 	<include />
 	<include name="skinshortcuts-submenu-2" />
 	<include name="skinshortcuts-template-widget1">
@@ -978,36 +912,6 @@
 			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-20342)</visible>
 			<control type="group">
 				<visible>Integer.IsGreater(Container(80113).NumItems,0)</visible>
-				<control type="group">
-					<visible>Control.HasFocus(80113)</visible>
-					<animation condition="!String.IsEqual(Skin.String(MainMenu.Layout),vertical) + Skin.HasSetting(centermainmenu)" effect="slide" end="0,950">Conditional</animation>
-					<animation condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical)" effect="slide" end="0,677">Conditional</animation>
-					<top>90</top>
-					<left>245</left>
-					<control type="group">
-						<animation effect="fade" end="0">WindowClose</animation>
-						<control type="image">
-							<top>-40</top>
-							<width>1470</width>
-							<height>391</height>
-							<texture colordiffuse="BFFFFFFF">homewidgets/list_shadow.png</texture>
-						</control>
-						<control type="group">
-							<include condition="!false">InfoPosterContent</include>
-							<include condition="!false" content="InfoTextContent">
-								<param name="left">225</param>
-								<param name="width">1195</param>
-							</include>
-						</control>
-						<control type="group">
-							<include condition="false">InfoSquareContent</include>
-							<include condition="false" content="InfoTextContent">
-								<param name="left">330</param>
-								<param name="width">1090</param>
-							</include>
-						</control>
-					</control>
-				</control>
 				<control type="group">
 					<top>457</top>
 					<control type="group">
@@ -1031,7 +935,7 @@
 					</control>
 					<include content="PanelLabel">
 						<param name="id">80113</param>
-						<param name="Label">Unwatched Movies</param>
+						<param name="Label">20386</param>
 						<param name="Title">$VAR[HomeWidgetInfoTitleVar]</param>
 						<param name="labelFont">font13_title</param>
 						<param name="labelBottom">252</param>
@@ -1076,206 +980,6 @@
 						<param name="Diffuse" />
 						<param name="Case" />
 						<param name="labelVisible">false</param>
-						<param name="labelFocusVisible">true</param>
-						<param name="isWeather">false</param>
-						<param name="weatherTop" />
-						<param name="weatherHeight" />
-						<param name="weatherTop1" />
-						<param name="weatherTop2" />
-						<param name="weatherTop3" />
-						<param name="weatherFont">font12</param>
-					</include>
-					<content sortby="" sortorder="" target="videos">special://skin/extras/UnwatchedMovies.xsp</content>
-				</control>
-			</control>
-		</control>
-		<control type="group">
-			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
-			<control type="group">
-				<visible>Integer.IsGreater(Container(80114).NumItems,0)</visible>
-				<control type="group">
-					<visible>Control.HasFocus(80114)</visible>
-					<animation condition="!String.IsEqual(Skin.String(MainMenu.Layout),vertical) + Skin.HasSetting(centermainmenu)" effect="slide" end="0,950">Conditional</animation>
-					<animation condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical)" effect="slide" end="0,677">Conditional</animation>
-					<top>90</top>
-					<left>245</left>
-					<control type="group">
-						<animation effect="fade" end="0">WindowClose</animation>
-						<control type="image">
-							<top>-40</top>
-							<width>1470</width>
-							<height>391</height>
-							<texture colordiffuse="BFFFFFFF">homewidgets/list_shadow.png</texture>
-						</control>
-						<control type="group">
-							<include condition="!false">InfoPosterContent</include>
-							<include condition="!false" content="InfoTextContent">
-								<param name="left">225</param>
-								<param name="width">1195</param>
-							</include>
-						</control>
-						<control type="group">
-							<include condition="false">InfoSquareContent</include>
-							<include condition="false" content="InfoTextContent">
-								<param name="left">330</param>
-								<param name="width">1090</param>
-							</include>
-						</control>
-					</control>
-				</control>
-				<control type="group">
-					<top>457</top>
-					<control type="group">
-						<include condition="!String.IsEmpty(Skin.String(Widget.Trans))">HomeWidgetFade</include>
-						<centerleft>50%</centerleft>
-						<top>-21</top>
-						<width>1472.5</width>
-						<height>276</height>
-						<control type="image">
-							<width>1472.5</width>
-							<height>276</height>
-							<texture border="40" colordiffuse="$VAR[HomeWidgetBackColor]">$VAR[HomeWidgetBackgroundVar]</texture>
-							<visible>Skin.HasSetting(Enable.GlobalWidgetBack)</visible>
-						</control>
-						<control type="image">
-							<width>1472.5</width>
-							<height>276</height>
-							<texture border="40" colordiffuse="FF0B0B0B">homewidgets/bg_default.png</texture>
-							<visible>!Skin.HasSetting(Enable.GlobalWidgetBack)</visible>
-						</control>
-					</control>
-					<include content="PanelLabel">
-						<param name="id">80114</param>
-						<param name="Label">Unwatched Episodes</param>
-						<param name="Title">$VAR[HomeWidgetInfoTitleVar]</param>
-						<param name="labelFont">font13_title</param>
-						<param name="labelBottom">252</param>
-						<param name="labelWidth">710</param>
-						<param name="labelLeft">243</param>
-						<param name="labelRight">965.5</param>
-						<param name="labelTitle">false</param>
-					</include>
-				</control>
-			</control>
-			<control type="group">
-				<top>457</top>
-				<control id="80114" type="panel">
-					<left>242.5</left>
-					<width>1435</width>
-					<height>233</height>
-					<orientation>horizontal</orientation>
-					<preloaditems>2</preloaditems>
-					<scrolltime easing="out" tween="quadratic">300</scrolltime>
-					<include>skinshortcuts-template-HorizontalNavigation1</include>
-					<onfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,80114)</onfocus>
-					<onunfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,Home)</onunfocus>
-					<include content="PortraitArt">
-						<param name="containerWidth">159.4</param>
-						<param name="containerHeight">233</param>
-						<param name="Texture">$VAR[PosterThumbVar]</param>
-						<param name="leftArt">2.5</param>
-						<param name="topArt">0</param>
-						<param name="widthArt">154.4</param>
-						<param name="heightArt">233</param>
-						<param name="topFakeDiscArt">0</param>
-						<param name="leftCase">2.5</param>
-						<param name="topCase">0</param>
-						<param name="widthCase">154.4</param>
-						<param name="heightCase">233</param>
-						<param name="labelHeight">-29</param>
-						<param name="labelFont">font11</param>
-						<param name="fallbackFont">fontCDalbum</param>
-						<param name="fallbackVisible">false</param>
-						<param name="Aspect">stretch</param>
-						<param name="Aligny">top</param>
-						<param name="Diffuse" />
-						<param name="Case" />
-						<param name="labelVisible">true</param>
-						<param name="labelFocusVisible">true</param>
-						<param name="isWeather">false</param>
-						<param name="weatherTop" />
-						<param name="weatherHeight" />
-						<param name="weatherTop1" />
-						<param name="weatherTop2" />
-						<param name="weatherTop3" />
-						<param name="weatherFont">font12</param>
-					</include>
-					<content sortby="" sortorder="" target="videos">special://profile/playlists/video/Unwatched Episodes.xsp</content>
-				</control>
-			</control>
-		</control>
-		<control type="group">
-			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-31957)</visible>
-			<control type="group">
-				<visible>Integer.IsGreater(Container(80117).NumItems,0)</visible>
-				<control type="group">
-					<top>504</top>
-					<control type="group">
-						<include condition="!String.IsEmpty(Skin.String(Widget.Trans))">HomeWidgetFade</include>
-						<centerleft>50%</centerleft>
-						<top>-21</top>
-						<width>1472.5</width>
-						<height>242</height>
-						<control type="image">
-							<width>1472.5</width>
-							<height>242</height>
-							<texture border="40" colordiffuse="$VAR[HomeWidgetBackColor]">$VAR[HomeWidgetBackgroundVar]</texture>
-							<visible>Skin.HasSetting(Enable.GlobalWidgetBack)</visible>
-						</control>
-						<control type="image">
-							<width>1472.5</width>
-							<height>242</height>
-							<texture border="40" colordiffuse="FF0B0B0B">homewidgets/bg_default.png</texture>
-							<visible>!Skin.HasSetting(Enable.GlobalWidgetBack)</visible>
-						</control>
-					</control>
-					<include content="PanelLabel">
-						<param name="id">80117</param>
-						<param name="Label">31397</param>
-						<param name="Title">$VAR[HomeWidgetInfoTitleVar]</param>
-						<param name="labelFont">font13_title</param>
-						<param name="labelBottom">223</param>
-						<param name="labelWidth">710</param>
-						<param name="labelLeft">243</param>
-						<param name="labelRight">965.5</param>
-						<param name="labelTitle">false</param>
-					</include>
-				</control>
-			</control>
-			<control type="group">
-				<top>504</top>
-				<control id="80117" type="panel">
-					<left>242.5</left>
-					<width>1435</width>
-					<height>233</height>
-					<orientation>horizontal</orientation>
-					<preloaditems>2</preloaditems>
-					<scrolltime easing="out" tween="quadratic">300</scrolltime>
-					<include>skinshortcuts-template-HorizontalNavigation1</include>
-					<onfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,80117)</onfocus>
-					<onunfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,Home)</onunfocus>
-					<include content="SquareArt">
-						<param name="containerWidth">205</param>
-						<param name="containerHeight">200</param>
-						<param name="Texture">$VAR[PosterThumbVar]</param>
-						<param name="leftArt">2.5</param>
-						<param name="topArt">0</param>
-						<param name="widthArt">200</param>
-						<param name="heightArt">200</param>
-						<param name="topFakeDiscArt">0</param>
-						<param name="leftCase">2.5</param>
-						<param name="topCase">0</param>
-						<param name="widthCase">200</param>
-						<param name="heightCase">200</param>
-						<param name="labelHeight">-29</param>
-						<param name="labelFont">font11</param>
-						<param name="fallbackFont">fontCDalbum</param>
-						<param name="fallbackVisible">false</param>
-						<param name="Aspect">scale</param>
-						<param name="Aligny">top</param>
-						<param name="Diffuse" />
-						<param name="Case" />
-						<param name="labelVisible">false</param>
 						<param name="labelFocusVisible">false</param>
 						<param name="isWeather">false</param>
 						<param name="weatherTop" />
@@ -1285,183 +989,7 @@
 						<param name="weatherTop3" />
 						<param name="weatherFont">font12</param>
 					</include>
-					<content sortby="" sortorder="" target="">
-						<include>skinshortcuts-submenu-1</include>
-					</content>
-				</control>
-			</control>
-		</control>
-		<control type="group">
-			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-13000)</visible>
-			<control type="group">
-				<visible>Integer.IsGreater(Container(80119).NumItems,0)</visible>
-				<control type="group">
-					<top>504</top>
-					<control type="group">
-						<include condition="!String.IsEmpty(Skin.String(Widget.Trans))">HomeWidgetFade</include>
-						<centerleft>50%</centerleft>
-						<top>-21</top>
-						<width>1472.5</width>
-						<height>242</height>
-						<control type="image">
-							<width>1472.5</width>
-							<height>242</height>
-							<texture border="40" colordiffuse="$VAR[HomeWidgetBackColor]">$VAR[HomeWidgetBackgroundVar]</texture>
-							<visible>Skin.HasSetting(Enable.GlobalWidgetBack)</visible>
-						</control>
-						<control type="image">
-							<width>1472.5</width>
-							<height>242</height>
-							<texture border="40" colordiffuse="FF0B0B0B">homewidgets/bg_default.png</texture>
-							<visible>!Skin.HasSetting(Enable.GlobalWidgetBack)</visible>
-						</control>
-					</control>
-					<include content="PanelLabel">
-						<param name="id">80119</param>
-						<param name="Label">130</param>
-						<param name="Title">$VAR[HomeWidgetInfoTitleVar]</param>
-						<param name="labelFont">font13_title</param>
-						<param name="labelBottom">223</param>
-						<param name="labelWidth">710</param>
-						<param name="labelLeft">243</param>
-						<param name="labelRight">965.5</param>
-						<param name="labelTitle">false</param>
-					</include>
-				</control>
-			</control>
-			<control type="group">
-				<top>504</top>
-				<control id="80119" type="panel">
-					<left>242.5</left>
-					<width>1435</width>
-					<height>233</height>
-					<orientation>horizontal</orientation>
-					<preloaditems>2</preloaditems>
-					<scrolltime easing="out" tween="quadratic">300</scrolltime>
-					<include>skinshortcuts-template-HorizontalNavigation1</include>
-					<onfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,80119)</onfocus>
-					<onunfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,Home)</onunfocus>
-					<include content="SquareArt">
-						<param name="containerWidth">205</param>
-						<param name="containerHeight">200</param>
-						<param name="Texture">$VAR[PosterThumbVar]</param>
-						<param name="leftArt">2.5</param>
-						<param name="topArt">0</param>
-						<param name="widthArt">200</param>
-						<param name="heightArt">200</param>
-						<param name="topFakeDiscArt">0</param>
-						<param name="leftCase">2.5</param>
-						<param name="topCase">0</param>
-						<param name="widthCase">200</param>
-						<param name="heightCase">200</param>
-						<param name="labelHeight">-29</param>
-						<param name="labelFont">font11</param>
-						<param name="fallbackFont">fontCDalbum</param>
-						<param name="fallbackVisible">false</param>
-						<param name="Aspect">scale</param>
-						<param name="Aligny">top</param>
-						<param name="Diffuse" />
-						<param name="Case" />
-						<param name="labelVisible">false</param>
-						<param name="labelFocusVisible">false</param>
-						<param name="isWeather">true</param>
-						<param name="weatherTop">39</param>
-						<param name="weatherHeight">96</param>
-						<param name="weatherTop1">0</param>
-						<param name="weatherTop2">135</param>
-						<param name="weatherTop3">166</param>
-						<param name="weatherFont">font12</param>
-					</include>
-					<content sortby="" sortorder="" target="">
-						<include>skinshortcuts-template-SystemContent</include>
-					</content>
-				</control>
-			</control>
-		</control>
-		<control type="group">
-			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),weather)</visible>
-			<control type="group">
-				<visible>Integer.IsGreater(Container(801114).NumItems,0)</visible>
-				<control type="group">
-					<top>504</top>
-					<control type="group">
-						<include condition="!String.IsEmpty(Skin.String(Widget.Trans))">HomeWidgetFade</include>
-						<centerleft>50%</centerleft>
-						<top>-21</top>
-						<width>1472.5</width>
-						<height>242</height>
-						<control type="image">
-							<width>1472.5</width>
-							<height>242</height>
-							<texture border="40" colordiffuse="$VAR[HomeWidgetBackColor]">$VAR[HomeWidgetBackgroundVar]</texture>
-							<visible>Skin.HasSetting(Enable.GlobalWidgetBack)</visible>
-						</control>
-						<control type="image">
-							<width>1472.5</width>
-							<height>242</height>
-							<texture border="40" colordiffuse="FF0B0B0B">homewidgets/bg_default.png</texture>
-							<visible>!Skin.HasSetting(Enable.GlobalWidgetBack)</visible>
-						</control>
-					</control>
-					<include content="PanelLabel">
-						<param name="id">801114</param>
-						<param name="Label">10508</param>
-						<param name="Title">$VAR[HomeWidgetInfoTitleVar]</param>
-						<param name="labelFont">font13_title</param>
-						<param name="labelBottom">223</param>
-						<param name="labelWidth">710</param>
-						<param name="labelLeft">243</param>
-						<param name="labelRight">965.5</param>
-						<param name="labelTitle">false</param>
-					</include>
-				</control>
-			</control>
-			<control type="group">
-				<top>504</top>
-				<control id="801114" type="panel">
-					<left>242.5</left>
-					<width>1435</width>
-					<height>233</height>
-					<orientation>horizontal</orientation>
-					<preloaditems>2</preloaditems>
-					<scrolltime easing="out" tween="quadratic">300</scrolltime>
-					<include>skinshortcuts-template-HorizontalNavigation1</include>
-					<onfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,801114)</onfocus>
-					<onunfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,Home)</onunfocus>
-					<include content="SquareArt">
-						<param name="containerWidth">205</param>
-						<param name="containerHeight">200</param>
-						<param name="Texture">$VAR[PosterThumbVar]</param>
-						<param name="leftArt">2.5</param>
-						<param name="topArt">0</param>
-						<param name="widthArt">200</param>
-						<param name="heightArt">200</param>
-						<param name="topFakeDiscArt">0</param>
-						<param name="leftCase">2.5</param>
-						<param name="topCase">0</param>
-						<param name="widthCase">200</param>
-						<param name="heightCase">200</param>
-						<param name="labelHeight">-29</param>
-						<param name="labelFont">font11</param>
-						<param name="fallbackFont">fontCDalbum</param>
-						<param name="fallbackVisible">false</param>
-						<param name="Aspect">scale</param>
-						<param name="Aligny">top</param>
-						<param name="Diffuse" />
-						<param name="Case" />
-						<param name="labelVisible">false</param>
-						<param name="labelFocusVisible">false</param>
-						<param name="isWeather">true</param>
-						<param name="weatherTop">39</param>
-						<param name="weatherHeight">96</param>
-						<param name="weatherTop1">0</param>
-						<param name="weatherTop2">135</param>
-						<param name="weatherTop3">166</param>
-						<param name="weatherFont">font12</param>
-					</include>
-					<content sortby="" sortorder="" target="">
-						<include>skinshortcuts-template-WeatherForecastContent</include>
-					</content>
+					<content sortby="" sortorder="" target="videos">videodb://recentlyaddedmovies/</content>
 				</control>
 			</control>
 		</control>
@@ -1480,469 +1008,6 @@
 		<ondown condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical) + !Control.IsVisible(90020) + ![Control.IsVisible(9027) | System.HasMediaDVD]">9000</ondown>
 		<onleft condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical)">9000</onleft>
 		<onback>9000</onback>
-	</include>
-	<include name="skinshortcuts-template-SystemContent">
-		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-SystemContent-Master user</include>
-	</include>
-	<include name="skinshortcuts-template-SystemContent-Master user">
-		<item>
-			<label>12395</label>
-			<label2>$INFO[System.BatteryLevel]</label2>
-			<icon>homewidgets/systeminfo/square/battery_100.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/battery_100.jpg</property>
-			<property name="Label3">Remaining</property>
-			<property name="isSystemInfo">true</property>
-			<visible>Integer.IsGreater(System.BatteryLevel,60)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>12395</label>
-			<label2>$INFO[System.BatteryLevel]</label2>
-			<icon>homewidgets/systeminfo/square/battery_50.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/battery_50.jpg</property>
-			<property name="Label3">Remaining</property>
-			<property name="isSystemInfo">true</property>
-			<visible>Integer.IsGreater(System.BatteryLevel,20) + !Integer.IsGreater(System.BatteryLevel,60)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>12395</label>
-			<label2>$INFO[System.BatteryLevel]</label2>
-			<icon>homewidgets/systeminfo/square/battery_10.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/battery_10.jpg</property>
-			<property name="Label3">Remaining</property>
-			<property name="isSystemInfo">true</property>
-			<visible>Integer.IsGreater(System.BatteryLevel,5) + !Integer.IsGreater(System.BatteryLevel,20)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>12395</label>
-			<label2>$INFO[System.BatteryLevel]</label2>
-			<icon>homewidgets/systeminfo/square/battery_critical.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/battery_critical.jpg</property>
-			<property name="Label3">Remaining</property>
-			<property name="isSystemInfo">true</property>
-			<visible>Integer.IsGreater(System.BatteryLevel,0) + !Integer.IsGreater(System.BatteryLevel,5)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>705</label>
-			<label2>$INFO[Network.LinkState]</label2>
-			<icon>homewidgets/systeminfo/square/connected.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/connected.jpg</property>
-			<property name="Label3">$INFO[Network.IPAddress,IP: ]</property>
-			<property name="isSystemInfo">true</property>
-			<visible>!String.IsEmpty(Network.IPAddress)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>705</label>
-			<label2>$INFO[Network.LinkState]</label2>
-			<icon>homewidgets/systeminfo/square/disconnected.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/disconnected.jpg</property>
-			<property name="Label3">$INFO[Network.IPAddress,IP: ]</property>
-			<property name="isSystemInfo">true</property>
-			<visible>String.IsEmpty(Network.IPAddress)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>13280</label>
-			<label2>$INFO[System.ScreenWidth]x$INFO[System.ScreenHeight]</label2>
-			<icon>homewidgets/systeminfo/square/video.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/video.jpg</property>
-			<property name="Label3">$INFO[System.fps,, FPS]</property>
-			<property name="isSystemInfo">true</property>
-			<visible>!Integer.IsGreater(System.GPUTemperature,0)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>13280</label>
-			<label2>$INFO[System.ScreenWidth]x$INFO[System.ScreenHeight]</label2>
-			<icon>homewidgets/systeminfo/square/video.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/video.jpg</property>
-			<property name="Label3">$INFO[System.fps] FPS $INFO[System.GPUTemperature]</property>
-			<property name="isSystemInfo">true</property>
-			<visible>Integer.IsGreater(System.GPUTemperature,0)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>CPU</label>
-			<label2>$INFO[System.CPUUsage(used.percent)]</label2>
-			<icon>homewidgets/systeminfo/square/cpu.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/cpu.jpg</property>
-			<property name="Label3">$INFO[System.CpuFrequency] $INFO[System.CPUTemperature]</property>
-			<property name="isSystemInfo">true</property>
-			<visible>Integer.IsGreater(System.CPUTemperature,0)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>CPU</label>
-			<label2>$INFO[System.CPUUsage(used.percent)]</label2>
-			<icon>homewidgets/systeminfo/square/cpu.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/cpu.jpg</property>
-			<property name="Label3">$INFO[System.CpuFrequency]</property>
-			<property name="isSystemInfo">true</property>
-			<visible>!Integer.IsGreater(System.CPUTemperature,0)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>$LOCALIZE[31309]</label>
-			<label2>$INFO[System.Memory(free.percent)] $LOCALIZE[156]</label2>
-			<icon>homewidgets/systeminfo/square/memory.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/memory.jpg</property>
-			<property name="Label3">$INFO[System.Memory(total)] $LOCALIZE[20161]</property>
-			<property name="isSystemInfo">true</property>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>154</label>
-			<label2>$INFO[System.FreeSpacePercent]</label2>
-			<icon>homewidgets/systeminfo/square/storage.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/storage.jpg</property>
-			<property name="Label3">$INFO[System.TotalSpace]</property>
-			<property name="isSystemInfo">true</property>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>19020</label>
-			<label2>$INFO[Pvr.BackendName]</label2>
-			<icon>homewidgets/systeminfo/square/pvr.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/pvr.jpg</property>
-			<property name="Label3">$INFO[Pvr.BackendChannels] $LOCALIZE[19019]</property>
-			<property name="isSystemInfo">true</property>
-			<visible>PVR.HasTVChannels</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>19114</label>
-			<label2>$INFO[System.BuildVersion]</label2>
-			<icon>homewidgets/systeminfo/square/system.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/system.jpg</property>
-			<property name="Label3">$INFO[System.BuildDate]</property>
-			<property name="isSystemInfo">true</property>
-			<visible>!PVR.HasTVChannels</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>12390</label>
-			<label2>$INFO[System.Uptime]</label2>
-			<icon>homewidgets/systeminfo/square/uptime.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/uptime.jpg</property>
-			<property name="Label3">$LOCALIZE[20161]: $INFO[System.TotalUptime]</property>
-			<property name="isSystemInfo">true</property>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-	</include>
-	<include name="skinshortcuts-template-SystemUptime">
-		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-SystemUptime-Master user</include>
-	</include>
-	<include name="skinshortcuts-template-SystemUptime-Master user">
-		<item>
-			<label>12390</label>
-			<label2>$INFO[System.Uptime]</label2>
-			<icon>homewidgets/systeminfo/square/uptime.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/uptime.jpg</property>
-			<property name="Label3">$LOCALIZE[20161]: $INFO[System.TotalUptime]</property>
-			<property name="isSystemInfo">true</property>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-	</include>
-	<include name="skinshortcuts-template-SystemBattery">
-		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-SystemBattery-Master user</include>
-	</include>
-	<include name="skinshortcuts-template-SystemBattery-Master user">
-		<item>
-			<label>12395</label>
-			<label2>$INFO[System.BatteryLevel]</label2>
-			<icon>homewidgets/systeminfo/square/battery_100.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/battery_100.jpg</property>
-			<property name="Label3">Remains</property>
-			<property name="isSystemInfo">true</property>
-			<visible>Integer.IsGreater(System.BatteryLevel,60)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>12395</label>
-			<label2>$INFO[System.BatteryLevel]</label2>
-			<icon>homewidgets/systeminfo/square/battery_50.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/battery_50.jpg</property>
-			<property name="Label3">Remains</property>
-			<property name="isSystemInfo">true</property>
-			<visible>Integer.IsGreater(System.BatteryLevel,20) + !Integer.IsGreater(System.BatteryLevel,60)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>12395</label>
-			<label2>$INFO[System.BatteryLevel]</label2>
-			<icon>homewidgets/systeminfo/square/battery_10.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/battery_10.jpg</property>
-			<property name="Label3">Remains</property>
-			<property name="isSystemInfo">true</property>
-			<visible>Integer.IsGreater(System.BatteryLevel,5) + !Integer.IsGreater(System.BatteryLevel,20)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>12395</label>
-			<label2>$INFO[System.BatteryLevel]</label2>
-			<icon>homewidgets/systeminfo/square/battery_critical.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/battery_critical.jpg</property>
-			<property name="Label3">Remains</property>
-			<property name="isSystemInfo">true</property>
-			<visible>Integer.IsGreater(System.BatteryLevel,0) + !Integer.IsGreater(System.BatteryLevel,5)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-	</include>
-	<include name="skinshortcuts-template-SystemNetwork">
-		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-SystemNetwork-Master user</include>
-	</include>
-	<include name="skinshortcuts-template-SystemNetwork-Master user">
-		<item>
-			<label>705</label>
-			<label2>$INFO[Network.LinkState]</label2>
-			<icon>homewidgets/systeminfo/square/connected.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/connected.jpg</property>
-			<property name="Label3">$INFO[Network.IPAddress,IP: ]</property>
-			<property name="isSystemInfo">true</property>
-			<visible>!String.IsEmpty(Network.IPAddress)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>705</label>
-			<label2>$INFO[Network.LinkState]</label2>
-			<icon>homewidgets/systeminfo/square/disconnected.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/disconnected.jpg</property>
-			<property name="Label3">$INFO[Network.IPAddress,IP: ]</property>
-			<property name="isSystemInfo">true</property>
-			<visible>String.IsEmpty(Network.IPAddress)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-	</include>
-	<include name="skinshortcuts-template-SystemVideo">
-		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-SystemVideo-Master user</include>
-	</include>
-	<include name="skinshortcuts-template-SystemVideo-Master user">
-		<item>
-			<label>13280</label>
-			<label2>$INFO[System.ScreenWidth]x$INFO[System.ScreenHeight]</label2>
-			<icon>homewidgets/systeminfo/square/video.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/video.jpg</property>
-			<property name="Label3">$INFO[System.fps] FPS</property>
-			<property name="isSystemInfo">true</property>
-			<visible>!Integer.IsGreater(System.GPUTemperature,0)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>13280</label>
-			<label2>$INFO[System.ScreenWidth]x$INFO[System.ScreenHeight]</label2>
-			<icon>homewidgets/systeminfo/square/video.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/video.jpg</property>
-			<property name="Label3">$INFO[System.fps] FPS $INFO[System.GPUTemperature]</property>
-			<property name="isSystemInfo">true</property>
-			<visible>Integer.IsGreater(System.GPUTemperature,0)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-	</include>
-	<include name="skinshortcuts-template-SystemCPU">
-		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-SystemCPU-Master user</include>
-	</include>
-	<include name="skinshortcuts-template-SystemCPU-Master user">
-		<item>
-			<label>$LOCALIZE[140]</label>
-			<label2>$INFO[System.CPUUsage(used.percent)]</label2>
-			<icon>homewidgets/systeminfo/square/cpu.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/cpu.jpg</property>
-			<property name="Label3">$INFO[System.CpuFrequency] $INFO[System.CPUTemperature]</property>
-			<property name="isSystemInfo">true</property>
-			<visible>Integer.IsGreater(System.CPUTemperature,0)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>$LOCALIZE[140]</label>
-			<label2>$INFO[System.CPUUsage(used.percent)]</label2>
-			<icon>homewidgets/systeminfo/square/cpu.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/cpu.jpg</property>
-			<property name="Label3">$INFO[System.CpuFrequency]</property>
-			<property name="isSystemInfo">true</property>
-			<visible>!Integer.IsGreater(System.CPUTemperature,0)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-	</include>
-	<include name="skinshortcuts-template-SystemMemory">
-		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-SystemMemory-Master user</include>
-	</include>
-	<include name="skinshortcuts-template-SystemMemory-Master user">
-		<item>
-			<label>158</label>
-			<label2>$INFO[System.Memory(free.percent)] $LOCALIZE[156]</label2>
-			<icon>homewidgets/systeminfo/square/memory.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/memory.jpg</property>
-			<property name="Label3">$INFO[System.Memory(total)] $LOCALIZE[20161]</property>
-			<property name="isSystemInfo">true</property>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-	</include>
-	<include name="skinshortcuts-template-SystemStorage">
-		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-SystemStorage-Master user</include>
-	</include>
-	<include name="skinshortcuts-template-SystemStorage-Master user">
-		<item>
-			<label>154</label>
-			<label2>$INFO[System.FreeSpacePercent]</label2>
-			<icon>homewidgets/systeminfo/square/storage.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/storage.jpg</property>
-			<property name="Label3">$INFO[System.TotalSpace]</property>
-			<property name="isSystemInfo">true</property>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-	</include>
-	<include name="skinshortcuts-template-SystemPVR">
-		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-SystemPVR-Master user</include>
-	</include>
-	<include name="skinshortcuts-template-SystemPVR-Master user">
-		<item>
-			<label>19020</label>
-			<label2>$INFO[Pvr.BackendName]</label2>
-			<icon>homewidgets/systeminfo/square/pvr.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/pvr.jpg</property>
-			<property name="Label3">$INFO[Pvr.BackendChannels] $LOCALIZE[19019]</property>
-			<property name="isSystemInfo">true</property>
-			<visible>PVR.HasTVChannels</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-	</include>
-	<include name="skinshortcuts-template-SystemVersion">
-		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-SystemVersion-Master user</include>
-	</include>
-	<include name="skinshortcuts-template-SystemVersion-Master user">
-		<item>
-			<label>19114</label>
-			<label2>$INFO[System.BuildVersion]</label2>
-			<icon>homewidgets/systeminfo/square/system.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/system.jpg</property>
-			<property name="Label3">$INFO[System.BuildDate]</property>
-			<property name="isSystemInfo">true</property>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-	</include>
-	<include name="skinshortcuts-template-WeatherForecastContent">
-		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-WeatherForecastContent-Master user</include>
-	</include>
-	<include name="skinshortcuts-template-WeatherForecastContent-Master user">
-		<item>
-			<label>$LOCALIZE[31909]</label>
-			<icon />
-			<visible>!Weather.IsFetched</visible>
-		</item>
-		<item>
-			<label>$INFO[Window(weather).Property(Day0.Title)]</label>
-			<label2>$INFO[Window(weather).Property(Day0.Outlook)]</label2>
-			<icon>$VAR[WeatherIconsPathVar]$INFO[Window(weather).Property(Day0.FanartCode)]$VAR[WeatherIconsExtVar]</icon>
-			<property name="Label3">[COLOR red]$INFO[Window(weather).Property(Day0.HighTemp)]$INFO[System.TemperatureUnits][/COLOR]</property>
-			<property name="Label4">[COLOR blue]$INFO[Window(weather).Property(Day0.LowTemp)]$INFO[System.TemperatureUnits][/COLOR]</property>
-			<property name="Fanart">$INFO[Skin.String(weatherfanart.path)]$INFO[Window(weather).Property(Day0.FanartCode)]$VAR[WeatherBackgroundTypeVar]</property>
-			<onclick>ActivateWindow(weather)</onclick>
-			<visible>!String.IsEmpty(Window(Weather).Property(Day0.Title))</visible>
-		</item>
-		<item>
-			<label>$INFO[Window(weather).Property(Day1.Title)]</label>
-			<label2>$INFO[Window(weather).Property(Day1.Outlook)]</label2>
-			<icon>$VAR[WeatherIconsPathVar]$INFO[Window(weather).Property(Day1.FanartCode)]$VAR[WeatherIconsExtVar]</icon>
-			<property name="Label3">[COLOR red]$INFO[Window(weather).Property(Day1.HighTemp)]$INFO[System.TemperatureUnits][/COLOR]</property>
-			<property name="Label4">[COLOR blue]$INFO[Window(weather).Property(Day1.LowTemp)]$INFO[System.TemperatureUnits][/COLOR]</property>
-			<property name="Fanart">$INFO[Skin.String(weatherfanart.path)]$INFO[Window(weather).Property(Day1.FanartCode)]$VAR[WeatherBackgroundTypeVar]</property>
-			<onclick>ActivateWindow(weather)</onclick>
-			<visible>!String.IsEmpty(Window(Weather).Property(Day1.Title))</visible>
-		</item>
-		<item>
-			<label>$INFO[Window(weather).Property(Day2.Title)]</label>
-			<label2>$INFO[Window(weather).Property(Day2.Outlook)]</label2>
-			<icon>$VAR[WeatherIconsPathVar]$INFO[Window(weather).Property(Day2.FanartCode)]$VAR[WeatherIconsExtVar]</icon>
-			<property name="Label3">[COLOR red]$INFO[Window(weather).Property(Day2.HighTemp)]$INFO[System.TemperatureUnits][/COLOR]</property>
-			<property name="Label4">[COLOR blue]$INFO[Window(weather).Property(Day2.LowTemp)]$INFO[System.TemperatureUnits][/COLOR]</property>
-			<property name="Fanart">$INFO[Skin.String(weatherfanart.path)]$INFO[Window(weather).Property(Day2.FanartCode)]$VAR[WeatherBackgroundTypeVar]</property>
-			<onclick>ActivateWindow(weather)</onclick>
-			<visible>!String.IsEmpty(Window(Weather).Property(Day2.Title))</visible>
-		</item>
-		<item>
-			<label>$INFO[Window(weather).Property(Day3.Title)]</label>
-			<label2>$INFO[Window(weather).Property(Day3.Outlook)]</label2>
-			<icon>$VAR[WeatherIconsPathVar]$INFO[Window(weather).Property(Day3.FanartCode)]$VAR[WeatherIconsExtVar]</icon>
-			<property name="Label3">[COLOR red]$INFO[Window(weather).Property(Day3.HighTemp)]$INFO[System.TemperatureUnits][/COLOR]</property>
-			<property name="Label4">[COLOR blue]$INFO[Window(weather).Property(Day3.LowTemp)]$INFO[System.TemperatureUnits][/COLOR]</property>
-			<property name="Fanart">$INFO[Skin.String(weatherfanart.path)]$INFO[Window(weather).Property(Day3.FanartCode)]$VAR[WeatherBackgroundTypeVar]</property>
-			<onclick>ActivateWindow(weather)</onclick>
-			<visible>!String.IsEmpty(Window(Weather).Property(Day3.Title))</visible>
-		</item>
-		<item>
-			<label>$INFO[Window(weather).Property(Day4.Title)]</label>
-			<label2>$INFO[Window(weather).Property(Day4.Outlook)]</label2>
-			<icon>$VAR[WeatherIconsPathVar]$INFO[Window(weather).Property(Day4.FanartCode)]$VAR[WeatherIconsExtVar]</icon>
-			<property name="Label3">[COLOR red]$INFO[Window(weather).Property(Day4.HighTemp)]$INFO[System.TemperatureUnits][/COLOR]</property>
-			<property name="Label4">[COLOR blue]$INFO[Window(weather).Property(Day4.LowTemp)]$INFO[System.TemperatureUnits][/COLOR]</property>
-			<property name="Fanart">$INFO[Skin.String(weatherfanart.path)]$INFO[Window(weather).Property(Day4.FanartCode)]$VAR[WeatherBackgroundTypeVar]</property>
-			<onclick>ActivateWindow(weather)</onclick>
-			<visible>!String.IsEmpty(Window(Weather).Property(Day4.Title))</visible>
-		</item>
-		<item>
-			<label>$INFO[Window(weather).Property(Day5.Title)]</label>
-			<label2>$INFO[Window(weather).Property(Day5.Outlook)]</label2>
-			<icon>$VAR[WeatherIconsPathVar]$INFO[Window(weather).Property(Day5.FanartCode)]$VAR[WeatherIconsExtVar]</icon>
-			<property name="Label3">[COLOR red]$INFO[Window(weather).Property(Day5.HighTemp)]$INFO[System.TemperatureUnits][/COLOR]</property>
-			<property name="Label4">[COLOR blue]$INFO[Window(weather).Property(Day5.LowTemp)]$INFO[System.TemperatureUnits][/COLOR]</property>
-			<property name="Fanart">$INFO[Skin.String(weatherfanart.path)]$INFO[Window(weather).Property(Day5.FanartCode)]$VAR[WeatherBackgroundTypeVar]</property>
-			<onclick>ActivateWindow(weather)</onclick>
-			<visible>!String.IsEmpty(Window(Weather).Property(Day5.Title))</visible>
-		</item>
-		<item>
-			<label>$INFO[Window(weather).Property(Day6.Title)]</label>
-			<label2>$INFO[Window(weather).Property(Day6.Outlook)]</label2>
-			<icon>$VAR[WeatherIconsPathVar]$INFO[Window(weather).Property(Day6.FanartCode)]$VAR[WeatherIconsExtVar]</icon>
-			<property name="Label3">[COLOR red]$INFO[Window(weather).Property(Day6.HighTemp)]$INFO[System.TemperatureUnits][/COLOR]</property>
-			<property name="Label4">[COLOR blue]$INFO[Window(weather).Property(Day6.LowTemp)]$INFO[System.TemperatureUnits][/COLOR]</property>
-			<property name="Fanart">$INFO[Skin.String(weatherfanart.path)]$INFO[Window(weather).Property(Day6.FanartCode)]$VAR[WeatherBackgroundTypeVar]</property>
-			<onclick>ActivateWindow(weather)</onclick>
-			<visible>!String.IsEmpty(Window(Weather).Property(Day6.Title))</visible>
-		</item>
-	</include>
-	<include name="skinshortcuts-template-WeatherTodayContent">
-		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-WeatherTodayContent-Master user</include>
-	</include>
-	<include name="skinshortcuts-template-WeatherTodayContent-Master user">
-		<item>
-			<label>$LOCALIZE[31909]</label>
-			<icon />
-			<visible>!Weather.IsFetched</visible>
-		</item>
-		<item>
-			<label>33006</label>
-			<label2>$INFO[Window(weather).Property(Day0.Outlook)]</label2>
-			<icon>$VAR[WeatherIconsPathVar]$INFO[Window(weather).Property(Day0.FanartCode)]$VAR[WeatherIconsExtVar]</icon>
-			<property name="Label3">[COLOR red]$INFO[Window(weather).Property(Day0.HighTemp)]$INFO[System.TemperatureUnits][/COLOR]</property>
-			<property name="Label4">[COLOR blue]$INFO[Window(weather).Property(Day0.LowTemp)]$INFO[System.TemperatureUnits][/COLOR]</property>
-			<property name="Fanart">$INFO[Skin.String(weatherfanart.path)]$INFO[Window(weather).Property(Day0.FanartCode)]$VAR[WeatherBackgroundTypeVar]</property>
-			<onclick>ActivateWindow(weather)</onclick>
-			<visible>!String.IsEmpty(Window(Weather).Property(Day0.Title))</visible>
-		</item>
-	</include>
-	<include name="skinshortcuts-template-WeatherTomorrowContent">
-		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-WeatherTomorrowContent-Master user</include>
-	</include>
-	<include name="skinshortcuts-template-WeatherTomorrowContent-Master user">
-		<item>
-			<label>$LOCALIZE[31909]</label>
-			<icon />
-			<visible>!Weather.IsFetched</visible>
-		</item>
-		<item>
-			<label>33007</label>
-			<label2>$INFO[Window(weather).Property(Day1.Outlook)]</label2>
-			<icon>$VAR[WeatherIconsPathVar]$INFO[Window(weather).Property(Day1.FanartCode)]$VAR[WeatherIconsExtVar]</icon>
-			<property name="Label3">[COLOR red]$INFO[Window(weather).Property(Day1.HighTemp)]$INFO[System.TemperatureUnits][/COLOR]</property>
-			<property name="Label4">[COLOR blue]$INFO[Window(weather).Property(Day1.LowTemp)]$INFO[System.TemperatureUnits][/COLOR]</property>
-			<property name="Fanart">$INFO[Skin.String(weatherfanart.path)]$INFO[Window(weather).Property(Day1.FanartCode)]$VAR[WeatherBackgroundTypeVar]</property>
-			<onclick>ActivateWindow(weather)</onclick>
-			<visible>!String.IsEmpty(Window(Weather).Property(Day1.Title))</visible>
-		</item>
 	</include>
 	<include name="skinshortcuts-template-widget2">
 		<description>This include was built automatically as the template didn't match any menu items</description>
@@ -2008,6 +1073,45 @@
 		<description>This include was built automatically as the template didn't match any menu items</description>
 	</include>
 	<include name="skinshortcuts-template-WidgetTitle2.2">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-WeatherForecastContent">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-WeatherTodayContent">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-WeatherTomorrowContent">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-SystemContent">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-SystemUptime">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-SystemBattery">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-SystemNetwork">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-SystemVideo">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-SystemCPU">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-SystemMemory">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-SystemStorage">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-SystemPVR">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-SystemVersion">
 		<description>This include was built automatically as the template didn't match any menu items</description>
 	</include>
 </includes>
