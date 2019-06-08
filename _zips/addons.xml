@@ -156,7 +156,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.psmc.man.of.steel" version="1.0.8" name="PSMC Man of Steel Skin" provider-name="The Papaw">
+<addon id="skin.psmc.man.of.steel" version="1.0.9" name="PSMC Man of Steel Skin" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
@@ -190,7 +190,7 @@
 		</assets>
 		<news>
 [COLOR blue]• [/COLOR]Cosmetic Fixes
-[COLOR blue]• [/COLOR]Redone Weather/Time
+[COLOR blue]• [/COLOR]New intro.mp4 added
 
 Please give credit to all the devolopers that have and do contribute to this skin!
         </news>
