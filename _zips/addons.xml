@@ -156,7 +156,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.psmc.man.of.steel" version="1.0.7" name="PSMC Man of Steel Skin" provider-name="The Papaw">
+<addon id="skin.psmc.man.of.steel" version="1.0.8" name="PSMC Man of Steel Skin" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
@@ -197,7 +197,7 @@ Please give credit to all the devolopers that have and do contribute to this ski
 	</extension>
 </addon>
 
-<addon id="skin.psmc.silvo" version="1.0.9" name="PSMC Silvo Skin" provider-name="The Papaw">
+<addon id="skin.psmc.silvo" version="1.0.10" name="PSMC Silvo Skin" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
@@ -210,13 +210,14 @@ Please give credit to all the devolopers that have and do contribute to this ski
 		<res width="1920" height="1080" aspect="16:9" default="true" folder="16x9" />
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Created by BigNoid, Modded by SiLVO, Widgets by Mr. V and themed by The Papawfor the PSMC theme</summary>
-		<description lang="en">Themed from Aeon Nox SiLVO v7.0.1 to better match PSMC. Please give credit to Mike, The Papaw and all others that contributed.</description>
+		<summary lang="en_US">Created by BigNoid, Modded by SiLVO, Widgets by Mr. V and themed by The Papaw</summary>
+		<description lang="en_US">Themed from Aeon Nox SiLVO v7.0.1. Please give credit to Mike and others that contributed.</description>
 		<platform>all</platform>
 		<license></license>
 		<forum></forum>
 		<website>https://github.com/ThePapaw/psmc</website>
 		<source>https://github.com/ThePapaw/psmc</source>
+		<video_guide></video_guide>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
@@ -233,11 +234,16 @@ Please give credit to all the devolopers that have and do contribute to this ski
 			<screenshot>resources/screenshots/screenshot-11.jpg</screenshot>
 			<screenshot>resources/screenshots/screenshot-12.jpg</screenshot>
 		</assets>
-		<news>This skin was cloned and modded from the Aeon Nox SiLVO v7.0.1. Please give credit to Mike and all others that contributed to the code used.</news>
+		<news>
+[COLOR blue]• [/COLOR]Initial Upload
+[COLOR blue]• [/COLOR]Initial Upload of matching GUI sounds
+
+Please give credit to all the devolopers that have and do contribute to this skin!
+        </news>
 	</extension>
 </addon>
 
-<addon id="skin.psmc.spiderman" version="1.0.10" name="PSMC's Spiderman" provider-name="The Papaw">
+<addon id="skin.psmc.spiderman" version="1.0.11" name="PSMC's Spiderman" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
