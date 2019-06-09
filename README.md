@@ -18,7 +18,7 @@ Features include: Auto delete of cache at start up (optional), notifies when pac
 
 The SKINS here were themed and/or modded for using with PSMC 18. They work with Kodi 18 as well. All were themed from Aeon Nox SiLVO (v7.0.1) unless otherwise stated. They include:
 
-• <B>PSMC's Silvo Skin</B> - General Aeon Nox SiLVO skin themed for PSMC<BR>
+• <B>PSMC's Silvo Skin</B> - General Aeon Nox SiLVO skin themed for PSMC/Kodi 18<BR>
 • <B>PSMC's Spiderman</B> - Spiderman Theme modded and brought up-to-date for PSMC/Kodi 18<BR>
 • <B>PSMC's Man of Steel</B> - Man of Steel Theme modded and brought up-to-date for PSMC/Kodi 18<BR>
 • <B>PSMC's Super Mario Galaxy</B> - Super Mario Galaxy Theme modded and brought up-to-date for PSMC/Kodi 18 (don't forget to download the companion UI sounds for the skin!)
