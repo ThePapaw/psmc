@@ -20,7 +20,7 @@ The SKINS here were themed and/or modded for using with PSMC 18. They work with 
 
 • <B>PSMC Silvo Skin</B> - General Aeon Nox SiLVO skin themed for PSMC<BR>
 • <B>PSMC's Spiderman</B> - Spiderman Theme modded and brought up-to-date for PSMC/Kodi 18<BR>
-• <B>PSMC's Man of Steel</B> - Man of Steel Theme modded and brought up-to-date for PSMC/Kodi 18
+• <B>PSMC's Man of Steel</B> - Man of Steel Theme modded and brought up-to-date for PSMC/Kodi 18<BR>
 • <B>PSMC's Super Mario Galaxy</B> - Super Mario Galaxy Theme modded and brought up-to-date for PSMC/Kodi 18 (don't forget to download the companion UI sounds for the skin!)
 
 PSMC, the addons & skins are considered 3rd party, so please do not seek help from Kodi, the Kodi forums, etc..
