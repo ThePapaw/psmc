@@ -307,7 +307,7 @@ Please give credit to all the devolopers that have and do contribute to this ski
 	</extension>
 </addon>
 
-<addon id="skin.psmc.super.mario.galaxy" version="1.0.2" name="PSMC Super Mario Galaxy Skin" provider-name="The Papaw">
+<addon id="skin.psmc.super.mario.galaxy" version="1.0.3" name="PSMC Super Mario Galaxy Skin" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
@@ -321,7 +321,7 @@ Please give credit to all the devolopers that have and do contribute to this ski
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Bringing The Super Mario Galaxy Skin to PSMC/Kodi 18.</summary>
-		<description lang="en">Bringing The Super Mario Galaxy skin to PSMC/Kodi 18. Themed from Aeon Nox SiLVO v7.0.1 to better match PSMC. Please give credit to Mike, The Papaw and all others that contributed.</description>
+		<description lang="en">Bringing The Super Mario Galaxy skin to PSMC/Kodi 18. Themed from Aeon Nox SiLVO v7.0.1 to better match PSMC. Please give credit to Mike, The Papaw and all others that contributed. [B]Make sure to download the GUI sounds for the skin![/B]</description>
 		<platform>all</platform>
 		<license></license>
 		<forum></forum>
