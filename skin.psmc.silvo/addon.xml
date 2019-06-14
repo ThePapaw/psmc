@@ -3,16 +3,17 @@
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
+		<import addon="plugin.program.autocompletion" version="1.0" />
 		<import addon="service.library.data.provider" version="0.0.7" />
 		<import addon="script.grab.fanart" version="0.12.8" />
-		<import addon="resource.images.studios.white" version="0.0.1" />
+		<import addon="resource.images.studios.coloured" version="0.0.16" />
 		<import addon="resource.images.recordlabels.white" version="0.0.1" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1080" aspect="16:9" default="true" folder="16x9" />
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en_US">PSMC Sylvo Mod from the great folks of Aeon-Nox SiLVO, Widgets by Mr. V and themed by The Papaw</summary>
+		<summary lang="en_US">PSMC Sylvo Skin Mod (forked from Aeon-Nox SiLVO, Modded by Sylvo, Widgets by Mr. V and themed by The Papaw)</summary>
 		<description lang="en_US">Themed from Aeon Nox SiLVO v7.0.1. Please give credit to Mike and others that contributed.</description>
 		<platform>all</platform>
 		<license></license>
