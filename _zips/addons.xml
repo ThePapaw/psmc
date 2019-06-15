@@ -213,13 +213,14 @@ Please give credit to all the devolopers that have and do contribute!
 	</extension>
 </addon>
 
-<addon id="skin.psmc.man.of.steel" version="1.0.9" name="PSMC Man of Steel Skin" provider-name="The Papaw">
+<addon id="skin.psmc.man.of.steel" version="1.0.10" name="PSMC Man of Steel Skin" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
+		<import addon="plugin.program.autocompletion" version="1.0" />
 		<import addon="service.library.data.provider" version="0.0.7" />
 		<import addon="script.grab.fanart" version="0.12.8" />
-		<import addon="resource.images.studios.white" version="0.0.1" />
+		<import addon="resource.images.studios.coloured" version="0.0.16" />
 		<import addon="resource.images.recordlabels.white" version="0.0.1" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
@@ -301,13 +302,14 @@ Please give credit to all the devolopers that have and do contribute to this ski
 	</extension>
 </addon>
 
-<addon id="skin.psmc.spiderman" version="1.0.12" name="PSMC's Spiderman" provider-name="The Papaw">
+<addon id="skin.psmc.spiderman" version="1.0.13" name="PSMC's Spiderman" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
+		<import addon="plugin.program.autocompletion" version="1.0" />
 		<import addon="service.library.data.provider" version="0.0.7" />
 		<import addon="script.grab.fanart" version="0.12.8" />
-		<import addon="resource.images.studios.white" version="0.0.1" />
+		<import addon="resource.images.studios.coloured" version="0.0.16" />
 		<import addon="resource.images.recordlabels.white" version="0.0.1" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
@@ -339,13 +341,14 @@ Please give credit to all the devolopers that have and do contribute to this ski
 	</extension>
 </addon>
 
-<addon id="skin.psmc.super.mario.galaxy" version="1.0.3" name="PSMC Super Mario Galaxy Skin" provider-name="The Papaw">
+<addon id="skin.psmc.super.mario.galaxy" version="1.0.4" name="PSMC Super Mario Galaxy Skin" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
+		<import addon="plugin.program.autocompletion" version="1.0" />
 		<import addon="service.library.data.provider" version="0.0.7" />
 		<import addon="script.grab.fanart" version="0.12.8" />
-		<import addon="resource.images.studios.white" version="0.0.1" />
+		<import addon="resource.images.studios.coloured" version="0.0.16" />
 		<import addon="resource.images.recordlabels.white" version="0.0.1" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
