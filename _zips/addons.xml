@@ -341,7 +341,7 @@ Please give credit to all the devolopers that have and do contribute to this ski
 	</extension>
 </addon>
 
-<addon id="skin.psmc.super.mario.galaxy" version="1.0.6" name="PSMC Super Mario Galaxy Skin" provider-name="The Papaw">
+<addon id="skin.psmc.super.mario.galaxy" version="1.0.7" name="PSMC Super Mario Galaxy Skin" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
