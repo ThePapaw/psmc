@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.psmc.super.mario.galaxy" version="1.0.5" name="PSMC Super Mario Galaxy Skin" provider-name="The Papaw">
+<addon id="skin.psmc.super.mario.galaxy" version="1.0.6" name="PSMC Super Mario Galaxy Skin" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
@@ -15,7 +15,7 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Bringing The Super Mario Galaxy Skin to PSMC/Kodi 18.</summary>
-		<description lang="en">Bringing The Super Mario Galaxy skin to PSMC/Kodi 18. Themed from Aeon Nox SiLVO v7.0.1 to better match PSMC. Please give credit to Mike, The Papaw and all others that contributed. [B]Make sure to download the GUI sounds for the skin![/B]</description>
+		<description lang="en">Bringing The Super Mario Galaxy skin to PSMC/Kodi 18. [B][COLOR red]IF YOU WISH TO USE THE MARIO GUI SOUNDS, YOU NEED TO ENABLE THEM IN THE SYSTEM SETTINGS![/COLOR][/B] Please give credit to Mike, The Papaw and all others that contributed. [B]Make sure to download the GUI sounds for the skin![/B]</description>
 		<platform>all</platform>
 		<license></license>
 		<forum></forum>
@@ -34,8 +34,8 @@
 			<screenshot>resources/screenshots/screenshot-07.jpg</screenshot>
 		</assets>
 		<news>
-[COLOR blue]• [/COLOR]Initial Upload
-[COLOR blue]• [/COLOR]Initial Upload of matching GUI sounds
+[COLOR blue]• [/COLOR]Added GUI Sounds (Disabled by default)
+[COLOR blue]• [/COLOR][B][COLOR red]IF YOU WISH TO USE THE MARIO GUI SOUNDS, YOU NEED TO ENABLE THEM IN THE SYSTEM SETTINGS![/COLOR][/B]
 
 Please give credit to all the devolopers that have and do contribute to this skin!
         </news>
