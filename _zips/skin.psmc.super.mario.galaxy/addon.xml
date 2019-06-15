@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.psmc.super.mario.galaxy" version="1.0.4" name="PSMC Super Mario Galaxy Skin" provider-name="The Papaw">
+<addon id="skin.psmc.super.mario.galaxy" version="1.0.5" name="PSMC Super Mario Galaxy Skin" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
@@ -8,6 +8,7 @@
 		<import addon="script.grab.fanart" version="0.12.8" />
 		<import addon="resource.images.studios.coloured" version="0.0.16" />
 		<import addon="resource.images.recordlabels.white" version="0.0.1" />
+		<import addon="resource.uisounds.psmc-mario" version="1.0.0" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1080" aspect="16:9" default="true" folder="16x9" />
