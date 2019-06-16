@@ -255,7 +255,7 @@ Please give credit to all the devolopers that have and do contribute to this ski
 	</extension>
 </addon>
 
-<addon id="skin.psmc.silvo" version="1.0.19" name="PSMC Silvo Skin" provider-name="The Papaw">
+<addon id="skin.psmc.silvo" version="1.0.20" name="PSMC's Silvo Skin" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
