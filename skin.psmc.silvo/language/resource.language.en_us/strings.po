@@ -1281,8 +1281,8 @@ msgid "Taking a Screenshot"
 msgstr "Taking a Screenshot"
 
 msgctxt "#31330"
-msgid "This script is not available in the default Kodi repository. The PSMC Repo is needed to use the click to install feature, without it this script must be installed manually."
-msgstr ""
+msgid "This script is not available in the default Kodi repositiory. The Aeon Nox SiLVO repo is needed to use the click to install feature, without it this script must be installed manually."
+msgstr "This script is not available in the default Kodi repositiory. The Aeon Nox SiLVO repo is needed to use the click to install feature, without it this script must be installed manually."
 
 msgctxt "#31331"
 msgid "Installed"
@@ -2487,3 +2487,4 @@ msgstr "Fake discart"
 msgctxt "#31994"
 msgid "Vertical Menu"
 msgstr "Vertical Menu"
+s

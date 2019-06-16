@@ -9,11 +9,11 @@ msgstr ""
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Kodi Translation Team\n"
-"Language-Team: English (United States) (http://www.transifex.com/projects/p/kodi-skins/language/en_US/)\n"
+"Language-Team: English (New Zealand) (http://www.transifex.com/projects/p/kodi-skins/language/en_NZ/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en_US\n"
+"Language: en_NZ\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgctxt "#31000"
@@ -194,11 +194,11 @@ msgstr "Platform"
 
 msgctxt "#31044"
 msgid "Views: Plot outline | Info dialog: Full plot"
-msgstr "Views: Plot outline | Info dialog: Full plot"
+msgstr "Views: Plot outline | Info dialogue: Full plot"
 
 msgctxt "#31045"
 msgid "Views: Full plot | Info dialog: Plot outline"
-msgstr "Views: Full plot | Info dialog: Plot outline"
+msgstr "Views: Full plot | Info dialogue: Plot outline"
 
 msgctxt "#31046"
 msgid "SEEKING"
@@ -210,7 +210,7 @@ msgstr "Set item icon"
 
 msgctxt "#31048"
 msgid "Visualisation Presets"
-msgstr "Visualization Presets"
+msgstr "Visualisation Presets"
 
 msgctxt "#31049"
 msgid "Select infoline"
@@ -262,7 +262,7 @@ msgstr "This file is stacked, select the part you want to play from."
 
 msgctxt "#31061"
 msgid "Total addons / Favourites statistics"
-msgstr "Total addons / Favorites statistics"
+msgstr "Total addons / Favourites statistics"
 
 msgctxt "#31062"
 msgid "Random movie fanart"
@@ -514,7 +514,7 @@ msgstr "Show Background \"Now Playing\" Video"
 
 msgctxt "#31125"
 msgid "Show Background \"Now Playing\" Visualisation"
-msgstr "Show Background \"Now Playing\" Visualization"
+msgstr "Show Background \"Now Playing\" Visualisation"
 
 msgctxt "#31127"
 msgid "Disable Extended Info integration"
@@ -526,7 +526,7 @@ msgstr "Channels View"
 
 msgctxt "#31129"
 msgid "Hide Fanart in full screen visualisation"
-msgstr "Hide Fanart in full screen visualization"
+msgstr "Hide Fanart in full screen visualisation"
 
 msgctxt "#31130"
 msgid "Use \"Enigma2-style\" channel OSD"
@@ -694,11 +694,11 @@ msgstr "This setting will activate fullscreen mode automatically after starting 
 
 msgctxt "#31172"
 msgid "Set the path to your music collection for displaying artist logos in the music visualisation and in some views that support it."
-msgstr "Set the path to your music collection for displaying artist logos in the music visualization and in some views that support it."
+msgstr "Set the path to your music collection for displaying artist logos in the music visualisation and in some views that support it."
 
 msgctxt "#31173"
 msgid "Blur background (video info dialog)"
-msgstr "Blur background (video info dialog)"
+msgstr "Blur background (video info dialogue)"
 
 msgctxt "#31174"
 msgid "Blur background behind information"
@@ -794,7 +794,7 @@ msgstr "Replace default with Extended Info (some features and extras (+) will be
 
 msgctxt "#31197"
 msgid "Enable info rating (works with US Ratings only)"
-msgstr "Enable info rating (works with U.S. Ratings only)"
+msgstr "Enable info rating (works with US Ratings only)"
 
 msgctxt "#31198"
 msgid "This setting controls the appearance of cases when using Live Backgrounds"
@@ -838,7 +838,7 @@ msgstr "Top Box Office"
 
 msgctxt "#31209"
 msgid "In Cinemas"
-msgstr "In Theaters"
+msgstr "In Cinemas"
 
 msgctxt "#31210"
 msgid "Popular Movies"
@@ -1010,7 +1010,7 @@ msgstr "Movie set titles"
 
 msgctxt "#31258"
 msgid "Blur background (extended info dialog)"
-msgstr "Blur background (extended info dialog)"
+msgstr "Blur background (extended info dialogue)"
 
 msgctxt "#31259"
 msgid "Center"
@@ -1086,7 +1086,7 @@ msgstr "Time & Date"
 
 msgctxt "#31281"
 msgid "Choose skin colors"
-msgstr "Choose skin colors"
+msgstr "Choose skin colours"
 
 msgctxt "#31282"
 msgid "Enable startup intro"
@@ -1186,7 +1186,7 @@ msgstr "Unwatched episode"
 
 msgctxt "#31306"
 msgid "Customize colors"
-msgstr "Customize colors"
+msgstr "Customise colours"
 
 msgctxt "#31307"
 msgid "Hide Fanart"
@@ -1250,7 +1250,7 @@ msgstr "Karaoke Song Selector"
 
 msgctxt "#31322"
 msgid "This will disable the screensaver during music playback by hiding the visualization. This may cause unwanted [B]IMAGE RETENTION[/B] if not used carefully. Do you accept the risks and want to enable this setting?"
-msgstr "This will disable the screensaver during music playback by hiding the visualization. This may cause unwanted [B]IMAGE RETENTION[/B] if not used carefully. Do you accept the risks and want to enable this setting?"
+msgstr "This will disable the screensaver during music playback by hiding the visualisation. This may cause unwanted [B]IMAGE RETENTION[/B] if not used carefully. Do you accept the risks and want to enable this setting?"
 
 msgctxt "#31323"
 msgid "If you cannot locate the directory containing your background images, please add that location as a source in Kodi's File Manager. For more information visit http://kodi.wiki/view/File_manager"
@@ -1281,8 +1281,8 @@ msgid "Taking a Screenshot"
 msgstr "Taking a Screenshot"
 
 msgctxt "#31330"
-msgid "This script is not available in the default Kodi repository. The PSMC Repo is needed to use the click to install feature, without it this script must be installed manually."
-msgstr ""
+msgid "This script is not available in the default Kodi repositiory. The Aeon Nox SiLVO repo is needed to use the click to install feature, without it this script must be installed manually."
+msgstr "This script is not available in the default Kodi repositiory. The Aeon Nox SiLVO repo is needed to use the click to install feature, without it this script must be installed manually."
 
 msgctxt "#31331"
 msgid "Installed"
@@ -1322,7 +1322,7 @@ msgstr "Enable or disable skin debug info"
 
 msgctxt "#31340"
 msgid "Color customization"
-msgstr "Color customization"
+msgstr "Colour customisation"
 
 msgctxt "#31341"
 msgid "NOT SUPPORTED"
@@ -1342,7 +1342,7 @@ msgstr "Display title of movie/tvshow/artist on home screen if the background ha
 
 msgctxt "#31345"
 msgid "Main Menu Customizer"
-msgstr "Main Menu Customizer"
+msgstr "Main Menu Customiser"
 
 msgctxt "#31346"
 msgid "OSD Progress Bar"
@@ -1422,7 +1422,7 @@ msgstr "TIMESHIFT"
 
 msgctxt "#31365"
 msgid "Customization"
-msgstr "Customization"
+msgstr "Customisation"
 
 msgctxt "#31366"
 msgid "Setup the on-screen display during fullscreen video playback."
@@ -1440,17 +1440,9 @@ msgctxt "#31370"
 msgid "Full plot"
 msgstr "Full plot"
 
-msgctxt "#31371"
-msgid "Views and widget plot preference"
-msgstr "Views and widget plot preference"
-
-msgctxt "#31372"
-msgid "Choose if library views and widgets should display plot outline or full plot. Falls back to full plot if no outline is available. This does not effect certain areas with limited space for the plot that have this enabled by default"
-msgstr "Choose if library views and widgets should display plot outline or full plot. Falls back to full plot if no outline is available. This does not effect certain areas with limited space for the plot that have this enabled by default"
-
 msgctxt "#31373"
 msgid "Customize the colors displayed throughout the skin."
-msgstr "Customize the colors displayed throughout the skin."
+msgstr "Customise the colours displayed throughout the skin."
 
 msgctxt "#31374"
 msgid "Latest"
@@ -1466,7 +1458,7 @@ msgstr "Music OSD"
 
 msgctxt "#31377"
 msgid "Altering this shortcut may prevent access to the Main Menu customizer and several skin options.[CR]Are you sure you want to perform the requested changes to this shortcut?"
-msgstr "Altering this shortcut may prevent access to the Main Menu customizer and several skin options.[CR]Are you sure you want to perform the requested changes to this shortcut?"
+msgstr "Altering this shortcut may prevent access to the Main Menu customiser and several skin options.[CR]Are you sure you want to perform the requested changes to this shortcut?"
 
 msgctxt "#31378"
 msgid "Toggle SYSTEM DEBUG LOGGING on or off. When activated a visible debug overlay will appear in the top left corner of your screen. This is NOT the same as SKIN DEBUG INFO."
@@ -1478,7 +1470,7 @@ msgstr "Toggle SKIN DEBUG INFO on or off. When activated a visible debug overlay
 
 msgctxt "#31380"
 msgid "Activating this setting will enable the skins built-in startup intro video."
-msgstr "Activating this setting will enable the skin's built-in startup intro video."
+msgstr "Activating this setting will enable the skins built-in startup intro video."
 
 msgctxt "#31381"
 msgid "Will open the settings for the AutoComplete add-on."
@@ -1534,11 +1526,11 @@ msgstr "Replace default info with Netflix style"
 
 msgctxt "#31395"
 msgid "Use colored genres"
-msgstr "Use colored genres"
+msgstr "Use coloured genres"
 
 msgctxt "#31396"
 msgid "Lighter colors"
-msgstr "Lighter colors"
+msgstr "Lighter colours"
 
 msgctxt "#31397"
 msgid "Custom Widget"
@@ -1550,7 +1542,7 @@ msgstr "Do you want to reset ALL skin settings to their defaults?[CR]This action
 
 msgctxt "#31399"
 msgid "Customize the settings for the Live TV section."
-msgstr "Customize the settings for the Live TV section."
+msgstr "Customise the settings for the Live TV section."
 
 msgctxt "#31400"
 msgid "[B]CONFIGURE INTERFACE SETTINGS[/B][CR]Change the skin · Set language and region · Setup remote controls[CR]Set up a screensaver · Setup master lock"
@@ -1562,7 +1554,7 @@ msgstr "Reset skin settings"
 
 msgctxt "#31404"
 msgid "This will RESET ALL skin settings, selecting YES in the dialog that appears is irreversible. This DOES NOT affect the Main Menu items you have set in the Main Menu Customizer."
-msgstr "This will RESET ALL skin settings, selecting YES in the dialog that appears is irreversible. This DOES NOT affect the Main Menu items you have set in the Main Menu Customizer."
+msgstr "This will RESET ALL skin settings, selecting YES in the dialogue that appears is irreversible. This DOES NOT affect the Main Menu items you have set in the Main Menu Customiser."
 
 msgctxt "#31405"
 msgid "[B]MONITOR YOUR SYSTEM[/B][CR]Check out your hardware · Monitor CPU usage[CR]Check Kodi revision number"
@@ -1590,7 +1582,7 @@ msgstr "[B]CONFIGURE SERVICE SETTINGS[/B][CR]Setup control of Kodi via UPnP and 
 
 msgctxt "#31411"
 msgid "Will override the General Theme color."
-msgstr "Will override the General Theme color."
+msgstr "Will override the General Theme colour."
 
 msgctxt "#31412"
 msgid "Select section"
@@ -1602,31 +1594,31 @@ msgstr "Local subtitle available"
 
 msgctxt "#31414"
 msgid "Set the Main Theme color used throughout the skin."
-msgstr "Set the Main Theme color used throughout the skin."
+msgstr "Set the Main Theme colour used throughout the skin."
 
 msgctxt "#31415"
 msgid "Set the Highlight Bar color used throughout the skin."
-msgstr "Set the Highlight Bar color used throughout the skin."
+msgstr "Set the Highlight Bar colour used throughout the skin."
 
 msgctxt "#31416"
 msgid "Set to add color to the UnWatched Episode count."
-msgstr "Set to add color to the UnWatched Episode count."
+msgstr "Set to add colour to the UnWatched Episode count."
 
 msgctxt "#31417"
 msgid "Set the Main Menu Theme color."
-msgstr "Set the Main Menu Theme color."
+msgstr "Set the Main Menu Theme colour."
 
 msgctxt "#31418"
 msgid "Choose the color for the TopBar in views and other sections not on the Home screen."
-msgstr "Choose the color for the TopBar in views and other sections not on the Home screen."
+msgstr "Choose the colour for the TopBar in views and other sections not on the Home screen."
 
 msgctxt "#31419"
 msgid "Enable this to change the default transparent color to a more solid FULL COLOR image."
-msgstr "Enable this to change the default transparent color to a more solid FULL COLOR image."
+msgstr "Enable this to change the default transparent colour to a more solid FULL COLOUR image."
 
 msgctxt "#31420"
 msgid "Choose the color of the Progress bar displayed during fullscreen video playback."
-msgstr "Choose the color of the Progress bar displayed during fullscreen video playback."
+msgstr "Choose the colour of the Progress bar displayed during fullscreen video playback."
 
 msgctxt "#31421"
 msgid "Select your Kodi user profile[CR]to login and continue"
@@ -1634,19 +1626,19 @@ msgstr "Select your Kodi user profile[CR]to login and continue"
 
 msgctxt "#31422"
 msgid "Customize the Widget Highlight color on the home screen."
-msgstr "Customize the Widget Highlight color on the home screen."
+msgstr "Customise the Widget Highlight colour on the home screen."
 
 msgctxt "#31423"
 msgid "Will override the General Highlight color."
-msgstr "Will override the General Highlight color."
+msgstr "Will override the General Highlight colour."
 
 msgctxt "#31424"
 msgid "This will change the color of the Widget background when selecting one of the Colored options in the Global setting in the Widgets section or individually in the Menu Customizer if you did not enable Global backgrounds."
-msgstr "This will change the color of the Widget background when selecting one of the Colored options in the Global setting in the Widgets section or individually in the Menu Customizer if you did not enable Global backgrounds."
+msgstr "This will change the colour of the Widget background when selecting one of the Coloured options in the Global setting in the Widgets section or individually in the Menu Customiser if you did not enable Global backgrounds."
 
 msgctxt "#31425"
 msgid "Use this to customize the color on the Home window for the item selected."
-msgstr "Use this to customize the color on the Home window for the item selected."
+msgstr "Use this to customise the colour on the Home window for the item selected."
 
 msgctxt "#31426"
 msgid "Enter text here..."
@@ -1748,18 +1740,6 @@ msgctxt "#31452"
 msgid "Premiered"
 msgstr "Premiered"
 
-msgctxt "#31453"
-msgid "Down for more"
-msgstr "Down for more"
-
-msgctxt "#31454"
-msgid "Up or down"
-msgstr "Up or down"
-
-msgctxt "#31455"
-msgid "Up to return"
-msgstr "Up to return"
-
 msgctxt "#31457"
 msgid "YouTube"
 msgstr "YouTube"
@@ -1767,14 +1747,6 @@ msgstr "YouTube"
 msgctxt "#31458"
 msgid "TheMovieDB"
 msgstr "TheMovieDB"
-
-msgctxt "#31459"
-msgid "Radio groups"
-msgstr "Radio groups"
-
-msgctxt "#31460"
-msgid "Mini fullscreen info"
-msgstr "Mini fullscreen info"
 
 msgctxt "#31501"
 msgid "Channel group"
@@ -1870,7 +1842,7 @@ msgstr "Select a shortcut for this item."
 
 msgctxt "#31681"
 msgid "Customize the label. Can also accept some label formatting."
-msgstr "Customize the label. Can also accept some label formatting."
+msgstr "Customise the label. Can also accept some label formatting."
 
 msgctxt "#31682"
 msgid "Change the selected shorcuts command. Can also be used to enter a custom command."
@@ -1990,19 +1962,19 @@ msgstr "Clear white"
 
 msgctxt "#31725"
 msgid "Colored default"
-msgstr "Colored default"
+msgstr "Coloured default"
 
 msgctxt "#31726"
 msgid "Colored flat"
-msgstr "Colored flat"
+msgstr "Coloured flat"
 
 msgctxt "#31727"
 msgid "Colored clear"
-msgstr "Colored clear"
+msgstr "Coloured clear"
 
 msgctxt "#31728"
 msgid "Colored clear white"
-msgstr "Colored clear white"
+msgstr "Coloured clear white"
 
 msgctxt "#31729"
 msgid "Show on panel"
@@ -2054,15 +2026,15 @@ msgstr "Case on widget info"
 
 msgctxt "#31741"
 msgid "Case on widget info dialog"
-msgstr "Case on widget info dialog"
+msgstr "Case on widget info dialogue"
 
 msgctxt "#31742"
 msgid "Cast on widget info dialog"
-msgstr "Cast on widget info dialog"
+msgstr "Cast on widget info dialogue"
 
 msgctxt "#31743"
 msgid "Match info dialog background to widget background"
-msgstr "Match info dialog background to widget background"
+msgstr "Match info dialogue background to widget background"
 
 msgctxt "#31744"
 msgid "Global panel widget info"
@@ -2078,7 +2050,7 @@ msgstr "Blu-Ray Case"
 
 msgctxt "#31748"
 msgid "This setting enables more widget customization. Disable to use Aeon Nox default widgets."
-msgstr "This setting enables more widget customization. Disable to use Aeon Nox default widgets."
+msgstr "This setting enables more widget customisation. Disable to use Aeon Nox default widgets."
 
 msgctxt "#31749"
 msgid "Change the transparency of the artwork and background."
@@ -2086,7 +2058,7 @@ msgstr "Change the transparency of the artwork and background."
 
 msgctxt "#31750"
 msgid "Enable to use the same background throughout the home screen. Disable to set each background individually in the home menu customizer."
-msgstr "Enable to use the same background throughout the home screen. Disable to set each background individually in the home menu customizer."
+msgstr "Enable to use the same background throughout the home screen. Disable to set each background individually in the home menu customiser."
 
 msgctxt "#31751"
 msgid "Choose the background style."
@@ -2106,19 +2078,19 @@ msgstr "Choose a case for the widget information poster. Match will use the same
 
 msgctxt "#31755"
 msgid "Choose a case for the information dialog poster. Match will use the same case as the widget."
-msgstr "Choose a case for the information dialog poster. Match will use the same case as the widget."
+msgstr "Choose a case for the information dialogue poster. Match will use the same case as the widget."
 
 msgctxt "#31756"
 msgid "Show movie and tv show cast details within the information dialog."
-msgstr "Show movie and tv show cast details within the information dialog."
+msgstr "Show movie and tv show cast details within the information dialogue."
 
 msgctxt "#31757"
 msgid "Enable to use the widget background in the information dialog."
-msgstr "Enable to use the widget background in the information dialog."
+msgstr "Enable to use the widget background in the information dialogue."
 
 msgctxt "#31758"
 msgid "Enable to show widget information for all panel widgets. Disable to individually select in the home menu customizer."
-msgstr "Enable to show widget information for all panel widgets. Disable to individually select in the home menu customizer."
+msgstr "Enable to show widget information for all panel widgets. Disable to individually select in the home menu customiser."
 
 msgctxt "#31759"
 msgid "If enabled widgets will not be visible throughout the home screen until they are focused."
@@ -2230,7 +2202,7 @@ msgstr "Navigation style for horizontal lists"
 
 msgctxt "#31916"
 msgid "Change the way horizontal lists scroll in Aeon Nox. Default will scroll lists in a cycle. \"Fixed\" are lists with a beginning and end."
-msgstr "Change the way horizontal lists scroll in Aeon Nox. Default will scroll lists in a cycle. \"Fixed\" are lists with a beginning and end."
+msgstr "Change the way horisontal lists scroll in Aeon Nox. Default will scroll lists in a cycle. \"Fixed\" are lists with a beginning and end."
 
 msgctxt "#31917"
 msgid "When enabled text scrolls automatically. When disabled manual scrolling is required. Note that not every textbox has a manual button."
@@ -2242,7 +2214,7 @@ msgstr "Projects the current playing video on the background behind the panels."
 
 msgctxt "#31919"
 msgid "Projects the visualisation on the background behind the panels when music is played."
-msgstr "Projects the visualization on the background behind the panels when music is played."
+msgstr "Projects the visualisation on the background behind the panels when music is played."
 
 msgctxt "#31920"
 msgid "Displays a widget on the Home screen with media information when music is playing."
@@ -2266,7 +2238,7 @@ msgstr "Pick one of the preset backgrounds or set your own images as the menu it
 
 msgctxt "#31926"
 msgid "Select add-ons, playlists or favourites. Choose 'Custom' for any of Kodi's built-in functions. (http://kodi.wiki/?title=List_of_Built_In_Functions)"
-msgstr "Select add-ons, playlists or favorites. Choose 'Custom' for any of Kodi's built-in functions. (http://kodi.wiki/?title=List_of_Built_In_Functions)"
+msgstr "Select add-ons, playlists or favourites. Choose 'Custom' for any of Kodi's built-in functions. (http://kodi.wiki/?title=List_of_Built_In_Functions)"
 
 msgctxt "#31927"
 msgid "Resets all above values to their defaults."
@@ -2290,7 +2262,7 @@ msgstr "Video plot preference"
 
 msgctxt "#31932"
 msgid "Show plot outline in the library views and full plot in the video information dialog or vice versa. Falls back to full plot if no outline is available."
-msgstr "Show plot outline in the library views and full plot in the video information dialog or vice versa. Falls back to full plot if no outline is available."
+msgstr "Show plot outline in the library views and full plot in the video information dialogue or vice versa. Falls back to full plot if no outline is available."
 
 msgctxt "#31933"
 msgid "Select an item to display on the left top of the main menu"
@@ -2298,7 +2270,7 @@ msgstr "Select an item to display on the left top of the main menu"
 
 msgctxt "#31935"
 msgid "Switch places with another menu item. Opens a dialog with a list of menu items to choose from."
-msgstr "Switch places with another menu item. Opens a dialog with a list of menu items to choose from."
+msgstr "Switch places with another menu item. Opens a dialogue with a list of menu items to choose from."
 
 msgctxt "#31937"
 msgid "Show the RSS feed on the bottom or top of the screen, depending on main menu position. Enabling this setting makes the submenu permanently visible."
@@ -2406,7 +2378,7 @@ msgstr "Rate on Trakt"
 
 msgctxt "#31971"
 msgid "Hide visualization behind fanart (works best with waveform)"
-msgstr "Hide visualization behind fanart (works best with waveform)"
+msgstr "Hide visualisation behind fanart (works best with waveform)"
 
 msgctxt "#31972"
 msgid "Autoplay music in fullscreen"
@@ -2422,7 +2394,7 @@ msgstr "Select the style of cases used in all views"
 
 msgctxt "#31975"
 msgid "Use colored icons and mediaflags"
-msgstr "Use colored icons and mediaflags"
+msgstr "Use coloured icons and mediaflags"
 
 msgctxt "#31978"
 msgid "Reset main menu items to their defaults"
@@ -2442,15 +2414,15 @@ msgstr "Show Plot and Cast information when pressing info button during video pl
 
 msgctxt "#31982"
 msgid "Display discart for  movies in information screen."
-msgstr "Display discart for  movies in information screen."
+msgstr "Display discart for movies in information screen."
 
 msgctxt "#31983"
 msgid "Swap locations of Trailer and Cinema Experience buttons. Location is either in extras (+) or in the info dialog."
-msgstr "Swap locations of Trailer and Cinema Experience buttons. Location is either in extras (+) or in the info dialog."
+msgstr "Swap locations of Trailer and Cinema Experience buttons. Location is either in extras (+) or in the info dialogue."
 
 msgctxt "#31984"
 msgid "When activated the default mediaflags and icons are changed to colored versions"
-msgstr "When activated the default mediaflags and icons are changed to colored versions"
+msgstr "When activated the default mediaflags and icons are changed to coloured versions"
 
 msgctxt "#31986"
 msgid "Select case style used in all views. Default or clear cases."
