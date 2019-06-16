@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.psmc.silvo" version="1.0.22" name="PSMC's Silvo Skin" provider-name="The Papaw">
+<addon id="skin.psmc.silvo" version="1.0.23" name="PSMC's Silvo Skin" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
@@ -13,8 +13,8 @@
 		<res width="1920" height="1080" aspect="16:9" default="true" folder="16x9" />
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">PSMC's Sylvo Skin (forked from Aeon-Nox SiLVO v7.0.1).</summary>
-		<description lang="en">The PSMC's Sylvo Skin is aeon-nox sylvo cloned skin that hass been themed and modded to better match the PSMC Media Center (a fork of XBMC/Kodi).</description>
+		<summary lang="en">PSMC's Sylvo Skin.Themes and modded by The Papaw</summary>
+		<description lang="en">The PSMC Sylvo Skin is a aeon-nox sylvo forked skin that has been themed and modified to better suit the PSMC Media Center (a fork of XBMC/Kodi). It works fine with Kodi 18 as well. Enjoy, The Papaw!</description>
 		<platform>all</platform>
 		<license></license>
 		<forum></forum>
