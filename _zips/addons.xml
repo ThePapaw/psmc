@@ -270,7 +270,7 @@ Please give credit to all the devolopers that have and do contribute to this ski
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">PSMC's Sylvo Skin.Themes and modded by The Papaw</summary>
-		<description lang="en">The PSMC Sylvo Skin is a aeon-nox sylvo forked skin that has been themed and modified to better suit the PSMC Media Center (a fork of XBMC/Kodi). It works fine with Kodi 18 as well. Enjoy, The Papaw!</description>
+		<description lang="en">The PSMC Sylvo Skin is forked from aeon-nox sylvo 7.0.1. It has been modified and themed to better work with and match the [B]PSMC Media Center[/B] (a fork of XBMC/Kodi). It works fine with Kodi 18 as well!</description>
 		<platform>all</platform>
 		<license></license>
 		<forum></forum>
