@@ -63,7 +63,7 @@ Please give credit to all the devolopers that have and does contribute to this a
     </extension>
 </addon>
 
-    <addon id="repository.fuzzybritches" name="Fuzzy Britches Repository" version="1.0.6" provider-name="The Papaw">
+    <addon id="repository.fuzzybritches" name="Fuzzy Britches Repository" version="1.0.10" provider-name="The Papaw">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
@@ -84,13 +84,24 @@ Please give credit to all the devolopers that have and does contribute to this a
             <description>This is the repository for the "Official" Fuzzy Britches addon for Kodi.</description>
             <platform>all</platform>
             <genre>movies,usa</genre>
-			<assets>
+			<license></license>
+			<forum></forum>
+			<website>https://github.com/ThePapaw/fuzzybritches</website>
+			<source>https://github.com/ThePapaw/fuzzybritches</source>
+			<video_guide></video_guide>
+		<assets>
 			<icon>icon.gif</icon>
+			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 			<screenshot>resources/media/screenshot-01.jpg</screenshot>
 			<screenshot>resources/media/screenshot-02.jpg</screenshot>
 			<screenshot>resources/media/screenshot-03.jpg</screenshot>
 		</assets>
+		<news>
+[COLOR blue]• [/COLOR]Cosmetic Fixes
+
+Please give credit to all the devolopers that have and do contribute to this addon!
+        </news>
         </extension>
     </addon>
 
