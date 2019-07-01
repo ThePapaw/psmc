@@ -2,12 +2,12 @@
 
 This repository is primarily for the development of PSMC (Papaw's Son Media Center), a fork of XBMC/Kodi Media Center. 
 
-• <B>PSMC v18.2</B> - Initial Release
+• <B>PSMC v18.3</B> - Initial Release 07-01-19
 
 To Install PSMC:
 1. Download the appropriate apk file for your device:<br>
-<a href="https://github.com/ThePapaw/psmc/blob/master/_PSMC%20APK%20Files/psmc-18.2-armeabi-v7a.apk?raw=true">• <B>32bit Version-armeabi-v7a</B></a> (for most android devices)<br>
-<a href="https://github.com/ThePapaw/psmc/blob/master/_PSMC%20APK%20Files/psmc-18.2-arm64-v8a.apk?raw=true">• <B>64bit version-arm64-v8a</B></a>  (devices running Android TV OS, like the Nvidea Shield)
+<a href="https://github.com/ThePapaw/psmc/blob/master/_PSMC%20APK%20Files/psmc-18.3-armeabi-v7a.apk?raw=true">• <B>32bit Version-armeabi-v7a</B></a> (for most android devices)<br>
+<a href="https://github.com/ThePapaw/psmc/blob/master/_PSMC%20APK%20Files/psmc-18.3-arm64-v8a.apk?raw=true">• <B>64bit version-arm64-v8a</B></a>  (devices running Android TV OS, like the Nvidea Shield)
 2. Install as you would any other apk file.
 
 
