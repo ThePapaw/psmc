@@ -27,7 +27,7 @@ PSMC, the add-ons & skins are considered 3rd party, so please do not seek help f
 
 If you have issues, please post them here. All items are still being developed and should only be used for testing purposes.
 
-All items are still being developed and should only be used for testing purposes. Please do NOT post or link too Youtube, social media or any other web sites without gaining approval first.
+All items are still being developed and should only be used for testing purposes. 
 
   
 To Install this Repo:
