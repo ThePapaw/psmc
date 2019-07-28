@@ -1,6 +1,6 @@
 # PSMC Reposity
 
-This repository is primarily for the development of PSMC (Papaw's Son Media Center), a fork of XBMC/Kodi Media Center. All items hosted here are for educational purposes.
+This repository is primarily for the development of PSMC (Papaw's Son Media Center), a fork of XBMC/Kodi Media Center. All items hosted here are for learning and educational purposes only.
 
 • <B>PSMC v18.3</B> - Initial Release 07-01-19
 
