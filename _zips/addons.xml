@@ -202,7 +202,7 @@ Please give credit to all the devolopers that have and do contribute!
 		</extension>
 	</addon>
 
-<addon id="script.skin.info.service" name="Skin Info Service" version="1.0.3" provider-name="phil65, SiLVO">
+<addon id="script.skin.info.service" name="Skin Info Service" version="1.0.5" provider-name="phil65, SiLVO">
 	<requires>
 		<import addon="xbmc.python" version="2.26.0" />
 	</requires>
@@ -211,8 +211,8 @@ Please give credit to all the devolopers that have and do contribute!
 		<provides>executable</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Script used by skins to show extended media info.</summary>
-		<description lang="en">This script fetches extended information for several media types (artists, albums, movie sets etc.). Needs skin support.</description>
+		<summary lang="en_GB">Script used by skins to show extended media info.</summary>
+		<description lang="en_GB">This script fetches extended information for several media types (artists, albums, movie sets etc.). Needs skin support.</description>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
 		<forum>http://forum.kodi.tv/showthread.php?tid=210069</forum>
@@ -220,7 +220,7 @@ Please give credit to all the devolopers that have and do contribute!
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
-		<news>Kodi v18 updates</news>
+		<news>Add 4k support</news>
 	</extension>
 </addon>
 
