@@ -94,9 +94,9 @@
 						<font>font15</font>
 						<textcolor>$VAR[ThemeLabelColor]</textcolor>
 						<scroll>true</scroll>
-						<label>$INFO[Window(Home).Property(Artist.Albums.Count),, $LOCALIZE[132]]</label>
-						<visible>!String.IsEmpty(Window(Home).Property(Artist.Albums.Count))</visible>
-						<visible>[String.IsEmpty(ListItem.Property(Artist_Sortname)) + String.IsEmpty(ListItem.Property(Artist_Disambiguation))] | [!String.IsEmpty(ListItem.Property(Artist_Sortname)) + String.IsEqual(ListItem.Property(Artist_Sortname),ListItem.Artist)] | [!String.IsEmpty(ListItem.Property(Artist_Sortname)) + String.IsEqual(ListItem.Property(Artist_Sortname),ListItem.Artist) + String.IsEmpty(ListItem.Property(Artist_Disambiguation))]</visible>
+						<label>$INFO[Window(Home).Property(SkinInfo.Artist.Albums.Count),, $LOCALIZE[132]]</label>
+						<visible>System.HasAddon(script.skin.info.service) + !String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Albums.Count))</visible>
+						<visible>[String.IsEmpty(ListItem.Property(Artist_Sortname)) + String.IsEmpty(ListItem.Property(Artist_Disambiguation))] | [!String.IsEmpty(ListItem.Property(Artist_Sortname)) + String.IsEqual(ListItem.Property(Artist_Sortname),ListItem.Artist) + String.IsEmpty(ListItem.Property(Artist_Disambiguation))]</visible>
 					</control>
 					<control type="fadelabel">
 						<height>30</height>
@@ -107,10 +107,27 @@
 						<scroll>true</scroll>
 						<scrollout>false</scrollout>
 						<pauseatend>4000</pauseatend>
-						<label>$INFO[Window(Home).Property(Artist.Albums.Count),, $LOCALIZE[132]]</label>
+						<label>$INFO[Window(Home).Property(SkinInfo.Artist.Albums.Count),, $LOCALIZE[132]]</label>
+						<label>$INFO[ListItem.Property(Artist_Disambiguation)]</label>
+						<visible>!String.IsEqual(ListItem.DBTYPE,song)</visible>
+						<visible>System.HasAddon(script.skin.info.service) + !String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Albums.Count))</visible>
+						<visible>!String.IsEmpty(ListItem.Property(Artist_Sortname)) + String.IsEqual(ListItem.Property(Artist_Sortname),ListItem.Artist) + !String.IsEmpty(ListItem.Property(Artist_Disambiguation))</visible>
+					</control>
+					<control type="fadelabel">
+						<height>30</height>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>font15</font>
+						<textcolor>$VAR[ThemeLabelColor]</textcolor>
+						<scroll>true</scroll>
+						<scrollout>false</scrollout>
+						<pauseatend>4000</pauseatend>
+						<label>$INFO[Window(Home).Property(SkinInfo.Artist.Albums.Count),, $LOCALIZE[132]]</label>
 						<label>$INFO[ListItem.Property(Artist_Sortname)]</label>
 						<label>$INFO[ListItem.Property(Artist_Disambiguation)]</label>
-						<visible>System.HasAddon(script.skin.info.service) + !String.IsEqual(ListItem.DBTYPE,song) + !String.IsEmpty(ListItem.Property(Artist_Sortname)) + !String.IsEqual(ListItem.Property(Artist_Sortname),ListItem.Artist) | !String.IsEmpty(ListItem.Property(Artist_Disambiguation))</visible>
+						<visible>!String.IsEqual(ListItem.DBTYPE,song)</visible>
+						<visible>System.HasAddon(script.skin.info.service) + !String.IsEmpty(Window(Home).Property(SkinInfo.Artist.Albums.Count))</visible>
+						<visible>!String.IsEmpty(ListItem.Property(Artist_Sortname)) + !String.IsEqual(ListItem.Property(Artist_Sortname),ListItem.Artist) + !String.IsEmpty(ListItem.Property(Artist_Disambiguation))</visible>
 					</control>
 				</control>
 				<control type="grouplist">
@@ -166,7 +183,7 @@
 					<top>99</top>
 					<width>1188</width>
 					<height>1</height>
-					<texture colordiffuse="$VAR[ThemeLabelColor]">new_pvr/osd_line_white.png</texture>
+					<texture colordiffuse="$VAR[ThemeLabelColor]">separator_horizontal.png</texture>
 				</control>
 				<control type="grouplist">
 					<top>90</top>
@@ -177,7 +194,7 @@
 					<control type="label">
 						<width>auto</width>
 						<height>90</height>
-						<label>$INFO[ListItem.Property(Artist_YearsActive),[B][LOWERCASE],  [/LOWERCASE][/B]]</label>Artist_YearsActive
+						<label>$INFO[ListItem.Property(Artist_YearsActive),[B][LOWERCASE],  [/LOWERCASE][/B]]</label>
 						<font>font35_title</font>
 						<textcolor>grey</textcolor>
 						<visible>!String.IsEmpty(ListItem.Property(Artist_YearsActive)) + String.IsEqual(ListItem.DBTYPE,artist)</visible>
@@ -261,7 +278,7 @@
 					<top>175</top>
 					<width>1188</width>
 					<height>1</height>
-					<texture colordiffuse="$VAR[ThemeLabelColor]">new_pvr/osd_line_white.png</texture>
+					<texture colordiffuse="$VAR[ThemeLabelColor]">separator_horizontal.png</texture>
 				</control>
 				<control type="button" id="64">
 					<left>-12</left>
@@ -659,14 +676,14 @@
 					<top>526</top>
 					<width>1188</width>
 					<height>1</height>
-					<texture colordiffuse="$VAR[ThemeLabelColor]">new_pvr/osd_line_white.png</texture>
+					<texture colordiffuse="$VAR[ThemeLabelColor]">separator_horizontal.png</texture>
 				</control>
 				<control type="image">
 					<left>-11</left>
 					<top>588</top>
 					<width>1188</width>
 					<height>1</height>
-					<texture colordiffuse="$VAR[ThemeLabelColor]">new_pvr/osd_line_white.png</texture>
+					<texture colordiffuse="$VAR[ThemeLabelColor]">separator_horizontal.png</texture>
 				</control>
 				<control type="button">
 					<left>-43</left>
