@@ -960,10 +960,10 @@
 					</control>
 				</control>
 				<control type="image">
-					<left>-75</left>
-					<top>-50</top>
-					<width>660</width>
-					<height>895</height>
+					<left>-83</left>
+					<top>-58</top>
+					<width>673</width>
+					<height>903</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
 					<texture background="true">$VAR[CaseTypePathVar]$VAR[GlobalCaseVar]</texture>
 					<fadetime>IconCrossfadeTime</fadetime>
@@ -1618,7 +1618,8 @@
 					<onup>95060</onup>
 					<ondown>95060</ondown>
 					<onleft>50</onleft>
-					<onright>9002</onright>
+					<onright condition="!Control.IsVisible(615)">4400</onright>
+					<onright condition="Control.IsVisible(615)">615</onright>
 					<texturesliderbackground colordiffuse="1AFFFFFF">colors/white50.png</texturesliderbackground>
 					<texturesliderbar colordiffuse="1AFFFFFF">colors/white.png</texturesliderbar>
 					<texturesliderbarfocus colordiffuse="$VAR[ThemeLabelColor]">colors/white.png</texturesliderbarfocus>
