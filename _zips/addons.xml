@@ -349,14 +349,14 @@ Please give credit to all the devolopers that have and do contribute to this ski
 	</extension>
 </addon>
 
-<addon id="skin.psmc.super.mario.galaxy" version="1.0.7" name="PSMC Super Mario Galaxy Skin" provider-name="The Papaw">
+<addon id="skin.psmc.super.mario.galaxy" version="2.0.0" name="PSMC Super Mario Galaxy Skin" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
-		<import addon="plugin.program.autocompletion" version="1.0" />
-		<import addon="service.library.data.provider" version="0.0.7" />
-		<import addon="script.grab.fanart" version="0.12.8" />
-		<import addon="resource.images.studios.coloured" version="0.0.16" />
+		<import addon="plugin.program.autocompletion" version="1.0.1" />
+		<import addon="service.library.data.provider" version="0.3.2" />
+		<import addon="script.grab.fanart" version="0.14.1" />
+		<import addon="resource.images.studios.coloured" version="0.0.18" />
 		<import addon="resource.images.recordlabels.white" version="0.0.1" />
 		<import addon="resource.uisounds.psmc-mario" version="1.0.0" />
 	</requires>
