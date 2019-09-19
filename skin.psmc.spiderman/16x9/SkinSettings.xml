@@ -3,7 +3,6 @@
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<onload>SetProperty(Window.HasSettings,True,Home)</onload>
 	<onload>ClearProperty(MediaMenu,Home)</onload>
-	<!-- <onunload condition="System.HasAddon(script.skinshortcuts)">RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;levels=2&amp;options=noGroups)</onunload> -->
 	<onunload>ClearProperty(MediaMenu,Home)</onunload>
 	<onunload>ClearProperty(Window.HasSettings,Home)</onunload>
 	<onunload condition="System.HasAddon(script.colorbox)">RunScript(script.colorbox,daemon=True)</onunload>
@@ -19,11 +18,13 @@
 		<include>GlobalFanart</include>
 		<control type="group">
 			<visible>[Player.HasVideo + !Skin.HasSetting(Disable.ShowBackgroundVideo) + !SlideShow.IsActive]</visible>
-			<include>FullscreenDimensions</include>
 			<control type="image">
+				<include>FullscreenDimensions</include>
 				<texture>black.png</texture>
 			</control>
-			<control type="videowindow" />
+			<control type="videowindow">
+				<include>FullscreenDimensions</include>
+			</control>
 		</control>
 		<control type="visualisation">
 			<include>FullscreenDimensions</include>
@@ -334,7 +335,7 @@
 							<include>SettingsButtonCommonValues</include>
 							<label>$LOCALIZE[31192]</label>
 							<label2>[COLOR $VAR[ThemeLabelColor]]$INFO[Skin.String(CustomDefaultBackground.path)][/COLOR]</label2>
-							<onclick>SetProperty(CustomSelectDefaultBackground,True)</onclick>
+							<onclick>SetProperty(CustomSelectDefaultBackground,True,Home)</onclick>
 							<onclick>ActivateWindow(1129)</onclick>
 						</control>
 						<control type="radiobutton" id="2008">
@@ -582,7 +583,7 @@
 						<control type="image" id="6010">
 							<width>1401</width>
 							<height>1</height>
-							<texture colordiffuse="$VAR[ThemeLabelColor]">new_pvr/osd_line_white.png</texture>
+							<texture colordiffuse="$VAR[ThemeLabelColor]">separator_horizontal.png</texture>
 						</control>
 						<control type="button" id="6007">
 							<include>SettingsButtonCommonValues</include>
@@ -710,7 +711,7 @@
 							<top>-2</top>
 							<width>1401</width>
 							<height>2</height>
-							<texture colordiffuse="$VAR[ThemeLabelColor]">new_pvr/osd_line_white.png</texture>
+							<texture colordiffuse="$VAR[ThemeLabelColor]">separator_horizontal.png</texture>
 						</control>
 						<control type="button" id="7005">
 							<include>SettingsButtonCommonValues</include>

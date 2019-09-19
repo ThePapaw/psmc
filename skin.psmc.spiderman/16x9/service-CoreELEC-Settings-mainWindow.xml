@@ -108,18 +108,18 @@
 						<control type="group">
 							<visible>String.IsEqual(ListItem.Property(Typ), bool)</visible>
 							<control type="image">
-								<left>1232</left>
+								<left>1200</left>
 								<top>13</top>
-								<width>64</width>
-								<height>64</height>
+								<width>120</width>
+								<height>76</height>
 								<texture colordiffuse="grey">android/btn_radio_off_holo_dark.png</texture>
 								<visible>String.IsEqual(ListItem.Property(value), 0) | String.IsEqual(ListItem.Property(value), false) | String.IsEmpty(ListItem.Property(value))</visible>
 							</control>
 							<control type="image">
-								<left>1232</left>
+								<left>1200</left>
 								<top>13</top>
-								<width>64</width>
-								<height>64</height>
+								<width>120</width>
+								<height>76</height>
 								<texture colordiffuse="$VAR[ThemeHomeLabelColor]">android/btn_radio_on_holo_dark.png</texture>
 								<visible>String.IsEqual(ListItem.Property(value), 1) | String.IsEqual(ListItem.Property(value), true)</visible>
 							</control>
@@ -189,18 +189,18 @@
 						<control type="group">
 							<visible>String.IsEqual(ListItem.Property(Typ), bool)</visible>
 							<control type="image">
-								<left>1232</left>
+								<left>1200</left>
 								<top>13</top>
-								<width>64</width>
-								<height>64</height>
+								<width>120</width>
+								<height>76</height>
 								<texture colordiffuse="grey">android/btn_radio_off_holo_dark.png</texture>
 								<visible>String.IsEqual(ListItem.Property(value), 0) | String.IsEqual(ListItem.Property(value), false) | String.IsEmpty(ListItem.Property(value))</visible>
 							</control>
 							<control type="image">
-								<left>1232</left>
+								<left>1200</left>
 								<top>13</top>
-								<width>64</width>
-								<height>64</height>
+								<width>120</width>
+								<height>76</height>
 								<texture colordiffuse="$VAR[ThemeHomeLabelColor]">android/btn_radio_on_holo_dark.png</texture>
 								<visible>String.IsEqual(ListItem.Property(value), 1) | String.IsEqual(ListItem.Property(value), true)</visible>
 							</control>
@@ -731,7 +731,7 @@
 							<left>40</left>
 							<top>21</top>
 							<width>48</width>
-							<height>48</height>>
+							<height>48</height>
 							<aspectratio>keep</aspectratio>
 							<visible>String.IsEqual(ListItem.Property(Icon), default)</visible>
 							<texture>coreelec/icons/bt.png</texture>
@@ -966,7 +966,7 @@
 							<width>1316</width>
 							<height>30</height>
 							<textoffsetx>30</textoffsetx>
-							<label>[COLOR $VAR[ThemeLabelColor]]$ADDON[service.coreelec.settings 608][/COLOR]</label>
+							<label>[COLOR $VAR[ThemeLabelColor]]$ADDON[service.coreelec.settings 607][/COLOR]</label>
 							<label2>$INFO[Window.Property(Version)]</label2>
 							<font>font15</font>
 							<shadowcolor>shadow</shadowcolor>
@@ -978,7 +978,7 @@
 							<width>1316</width>
 							<height>30</height>
 							<textoffsetx>30</textoffsetx>
-							<label>[COLOR $VAR[ThemeLabelColor]]$ADDON[service.coreelec.settings 607][/COLOR]</label>
+							<label>[COLOR $VAR[ThemeLabelColor]]$ADDON[service.coreelec.settings 608][/COLOR]</label>
 							<label2>$INFO[Window.Property(Arch)]</label2>
 							<font>font15</font>
 							<shadowcolor>shadow</shadowcolor>

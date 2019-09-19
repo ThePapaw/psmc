@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.psmc.spiderman" version="1.0.13" name="PSMC's Spiderman" provider-name="The Papaw">
+<addon id="skin.psmc.spiderman" version="2.0.0" name="PSMC's Spiderman" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
-		<import addon="plugin.program.autocompletion" version="1.0" />
-		<import addon="service.library.data.provider" version="0.0.7" />
-		<import addon="script.grab.fanart" version="0.12.8" />
-		<import addon="resource.images.studios.coloured" version="0.0.16" />
+		<import addon="plugin.program.autocompletion" version="1.0.1" />
+		<import addon="service.library.data.provider" version="0.3.2" />
+		<import addon="script.grab.fanart" version="0.14.1" />
+		<import addon="resource.images.studios.coloured" version="0.0.18" />
 		<import addon="resource.images.recordlabels.white" version="0.0.1" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
@@ -14,7 +14,7 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Bringing the Spiderman skin to PSMC/Kodi 18.</summary>
-		<description lang="en">Bringing the Spiderman skin to PSMC/Kodi 18. Themed from Aeon Nox SiLVO v7.0.1 to better match PSMC. Please give credit to Mike, The Papaw and all others that contributed.</description>
+		<description lang="en">Bringing the Spiderman skin to PSMC/Kodi 18. Themed from Aeon Nox SiLVO v7.0.7 to better match PSMC. Please give credit to Mike, The Papaw and all others that contributed.</description>
 		<platform>all</platform>
 		<license></license>
 		<forum></forum>
@@ -22,8 +22,8 @@
 		<source>https://github.com/ThePapaw/psmc</source>
 		<video_guide></video_guide>
 		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
 			<screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
 			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
 			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
@@ -31,9 +31,7 @@
 			<screenshot>resources/screenshots/screenshot-05.jpg</screenshot>
 		</assets>
 		<news>
-[COLOR blue]• [/COLOR]Cosmetic Fixes
-
-Please give credit to all the devolopers that have and do contribute to this skin!
+			[COLOR blue]• [/COLOR]Added some of the changes from the Sylvo v7.0.7 build.[CR][COLOR blue]• COLOR]Cosmetic fixes.[CR][COLOR blue]• [/COLOR] Please give credit to all the devolopers (Especially Mike) that have and do contribute to this skin!
         </news>
 	</extension>
 </addon>

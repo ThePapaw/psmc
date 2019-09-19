@@ -9,5 +9,4 @@ Parts of the skin are under different licenses.
 “Estuary Artwork” by phil65 (Team Kodi) is licensed under CC BY SA 4.0
 You can find the license details here: <http://creativecommons.org/licenses/by-sa/4.0/>.
 
-Movie Genre Icons are used with kind permission of frodo19
-http://forum.kodi.tv/showthread.php?tid=141714
+Movie Genre Icons are used with permission of frodo19
