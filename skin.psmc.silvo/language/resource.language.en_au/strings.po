@@ -1,7 +1,7 @@
 # Kodi Media Center language file
-# Addon Name: Aeon Nox: SiLVO
-# Addon id: skin.aeon.nox.silvo
-# Addon Provider: SiLVO
+# Addon Name: PSMC Silvo Skin
+# Addon id: skin.psmc.silvo
+# Addon Provider: The Papaw
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
