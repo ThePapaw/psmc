@@ -60,12 +60,13 @@
 	</include>
 	<include name="SettingsTextboxValues">
 		<left>467</left>
-		<top>890</top>
+		<top>888</top>
 		<width>1341</width>
-		<height>130</height>
+		<height>120</height>
 		<font>font16bold_textbox</font>
 		<textcolor>grey2</textcolor>
 		<align>justify</align>
+		<aligny>center</aligny>
 	</include>
 	<include name="ButtonInfoDialogsCommonValues">
 		<height>60</height>
@@ -91,15 +92,12 @@
 		<width>320</width>
 		<height>80</height>
 		<texturefocus colordiffuse="$VAR[HighlightBarColor]" border="4">listselect_fo.png</texturefocus>
-		<texturenofocus border="4">thumbs/panel_border.png</texturenofocus>
-		<alttexturenofocus border="4">thumbs/panel_border.png</alttexturenofocus>
 		<include>Objects_KeyOff</include>
 	</include>
 	<include name="Objects_SingleKeyOff">
 		<width>80</width>
 		<height>80</height>
 		<texturefocus colordiffuse="$VAR[HighlightBarColor]" border="4">listselect_fo.png</texturefocus>
-		<texturenofocus border="4">thumbs/panel_border.png</texturenofocus>
 		<include>Objects_KeyOff</include>
 	</include>
 	<include name="ShowCaseInfoPanelButtonsValues">
@@ -302,13 +300,13 @@
 	<!-- PARAM -->
 	<include name="ExtendedInfoListLayout">
 		<param name="PanelID" />
-		<param name="listVisible" />
-		<param name="overlayVisibility">[!String.IsEmpty(ListItem.DBID) | !String.IsEmpty(ListItem.Property(DBID))]</param>
+		<param name="overlayVisibility">!String.IsEmpty(ListItem.Property(DBID))</param>
 		<param name="label1" default="$INFO[ListItem.Label]" />
 		<param name="label2" default="$INFO[ListItem.Year]" />
 		<param name="texture" default="$VAR[PosterVar]" />
 		<param name="content" />
 		<param name="sortby" />
+		<param name="limit" />
 		<definition>
 			<left>15</left>
 			<width>1196</width>
@@ -316,7 +314,6 @@
 			<orientation>horizontal</orientation>
 			<preloaditems>2</preloaditems>
 			<scrolltime tween="quadratic" easing="out">300</scrolltime>
-			<visible>$PARAM[listVisible]</visible>
 			<itemlayout height="500" width="299">
 				<control type="image">
 					<left>-15</left>
@@ -422,7 +419,7 @@
 					</control>
 				</control>
 			</focusedlayout>
-			<content sortby="$PARAM[sortby]" target="videos">$PARAM[content]</content>
+			<content sortby="$PARAM[sortby]" limit="$PARAM[limit]" target="videos">$PARAM[content]</content>
 		</definition>
 	</include>
 	<include name="VideoCastItem">

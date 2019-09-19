@@ -29,11 +29,10 @@
 		<width>450</width>
 		<height>60</height>
 		<texturefocus colordiffuse="$VAR[HighlightBarColor]" border="1">listselect_fo.png</texturefocus>
-		<texturenofocus border="1">separator2.png</texturenofocus>
 		<font>font14</font>
-		<textcolor>grey2</textcolor>
+		<textcolor>grey</textcolor>
 		<focusedcolor>white</focusedcolor>
-		<disabledcolor>grey4</disabledcolor>
+		<disabledcolor>grey3</disabledcolor>
 		<textoffsetx>15</textoffsetx>
 		<aligny>center</aligny>
 		<pulseonselect>false</pulseonselect>
@@ -43,12 +42,10 @@
 		<height>60</height>
 		<textoffsetx>15</textoffsetx>
 		<texturefocus colordiffuse="$VAR[HighlightBarColor]" border="1">listselect_fo.png</texturefocus>
-		<texturenofocus border="1">separator2.png</texturenofocus>
 		<alttexturefocus colordiffuse="$VAR[HighlightBarColor]" border="1">listselect_fo.png</alttexturefocus>
-		<alttexturenofocus border="1">separator2.png</alttexturenofocus>
-		<textcolor>grey2</textcolor>
+		<textcolor>grey</textcolor>
 		<focusedcolor>white</focusedcolor>
-		<disabledcolor>grey4</disabledcolor>
+		<disabledcolor>grey3</disabledcolor>
 		<label />
 		<aligny>center</aligny>
 		<font>font14</font>
@@ -62,11 +59,11 @@
 		<font>font15_textbox</font>
 	</default>
 	<default type="progress">
-		<texturebg border="1">osd/texturebg_cache.png</texturebg>
 		<lefttexture />
-		<midtexture border="2">osd/midtexture.png</midtexture>
 		<righttexture />
 		<overlaytexture />
+		<midtexture border="2">osd/midtexture.png</midtexture>
+		<texturebg border="1">osd/texturebg_cache.png</texturebg>
 	</default>
 	<default type="spincontrol">
 		<textureup colordiffuse="grey">android/numberpicker_up_normal_holo_dark.png</textureup>
@@ -80,8 +77,8 @@
 		<height>25</height>
 		<font>font14</font>
 		<reverse>yes</reverse>
-		<textcolor>grey2</textcolor>
-		<disabledcolor>grey4</disabledcolor>
+		<textcolor>grey</textcolor>
+		<disabledcolor>grey3</disabledcolor>
 		<subtype>text</subtype>
 		<textoffsetx>0</textoffsetx>
 		<textoffsety>0</textoffsety>
@@ -94,7 +91,6 @@
 		<spinwidth>40</spinwidth>
 		<spinheight>25</spinheight>
 		<texturefocus colordiffuse="$VAR[HighlightBarColor]" border="1">listselect_fo.png</texturefocus>
-		<texturenofocus border="1">separator2.png</texturenofocus>
 		<textureup colordiffuse="grey">android/numberpicker_up_normal_holo_dark.png</textureup>
 		<texturedown colordiffuse="grey">android/numberpicker_down_normal_holo_dark.png</texturedown>
 		<textureupfocus colordiffuse="$VAR[HighlightBarColor]">android/numberpicker_up_normal_holo_dark.png</textureupfocus>
@@ -102,9 +98,9 @@
 		<texturedowndisabled colordiffuse="40FFFFFF">android/numberpicker_down_normal_holo_dark.png</texturedowndisabled>
 		<textureupdisabled colordiffuse="40FFFFFF">android/numberpicker_up_normal_holo_dark.png</textureupdisabled>
 		<font>font14</font>
-		<textcolor>grey2</textcolor>
+		<textcolor>grey</textcolor>
 		<focusedcolor>white</focusedcolor>
-		<disabledcolor>grey4</disabledcolor>
+		<disabledcolor>grey3</disabledcolor>
 		<textoffsetx>15</textoffsetx>
 		<aligny>center</aligny>
 		<reverse>yes</reverse>
@@ -113,8 +109,8 @@
 	<default type="radiobutton">
 		<width>450</width>
 		<height>60</height>
-		<radiowidth>64</radiowidth>
-		<radioheight>64</radioheight>
+		<radiowidth>120</radiowidth>
+		<radioheight>76</radioheight>
 		<textureradioonfocus colordiffuse="$VAR[ThemeLabelColor]">android/btn_radio_on_holo_dark.png</textureradioonfocus>
 		<textureradioonnofocus colordiffuse="$VAR[ThemeLabelColor]">android/btn_radio_on_holo_dark.png</textureradioonnofocus>
 		<textureradioofffocus colordiffuse="grey">android/btn_radio_off_holo_dark.png</textureradioofffocus>
@@ -122,12 +118,11 @@
 		<texturefocus colordiffuse="$VAR[HighlightBarColor]" border="1">listselect_fo.png</texturefocus>
 		<textureradioondisabled colordiffuse="40FFFFFF">android/btn_radio_on_holo_dark.png</textureradioondisabled>
 		<textureradiooffdisabled colordiffuse="40FFFFFF">android/btn_radio_off_holo_dark.png</textureradiooffdisabled>
-		<texturenofocus border="1">separator2.png</texturenofocus>
 		<label>215</label>
 		<font>font14</font>
-		<textcolor>grey2</textcolor>
+		<textcolor>grey</textcolor>
 		<focusedcolor>white</focusedcolor>
-		<disabledcolor>grey4</disabledcolor>
+		<disabledcolor>grey3</disabledcolor>
 		<textoffsetx>15</textoffsetx>
 		<aligny>center</aligny>
 		<pulseonselect>false</pulseonselect>
@@ -140,43 +135,38 @@
 		<textoffsetx>15</textoffsetx>
 		<aligny>center</aligny>
 		<texturefocus colordiffuse="$VAR[HighlightBarColor]" border="1">listselect_fo.png</texturefocus>
-		<texturenofocus border="1">separator2.png</texturenofocus>
 		<sliderwidth>150</sliderwidth>
 		<sliderheight>20</sliderheight>
 		<texturesliderbar>osd_slider_bg.png</texturesliderbar>
 		<textureslidernib>osd_slider_nibNF.png</textureslidernib>
-		<textureslidernibfocus>osd_slider_nib.png</textureslidernibfocus>
+		<textureslidernibfocus colordiffuse="$VAR[ThemeLabelColor]">osd_slider_nib.png</textureslidernibfocus>
 		<font>font14</font>
-		<textcolor>grey2</textcolor>
+		<textcolor>grey</textcolor>
 		<focusedcolor>white</focusedcolor>
-		<disabledcolor>grey4</disabledcolor>
+		<disabledcolor>grey3</disabledcolor>
 		<pulseonselect>false</pulseonselect>
+		<scrollspeed>30</scrollspeed>
 	</default>
 	<default type="mover">
 		<texturefocus colordiffuse="$VAR[HighlightBarColor]" border="1">listselect_fo.png</texturefocus>
-		<texturenofocus border="1">separator2.png</texturenofocus>
 		<pulseonselect>false</pulseonselect>
 	</default>
 	<default type="resize">
 		<texturefocus colordiffuse="$VAR[HighlightBarColor]" border="1">listselect_fo.png</texturefocus>
-		<texturenofocus border="1">separator2.png</texturenofocus>
 		<pulseonselect>false</pulseonselect>
 	</default>
 	<default type="edit">
 		<width>450</width>
 		<height>60</height>
 		<texturefocus colordiffuse="$VAR[HighlightBarColor]" border="1">listselect_fo.png</texturefocus>
-		<texturenofocus border="1">separator2.png</texturenofocus>
 		<font>font14</font>
-		<textcolor>grey2</textcolor>
+		<textcolor>grey</textcolor>
 		<focusedcolor>white</focusedcolor>
-		<disabledcolor>grey4</disabledcolor>
+		<disabledcolor>grey3</disabledcolor>
 		<invalidcolor>invalid</invalidcolor>
 		<textoffsetx>15</textoffsetx>
 		<aligny>center</aligny>
 		<pulseonselect>false</pulseonselect>
-	</default>
-	<default type="group">
 	</default>
 	<default type="grouplist">
 		<itemgap>0</itemgap>

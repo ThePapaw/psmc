@@ -12,6 +12,7 @@
 		<property name="widget" tag="property" attribute="name|widget" />
 		<property name="widgettype" tag="property" attribute="name|widgetType" />
 		<property name="content" tag="property" attribute="name|widgetPath" />
+		<property name="limit" tag="property" attribute="name|widgetLimit" />
 		<property name="target" tag="property" attribute="name|widgetTarget" />
 		<property name="name" tag="property" attribute="name|widgetName" />
 		<property name="sortby" tag="property" attribute="name|widgetSortby" />
@@ -384,8 +385,6 @@
 						<effect type="fade" start="100" end="0" time="300" tween="sine" easing="inout" />
 					</animation>
 					<animation effect="slide" end="-410,0" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical) + String.Contains(Container(9000).ListItem.Property(widgetStyle),Extended)">Conditional</animation>
-					<onfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,8011$SKINSHORTCUTS[id])</onfocus>
-					<onunfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,Home)</onunfocus>
 					<include content="$SKINSHORTCUTS[containercontent]">
 						<param name="id">8011$SKINSHORTCUTS[id]</param>
 						<param name="Texture">$SKINSHORTCUTS[artwork]</param>
@@ -400,7 +399,7 @@
 						<param name="fallbackFont">$SKINSHORTCUTS[fallbackfont]</param>
 						<param name="Case">$SKINSHORTCUTS[casepathbanner]</param>
 					</include>
-					<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]">$SKINSHORTCUTS[content]</content>
+					<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]" limit="$SKINSHORTCUTS[limit]">$SKINSHORTCUTS[content]</content>
 				</control>
 			</control>
 		</controls>
@@ -443,6 +442,7 @@
 		<property name="widget" tag="property" attribute="name|widget" />
 		<property name="widgettype" tag="property" attribute="name|widgetType" />
 		<property name="content" tag="property" attribute="name|widgetPath" />
+		<property name="limit" tag="property" attribute="name|widgetLimit" />
 		<property name="target" tag="property" attribute="name|widgetTarget" />
 		<property name="name" tag="property" attribute="name|widgetName" />
 		<property name="sortby" tag="property" attribute="name|widgetSortby" />
@@ -815,8 +815,6 @@
 						<effect type="fade" start="100" end="0" time="300" tween="sine" easing="inout" />
 					</animation>
 					<animation effect="slide" end="-410,0" condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical) + String.Contains(Container(9000).ListItem.Property(widgetStyle),Extended)">Conditional</animation>
-					<onfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,8011$SKINSHORTCUTS[id])</onfocus>
-					<onunfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,Home)</onunfocus>
 					<include content="$SKINSHORTCUTS[containercontent]">
 						<param name="id">8011$SKINSHORTCUTS[id]</param>
 						<param name="Texture">$SKINSHORTCUTS[artwork]</param>
@@ -831,7 +829,7 @@
 						<param name="fallbackFont">$SKINSHORTCUTS[fallbackfont]</param>
 						<param name="Case">$SKINSHORTCUTS[casepathbanner]</param>
 					</include>
-					<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]">$SKINSHORTCUTS[content]</content>
+					<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]" limit="$SKINSHORTCUTS[limit]">$SKINSHORTCUTS[content]</content>
 				</control>
 			</control>
 		</controls>
@@ -866,7 +864,7 @@
 	<!-- Panel -->
 	<other include="widget1">
 		<!-- Check Widget Style -->
-		<condition tag="property" attribute="name|widgetPanelInfo">Enabled</condition>
+		<condition tag="property" attribute="name|widgetPanelInfo">true</condition>
 		<condition tag="property" attribute="name|widgetStyle">Panel</condition>
 		<condition tag="property" attribute="name|widgetPath" />
 		<propertyGroup>widget1Common</propertyGroup>
@@ -955,8 +953,6 @@
 						<preloaditems>2</preloaditems>
 						<scrolltime tween="quadratic" easing="out">300</scrolltime>
 						<include>skinshortcuts-template-HorizontalNavigation1</include>
-						<onfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,8011$SKINSHORTCUTS[id])</onfocus>
-						<onunfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,Home)</onunfocus>
 						<include content="$SKINSHORTCUTS[artcontent]">
 							<param name="containerWidth">$SKINSHORTCUTS[containerwidth]</param>
 							<param name="containerHeight">$SKINSHORTCUTS[containerheight]</param>
@@ -988,7 +984,7 @@
 							<param name="weatherTop3">$SKINSHORTCUTS[weathertop3]</param>
 							<param name="weatherFont">$SKINSHORTCUTS[weatherfont]</param>
 						</include>
-						<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]">$SKINSHORTCUTS[content]</content>
+						<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]" limit="$SKINSHORTCUTS[limit]">$SKINSHORTCUTS[content]</content>
 					</control>
 				</control>
 			</control>
@@ -1051,8 +1047,6 @@
 						<preloaditems>2</preloaditems>
 						<scrolltime tween="quadratic" easing="out">300</scrolltime>
 						<include>skinshortcuts-template-HorizontalNavigation1</include>
-						<onfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,8011$SKINSHORTCUTS[id])</onfocus>
-						<onunfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,Home)</onunfocus>
 						<include content="$SKINSHORTCUTS[artcontent]">
 							<param name="containerWidth">$SKINSHORTCUTS[containerwidth]</param>
 							<param name="containerHeight">$SKINSHORTCUTS[containerheight]</param>
@@ -1084,7 +1078,7 @@
 							<param name="weatherTop3">$SKINSHORTCUTS[weathertop3]</param>
 							<param name="weatherFont">$SKINSHORTCUTS[weatherfont]</param>
 						</include>
-						<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]">$SKINSHORTCUTS[content]</content>
+						<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]" limit="$SKINSHORTCUTS[limit]">$SKINSHORTCUTS[content]</content>
 					</control>
 				</control>
 			</control>
@@ -1093,7 +1087,7 @@
 	<!-- Extended Panel -->
 	<other include="widget1">
 		<!-- Check Widget Style -->
-		<condition tag="property" attribute="name|widgetPanelInfo">Enabled</condition>
+		<condition tag="property" attribute="name|widgetPanelInfo">true</condition>
 		<condition tag="property" attribute="name|widgetStyle">Extended Panel</condition>
 		<condition tag="property" attribute="name|widgetPath" />
 		<propertyGroup>widget1Common</propertyGroup>
@@ -1182,8 +1176,6 @@
 						<preloaditems>2</preloaditems>
 						<scrolltime tween="quadratic" easing="out">300</scrolltime>
 						<include>skinshortcuts-template-HorizontalNavigation1</include>
-						<onfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,8011$SKINSHORTCUTS[id])</onfocus>
-						<onunfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,Home)</onunfocus>
 						<include content="$SKINSHORTCUTS[artcontent]">
 							<param name="containerWidth">$SKINSHORTCUTS[containerwidth]</param>
 							<param name="containerHeight">$SKINSHORTCUTS[containerheight]</param>
@@ -1215,7 +1207,7 @@
 							<param name="weatherTop3">$SKINSHORTCUTS[weathertop3]</param>
 							<param name="weatherFont">$SKINSHORTCUTS[weatherfont]</param>
 						</include>
-						<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]">$SKINSHORTCUTS[content]</content>
+						<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]" limit="$SKINSHORTCUTS[limit]">$SKINSHORTCUTS[content]</content>
 					</control>
 				</control>
 			</control>
@@ -1278,8 +1270,6 @@
 						<preloaditems>2</preloaditems>
 						<scrolltime tween="quadratic" easing="out">300</scrolltime>
 						<include>skinshortcuts-template-HorizontalNavigation1</include>
-						<onfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,8011$SKINSHORTCUTS[id])</onfocus>
-						<onunfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,Home)</onunfocus>
 						<include content="$SKINSHORTCUTS[artcontent]">
 							<param name="containerWidth">$SKINSHORTCUTS[containerwidth]</param>
 							<param name="containerHeight">$SKINSHORTCUTS[containerheight]</param>
@@ -1311,7 +1301,7 @@
 							<param name="weatherTop3">$SKINSHORTCUTS[weathertop3]</param>
 							<param name="weatherFont">$SKINSHORTCUTS[weatherfont]</param>
 						</include>
-						<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]">$SKINSHORTCUTS[content]</content>
+						<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]" limit="$SKINSHORTCUTS[limit]">$SKINSHORTCUTS[content]</content>
 					</control>
 				</control>
 			</control>
@@ -1320,7 +1310,7 @@
 	<!-- Compact Panel -->
 	<other include="widget1">
 		<!-- Check Widget Style -->
-		<condition tag="property" attribute="name|widgetPanelInfo">Enabled</condition>
+		<condition tag="property" attribute="name|widgetPanelInfo">true</condition>
 		<condition tag="property" attribute="name|widgetStyle">Compact Panel</condition>
 		<condition tag="property" attribute="name|widgetPath" />
 		<propertyGroup>widget1Common</propertyGroup>
@@ -1409,8 +1399,6 @@
 						<preloaditems>2</preloaditems>
 						<scrolltime tween="quadratic" easing="out">300</scrolltime>
 						<include>skinshortcuts-template-HorizontalNavigation1</include>
-						<onfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,8011$SKINSHORTCUTS[id])</onfocus>
-						<onunfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,Home)</onunfocus>
 						<include content="$SKINSHORTCUTS[artcontent]">
 							<param name="containerWidth">$SKINSHORTCUTS[containerwidth]</param>
 							<param name="containerHeight">$SKINSHORTCUTS[containerheight]</param>
@@ -1442,7 +1430,7 @@
 							<param name="weatherTop3">$SKINSHORTCUTS[weathertop3]</param>
 							<param name="weatherFont">$SKINSHORTCUTS[weatherfont]</param>
 						</include>
-						<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]">$SKINSHORTCUTS[content]</content>
+						<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]" limit="$SKINSHORTCUTS[limit]">$SKINSHORTCUTS[content]</content>
 					</control>
 				</control>
 			</control>
@@ -1505,8 +1493,6 @@
 						<preloaditems>2</preloaditems>
 						<scrolltime tween="quadratic" easing="out">300</scrolltime>
 						<include>skinshortcuts-template-HorizontalNavigation1</include>
-						<onfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,8011$SKINSHORTCUTS[id])</onfocus>
-						<onunfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,Home)</onunfocus>
 						<include content="$SKINSHORTCUTS[artcontent]">
 							<param name="containerWidth">$SKINSHORTCUTS[containerwidth]</param>
 							<param name="containerHeight">$SKINSHORTCUTS[containerheight]</param>
@@ -1538,7 +1524,7 @@
 							<param name="weatherTop3">$SKINSHORTCUTS[weathertop3]</param>
 							<param name="weatherFont">$SKINSHORTCUTS[weatherfont]</param>
 						</include>
-						<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]">$SKINSHORTCUTS[content]</content>
+						<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]" limit="$SKINSHORTCUTS[limit]">$SKINSHORTCUTS[content]</content>
 					</control>
 				</control>
 			</control>
@@ -1547,7 +1533,7 @@
 	<!-- Extended Compact Panel -->
 	<other include="widget1">
 		<!-- Check Widget Style -->
-		<condition tag="property" attribute="name|widgetPanelInfo">Enabled</condition>
+		<condition tag="property" attribute="name|widgetPanelInfo">true</condition>
 		<condition tag="property" attribute="name|widgetStyle">Extended Compact Panel</condition>
 		<condition tag="property" attribute="name|widgetPath" />
 		<propertyGroup>widget1Common</propertyGroup>
@@ -1636,8 +1622,6 @@
 						<preloaditems>2</preloaditems>
 						<scrolltime tween="quadratic" easing="out">300</scrolltime>
 						<include>skinshortcuts-template-HorizontalNavigation1</include>
-						<onfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,8011$SKINSHORTCUTS[id])</onfocus>
-						<onunfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,Home)</onunfocus>
 						<include content="$SKINSHORTCUTS[artcontent]">
 							<param name="containerWidth">$SKINSHORTCUTS[containerwidth]</param>
 							<param name="containerHeight">$SKINSHORTCUTS[containerheight]</param>
@@ -1669,7 +1653,7 @@
 							<param name="weatherTop3">$SKINSHORTCUTS[weathertop3]</param>
 							<param name="weatherFont">$SKINSHORTCUTS[weatherfont]</param>
 						</include>
-						<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]">$SKINSHORTCUTS[content]</content>
+						<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]" limit="$SKINSHORTCUTS[limit]">$SKINSHORTCUTS[content]</content>
 					</control>
 				</control>
 			</control>
@@ -1732,8 +1716,6 @@
 						<preloaditems>2</preloaditems>
 						<scrolltime tween="quadratic" easing="out">300</scrolltime>
 						<include>skinshortcuts-template-HorizontalNavigation1</include>
-						<onfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,8011$SKINSHORTCUTS[id])</onfocus>
-						<onunfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,Home)</onunfocus>
 						<include content="$SKINSHORTCUTS[artcontent]">
 							<param name="containerWidth">$SKINSHORTCUTS[containerwidth]</param>
 							<param name="containerHeight">$SKINSHORTCUTS[containerheight]</param>
@@ -1765,7 +1747,7 @@
 							<param name="weatherTop3">$SKINSHORTCUTS[weathertop3]</param>
 							<param name="weatherFont">$SKINSHORTCUTS[weatherfont]</param>
 						</include>
-						<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]">$SKINSHORTCUTS[content]</content>
+						<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]" limit="$SKINSHORTCUTS[limit]">$SKINSHORTCUTS[content]</content>
 					</control>
 				</control>
 			</control>
@@ -1783,6 +1765,7 @@
 		<property name="widget" tag="property" attribute="name|widget.2" />
 		<property name="widgettype" tag="property" attribute="name|widgetType.2" />
 		<property name="content" tag="property" attribute="name|widgetPath.2" />
+		<property name="limit" tag="property" attribute="name|widgetLimit.2" />
 		<property name="target" tag="property" attribute="name|widgetTarget.2" />
 		<property name="name" tag="property" attribute="name|widgetName.2" />
 		<property name="sortby" tag="property" attribute="name|widgetSortby.2" />
@@ -2169,7 +2152,7 @@
 						<param name="fallbackFont">$SKINSHORTCUTS[fallbackfont]</param>
 						<param name="Case">$SKINSHORTCUTS[casepathbanner]</param>
 					</include>
-					<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]">$SKINSHORTCUTS[content]</content>
+					<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]" limit="$SKINSHORTCUTS[limit]">$SKINSHORTCUTS[content]</content>
 				</control>
 			</control>
 		</controls>
@@ -2212,6 +2195,7 @@
 		<property name="widget" tag="property" attribute="name|widget.2" />
 		<property name="widgettype" tag="property" attribute="name|widgetType.2" />
 		<property name="content" tag="property" attribute="name|widgetPath.2" />
+		<property name="limit" tag="property" attribute="name|widgetLimit.2" />
 		<property name="target" tag="property" attribute="name|widgetTarget.2" />
 		<property name="name" tag="property" attribute="name|widgetName.2" />
 		<property name="sortby" tag="property" attribute="name|widgetSortby.2" />
@@ -2598,7 +2582,7 @@
 						<param name="fallbackFont">$SKINSHORTCUTS[fallbackfont]</param>
 						<param name="Case">$SKINSHORTCUTS[casepathbanner]</param>
 					</include>
-					<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]">$SKINSHORTCUTS[content]</content>
+					<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]" limit="$SKINSHORTCUTS[limit]">$SKINSHORTCUTS[content]</content>
 				</control>
 			</control>
 		</controls>
@@ -2633,7 +2617,7 @@
 	<!-- Panel -->
 	<other include="widget2">
 		<!-- Check Widget Style -->
-		<condition tag="property" attribute="name|widgetPanelInfo.2">Enabled</condition>
+		<condition tag="property" attribute="name|widgetPanelInfo.2">true</condition>
 		<condition tag="property" attribute="name|widgetStyle.2">Panel</condition>
 		<condition tag="property" attribute="name|widgetPath.2" />
 		<propertyGroup>widget2Common</propertyGroup>
@@ -2724,8 +2708,6 @@
 						<preloaditems>2</preloaditems>
 						<scrolltime tween="quadratic" easing="out">300</scrolltime>
 						<include>skinshortcuts-template-HorizontalNavigation2</include>
-						<onfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,8021$SKINSHORTCUTS[id])</onfocus>
-						<onunfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,Home)</onunfocus>
 						<include content="$SKINSHORTCUTS[artcontent]">
 							<param name="containerWidth">$SKINSHORTCUTS[containerwidth]</param>
 							<param name="containerHeight">$SKINSHORTCUTS[containerheight]</param>
@@ -2757,7 +2739,7 @@
 							<param name="weatherTop3">$SKINSHORTCUTS[weathertop3]</param>
 							<param name="weatherFont">$SKINSHORTCUTS[weatherfont]</param>
 						</include>
-						<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]">$SKINSHORTCUTS[content]</content>
+						<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]" limit="$SKINSHORTCUTS[limit]">$SKINSHORTCUTS[content]</content>
 					</control>
 				</control>
 			</control>
@@ -2821,8 +2803,6 @@
 						<preloaditems>2</preloaditems>
 						<scrolltime tween="quadratic" easing="out">300</scrolltime>
 						<include>skinshortcuts-template-HorizontalNavigation2</include>
-						<onfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,8021$SKINSHORTCUTS[id])</onfocus>
-						<onunfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,Home)</onunfocus>
 						<include content="$SKINSHORTCUTS[artcontent]">
 							<param name="containerWidth">$SKINSHORTCUTS[containerwidth]</param>
 							<param name="containerHeight">$SKINSHORTCUTS[containerheight]</param>
@@ -2854,7 +2834,7 @@
 							<param name="weatherTop3">$SKINSHORTCUTS[weathertop3]</param>
 							<param name="weatherFont">$SKINSHORTCUTS[weatherfont]</param>
 						</include>
-						<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]">$SKINSHORTCUTS[content]</content>
+						<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]" limit="$SKINSHORTCUTS[limit]">$SKINSHORTCUTS[content]</content>
 					</control>
 				</control>
 			</control>
@@ -2863,7 +2843,7 @@
 	<!-- Extended Panel -->
 	<other include="widget2">
 		<!-- Check Widget Style -->
-		<condition tag="property" attribute="name|widgetPanelInfo.2">Enabled</condition>
+		<condition tag="property" attribute="name|widgetPanelInfo.2">true</condition>
 		<condition tag="property" attribute="name|widgetStyle.2">Extended Panel</condition>
 		<condition tag="property" attribute="name|widgetPath.2" />
 		<propertyGroup>widget2Common</propertyGroup>
@@ -2954,8 +2934,6 @@
 						<preloaditems>2</preloaditems>
 						<scrolltime tween="quadratic" easing="out">300</scrolltime>
 						<include>skinshortcuts-template-HorizontalNavigation2</include>
-						<onfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,8021$SKINSHORTCUTS[id])</onfocus>
-						<onunfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,Home)</onunfocus>
 						<include content="$SKINSHORTCUTS[artcontent]">
 							<param name="containerWidth">$SKINSHORTCUTS[containerwidth]</param>
 							<param name="containerHeight">$SKINSHORTCUTS[containerheight]</param>
@@ -2987,7 +2965,7 @@
 							<param name="weatherTop3">$SKINSHORTCUTS[weathertop3]</param>
 							<param name="weatherFont">$SKINSHORTCUTS[weatherfont]</param>
 						</include>
-						<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]">$SKINSHORTCUTS[content]</content>
+						<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]" limit="$SKINSHORTCUTS[limit]">$SKINSHORTCUTS[content]</content>
 					</control>
 				</control>
 			</control>
@@ -3001,7 +2979,6 @@
 		<propertyGroup>extendedPanel2Common</propertyGroup>
 		<controls>
 			<control type="group">
-				<animation effect="slide" end="0,-20" condition="$SKINSHORTCUTS[widgetsquare]">Conditional</animation>
 				<skinshortcuts>visibility</skinshortcuts>
 				<control type="group">
 					<visible>Integer.IsGreater(Container(8021$SKINSHORTCUTS[id]).NumItems,0)</visible>
@@ -3051,8 +3028,6 @@
 						<preloaditems>2</preloaditems>
 						<scrolltime tween="quadratic" easing="out">300</scrolltime>
 						<include>skinshortcuts-template-HorizontalNavigation2</include>
-						<onfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,8021$SKINSHORTCUTS[id])</onfocus>
-						<onunfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,Home)</onunfocus>
 						<include content="$SKINSHORTCUTS[artcontent]">
 							<param name="containerWidth">$SKINSHORTCUTS[containerwidth]</param>
 							<param name="containerHeight">$SKINSHORTCUTS[containerheight]</param>
@@ -3084,7 +3059,7 @@
 							<param name="weatherTop3">$SKINSHORTCUTS[weathertop3]</param>
 							<param name="weatherFont">$SKINSHORTCUTS[weatherfont]</param>
 						</include>
-						<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]">$SKINSHORTCUTS[content]</content>
+						<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]" limit="$SKINSHORTCUTS[limit]">$SKINSHORTCUTS[content]</content>
 					</control>
 				</control>
 			</control>
@@ -3093,7 +3068,7 @@
 	<!-- Compact Panel -->
 	<other include="widget2">
 		<!-- Check Widget Style -->
-		<condition tag="property" attribute="name|widgetPanelInfo.2">Enabled</condition>
+		<condition tag="property" attribute="name|widgetPanelInfo.2">true</condition>
 		<condition tag="property" attribute="name|widgetStyle.2">Compact Panel</condition>
 		<condition tag="property" attribute="name|widgetPath.2" />
 		<propertyGroup>widget2Common</propertyGroup>
@@ -3182,8 +3157,6 @@
 						<preloaditems>2</preloaditems>
 						<scrolltime tween="quadratic" easing="out">300</scrolltime>
 						<include>skinshortcuts-template-HorizontalNavigation2</include>
-						<onfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,8021$SKINSHORTCUTS[id])</onfocus>
-						<onunfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,Home)</onunfocus>
 						<include content="$SKINSHORTCUTS[artcontent]">
 							<param name="containerWidth">$SKINSHORTCUTS[containerwidth]</param>
 							<param name="containerHeight">$SKINSHORTCUTS[containerheight]</param>
@@ -3215,7 +3188,7 @@
 							<param name="weatherTop3">$SKINSHORTCUTS[weathertop3]</param>
 							<param name="weatherFont">$SKINSHORTCUTS[weatherfont]</param>
 						</include>
-						<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]">$SKINSHORTCUTS[content]</content>
+						<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]" limit="$SKINSHORTCUTS[limit]">$SKINSHORTCUTS[content]</content>
 					</control>
 				</control>
 			</control>
@@ -3279,8 +3252,6 @@
 						<preloaditems>2</preloaditems>
 						<scrolltime tween="quadratic" easing="out">300</scrolltime>
 						<include>skinshortcuts-template-HorizontalNavigation2</include>
-						<onfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,8021$SKINSHORTCUTS[id])</onfocus>
-						<onunfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,Home)</onunfocus>
 						<include content="$SKINSHORTCUTS[artcontent]">
 							<param name="containerWidth">$SKINSHORTCUTS[containerwidth]</param>
 							<param name="containerHeight">$SKINSHORTCUTS[containerheight]</param>
@@ -3312,7 +3283,7 @@
 							<param name="weatherTop3">$SKINSHORTCUTS[weathertop3]</param>
 							<param name="weatherFont">$SKINSHORTCUTS[weatherfont]</param>
 						</include>
-						<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]">$SKINSHORTCUTS[content]</content>
+						<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]" limit="$SKINSHORTCUTS[limit]">$SKINSHORTCUTS[content]</content>
 					</control>
 				</control>
 			</control>
@@ -3321,7 +3292,7 @@
 	<!-- Extended Compact Panel -->
 	<other include="widget2">
 		<!-- Check Widget Style -->
-		<condition tag="property" attribute="name|widgetPanelInfo.2">Enabled</condition>
+		<condition tag="property" attribute="name|widgetPanelInfo.2">true</condition>
 		<condition tag="property" attribute="name|widgetStyle.2">Extended Compact Panel</condition>
 		<condition tag="property" attribute="name|widgetPath.2" />
 		<propertyGroup>widget2Common</propertyGroup>
@@ -3410,8 +3381,6 @@
 						<preloaditems>2</preloaditems>
 						<scrolltime tween="quadratic" easing="out">300</scrolltime>
 						<include>skinshortcuts-template-HorizontalNavigation2</include>
-						<onfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,8021$SKINSHORTCUTS[id])</onfocus>
-						<onunfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,Home)</onunfocus>
 						<include content="$SKINSHORTCUTS[artcontent]">
 							<param name="containerWidth">$SKINSHORTCUTS[containerwidth]</param>
 							<param name="containerHeight">$SKINSHORTCUTS[containerheight]</param>
@@ -3443,7 +3412,7 @@
 							<param name="weatherTop3">$SKINSHORTCUTS[weathertop3]</param>
 							<param name="weatherFont">$SKINSHORTCUTS[weatherfont]</param>
 						</include>
-						<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]">$SKINSHORTCUTS[content]</content>
+						<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]" limit="$SKINSHORTCUTS[limit]">$SKINSHORTCUTS[content]</content>
 					</control>
 				</control>
 			</control>
@@ -3507,8 +3476,6 @@
 						<preloaditems>2</preloaditems>
 						<scrolltime tween="quadratic" easing="out">300</scrolltime>
 						<include>skinshortcuts-template-HorizontalNavigation2</include>
-						<onfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,8021$SKINSHORTCUTS[id])</onfocus>
-						<onunfocus condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,Home)</onunfocus>
 						<include content="$SKINSHORTCUTS[artcontent]">
 							<param name="containerWidth">$SKINSHORTCUTS[containerwidth]</param>
 							<param name="containerHeight">$SKINSHORTCUTS[containerheight]</param>
@@ -3540,7 +3507,7 @@
 							<param name="weatherTop3">$SKINSHORTCUTS[weathertop3]</param>
 							<param name="weatherFont">$SKINSHORTCUTS[weatherfont]</param>
 						</include>
-						<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]">$SKINSHORTCUTS[content]</content>
+						<content target="$SKINSHORTCUTS[target]" sortby="$SKINSHORTCUTS[sortby]" sortorder="$SKINSHORTCUTS[sort]" limit="$SKINSHORTCUTS[limit]">$SKINSHORTCUTS[content]</content>
 					</control>
 				</control>
 			</control>
@@ -4673,6 +4640,7 @@
 		<property name="widget" tag="property" attribute="name|widget" />
 		<property name="widgettype" tag="property" attribute="name|widgetType" />
 		<property name="content" tag="property" attribute="name|widgetPath" />
+		<property name="limit" tag="property" attribute="name|widgetLimit" />
 		<property name="target" tag="property" attribute="name|widgetTarget" />
 		<property name="label" tag="property" attribute="name|widgetName" />
 		<property name="sortby" tag="property" attribute="name|widgetSortby" />
@@ -4695,7 +4663,7 @@
 		<property name="artworkfb">false</property>
 		<!-- Artwork Aspect -->
 		<property name="aspect" tag="property" attribute="name|widgetType" value="pvr">keep</property>
-		<property name="aspect" tag="property" attribute="name|widgetArt" value="ClearArt|ClearLogo|CharacterArt|DiscArt">keep</property>
+		<property name="aspect" tag="property" attribute="name|widgetArt" value="Square Poster|ClearArt|ClearLogo|CharacterArt|DiscArt">keep</property>
 		<property name="aspect" tag="property" attribute="name|widgetArt" value="Banner|Poster">stretch</property>
 		<property name="aspect">scale</property>
 		<!-- Artwork Aligny -->
@@ -4782,6 +4750,7 @@
 		<property name="widget" tag="property" attribute="name|widget.2" />
 		<property name="widgettype" tag="property" attribute="name|widgetType.2" />
 		<property name="content" tag="property" attribute="name|widgetPath.2" />
+		<property name="limit" tag="property" attribute="name|widgetLimit.2" />
 		<property name="target" tag="property" attribute="name|widgetTarget.2" />
 		<property name="label" tag="property" attribute="name|widgetName.2" />
 		<property name="sortby" tag="property" attribute="name|widgetSortby.2" />
@@ -4804,7 +4773,7 @@
 		<property name="artworkfb">false</property>
 		<!-- Artwork Aspect -->
 		<property name="aspect" tag="property" attribute="name|widgetType.2" value="pvr">keep</property>
-		<property name="aspect" tag="property" attribute="name|widgetArt.2" value="ClearArt|ClearLogo|CharacterArt|DiscArt">keep</property>
+		<property name="aspect" tag="property" attribute="name|widgetArt.2" value="Square Poster|ClearArt|ClearLogo|CharacterArt|DiscArt">keep</property>
 		<property name="aspect" tag="property" attribute="name|widgetArt.2" value="Banner|Poster">stretch</property>
 		<property name="aspect">scale</property>
 		<!-- Artwork Aligny -->
