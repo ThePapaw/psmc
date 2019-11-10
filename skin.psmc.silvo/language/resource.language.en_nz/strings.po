@@ -1,7 +1,7 @@
 # Kodi Media Center language file
-# Addon Name: PSMC Silvo Skin
-# Addon id: skin.psmc.silvo
-# Addon Provider: The Papaw
+# Addon Name: Aeon Nox: SiLVO
+# Addon id: skin.aeon.nox.silvo
+# Addon Provider: SiLVO
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
@@ -1300,18 +1300,6 @@ msgctxt "#31324"
 msgid "Aired"
 msgstr "Aired"
 
-msgctxt "#31325"
-msgid "This script is REQUIRED[CR]Required scripts are necessary for basic skin functions"
-msgstr "This script is REQUIRED[CR]Required scripts are necessary for basic skin functions"
-
-msgctxt "#31326"
-msgid "This script is RECOMMENDED[CR]Some recommended scripts may be unsuitable for low performance devices"
-msgstr "This script is RECOMMENDED[CR]Some recommended scripts may be unsuitable for low performance devices"
-
-msgctxt "#31327"
-msgid "This script is OPTIONAL[CR]Some optional scripts may be unsuitable for low performance devices"
-msgstr "This script is OPTIONAL[CR]Some optional scripts may be unsuitable for low performance devices"
-
 msgctxt "#31328"
 msgid "Recently Added"
 msgstr "Recently Added"
@@ -1321,8 +1309,8 @@ msgid "Taking a Screenshot"
 msgstr "Taking a Screenshot"
 
 msgctxt "#31330"
-msgid "This script is not available in the default Kodi repositiory. The PSMC repo is needed to use the click to install feature, without it this script must be installed manually."
-msgstr "This script is not available in the default Kodi repositiory. The PSMC repo is needed to use the click to install feature, without it this script must be installed manually."
+msgid "This script is not available in the default Kodi repositiory. The Aeon Nox SiLVO repo is needed to use the click to install feature, without it this script must be installed manually."
+msgstr "This script is not available in the default Kodi repositiory. The Aeon Nox SiLVO repo is needed to use the click to install feature, without it this script must be installed manually."
 
 msgctxt "#31331"
 msgid "Installed"
@@ -1369,8 +1357,8 @@ msgid "NOT SUPPORTED"
 msgstr "NOT SUPPORTED"
 
 msgctxt "#31342"
-msgid "Display the status of some add-ons supported in PSMC Silvo Skin. Select an add-on to install or open its settings if already installed."
-msgstr "Display the status of some add-ons supported in PSMC Silvo Skin. Select an add-on to install or open its settings if already installed."
+msgid "Display the status of some add-ons supported in Aeon Nox SiLVO. Select an add-on to install or open its settings if already installed."
+msgstr "Display the status of some add-ons supported in Aeon Nox SiLVO. Select an add-on to install or open its settings if already installed."
 
 msgctxt "#31343"
 msgid "Display background name"
@@ -1912,10 +1900,6 @@ msgctxt "#31505"
 msgid "Delete Group"
 msgstr "Delete Group"
 
-msgctxt "#31506"
-msgid "Available[CR]Groups"
-msgstr "Available[CR]Groups"
-
 msgctxt "#31511"
 msgid "Channel Options"
 msgstr "Channel Options"
@@ -2301,8 +2285,8 @@ msgid "Use this setting to override the location of the Trailers button when usi
 msgstr "Use this setting to override the location of the Trailers button when using the Default setting for the CinemaVision button."
 
 msgctxt "#31855"
-msgid "Enable this setting to replace the Default info with online info provided by the ExtendedInfo script. You can use the PSMC Silvo Skin version or the Defaults provided by the script if you enable the option in the settings for ExtendedInfo."
-msgstr "Enable this setting to replace the Default info with online info provided by the ExtendedInfo script. You can use the PSMC Silvo Skin version or the Defaults provided by the script if you enable the option in the settings for ExtendedInfo."
+msgid "Enable this setting to replace the Default info with online info provided by the ExtendedInfo script. You can use the Aeon Nox SiLVO version or the Defaults provided by the script if you enable the option in the settings for ExtendedInfo."
+msgstr "Enable this setting to replace the Default info with online info provided by the ExtendedInfo script. You can use the Aeon Nox SiLVO version or the Defaults provided by the script if you enable the option in the settings for ExtendedInfo."
 
 msgctxt "#31856"
 msgid "Use this to select the multi-fanart cycle speed skin wide."
@@ -2391,10 +2375,6 @@ msgstr "This enables custom genre backgrounds when browsing through the videolib
 msgctxt "#31924"
 msgid "This enables custom genre backgrounds when browsing through the musiclibrary's genre node. Filenames should match the genre label. Extension must be .jpg."
 msgstr "This enables custom genre backgrounds when browsing through the musiclibrary's genre node. Filenames should match the genre label. Extension must be .jpg."
-
-msgctxt "#31926"
-msgid "Select add-ons, playlists or favourites. Choose 'Custom' for any of Kodi's built-in functions. (http://kodi.wiki/?title=List_of_Built_In_Functions)"
-msgstr "Select add-ons, playlists or favourites. Choose 'Custom' for any of Kodi's built-in functions. (http://kodi.wiki/?title=List_of_Built_In_Functions)"
 
 msgctxt "#31927"
 msgid "Resets all above values to their defaults."

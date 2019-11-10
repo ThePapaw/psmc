@@ -56,7 +56,7 @@
 				<control type="button">
 					<top>461</top>
 					<width>679</width>
-					<label>$INFO[Window(Home).Property(SkinInfo.Set.Movies.Genre)][CR]$INFO[Window(Home).Property(SkinInfo.Set.Movies.Runtime),, $LOCALIZE[12391]]</label>
+					<label>$VAR[MovieSetGenreVar][CR]$INFO[Container(4500).NumItems,, $LOCALIZE[342]]</label>
 					<include>DefaultButtonsValues</include>
 					<shadowcolor>shadow</shadowcolor>
 					<visible>ListItem.IsCollection</visible>
@@ -516,8 +516,8 @@
 							<bordersize>6</bordersize>
 						</control>
 						<control type="group">
-							<animation effect="fade" start="100" end="0" time="300" reversible="false">Focus</animation>
-							<animation effect="fade" start="0" end="100" time="150" reversible="false">UnFocus</animation>
+							<animation effect="fade" start="100" end="0" reversible="false">Focus</animation>
+							<animation effect="fade" start="0" end="100" reversible="false">UnFocus</animation>
 							<control type="image">
 								<width>300</width>
 								<height>300</height>
