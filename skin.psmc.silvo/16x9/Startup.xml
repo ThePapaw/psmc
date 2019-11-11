@@ -8,6 +8,7 @@
 	<onload>SetProperty(FIVE_daemon_set,True,Home)</onload>
 	<onload>SetProperty(cfa_daemon_set,blur,Home)</onload>
 	<onload>SetProperty(FIVE_daemon_set,blur,Home)</onload>
+	<onload>Skin.SetString(MainMenu.Layout,1)</onload>
 	<onload>SetProperty(NINE_manual_set,"var=main,set=$INFO[Skin.String(ColorboxMain)]|var=comp,set=$INFO[Skin.String(ColorboxComp)]|var=blursize,set=$INFO[Skin.String(ColorboxBlursize)]",Home)</onload>
 	<onload condition="String.IsEmpty(Skin.String(Overlay.Toggle))">SetProperty(Overlay.Path,overlays/showcase/,Home)</onload>
 	<onload condition="String.IsEqual(Skin.String(Overlay.Toggle),both) + !Skin.HasSetting(coloredflags)">SetProperty(Overlay.Path,overlays/showcase/1/,Home)</onload>
