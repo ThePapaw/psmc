@@ -36,7 +36,7 @@
 			<label>$INFO[Player.Art(artist.fanart18)]</label>
 			<label>$INFO[Player.Art(artist.fanart19)]</label>
 			<label>$INFO[Player.Art(artist.fanart20)]</label>
-			<include>FadeLabelTime</include>>
+			<include>FadeLabelTime</include>
 		</control>
 		<control type="fadelabel" id="4411">
 			<top>-100</top>
@@ -67,12 +67,13 @@
 			<label>$INFO[Player.Art(albumartist.fanart18)]</label>
 			<label>$INFO[Player.Art(albumartist.fanart19)]</label>
 			<label>$INFO[Player.Art(albumartist.fanart20)]</label>
-			<include>FadeLabelTime</include>>
+			<include>FadeLabelTime</include>
 		</control>
 		<control type="multiimage" id="7975">
 			<include>HiddenObject</include>
 			<imagepath background="true">$INFO[Player.Art(thumb)]</imagepath>
 		</control>
+		<include condition="!System.HasAddon(script.grab.fanart)">MusicVizFanartLists</include>
 		<control type="visualisation" id="2">
 			<include>FullscreenDimensions</include>
 			<visible>!Skin.HasSetting(hidevizbehindfanart) + Player.HasAudio + ![String.IsEqual(Visualisation.Name,waveform) | String.Contains(Visualisation.Name,spectrum)]</visible>
@@ -166,7 +167,7 @@
 			<visible>Skin.HasSetting(BigAssLabel)</visible>
 			<animation effect="rotate" tween="cubic" time="720" center="auto" end="90" condition="true">Conditonal</animation>
 		</control>
-		<include condition="Skin.HasSetting(MakeItSnow)">SnowBackground</include>
+		<include condition="!String.IsEmpty(Skin.String(SeasonsBackground))">SnowBackground</include>
 		<control type="group">
 			<animation type="WindowOpen" reversible="false">
 				<effect type="slide" start="0,-540" end="0" tween="cubic" easing="inout" time="720" />
@@ -461,7 +462,7 @@
 							<textcolor>$VAR[ThemeLabelColor]</textcolor>
 							<scroll>true</scroll>
 							<scrollsuffix>  -  </scrollsuffix>
-							<label>$INFO[MusicPlayer.Genre,[COLOR white][LOWERCASE], [/LOWERCASE]· [/COLOR]]$VAR[MusicPlayerCodecVar]$INFO[MusicPlayer.Bitrate,[COLOR white] · , [/COLOR]kbps[COLOR white] ·[/COLOR]]$INFO[MusicPlayer.BitsPerSample,[COLOR white] ,[/COLOR] bps[COLOR white] ·[/COLOR]]$INFO[MusicPlayer.Samplerate,[COLOR white] ,[/COLOR] kHz]</label>
+							<label>$INFO[MusicPlayer.Genre,[COLOR white][LOWERCASE], [/LOWERCASE]· [/COLOR]]$VAR[MusicPlayerCodecVar]$INFO[MusicPlayer.Bitrate,[COLOR white] · , [/COLOR]kbps[COLOR white] ·[/COLOR]]$INFO[MusicPlayer.BitsPerSample,[COLOR white] ,[/COLOR] bit[COLOR white] ·[/COLOR]]$INFO[MusicPlayer.Samplerate,[COLOR white] ,[/COLOR] kHz]</label>
 						</control>
 						<control type="image">
 							<left>745</left>
@@ -527,7 +528,7 @@
 								<textcolor>$VAR[ThemeLabelColor]</textcolor>
 								<scroll>true</scroll>
 								<scrollsuffix>  -  </scrollsuffix>
-								<label>$INFO[MusicPlayer.Genre,[COLOR white][LOWERCASE], [/LOWERCASE]· [/COLOR]]$VAR[MusicPlayerCodecVar]$INFO[MusicPlayer.Bitrate,[COLOR white] · , [/COLOR]kbps[COLOR white] ·[/COLOR]]$INFO[MusicPlayer.BitsPerSample,[COLOR white] ,[/COLOR] bps[COLOR white] ·[/COLOR]]$INFO[MusicPlayer.Samplerate,[COLOR white] ,[/COLOR] kHz]</label>
+								<label>$INFO[MusicPlayer.Genre,[COLOR white][LOWERCASE], [/LOWERCASE]· [/COLOR]]$VAR[MusicPlayerCodecVar]$INFO[MusicPlayer.Bitrate,[COLOR white] · , [/COLOR]kbps[COLOR white] ·[/COLOR]]$INFO[MusicPlayer.BitsPerSample,[COLOR white] ,[/COLOR] bit[COLOR white] ·[/COLOR]]$INFO[MusicPlayer.Samplerate,[COLOR white] ,[/COLOR] kHz]</label>
 							</control>
 						</control>
 						<control type="group">
@@ -575,7 +576,7 @@
 								<textcolor>$VAR[ThemeLabelColor]</textcolor>
 								<scroll>true</scroll>
 								<scrollsuffix>  -  </scrollsuffix>
-								<label>$INFO[MusicPlayer.Genre,[COLOR white][LOWERCASE], [/LOWERCASE]· [/COLOR]]$VAR[MusicPlayerCodecVar]$INFO[MusicPlayer.Bitrate,[COLOR white] · , [/COLOR]kbps[COLOR white] ·[/COLOR]]$INFO[MusicPlayer.BitsPerSample,[COLOR white] ,[/COLOR] bps[COLOR white] ·[/COLOR]]$INFO[MusicPlayer.Samplerate,[COLOR white] ,[/COLOR] kHz]</label>
+								<label>$INFO[MusicPlayer.Genre,[COLOR white][LOWERCASE], [/LOWERCASE]· [/COLOR]]$VAR[MusicPlayerCodecVar]$INFO[MusicPlayer.Bitrate,[COLOR white] · , [/COLOR]kbps[COLOR white] ·[/COLOR]]$INFO[MusicPlayer.BitsPerSample,[COLOR white] ,[/COLOR] bit[COLOR white] ·[/COLOR]]$INFO[MusicPlayer.Samplerate,[COLOR white] ,[/COLOR] kHz]</label>
 							</control>
 						</control>
 						<control type="image">
@@ -674,7 +675,7 @@
 							<textcolor>$VAR[ThemeLabelColor]</textcolor>
 							<scroll>true</scroll>
 							<scrollsuffix>  -  </scrollsuffix>
-							<label>$INFO[MusicPlayer.Genre,[COLOR white][LOWERCASE], [/LOWERCASE]· [/COLOR]]$VAR[MusicPlayerCodecVar]$INFO[MusicPlayer.Bitrate,[COLOR white] · , [/COLOR]kbps[COLOR white] ·[/COLOR]]$INFO[MusicPlayer.BitsPerSample,[COLOR white] ,[/COLOR] bps[COLOR white] ·[/COLOR]]$INFO[MusicPlayer.Samplerate,[COLOR white] ,[/COLOR] kHz]</label>
+							<label>$INFO[MusicPlayer.Genre,[COLOR white][LOWERCASE], [/LOWERCASE]· [/COLOR]]$VAR[MusicPlayerCodecVar]$INFO[MusicPlayer.Bitrate,[COLOR white] · , [/COLOR]kbps[COLOR white] ·[/COLOR]]$INFO[MusicPlayer.BitsPerSample,[COLOR white] ,[/COLOR] bit[COLOR white] ·[/COLOR]]$INFO[MusicPlayer.Samplerate,[COLOR white] ,[/COLOR] kHz]</label>
 						</control>
 						<control type="image">
 							<left>854</left>
@@ -857,7 +858,7 @@
 					<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.ArtistBiography),$LOCALIZE[21887]: [COLOR grey],[/COLOR]]</label>
 					<label>$INFO[MusicPlayer.Artist,$LOCALIZE[31105] ,: ]$INFO[Window(Visualisation).Property(ArtistSlideshow.1.AlbumName),[COLOR grey],[/COLOR]]$INFO[Window(Visualisation).Property(ArtistSlideshow.2.AlbumName), • [COLOR grey],[/COLOR]]$INFO[Window(Visualisation).Property(ArtistSlideshow.3.AlbumName), • [COLOR grey],[/COLOR]]$INFO[Window(Visualisation).Property(ArtistSlideshow.4.AlbumName), • [COLOR grey],[/COLOR]]$INFO[Window(Visualisation).Property(ArtistSlideshow.5.AlbumName), • [COLOR grey],[/COLOR]]$INFO[Window(Visualisation).Property(ArtistSlideshow.6.AlbumName), • [COLOR grey],[/COLOR]]$INFO[Window(Visualisation).Property(ArtistSlideshow.7.AlbumName), • [COLOR grey],[/COLOR]]$INFO[Window(Visualisation).Property(ArtistSlideshow.8.AlbumName), • [COLOR grey],[/COLOR]]$INFO[Window(Visualisation).Property(ArtistSlideshow.9.AlbumName), • [COLOR grey],[/COLOR]]$INFO[Window(Visualisation).Property(ArtistSlideshow.10.AlbumName), • [COLOR grey],[/COLOR]]</label>
 					<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.1.SimilarName),$LOCALIZE[31104]: [COLOR grey],[/COLOR]]$INFO[Window(Visualisation).Property(ArtistSlideshow.2.SimilarName), • [COLOR grey],[/COLOR]]$INFO[Window(Visualisation).Property(ArtistSlideshow.3.SimilarName), • [COLOR grey],[/COLOR]]$INFO[Window(Visualisation).Property(ArtistSlideshow.4.SimilarName), • [COLOR grey],[/COLOR]]$INFO[Window(Visualisation).Property(ArtistSlideshow.5.SimilarName), •	[COLOR grey],[/COLOR]]$INFO[Window(Visualisation).Property(ArtistSlideshow.6.SimilarName), • [COLOR grey],[/COLOR]]$INFO[Window(Visualisation).Property(ArtistSlideshow.7.SimilarName), • [COLOR grey],[/COLOR]]$INFO[Window(Visualisation).Property(ArtistSlideshow.8.SimilarName), • [COLOR grey],[/COLOR]]$INFO[Window(Visualisation).Property(ArtistSlideshow.9.SimilarName), • [COLOR grey],[/COLOR]]$INFO[Window(Visualisation).Property(ArtistSlideshow.10.SimilarName), • [COLOR grey],[/COLOR]]</label>
-					<scrollspeed>75</scrollspeed>
+					<scrollspeed>60</scrollspeed>
 				</control>
 			</control>
 		</control>

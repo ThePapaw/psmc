@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol>9000</defaultcontrol>
+	<onload>ClearProperty(BusySkinBackup,Home)</onload>
 	<onload condition="Control.IsVisible(10)">SetFocus(10)</onload>
+	<onunload condition="Window.IsVisible(home) + System.HasAddon(script.skinshortcuts) + !String.IsEmpty(Window(Home).Property(RunSkinShortcutsAfterInstall))">RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;levels=2&amp;options=noGroups)</onunload>
 	<include>DialogOpenCloseAnimation</include>
 	<controls>
 		<control type="image">
 			<include>FullscreenDimensions</include>
-			<texture border="1" colordiffuse="AAFFFFFF">black.png</texture>
+			<texture colordiffuse="AAFFFFFF">black.png</texture>
 			<animation effect="fade" time="300">WindowOpen</animation>
 			<animation effect="fade" time="300">WindowClose</animation>
 		</control>
@@ -29,7 +31,7 @@
 				<top>70</top>
 				<width>882</width>
 				<height>1</height>
-				<texture colordiffuse="$VAR[ThemeLabelColor]">new_pvr/osd_line_white.png</texture>
+				<texture colordiffuse="$VAR[ThemeLabelColor]">separator_horizontal.png</texture>
 			</control>
 			<control type="progress">
 				<left>30</left>
@@ -61,42 +63,42 @@
 				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 			</control>
 			<control type="grouplist" id="9000">
-				<left>30</left>
+				<left>20</left>
 				<top>402</top>
-				<width>856</width>
+				<width>876</width>
 				<orientation>horizontal</orientation>
 				<align>center</align>
-				<itemgap>14</itemgap>
+				<itemgap>5</itemgap>
 				<control type="button" id="11">
 					<description>Yes button</description>
-					<width>421</width>
+					<width>287</width>
 					<height>60</height>
 					<label>107</label>
 					<font>font15_title</font>
 					<textcolor>grey2</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<align>center</align>
-					<onleft>10</onleft>
-					<onright>10</onright>
-					<onup>11</onup>
-					<ondown>11</ondown>
 					<texturefocus colordiffuse="$VAR[HighlightBarColor]" border="5">listselect_fo.png</texturefocus>
 				</control>
 				<control type="button" id="10">
 					<description>No button</description>
-					<left>465</left>
-					<top>402</top>
-					<width>421</width>
+					<width>287</width>
 					<height>60</height>
 					<label>106</label>
 					<font>font15_title</font>
 					<textcolor>grey2</textcolor>
 					<focusedcolor>white</focusedcolor>
 					<align>center</align>
-					<onleft>11</onleft>
-					<onright>11</onright>
-					<onup>10</onup>
-					<ondown>10</ondown>
+					<texturefocus colordiffuse="$VAR[HighlightBarColor]" border="5">listselect_fo.png</texturefocus>
+				</control>
+				<control type="button" id="12">
+					<description>Settings button</description>
+					<width>287</width>
+					<height>60</height>
+					<font>font15_title</font>
+					<textcolor>grey2</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<align>center</align>
 					<texturefocus colordiffuse="$VAR[HighlightBarColor]" border="5">listselect_fo.png</texturefocus>
 				</control>
 			</control>
