@@ -105,7 +105,7 @@ Please give credit to all the devolopers that have and do contribute to this add
         </extension>
     </addon>
 
-<addon id="repository.psmc" name="PSMC Repository" version="1.0.14" provider-name="The Papaw">
+<addon id="repository.psmc" name="PSMC Repository" version="1.0.12" provider-name="The Papaw">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
     </requires>
