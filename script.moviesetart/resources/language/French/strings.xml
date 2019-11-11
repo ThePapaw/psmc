@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<strings>
+  <string id="32000">Source des Artworks</string>
+  <string id="32001">Activer la recherche d'un dossier parent commun</string>
+  <string id="32020">    Inclure les noms des sagas comme préfixe</string>
+  <string id="32002">Activer un dossier unique d'Artworks pour toutes les sagas</string>
+  <string id="32003">    Chemin vers le dossier unique d'Artworks</string>
+  <string id="32019">    Inclure les sous-dossiers</string>
+  <string id="32004">Oui</string>
+  <string id="32005">Non</string>
+  <string id="32006">Mise à jour des Artworks pour les sagas</string>
+  <string id="32007">Saga : </string>
+  <string id="32008">Mettre à jour la base de données vidéo avec les derniers Artworks de sagas ?</string>
+  <string id="32009">Terminé</string>
+  <string id="32010">Film : </string>
+  <string id="32011">Aucune saga trouvée ! Ajouter les balises SET aux fichiers NFO</string>
+  <string id="32012">Rien à faire ! Activez une ou plusieurs sources d'Artworks</string>
+  <string id="32013">Artworks trouvés pour %d sagas, base de données mise à jour %d fois</string>
+  <string id="32014">This script requires the remote control service to be enabled</string>
+  <string id="32015">Dossiers</string>
+  <string id="32016">Noms de fichier</string>
+  <string id="32017">Pochette</string>
+  <string id="32018">Fanart</string>
+  <string id="32021">Logo</string>
+  <string id="32022">ClearArt</string>
+  <string id="32023">Bannière</string>
+  <string id="32024">Poster</string>
+  <string id="32025">Enable forced database update</string>
+</strings>
