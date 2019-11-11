@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<strings>
+  <string id="32000">Artwork Source</string>
+  <string id="32001">Enable searching of a common parent folder</string>
+  <string id="32020">    Include set name as a prefix</string>
+  <string id="32002">Enable single artwork folder for all sets</string>
+  <string id="32003">    Path to single artwork folder</string>
+  <string id="32019">    Include sub folders</string>
+  <string id="32004">Yes</string>
+  <string id="32005">No</string>
+  <string id="32006">Updating movie set artwork</string>
+  <string id="32007">Movie Set: </string>
+  <string id="32008">Update video database with latest movie set artwork?</string>
+  <string id="32009">Complete</string>
+  <string id="32010">Movie: </string>
+  <string id="32011">No movie sets found! Add set tags to nfo files</string>
+  <string id="32012">Nothing to do! Enable one or more artwork sources</string>
+  <string id="32013">Found artwork for %d sets, made %d database updates</string>
+  <string id="32014">This script requires the remote control service to be enabled</string>
+  <string id="32015">Folders</string>
+  <string id="32016">Filenames</string>
+  <string id="32017">Thumbnail</string>
+  <string id="32018">Fanart</string>
+  <string id="32021">Logo</string>
+  <string id="32022">ClearArt</string>
+  <string id="32023">Banner</string>
+  <string id="32026">Extrafanart1</string>
+  <string id="32024">Poster</string>
+  <string id="32025">Enable forced database update</string>
+</strings>
