@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="skin.psmc.silvo" version="2.0.6" name="PSMC's Silvo Skin" provider-name="The Papaw">
+	<requires>
+		<import addon="xbmc.gui" version="5.14.0" />
+		<import addon="script.skinshortcuts" version="1.0.10" />
+		<import addon="plugin.program.autocompletion" version="1.0.1" />
+		<import addon="service.library.data.provider" version="0.3.2" />
+		<import addon="script.grab.fanart" version="0.14.1" />
+		<import addon="resource.images.studios.coloured" version="0.0.18" />
+		<import addon="resource.images.recordlabels.white" version="0.0.7" />
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false">
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="16x9" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">PSMC's Sylvo Skin. Themed and modded by 'The Papaw'.</summary>
+		<description lang="en">The PSMC Sylvo Skin is forked from aeon-nox sylvo 7.0.1. It has been modified and themed to better work with and match the [B]PSMC Media Center[/B] (a fork of XBMC/Kodi). It works fine with Kodi 18 as well!</description>
+		<platform>all</platform>
+		<license></license>
+		<forum></forum>
+		<website>https://github.com/ThePapaw/psmc</website>
+		<source>https://github.com/ThePapaw/psmc</source>
+		<video_guide></video_guide>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-04.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-05.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-06.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-07.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-08.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-09.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-10.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-11.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-12.jpg</screenshot>
+		</assets>		
+		<news>
+			[COLOR blue]• [/COLOR]Added some of the changes from the Sylvo v7.9.3 build.[CR][COLOR blue]• COLOR]Cosmetic fixes.[CR][COLOR blue]• [/COLOR] Please give credit to all the devolopers (Especially Mike) that have and do contribute to this skin!
+        </news>
+	</extension>
+</addon>
