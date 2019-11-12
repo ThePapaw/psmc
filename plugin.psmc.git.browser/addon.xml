@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.psmc.git.browser" version="1.0.1" name="PSMC's Git Browser" author="The Papaw">
+<addon id="plugin.psmc.git.browser" version="1.0.2" name="PSMC's Git Browser" author="The Papaw">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.requests" />
@@ -24,10 +24,7 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
+		<news>[B][I][COLOR FFFFFF00]- Cosmetic fixes[/COLOR][/I][/B][COLOR FF00D5FF][CR]- Initial release[/COLOR]
 		<news>
-[COLOR blue]• [/COLOR]Initial Release
-
-Please give credit to all the devolopers that have and does contribute to this addon!
-        </news>
     </extension>
 </addon>
