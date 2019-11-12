@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">9000</defaultcontrol>
+	<onload>ClearProperty(RunSkinShortcutsAfterInstall,Home)</onload>
 	<onload condition="!System.HasAddon(script.skinshortcuts)">SetProperty(MissingDependency,True,Home)</onload>
 	<onload condition="!System.HasAddon(script.skinshortcuts)">ActivateWindow(1126)</onload>
-	<onload condition="System.HasAddon(script.skinshortcuts)">RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;levels=2&amp;options=noGroups)</onload>
+	<onload condition="System.HasAddon(script.skinshortcuts) + String.IsEmpty(Window(Home).Property(RunSkinShortcutsAfterInstall))">RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;levels=2&amp;options=noGroups)</onload>
 	<onload condition="System.HasAddon(script.skinshortcuts) + !Skin.HasSetting(AskedDefaultBackground)">SetProperty(AskDefaultBackground,True,Home)</onload>
 	<onload condition="System.HasAddon(script.skinshortcuts) + !Skin.HasSetting(AskedDefaultBackground) + !Control.IsVisible(9999)">AlarmClock(Ask for Default Background,ActivateWindow(1126),00:02,silent)</onload>
+	<onload condition="System.HasAddon(script.skin.info.service) + String.IsEmpty(Window(home).Property(skininfos_daemon_running))">RunScript(script.skin.info.service)</onload>
 	<menucontrol>9051</menucontrol>
 	<controls>
 		<control type="button" id="64">
@@ -109,7 +111,7 @@
 			<label>$INFO[Container.ListItem.Art(albumartist.fanart19)]</label>
 			<label>$INFO[Container.ListItem.Art(albumartist.fanart20)]</label>
 		</control>
-		<!-- <control type="fadelabel" id="4411">
+		<control type="fadelabel" id="4411">
 			<top>-100</top>
 			<width>2560</width>
 			<height>0</height>
@@ -118,31 +120,16 @@
 			<randomize>true</randomize>
 			<resetonlabelchange>true</resetonlabelchange>
 			<include>FadeLabelTime</include>
+			<!-- All Movies -->
 			<label>$INFO[Container(9035).ListItem.Art(fanart)]</label>
+			<!-- All TV Shows -->
 			<label>$INFO[Container(9036).ListItem.Art(fanart)]</label>
+			<!-- All Album Artists -->
 			<label>$INFO[Container(9037).ListItem.Art(fanart)]</label>
+			<!-- All Music Videos -->
 			<label>$INFO[Container(9038).ListItem.Art(fanart)]</label>
-		</control> -->
-		<control type="wraplist" id="9035">
-			<include>ListAutoscrollTime</include>
-			<include>HiddenList</include>
-			<content sortby="random">videodb://movies/titles/</content>
 		</control>
-		<control type="wraplist" id="9036">
-			<include>ListAutoscrollTime</include>
-			<include>HiddenList</include>
-			<content sortby="random">videodb://tvshows/titles/</content>
-		</control>
-		<control type="wraplist" id="9037">
-			<include>ListAutoscrollTime</include>
-			<include>HiddenList</include>
-			<content sortby="random">musicdb://artists/?albumartistsonly=true</content>
-		</control>
-		<!-- <control type="wraplist" id="9038">
-			<include>ListAutoscrollTime</include>
-			<include>HiddenList</include>
-			<content sortby="random">videodb://musicvideos/titles/</content>
-		</control> -->
+		<include>HomeFanartLists</include>
 		<control type="button" id="9051">
 			<include>HiddenObject</include>
 			<onfocus condition="Player.HasMedia">ActivateWindow(playercontrols)</onfocus>
@@ -150,7 +137,7 @@
 		</control>
 		<include>CommonBackground</include>
 		<control type="group">
-			<visible>!Control.HasFocus(64)</visible>
+			<visible>!Integer.IsEqual(Container(9000).NumItems,0) + !Control.HasFocus(64)</visible>
 			<include>VisibleFadeAnimation</include>
 			<include condition="!Skin.HasSetting(Disable.Videoinfo)">NowPlayingVideoWidget</include>
 			<include condition="!Skin.HasSetting(Disable.Musicinfo)">NowPlayingMusicWidget</include>
@@ -169,12 +156,178 @@
 			<include condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical)">RSSFeedVerticalMenu</include>
 			<!-- Fanart Title Widget -->
 			<include condition="!Skin.HasSetting(Disable.FanartTitle)">FanartTitle</include>
+			
+			
+			
+			<!-- Start Animations -->
+			<control type="group">
+				<visible>!Skin.HasSetting(Disable.HomeAnimations)</visible>
+				<posy>275</posy>
+				<posx>-300</posx>
+				<left>100</left>
+												
+			<!-- Use this to space all the groups -->
+			<animation effect="" end="200" time="10000" delay="300" pulse="true" condition="true">Conditional</animation>
+			
+			<!-- Large Spider Animation -->
+			<control type="image">
+				<left>260</left>
+				<top>550</top>
+				<width>300</width>
+				<height>250</height>
+				<texture flipx="false" border="0">large_spider_right.gif</texture>
+				<animation effect="slide" start="0,0" end="2800" time="5000" delay="16000" reversible="false" loop="true" pulse="false" condition="true">Conditional</animation>
+			</control>
+			
+			<!-- Black Widow Animation -->
+			<control type="image">
+				<left>-260</left>
+				<top>660</top>
+				<width>1300</width>
+				<height>70</height>
+				<texture flipx="false" border="0">black_widow.gif</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="100,0" end="2800" time="6000" delay="15000" reversible="false" loop="true" condition="true">Conditional</animation>
+			</control>
+			
+			<!-- Spiderman Right Wall -->
+			<control type="image">
+				<left>240</left>
+				<top>-260</top>
+				<width>4000</width>
+				<height>200</height>
+				<texture flipx="false" border="0">spiderman_right_wall.gif</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="0,0" end="2800,0" time="8200" delay="2750" reversible="false" loop="true" condition="true">Conditional</animation>
+				<animation effect="slide" start="-50,0" end="2800,0" time="6000" delay="80000" reversible="false" pulse="false" condition="true">Conditional</animation>
+			</control>
+			
+			<!-- Swinging Spiderman Animation -->
+			<control type="image">
+				<left>-2000</left>
+				<top>-290</top>
+				<width>4000</width>
+				<height>200</height>
+				<texture flipx="false" border="0">swinging_spiderman.gif</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="2800" end="0,0" time="10000" delay="1000" reversible="false" loop="true" condition="true">Conditional</animation>
+				<animation effect="slide" start="-50,0" end="-50,0" time="2300" delay="1000" reversible="false" pulse="true" condition="true">Conditional</animation>
+			</control>
+			
+			<!-- Hanging Spider Animation -->
+			<control type="image">
+				<right>110</right>
+				<top>-240</top>
+				<width>85</width>
+				<height>85</height>
+				<texture flipx="false" border="0">hanging_spider.gif</texture>
+				<animation effect="fade" start="0%" end="100%" time="10000" delay="4000" reversible="false" loop="true" condition="true">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,0" time="6000" delay="100000" reversible="false" loop="false" condition="true">Conditional</animation>
+				<animation effect="fade" start="100%" end="0%" time="10000" delay="6000" reversible="false" loop="true" condition="true">Conditional</animation>
+			</control>
+			
+			<!-- Cobweb Spider 1 Center Animation -->
+			<control type="image">
+				<right>525</right>
+				<top>200</top>
+				<width>65</width>
+				<height>65</height>
+				<texture flipx="false" border="0">spider_right_up.gif</texture>
+				<animation effect="fade" start="0%" end="100%" time="10000" delay="2000" reversible="true" loop="true" condition="true">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,0" time="2000" delay="100000" reversible="false" loop="false" condition="true">Conditional</animation>
+			</control>
+			
+			<!-- Cobweb Spider Wrapping Center Animation -->
+			<control type="image">
+				<right>525</right>
+				<top>200</top>
+				<width>65</width>
+				<height>65</height>
+				<texture flipx="false" border="0">spider_wrapping.gif</texture>
+				<animation effect="fade" start="0%" end="100%" time="5000" delay="6000" reversible="true" loop="true" condition="true">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,0" time="2000" delay="100000" reversible="false" loop="false" condition="true">Conditional</animation>				
+			</control>
+			
+			<!-- Cobweb Spider Wrapping Animation -->
+			<control type="image">
+				<right>1360</right>
+				<top>145</top>
+				<width>165</width>
+				<height>165</height>
+				<texture flipx="false" border="0">spider_wrapping.gif</texture>
+				<animation effect="slide" start="0,0" end="0,0" time="2000" delay="100000" reversible="false" loop="false" condition="true">Conditional</animation>
+				<animation effect="fade" start="0%" end="100%" time="26000" delay="10" reversible="true" loop="true" condition="true">Conditional</animation>
+				<animation effect="fade" start="100%" end="0%" time="26000" delay="10" reversible="true" loop="true" condition="true">Conditional</animation>
+				
+			</control>
+			
+			<!-- Cobweb Spider 2 Top Right Animation -->
+			<control type="image">
+				<right>-300</right>
+				<top>-240</top>
+				<width>85</width>
+				<height>85</height>
+				<texture flipx="false" border="0">spider_left_down.gif</texture>
+				<animation effect="fade" start="0%" end="100%" time="10000" delay="8000" reversible="false" loop="true" condition="true">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,0" time="6000" delay="100000" reversible="false" loop="false" condition="true">Conditional</animation>
+				<animation effect="fade" start="100%" end="0%" time="10000" delay="8000" reversible="false" loop="true" condition="true">Conditional</animation>
+			</control>
+			
+			<!-- Cobweb Spider 3 Bottom Right Animation -->
+			<control type="image">
+				<right>-100</right>
+				<top>450</top>
+				<width>85</width>
+				<height>85</height>
+				<texture flipx="false" border="0">spider_left_up.gif</texture>
+				<animation effect="fade" start="0%" end="100%" time="14000" delay="6000" reversible="false" loop="true" condition="true">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,0" time="6000" delay="100000" reversible="false" loop="false" condition="true">Conditional</animation>
+				<animation effect="fade" start="100%" end="0%" time="14000" delay="6000" reversible="false" loop="true" condition="true">Conditional</animation>
+			</control>
+			
+			<!-- Cobweb Spider 4 Left Animation -->
+			<control type="image">
+				<right>1700</right>
+				<top>-140</top>
+				<width>100</width>
+				<height>75</height>
+				<texture flipx="false" border="0">black_widow_left.gif</texture>
+				<animation effect="fade" start="10%" end="100%" time="6000" delay="1000" reversible="false" loop="true" condition="true">Conditional</animation>
+				<animation effect="slide" start="500" end="-50,0" time="10000" delay="1000" reversible="false" pulse="false "loop="true"  tween="quadratic" condition="true">Conditional</animation>
+			</control>
+			
+			<!-- Dancing Spiderman Animation -->
+			<control type="image">
+				<right>1000</right>
+				<top>430</top>
+				<width>350</width>
+				<height>250</height>
+				<texture flipx="false" border="0">spiderman_dancing.gif</texture>
+				<animation effect="fade" start="0%" end="100%" time="10000" delay="4000" reversible="false" loop="false" condition="true">Conditional</animation>
+				<animation effect="fade" start="100%" end="0%" time="10000" delay="4000" reversible="false" loop="false" condition="true">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,0" time="6000" delay="100000" reversible="false" loop="false" condition="true">Conditional</animation>
+			</control>
+			
+			<control type="image">
+				<posx>1000</posx>
+				<posy>400</posy>
+				<top>-1040</top>
+				<width>420</width>
+				<height>2000</height>
+				<texture>bbc4.</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="-2220,400" end="2200,0" time="26000" delay="6000" loop="true" easing="out" tween="quadratic" condition="true">Conditional</animation>
+			</control>
+				
+			</control>	
+			<!-- End Animations -->
+									
 			<!-- Vertical SubMenu + System Bars -->
 			<include condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical)">VerticalSubMenu</include>
 			<include condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical)">VerticalMenuSystemBars</include>
 		</control>
 		<control type="group" id="9999">
-			<visible>Integer.IsEqual(Container(9000).NumItems,0) | Container(9000).IsUpdating</visible>
+			<visible>System.HasAddon(script.skinshortcuts) + [Integer.IsEqual(Container(9000).NumItems,0) | Container(9000).IsUpdating]</visible>
 			<control type="image">
 				<include>FullscreenDimensions</include>
 				<texture border="1">black.png</texture>
@@ -183,7 +336,6 @@
 				<control type="label">
 					<top>300</top>
 					<width>100%</width>
-					<height>100</height>
 					<align>center</align>
 					<font>font_skinversion</font>
 					<label>$LOCALIZE[31526]</label>
