@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<strings>
+  <string id="32000">Artwork locatie</string>
+  <string id="32001">Zoeken naar een gemeenschappelijke bovenliggende map inschakelen</string>
+  <string id="32020">    Set naam als een prefix gebruiken</string>
+  <string id="32002">Algemene artwork folder voor alle sets inschakelen</string>
+  <string id="32003">    Pad naar algemene artwork folder</string>
+  <string id="32019">    Onderliggende folder opnemen</string>
+  <string id="32004">Ja</string>
+  <string id="32005">Nee</string>
+  <string id="32006">Filmset artwork updaten</string>
+  <string id="32007">Filmset: </string>
+  <string id="32008">Update video database met laatste filmset artwork?</string>
+  <string id="32009">Compleet</string>
+  <string id="32010">Film: </string>
+  <string id="32011">Geen filmset gevonden! Voeg set tags toe aan nfo bestanden</string>
+  <string id="32012">Niets te doen! Schakel één of meer artwork bronnen in</string>
+  <string id="32013">Artwork gevonden voor %d sets, %d database updates gedaan</string>
+  <string id="32014">This script requires the remote control service to be enabled</string>
+  <string id="32015">Folders</string>
+  <string id="32016">Bestandsnamen</string>
+  <string id="32017">Thumbnail</string>
+  <string id="32018">Fanart</string>
+  <string id="32021">Logo</string>
+  <string id="32022">ClearArt</string>
+  <string id="32023">Banner</string>
+  <string id="32024">Poster</string>
+  <string id="32025">Enable forced database update</string>
+</strings>
