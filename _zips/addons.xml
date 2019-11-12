@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.program.psmcmaintenance"
 	     name="PSMC Maintenance"
-	     version="1.0.4"
+	     version="1.0.5"
 	     provider-name="The Papaw">
   <requires>
   	<import addon="xbmc.python" version="2.1.0"/>
@@ -28,7 +28,7 @@
 		<icon>icon.png</icon>
 		<fanart>fanart.jpg</fanart>
 	</assets>
-	<news>[B][I][COLOR FFFFFF00]Initial release[/COLOR][/I][/B]</news>
+	<news>[B][COLOR FFFFFF00]Version 1.0.5[/COLOR][/B][CR]- Cosmetic Fixes[CR][COLOR FFFFFF00]Version 1.0.4[/COLOR][CR]- Minor changes[CR][COLOR FFFFFF00]Version 1.0.3[/COLOR][CR]- Minor changes[CR][COLOR FFFFFF00]Version 1.0.2[/COLOR][CR]- Minor changes[CR][COLOR FFFFFF00]Version 1.0.1[/COLOR][CR]- Cosmetic Fixes[CR][COLOR FFFFFF00]Version 1.0.0[/COLOR][CR]- Initial release</news>
   </extension>
 </addon>
 
