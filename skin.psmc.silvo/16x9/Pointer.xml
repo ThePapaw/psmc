@@ -5,28 +5,28 @@
 			<description>Pointer</description>
 			<width>44</width>
 			<height>50</height>
-			<texture>pointer_arrow.png</texture>
+			<texture>pointer_arrow1.png</texture>
 			<visible>String.IsEmpty(Window(Home).Property(Enable.ScreenshotMode))</visible>
 		</control>
 		<control type="image" id="2">
 			<description>Pointer Focus</description>
-			<width>44</width>
-			<height>50</height>
-			<texture>pointer_arrow.png</texture>
+			<width>64</width>
+			<height>70</height>
+			<texture>pointer_arrow1.png</texture>
 			<visible>String.IsEmpty(Window(Home).Property(Enable.ScreenshotMode))</visible>
 		</control>
 		<control type="image" id="3">
 			<description>Pointer Drag</description>
-			<width>44</width>
-			<height>50</height>
-			<texture>pointer_arrow.png</texture>
+			<width>64</width>
+			<height>70</height>
+			<texture>pointer_arrow1.png</texture>
 			<visible>String.IsEmpty(Window(Home).Property(Enable.ScreenshotMode))</visible>
 		</control>
 		<control type="image" id="4">
 			<description>Pointer Click</description>
-			<width>44</width>
-			<height>50</height>
-			<texture>pointer_click.png</texture>
+			<width>84</width>
+			<height>100</height>
+			<texture>pointer_click1.png</texture>
 			<visible>String.IsEmpty(Window(Home).Property(Enable.ScreenshotMode))</visible>
 		</control>
 	</controls>
