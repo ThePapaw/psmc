@@ -24,7 +24,6 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[B][I][COLOR FFFFFF00]- Cosmetic fixes[/COLOR][/I][/B][COLOR FF00D5FF][CR]- Initial release[/COLOR]
-		<news>
+		<news>[COLOR FFFFFF00]- Cosmetic fixes[/COLOR][COLOR FF00D5FF][CR]- Initial release[/COLOR]</news>
     </extension>
 </addon>
