@@ -1,7 +1,0 @@
-The PSMC GitHub Browser allows you to search for and install addons/repositories made for PSMC/Kodi that has been developed and/or distributed through GitHub.
-
-The [B][COLOR red]Search by GitHub Username[/COLOR][/B] method will provide you with the best results! Using the other search methods may not work at all or return incorrect results. There may be many forks of popular addons, with different versions and the same names being distributed all over the place.
-
-IMPORTANT: You should always make sure you are installing the REPOSITORY. These filenames are always in the format repository.NAME-x-x-x.zip. Once you have installed the repository, you can then install the desired addon from that repository! This is the [B][COLOR red]ONLY[/COLOR][/B] way to ensure that you get all future updates of the addon.
-
-The Batch Installer is the secure alternative to "Kodi builds" you may wish to try!
