@@ -5,7 +5,7 @@
   </requires>
   <extension point="kodi.resource.uisounds"/>
   <extension point="kodi.addon.metadata">
-    <summary lang="en">GUI Sounds for the PSMC Super Mario Galaxy skin.</summary>
+    <summary lang="en">GUI Sounds for the PSMCs Super Mario Galaxy skin.</summary>
 	<description lang="en">These GUI Sounds were created for use with the PSMCs Super Mario Galaxy skin provided by The Papaw.</description>
     <platform>all</platform>
 	<license></license>
