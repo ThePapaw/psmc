@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="resource.uisounds.psmc-mario" version="1.0.0" name="PSMC Super Mario Galaxy UI Sounds" provider-name="The Papaw">
+<addon id="resource.uisounds.psmc-mario" version="1.0.1" name="PSMC Super Mario Galaxy UI Sounds" provider-name="The Papaw">
   <requires>
     <import addon="kodi.resource" version="1.0.0"/>
   </requires>
   <extension point="kodi.resource.uisounds"/>
   <extension point="kodi.addon.metadata">
-    <summary lang="en">UI Sounds for the PSMC Super Mario Galaxy skin.</summary>
-	<description lang="en">These UI Sounds were created for use with the PSMC Super Mario Galaxy skin.</description>
+    <summary lang="en">GUI Sounds for the PSMC Super Mario Galaxy skin.</summary>
+	<description lang="en">These GUI Sounds were created for use with the PSMCs Super Mario Galaxy skin provided by The Papaw.</description>
     <platform>all</platform>
 	<license></license>
 		<forum></forum>
@@ -17,10 +17,6 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>
-[COLOR blue]• [/COLOR]Created for the PSMC Super Mario Galaxy skin.
-
-Please give credit to all the devolopers that have and do contribute!
-        </news>
+		<news>[COLOR FFFFFF00]GUI Sounds for the PSMCs Super Mario Galaxy skin[/COLOR][COLOR FF00D5FF][CR]- License update[CR]- Initial release[/COLOR]</news>
   </extension>
 </addon>
