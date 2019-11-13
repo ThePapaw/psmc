@@ -1,0 +1,12 @@
+<colors>
+	<color name="white">FF4d4291</color>
+	<color name="white2">D0fed700</color>
+	<color name="grey">D0fed700</color>
+	<color name="grey2">D0fed700</color>
+	<color name="grey3">FFffffff</color>
+	<color name="grey4">FFBDBDBD</color>
+	<color name="black">FFFF0000</color>
+	<color name="blue">FFFF0000</color>
+	<color name="selected">FFFF0000</color>
+	<color name="invalid">FFFF0000</color>
+</colors>
