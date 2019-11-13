@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="resource.uisounds.psmc-scoobydoo" version="1.0.0" name="PSMC's Scooby-Doo GUI Sounds" provider-name="The Papaw">
+<addon id="resource.uisounds.psmc-scoobydoo" version="1.0.1" name="PSMC's Scooby-Doo GUI Sounds" provider-name="The Papaw">
   <requires>
     <import addon="kodi.resource" version="1.0.0"/>
   </requires>
@@ -17,6 +17,6 @@
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>Created for the PSMC's Scooby-Doo skin provided by The Papaw.[CR]- Initial release</news>
+		<news>Created for the PSMC's Scooby-Doo skin provided by The Papaw.[CR]- Initial release[CR]- Changed a couple sounds</news>
   </extension>
 </addon>
