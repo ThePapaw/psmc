@@ -143,7 +143,7 @@ Please give credit to all the devolopers that have and do contribute to this add
 	</extension>
 </addon>
 
-<addon id="resource.uisounds.psmc-batman" version="1.0.0" name="PSMC's Batman GUI Sounds" provider-name="The Papaw">
+<addon id="resource.uisounds.psmc-batman" version="1.0.1" name="PSMC's Batman GUI Sounds" provider-name="The Papaw">
   <requires>
     <import addon="kodi.resource" version="1.0.0"/>
   </requires>
