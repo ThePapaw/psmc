@@ -176,8 +176,8 @@
 				<width>400</width>
 				<height>300</height>
 				<texture border="0">ghost_right.gif</texture>
-				<animation effect="fade" start="0%" end="100%" time="8300" delay="4000" reversible="false" loop="true"pulse="false" condition="true">Conditional</animation>
-				<animation effect="fade" start="100%" end="0%" time="8300" delay="4000" reversible="false" loop="true"pulse="false" condition="true">Conditional</animation>
+				<animation effect="fade" start="0%" end="100%" time="8300" delay="16000" reversible="false" loop="true"pulse="false" condition="true">Conditional</animation>
+				<animation effect="fade" start="100%" end="0%" time="8300" delay="16000" reversible="false" loop="true"pulse="false" condition="true">Conditional</animation>
 			</control>
 			
 			<!-- Ghost Left Animation -->
@@ -187,8 +187,8 @@
 				<width>275</width>
 				<height>225</height>
 				<texture border="0">ghost_left.gif</texture>
-				<animation effect="fade" start="0%" end="100%" time="4300" delay="10000" reversible="false" loop="true"pulse="false" condition="true">Conditional</animation>
-				<animation effect="fade" start="100%" end="0%" time="4300" delay="10000" reversible="false" loop="true"pulse="false" condition="true">Conditional</animation>
+				<animation effect="fade" start="0%" end="100%" time="4300" delay="22000" reversible="false" loop="true"pulse="false" condition="true">Conditional</animation>
+				<animation effect="fade" start="100%" end="0%" time="4300" delay="22000" reversible="false" loop="true"pulse="false" condition="true">Conditional</animation>
 			</control>
 			
 			<!-- Spider Web -->
@@ -218,7 +218,7 @@
 				<height>360</height>
 				<texture flipx="false" border="0">mystery_machine.png</texture>
 				<aspectratio scalediffuse="false">keep</aspectratio>
-				<animation effect="slide" start="0,0" end="3600" time="6000" delay="18000" reversible="false" loop="true" condition="true">Conditional</animation>
+				<animation effect="slide" start="0,0" end="3600" time="6000" delay="30500" reversible="false" loop="true" condition="true">Conditional</animation>
 				<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="1000" reversible="false" pulse="false" condition="true">Conditional</animation>
 			</control>
 			
@@ -230,7 +230,7 @@
 				<height>280</height>
 				<texture flipx="false" border="0">shaggy_scooby.gif</texture>
 				<aspectratio scalediffuse="false">keep</aspectratio>
-				<animation effect="slide" start="2800" end="0,0" time="15000" delay="8000" reversible="false" loop="true" condition="true">Conditional</animation>
+				<animation effect="slide" start="2800" end="0,0" time="15000" delay="20000" reversible="false" loop="true" condition="true">Conditional</animation>
 			</control>
 				
 			<!-- Cloud Animation -->
@@ -241,7 +241,7 @@
 					<height>320</height>
 					<texture flipx="false" border="0">clouds.gif</texture>
 					<aspectratio scalediffuse="false">keep</aspectratio>
-					<animation effect="slide" start="2800" end="0,0" time="15000" delay="8000" reversible="false" loop="true" condition="true">Conditional</animation>
+					<animation effect="slide" start="2800" end="0,0" time="15000" delay="20000" reversible="false" loop="true" condition="true">Conditional</animation>
 				</control>
 								
 				<!-- Bats Toon Large Animation -->
@@ -252,8 +252,8 @@
 					<height>220</height>
 					<texture flipx="false" border="0">bat_toon.gif</texture>
 					<aspectratio scalediffuse="false">keep</aspectratio>
-					<animation effect="slide" start="0,0" end="2800" time="8000" delay="10000" reversible="false" loop="true" condition="true">Conditional</animation>
-					<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="10000" reversible="false" pulse="true" condition="true">Conditional</animation>
+					<animation effect="slide" start="0,0" end="2800" time="8000" delay="22000" reversible="false" loop="true" condition="true">Conditional</animation>
+					<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="22000" reversible="false" pulse="true" condition="true">Conditional</animation>
 				</control>
 								
 				<!-- Bats Toon 2 Large Animation -->
@@ -264,8 +264,8 @@
 					<height>180</height>
 					<texture flipx="false" border="0">bat_toon.gif</texture>
 					<aspectratio scalediffuse="false">keep</aspectratio>
-					<animation effect="slide" start="0,0" end="2800" time="6000" delay="10000" reversible="false" loop="true" condition="true">Conditional</animation>
-					<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="10000" reversible="false" pulse="true" condition="true">Conditional</animation>
+					<animation effect="slide" start="0,0" end="2800" time="6000" delay="22000" reversible="false" loop="true" condition="true">Conditional</animation>
+					<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="22000" reversible="false" pulse="true" condition="true">Conditional</animation>
 				</control>
 								
 				<!-- Bats Large Animation -->
@@ -276,8 +276,8 @@
 					<height>220</height>
 					<texture flipx="false" border="0">bat_toon.gif</texture>
 					<aspectratio scalediffuse="false">keep</aspectratio>
-					<animation effect="slide" start="0,0" end="2800" time="6900" delay="20000" reversible="false" loop="true" condition="true">Conditional</animation>
-					<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="10000" reversible="false" pulse="true" condition="true">Conditional</animation>
+					<animation effect="slide" start="0,0" end="2800" time="6900" delay="32000" reversible="false" loop="true" condition="true">Conditional</animation>
+					<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="23000" reversible="false" pulse="true" condition="true">Conditional</animation>
 				</control>
 				
 				<!-- Bat Small Animation -->
@@ -287,8 +287,8 @@
 					<width>150</width>
 					<height>100</height>
 					<texture flipx="false" border="0">bat_toon.gif</texture>
-					<animation effect="slide" start="0,0" end="2800" time="4900" delay="20000" reversible="false" loop="true" condition="true">Conditional</animation>
-					<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="10000" reversible="false" pulse="true" condition="true">Conditional</animation>
+					<animation effect="slide" start="0,0" end="2800" time="4900" delay="32000" reversible="false" loop="true" condition="true">Conditional</animation>
+					<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="22000" reversible="false" pulse="true" condition="true">Conditional</animation>
 				</control>
 				
 				<control type="image">
