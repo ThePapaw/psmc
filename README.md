@@ -23,9 +23,9 @@ The SKINS have been themed and modded for use with PSMC. They will also work wit
 • <B>PSMC's Spiderman Skin</B> - Updated and redesigned (includes animations & GUI sounds). <BR>
 • <B>PSMC's Man of Steel Skin</B> - Updated and redesigned (includes animations & GUI sounds)<BR>
 • <B>PSMC's Super Mario Galaxy Skin</B> - Updated and redesigned (includes animations & GUI sounds). <BR>
-• <B>PSMC's Batman Skin</B> - ***NEW SKIN THEME** (includes animations & GUI sounds). <BR>
-• <B>PSMC's Scooby-Doo Skin</B> - ***NEW SKIN THEME** (includes animations & GUI sounds). <BR>
-• <B>PSMC's Toy Story Skin</B> - ***NEW SKIN THEME** (includes animations & GUI sounds). <BR>
+• <B>PSMC's Batman Skin</B> - ***NEW SKIN** (includes animations & GUI sounds). <BR>
+• <B>PSMC's Scooby-Doo Skin</B> - ***NEW SKIN** (includes animations & GUI sounds). <BR>
+• <B>PSMC's Toy Story Skin</B> - ***[COLOR red]NEW SKIN THEME** (includes animations & GUI sounds). <BR>
 
 PSMC, the add-ons & skins are considered 3rd party, so please do not seek help from Kodi, the Kodi forums, etc..
 
