@@ -19,7 +19,7 @@ Features include: Auto delete of cache at start up (optional), notifies when pac
 
 • <B>The SKINS</B> have been themed and modded for use with PSMC using the AeonNox SiLVO skin unless otherwise stated. They will work with Kodi and other Kodi forks. All the PSMC skins have been COMPLETELY redesigned and updated using the AeonNox SiLVO (v7.9.4).
 
-Most of them now include <B>Home Screen Animation</B> (can be toggled off), additional Falling Seasons, GUI Sounds and other various changes.  (If you wish to use the included <B>GUI Sounds</B> for a particular skin, they will be downloaded automaticlly with the skin, but you will need to enable them in the system settings) The PSMC skins include:
+Most of them now include <B>Home Screen Animation</B> (can be toggled off), additional Falling Seasons, GUI Sounds and other various changes.  (If you wish to use the included <B>GUI Sounds</B> for a particular skin, they are installed with the skin, but you will need to Enable them in the media player's system settings) The PSMC skins include:
 
 • <B>PSMC's Silvo Skin</B> - A general Aeon Nox SiLVO skin themed for PSMC. <BR>
 • <B>PSMC's Spiderman Skin</B> - Updated and redesigned (includes animations & GUI sounds). <BR>
