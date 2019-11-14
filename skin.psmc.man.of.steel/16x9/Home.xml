@@ -176,8 +176,8 @@
 					<width>200</width>
 					<height>200</height>
 					<texture flipx="false" border="0">superman_move_left.png</texture>
-					<animation effect="slide" start="2800" end="0,0" time="65000" delay="45000" reversible="false" loop="false" condition="true">Conditional</animation>
-					<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="1000" reversible="false" condition="true">Conditional</animation>
+					<animation effect="slide" start="2800" end="0,0" time="65000" delay="57000" reversible="false" loop="false" condition="true">Conditional</animation>
+					<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="13000" reversible="false" condition="true">Conditional</animation>
 				</control>
 				
 			<!-- Floating Superman Stationary -->
@@ -187,9 +187,9 @@
 					<width>200</width>
 					<height>200</height>
 					<texture flipx="false" border="0">superman_move_left.png</texture>
-					<animation effect="slide" start="2800" end="2800" time="65000" delay="500" reversible="false" loop="false" condition="true">Conditional</animation>
-					<animation effect="slide" start="-50,0" end="-50,0" time="300" delay="1000" reversible="false" condition="true">Conditional</animation>
-					<animation effect="fade" start="100%" end="0%" time="4300" delay="45000" reversible="true" condition="true">Conditional</animation>
+					<animation effect="slide" start="2800" end="2800" time="65000" delay="12500" reversible="false" loop="false" condition="true">Conditional</animation>
+					<animation effect="slide" start="-50,0" end="-50,0" time="300" delay="23000" reversible="false" condition="true">Conditional</animation>
+					<animation effect="fade" start="100%" end="0%" time="4300" delay="57000" reversible="true" condition="true">Conditional</animation>
 				</control>
 				
 			<!-- Floating Superman 2 Stationary -->
@@ -199,9 +199,9 @@
 					<width>200</width>
 					<height>200</height>
 					<texture flipx="false" border="0">superman_move_left.png</texture>
-					<animation effect="slide" start="2800" end="2800" time="65000" delay="500" reversible="false" loop="false" condition="true">Conditional</animation>
-					<animation effect="slide" start="-50,0" end="-50,0" time="6300" delay="1000" reversible="false" condition="true">Conditional</animation>
-					<animation effect="fade" start="0%" end="100%" time="6300" delay="125000" reversible="true" condition="true">Conditional</animation>
+					<animation effect="slide" start="2800" end="2800" time="65000" delay="12500" reversible="false" loop="false" condition="true">Conditional</animation>
+					<animation effect="slide" start="-50,0" end="-50,0" time="6300" delay="13000" reversible="false" condition="true">Conditional</animation>
+					<animation effect="fade" start="0%" end="100%" time="6300" delay="137000" reversible="true" condition="true">Conditional</animation>
 				</control>
 				
 			<!-- Floating Superman Moving Right 1 Animation -->
@@ -211,8 +211,8 @@
 					<width>200</width>
 					<height>200</height>
 					<texture flipx="false" border="0">superman_move_right.png</texture>
-					<animation effect="slide" start="0,0" end="2800" time="45000" delay="90000" reversible="false" loop="false" condition="true">Conditional</animation>
-					<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="1000" reversible="false" condition="true">Conditional</animation>
+					<animation effect="slide" start="0,0" end="2800" time="45000" delay="110000" reversible="false" loop="false" condition="true">Conditional</animation>
+					<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="13000" reversible="false" condition="true">Conditional</animation>
 				</control>
 						
 			<!-- Bullet Moving Left 1 Animation -->
@@ -222,8 +222,8 @@
 					<width>50</width>
 					<height>50</height>
 					<texture flipx="false" border="0">bullet_left.png</texture>
-					<animation effect="slide" start="2800" end="0,0" time="12000" delay="1000" reversible="false" pulse="false" loop="false" condition="true">Conditional</animation>
-					<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="1000" reversible="false" condition="true">Conditional</animation>
+					<animation effect="slide" start="2800" end="0,0" time="12000" delay="13000" reversible="false" pulse="false" loop="false" condition="true">Conditional</animation>
+					<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="13000" reversible="false" condition="true">Conditional</animation>
 				</control>
 						
 			<!-- Bullet Moving Left 2 Animation -->
@@ -233,8 +233,8 @@
 					<width>50</width>
 					<height>50</height>
 					<texture flipx="false" border="0">bullet_left.png</texture>
-					<animation effect="slide" start="2800" end="0,0" time="12000" delay="1000" reversible="false" pulse="false" loop="false" condition="true">Conditional</animation>
-					<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="1000" reversible="false" condition="true">Conditional</animation>
+					<animation effect="slide" start="2800" end="0,0" time="12000" delay="13000" reversible="false" pulse="false" loop="false" condition="true">Conditional</animation>
+					<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="13000" reversible="false" condition="true">Conditional</animation>
 				</control>
 						
 			<!-- Bullet Moving Left 3 Animation -->
@@ -244,8 +244,8 @@
 					<width>50</width>
 					<height>50</height>
 					<texture flipx="false" border="0">bullet_left.png</texture>
-					<animation effect="slide" start="2800" end="0,0" time="12000" delay="1000" reversible="false" pulse="false" loop="false" condition="true">Conditional</animation>
-					<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="1000" reversible="false" condition="true">Conditional</animation>
+					<animation effect="slide" start="2800" end="0,0" time="12000" delay="13000" reversible="false" pulse="false" loop="false" condition="true">Conditional</animation>
+					<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="13000" reversible="false" condition="true">Conditional</animation>
 				</control>
 						
 			<!-- Flying Superman Moving Left Animation -->
@@ -255,8 +255,8 @@
 					<width>200</width>
 					<height>75</height>
 					<texture flipx="false" border="0">superman_flying_left.gif</texture>
-					<animation effect="slide" start="2800" end="0,0" time="10000" delay="1000" reversible="false" pulse="false" loop="false" condition="true">Conditional</animation>
-					<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="1000" reversible="false" condition="true">Conditional</animation>
+					<animation effect="slide" start="2800" end="0,0" time="10000" delay="13000" reversible="false" pulse="false" loop="false" condition="true">Conditional</animation>
+					<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="13000" reversible="false" condition="true">Conditional</animation>
 				</control>
 						
 			<!-- Locomotive Moving Right Animation -->
@@ -266,8 +266,8 @@
 					<width>400</width>
 					<height>200</height>
 					<texture flipx="false" border="0">locomotive_right.png</texture>
-					<animation effect="slide" start="0,0" end="2800" time="16000" delay="10000" reversible="true" loop="false" condition="true">Conditional</animation>
-					<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="1000" reversible="false" condition="true">Conditional</animation>
+					<animation effect="slide" start="0,0" end="2800" time="16000" delay="230000" reversible="true" loop="false" condition="true">Conditional</animation>
+					<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="13000" reversible="false" condition="true">Conditional</animation>
 				</control>
 						
 			<!-- Locomotive Moving Left Animation -->
@@ -277,8 +277,8 @@
 					<width>400</width>
 					<height>200</height>
 					<texture flipx="false" border="0">locomotive_right.png</texture>
-					<animation effect="slide" start="2600" end="-200,0" time="24000" delay="20000" reversible="false" loop="false" condition="true">Conditional</animation>
-					<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="1000" reversible="false" condition="true">Conditional</animation>
+					<animation effect="slide" start="2600" end="-200,0" time="24000" delay="32000" reversible="false" loop="false" condition="true">Conditional</animation>
+					<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="13000" reversible="false" condition="true">Conditional</animation>
 				</control>
 				
 			<!-- Flying Superman Locomotive Moving Left Animation -->
@@ -288,8 +288,8 @@
 					<width>200</width>
 					<height>75</height>
 					<texture flipx="false" border="0">superman_flying_left.gif</texture>
-					<animation effect="slide" start="2600" end="-200,0" time="24000" delay="20000" reversible="false" loop="false"  condition="true">Conditional</animation>
-					<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="1000" reversible="false" condition="true">Conditional</animation>
+					<animation effect="slide" start="2600" end="-200,0" time="24000" delay="32000" reversible="false" loop="false"  condition="true">Conditional</animation>
+					<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="13000" reversible="false" condition="true">Conditional</animation>
 				</control>
 				
 			<!-- Buzz_Woody Right Animation -->
@@ -300,20 +300,8 @@
 					<height>220</height>
 					<texture flipx="false" border="1">none.gif</texture>
 					<aspectratio scalediffuse="false">keep</aspectratio>
-					<animation effect="slide" start="0,0" end="2800" time="26000" delay="1000" reversible="false" loop="true" condition="true">Conditional</animation>
-					<animation effect="slide" start="-50,0" end="-50,0" time="26000" delay="1000" reversible="false" pulse="true" condition="true">Conditional</animation>
-				</control>
-				
-				<!-- Cloud Animation -->
-				<control type="image">
-					<left>-2900</left>
-					<top>-280</top>
-					<width>5200</width>
-					<height>320</height>
-					<texture flipx="false" border="1">clouds.gif</texture>
-					<aspectratio scalediffuse="false">keep</aspectratio>
-					<animation effect="slide" start="2800" end="0,0" time="13000" delay="2000" reversible="false" loop="true" condition="true">Conditional</animation>
-					<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="600" reversible="false" pulse="true" condition="true">Conditional</animation>
+					<animation effect="slide" start="0,0" end="2800" time="26000" delay="13000" reversible="false" loop="true" condition="true">Conditional</animation>
+					<animation effect="slide" start="-50,0" end="-50,0" time="26000" delay="13000" reversible="false" pulse="true" condition="true">Conditional</animation>
 				</control>
 				
 				<control type="image">
