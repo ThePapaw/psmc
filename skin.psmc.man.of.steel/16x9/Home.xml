@@ -217,7 +217,7 @@
 						
 			<!-- Bullet Moving Left 1 Animation -->
 				<control type="image">
-					<left>-560</left>
+					<left>-490</left>
 					<top>200</top>
 					<width>50</width>
 					<height>50</height>
@@ -228,7 +228,7 @@
 						
 			<!-- Bullet Moving Left 2 Animation -->
 				<control type="image">
-					<left>-590</left>
+					<left>-530</left>
 					<top>225</top>
 					<width>50</width>
 					<height>50</height>
@@ -239,7 +239,7 @@
 						
 			<!-- Bullet Moving Left 3 Animation -->
 				<control type="image">
-					<left>-560</left>
+					<left>-490</left>
 					<top>250</top>
 					<width>50</width>
 					<height>50</height>
