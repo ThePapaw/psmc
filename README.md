@@ -23,7 +23,7 @@ The SKINS have been themed and modded for use with PSMC. They will also work wit
 • <B>PSMC's Spiderman Skin</B> - Updated and redesigned (includes animations & GUI sounds). <BR>
 • <B>PSMC's Man of Steel Skin</B> - Updated and redesigned (includes animations & GUI sounds)<BR>
 • <B>PSMC's Super Mario Galaxy Skin</B> - Updated and redesigned (includes animations & GUI sounds). <BR>
-• <B>PSMC's Batman Skin</B> - ***NEW** (includes animations & GUI sounds). <BR>
+• <B>PSMC's Batman Skin</B> - ***<color=red>NEW</color>** (includes animations & GUI sounds). <BR>
 • <B>PSMC's Scooby-Doo Skin</B> - ***NEW** (includes animations & GUI sounds). <BR>
 • <B>PSMC's Toy Story Skin</B> - ***NEW** (includes animations & GUI sounds). <BR>
 
