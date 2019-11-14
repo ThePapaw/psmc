@@ -25,11 +25,11 @@ The SKINS have been themed and modded for use with PSMC. They will also work wit
 • <B>PSMC's Super Mario Galaxy Skin</B> - Updated and redesigned (includes animations & GUI sounds). <BR>
 
 *Newly Added Skins:* <BR>
-• <B>PSMC's Batman Skin</B> - ***NEW SKIN** (includes animations & GUI sounds). <BR>
-• <B>PSMC's Scooby-Doo Skin</B> - ***NEW SKIN** (includes animations & GUI sounds). <BR>
-• <B>PSMC's Toy Story Skin</B> - ***NEW SKIN** (includes animations & GUI sounds). <BR>
+• <B>PSMC's Batman Skin</B> - ***NEW Design** (includes animations & GUI sounds). <BR>
+• <B>PSMC's Scooby-Doo Skin</B> - ***NEW Design** (includes animations & GUI sounds). <BR>
+• <B>PSMC's Toy Story Skin</B> - ***NEW Design** (includes animations & GUI sounds). <BR>
 
-PSMC, the add-ons & skins are considered 3rd party, so please do not seek help from Kodi, the Kodi forums, etc..
+PSMC, the Add-ons & Skins hosted here are considered 3rd party, so please do not seek help from Kodi, the Kodi forums, etc..
 
 If you have issues, please post them here. All items are still being developed and should only be used for testing purposes.
 
