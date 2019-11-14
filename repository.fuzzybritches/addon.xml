@@ -16,27 +16,20 @@
         </dir>			
         </extension>
         <extension point="xbmc.addon.metadata">
-            <summary>The Official Repo for the Fuzzy Britches Addon for Kodi</summary>
-            <description>This is the repository for the "Official" Fuzzy Britches addon for Kodi.</description>
+            <summary>The Official Fuzzy Britches Repository.</summary>
+            <description>This is the  "Official" repository for the Fuzzy Britches addon for Kodi.[CR]- [COLOR yellow]New Animated skins added![/COLOR]</description>
             <platform>all</platform>
             <genre>movies,usa</genre>
-			<license></license>
+			<license>CC BY-NC-SA 4.0</license>
 			<forum></forum>
 			<website>https://github.com/ThePapaw/fuzzybritches</website>
 			<source>https://github.com/ThePapaw/fuzzybritches</source>
 			<video_guide></video_guide>
 		<assets>
-			<icon>icon.gif</icon>
 			<icon>icon.png</icon>
+			<icon>icon.gif</icon>
 			<fanart>fanart.jpg</fanart>
-			<screenshot>resources/media/screenshot-01.jpg</screenshot>
-			<screenshot>resources/media/screenshot-02.jpg</screenshot>
-			<screenshot>resources/media/screenshot-03.jpg</screenshot>
 		</assets>
-		<news>
-[COLOR blue]• [/COLOR]Cosmetic Fixes
-
-Please give credit to all the devolopers that have and do contribute to this addon!
-        </news>
+		<news>[COLOR yellow]All Skins updated and completely redesigned[/COLOR][CR]- [COLOR yellow]NEW Animated skins added![/COLOR]</news>
         </extension>
     </addon>
