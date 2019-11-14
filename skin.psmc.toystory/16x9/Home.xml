@@ -176,7 +176,7 @@
 					<width>200</width>
 					<height>125</height>
 					<texture flipx="false" border="0">buzz_woody_right.gif</texture>
-					<animation effect="slide" start="0,0" end="2800" time="6000" delay="18000" reversible="false" loop="true"  pulse="false"condition="true">Conditional</animation>
+					<animation effect="slide" start="0,0" end="2800" time="6000" delay="30000" reversible="false" loop="true"  pulse="false"condition="true">Conditional</animation>
 				</control>
 				
 				<!-- Buzz Flying Left Animation -->
@@ -186,7 +186,7 @@
 					<width>150</width>
 					<height>100</height>
 					<texture flipx="false" border="0">buzz_flying_left.gif</texture>
-					<animation effect="slide" start="2800" end="0,0" time="8000" delay="6000" reversible="false" loop="true"  pulse="false"condition="true">Conditional</animation>
+					<animation effect="slide" start="2800" end="0,0" time="8000" delay="18000" reversible="false" loop="true"  pulse="false"condition="true">Conditional</animation>
 				</control>
 				
 				<!-- Sporky Running Left Animation -->
@@ -196,7 +196,7 @@
 				<width>200</width>
 				<height>200</height>
 				<texture flipx="false" border="0">sporky_left.gif</texture>
-				<animation effect="slide" start="2800" end="0,0" time="12000" delay="2000" reversible="false" loop="true" condition="true">Conditional</animation>
+				<animation effect="slide" start="2800" end="0,0" time="12000" delay="14000" reversible="false" loop="true" condition="true">Conditional</animation>
 			</control>
 						
 			<!-- Trex Running Left Animation -->
@@ -206,7 +206,7 @@
 				<width>200</width>
 				<height>200</height>
 				<texture flipx="false" border="0">trex_left.gif</texture>
-				<animation effect="slide" start="2800" end="0,0" time="12000" delay="2000" reversible="false" loop="true" condition="true">Conditional</animation>
+				<animation effect="slide" start="2800" end="0,0" time="12000" delay="14000" reversible="false" loop="true" condition="true">Conditional</animation>
 			</control>
 				
 				<control type="image">
@@ -217,7 +217,7 @@
 					<height>2000</height>
 					<texture>bbc4.</texture>
 					<aspectratio scalediffuse="false">keep</aspectratio>
-					<animation effect="slide" start="-2220,400" end="2200,0" time="26000" delay="6000" loop="true" easing="out" tween="quadratic" condition="true">Conditional</animation>
+					<animation effect="slide" start="-2220,400" end="2200,0" time="26000" delay="18000" loop="true" easing="out" tween="quadratic" condition="true">Conditional</animation>
 				</control>
 			</control>	
 			<!-- End Animations -->
