@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">9000</defaultcontrol>
+	<onload>ClearProperty(RunSkinShortcutsAfterInstall,Home)</onload>
 	<onload condition="!System.HasAddon(script.skinshortcuts)">SetProperty(MissingDependency,True,Home)</onload>
 	<onload condition="!System.HasAddon(script.skinshortcuts)">ActivateWindow(1126)</onload>
-	<onload condition="System.HasAddon(script.skinshortcuts)">RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;levels=2&amp;options=noGroups)</onload>
+	<onload condition="System.HasAddon(script.skinshortcuts) + String.IsEmpty(Window(Home).Property(RunSkinShortcutsAfterInstall))">RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;levels=2&amp;options=noGroups)</onload>
 	<onload condition="System.HasAddon(script.skinshortcuts) + !Skin.HasSetting(AskedDefaultBackground)">SetProperty(AskDefaultBackground,True,Home)</onload>
 	<onload condition="System.HasAddon(script.skinshortcuts) + !Skin.HasSetting(AskedDefaultBackground) + !Control.IsVisible(9999)">AlarmClock(Ask for Default Background,ActivateWindow(1126),00:02,silent)</onload>
+	<onload condition="System.HasAddon(script.skin.info.service) + String.IsEmpty(Window(home).Property(skininfos_daemon_running))">RunScript(script.skin.info.service)</onload>
 	<menucontrol>9051</menucontrol>
 	<controls>
 		<control type="button" id="64">
@@ -109,7 +111,7 @@
 			<label>$INFO[Container.ListItem.Art(albumartist.fanart19)]</label>
 			<label>$INFO[Container.ListItem.Art(albumartist.fanart20)]</label>
 		</control>
-		<!-- <control type="fadelabel" id="4411">
+		<control type="fadelabel" id="4411">
 			<top>-100</top>
 			<width>2560</width>
 			<height>0</height>
@@ -118,31 +120,16 @@
 			<randomize>true</randomize>
 			<resetonlabelchange>true</resetonlabelchange>
 			<include>FadeLabelTime</include>
+			<!-- All Movies -->
 			<label>$INFO[Container(9035).ListItem.Art(fanart)]</label>
+			<!-- All TV Shows -->
 			<label>$INFO[Container(9036).ListItem.Art(fanart)]</label>
+			<!-- All Album Artists -->
 			<label>$INFO[Container(9037).ListItem.Art(fanart)]</label>
+			<!-- All Music Videos -->
 			<label>$INFO[Container(9038).ListItem.Art(fanart)]</label>
-		</control> -->
-		<control type="wraplist" id="9035">
-			<include>ListAutoscrollTime</include>
-			<include>HiddenList</include>
-			<content sortby="random">videodb://movies/titles/</content>
 		</control>
-		<control type="wraplist" id="9036">
-			<include>ListAutoscrollTime</include>
-			<include>HiddenList</include>
-			<content sortby="random">videodb://tvshows/titles/</content>
-		</control>
-		<control type="wraplist" id="9037">
-			<include>ListAutoscrollTime</include>
-			<include>HiddenList</include>
-			<content sortby="random">musicdb://artists/?albumartistsonly=true</content>
-		</control>
-		<!-- <control type="wraplist" id="9038">
-			<include>ListAutoscrollTime</include>
-			<include>HiddenList</include>
-			<content sortby="random">videodb://musicvideos/titles/</content>
-		</control> -->
+		<include>HomeFanartLists</include>
 		<control type="button" id="9051">
 			<include>HiddenObject</include>
 			<onfocus condition="Player.HasMedia">ActivateWindow(playercontrols)</onfocus>
@@ -150,7 +137,7 @@
 		</control>
 		<include>CommonBackground</include>
 		<control type="group">
-			<visible>!Control.HasFocus(64)</visible>
+			<visible>!Integer.IsEqual(Container(9000).NumItems,0) + !Control.HasFocus(64)</visible>
 			<include>VisibleFadeAnimation</include>
 			<include condition="!Skin.HasSetting(Disable.Videoinfo)">NowPlayingVideoWidget</include>
 			<include condition="!Skin.HasSetting(Disable.Musicinfo)">NowPlayingMusicWidget</include>
@@ -169,12 +156,245 @@
 			<include condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical)">RSSFeedVerticalMenu</include>
 			<!-- Fanart Title Widget -->
 			<include condition="!Skin.HasSetting(Disable.FanartTitle)">FanartTitle</include>
+			
+			
+			
+			<!-- Start Animations -->
+			<control type="group">
+				<visible>!Skin.HasSetting(Disable.HomeAnimations)</visible>
+				<posy>275</posy>
+				<posx>-300</posx>
+				<left>100</left>
+												
+			<!-- Use this to space all the groups -->
+			<animation effect="" end="200" time="10000" delay="300" pulse="true" condition="true">Conditional</animation>
+			
+			
+			<!-- Mario Running Right 1 Animation -->
+			<control type="image">
+				<left>-250</left>
+				<top>465</top>
+				<width>200</width>
+				<height>200</height>
+				<texture flipx="false" border="0">mario_running_right.gif</texture>
+				<animation effect="slide" start="0,0" end="2800" time="7000" delay="1000" reversible="false" loop="false" condition="true">Conditional</animation>
+			</control>
+			
+			<!-- Mario Coin 1 Animation -->
+			<control type="image">
+				<left></left>
+				<top>560</top>
+				<width>100</width>
+				<height>100</height>
+				<texture flipx="false" border="0">mario_coin.gif</texture>
+				<animation effect="slide" start="0,0" end="2800" time="7000" delay="1000" reversible="false" loop="false" condition="true">Conditional</animation>
+			</control>
+			
+			<!-- Mario Running Left 1 Animation -->
+			<control type="image">
+				<left>-250</left>
+				<top>465</top>
+				<width>200</width>
+				<height>200</height>
+				<texture flipx="false" border="0">mario_running_left.gif</texture>
+				<animation effect="slide" start="2800" end="0,0" time="7000" delay="8000" reversible="false" loop="false" condition="true">Conditional</animation>
+			</control>
+						
+			<!-- Bowser Running Left 1 Animation -->
+			<control type="image">
+				<left></left>
+				<top>460</top>
+				<width>470</width>
+				<height>250</height>
+				<texture flipx="false" border="0">bowser_running_left.gif</texture>
+				<animation effect="slide" start="2800" end="0,0" time="7000" delay="8000" reversible="false" loop="false" condition="true">Conditional</animation>
+			</control>
+			
+			<!-- Mario Running Right 2 Animation -->
+			<control type="image">
+				<left>-250</left>
+				<top>465</top>
+				<width>200</width>
+				<height>200</height>
+				<texture flipx="false" border="0">mario_running_right.gif</texture>
+				<animation effect="slide" start="0,0" end="2800" time="7000" delay="15000" reversible="false" loop="false" condition="true">Conditional</animation>
+			</control>
+			
+			<!-- Mario Coin 2 Animation -->
+			<control type="image">
+				<left></left>
+				<top>560</top>
+				<width>100</width>
+				<height>100</height>
+				<texture flipx="false" border="0">mario_coin.gif</texture>
+				<animation effect="slide" start="0,0" end="2800" time="7000" delay="15000" reversible="false" loop="false" condition="true">Conditional</animation>
+			</control>
+			
+			<!-- Mario Running Left 2 Animation -->
+			<control type="image">
+				<left>-300</left>
+				<top>465</top>
+				<width>200</width>
+				<height>200</height>
+				<texture flipx="false" border="0">mario_running_left.gif</texture>
+				<animation effect="slide" start="2800" end="0,0" time="7000" delay="20000" reversible="false" loop="false" condition="true">Conditional</animation>
+			</control>
+						
+			<!-- Bowser Running Left 2 Animation -->
+			<control type="image">
+				<left></left>
+				<top>460</top>
+				<width>470</width>
+				<height>250</height>
+				<texture flipx="false" border="0">bowser_running_left.gif</texture>
+				<animation effect="slide" start="2800" end="0,0" time="7000" delay="20000" reversible="false" loop="false" condition="true">Conditional</animation>
+			</control>
+			
+			<!-- Turtle Sliding Right 1 Animation -->
+			<control type="image">
+				<left>-100</left>
+				<top>570</top>
+				<width>100</width>
+				<height>90</height>
+				<texture flipx="false" border="0">turtle_green.png</texture>
+				<animation effect="slide" start="0,0" end="2800,0" time="7000" delay="27000" reversible="false" loop="false" condition="true">Conditional</animation>
+			</control>
+			
+			<!-- Turtle Sliding Left 2 Animation -->
+			<control type="image">
+				<left>-175</left>
+				<top>570</top>
+				<width>110</width>
+				<height>100</height>
+				<texture flipx="false" border="0">turtle_red.png</texture>
+				<animation effect="slide" start="0,0" end="2800,0" time="7000" delay="27000" reversible="false" loop="false" condition="true">Conditional</animation>
+			</control>
+						
+			<!-- Bowser Running Right Animation -->
+			<control type="image">
+				<left></left>
+				<top>460</top>
+				<width>470</width>
+				<height>250</height>
+				<texture flipx="false" border="0">bowser_running_right.gif</texture>
+				<animation effect="slide" start="0,0" end="2800,0" time="7000" delay="27000" reversible="false" loop="false" condition="true">Conditional</animation>
+			</control>
+			
+			<!-- Mario Running Right 3 Animation -->
+			<control type="image">
+				<left>-360</left>
+				<top>465</top>
+				<width>200</width>
+				<height>200</height>
+				<texture flipx="false" border="0">mario_running_right.gif</texture>
+				<animation effect="slide" start="0,0" end="2800" time="7000" delay="27000" reversible="false" loop="false" condition="true">Conditional</animation>
+			</control>
+			
+			<!-- Mario Plant Animation -->
+			<control type="image">
+				<right>-550</right>
+				<top>-425</top>
+				<width>400</width>
+				<height>700</height>				
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<texture flipx="false" border="0">mario_plant_right.gif</texture>
+				<animation effect="fade" start="0%" end="100%" time="6000" delay="45000" reversible="false" loop="false" condition="true">Conditional</animation>
+			</control>
+			
+			<!-- Mario Bottom Right Pipe -->
+			<control type="image">
+				<right>-430</right>
+				<top>200</top>
+				<width>400</width>
+				<height>750</height>				
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<texture flipx="false" border="0">mario_right_pipe.png</texture>
+			</control>
+			
+			<!-- Mario Bottom Left Pipe -->
+			<control type="image">
+				<right>1150</right>
+				<top>200</top>
+				<width>400</width>
+				<height>750</height>				
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<texture flipx="false" border="0">left_pipe.png</texture>
+			</control>
+			
+			<!-- Mario Left Wall Animation -->
+			<control type="image">
+				<right>1375</right>
+				<top>-175</top>
+				<width>150</width>
+				<height>200</height>
+				<texture flipx="false" border="0">mario_left_wall.gif</texture>
+				<animation effect="fade" start="0%" end="100%" time="6000" delay="40000" reversible="false" loop="false" condition="true">Conditional</animation>
+			</control>
+			
+			<!-- Mario Top Right Wall Pipe -->
+			<control type="image">
+				<right>-405</right>
+				<top>-175</top>
+				<width>150</width>
+				<height>200</height>
+				<texture flipx="false" border="0">mario_right_pipe.png</texture>
+				<animation effect="fade" start="0%" end="100%" time="8000" delay="14000" reversible="false" loop="false" condition="true">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,0" time="6000" delay="14000" reversible="false" loop="false" condition="true">Conditional</animation>
+			</control>
+			
+			<!-- Mario Top Left Wall Pipe -->
+			<control type="image">
+				<right>1375</right>
+				<top>-175</top>
+				<width>150</width>
+				<height>200</height>
+				<texture flipx="false" border="0">mario_left_pipe.png</texture>
+				<animation effect="fade" start="0%" end="100%" time="8000" delay="10000" reversible="false" loop="false" condition="true">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,0" time="6000" delay="10000" reversible="false" loop="false" condition="true">Conditional</animation>
+			</control>
+			
+			<!-- Mario Ceiling Princess Animation -->
+			<control type="image">
+				<right>525</right>
+				<top>-320</top>
+				<width>165</width>
+				<height>210</height>
+				<texture flipx="false" border="0">mario_princess.gif</texture>
+				<animation effect="fade" start="0%" end="100%" time="6000" delay="34000" reversible="false" loop="false" condition="true">Conditional</animation>
+			</control>
+			
+			<!-- Mario Ceiling Pipe -->
+			<control type="image">
+				<right>485</right>
+				<top>-275</top>
+				<width>230</width>
+				<height>150</height>
+				<texture flipx="false" border="0">mario_ceiling_pipe.png</texture>
+				<animation effect="fade" start="0%" end="100%" time="8000" delay="6000" reversible="false" loop="false" condition="true">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,0" time="6000" delay="100000" reversible="false" loop="false" condition="true">Conditional</animation>
+			</control>
+			
+							
+				<control type="image">
+			<posx>1000</posx>
+			<posy>400</posy>
+			<top>-1040</top>
+			<width>420</width>
+			<height>2000</height>
+			<texture>bbc4.</texture>
+			<aspectratio scalediffuse="false">keep</aspectratio>
+			<animation effect="slide" start="-2220,400" end="2200,0" time="26000" delay="6000" loop="true" easing="out" tween="quadratic" condition="true">Conditional</animation>
+				</control>
+				
+			</control>	
+			<!-- End Animations -->
+									
 			<!-- Vertical SubMenu + System Bars -->
 			<include condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical)">VerticalSubMenu</include>
 			<include condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical)">VerticalMenuSystemBars</include>
 		</control>
 		<control type="group" id="9999">
-			<visible>Integer.IsEqual(Container(9000).NumItems,0) | Container(9000).IsUpdating</visible>
+			<visible>System.HasAddon(script.skinshortcuts) + [Integer.IsEqual(Container(9000).NumItems,0) | Container(9000).IsUpdating]</visible>
 			<control type="image">
 				<include>FullscreenDimensions</include>
 				<texture border="1">black.png</texture>
@@ -183,7 +403,6 @@
 				<control type="label">
 					<top>300</top>
 					<width>100%</width>
-					<height>100</height>
 					<align>center</align>
 					<font>font_skinversion</font>
 					<label>$LOCALIZE[31526]</label>

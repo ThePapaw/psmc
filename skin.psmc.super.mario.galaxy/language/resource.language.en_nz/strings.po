@@ -1,7 +1,7 @@
 # Kodi Media Center language file
-# Addon Name: PSMC's Super Mario Galaxy Skin
-# Addon id: skin.psmc.super.mario.galaxy
-# Addon Provider: The Papaw
+# Addon Name: Aeon Nox: SiLVO
+# Addon id: skin.aeon.nox.silvo
+# Addon Provider: SiLVO
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
@@ -1309,8 +1309,8 @@ msgid "Taking a Screenshot"
 msgstr "Taking a Screenshot"
 
 msgctxt "#31330"
-msgid "This script is not available in the default Kodi repositiory. The PSMC repo is needed to use the click to install feature, without it this script must be installed manually."
-msgstr "This script is not available in the default Kodi repositiory. The PSMC repo is needed to use the click to install feature, without it this script must be installed manually."
+msgid "This script is not available in the default Kodi repositiory. The Aeon Nox SiLVO repo is needed to use the click to install feature, without it this script must be installed manually."
+msgstr "This script is not available in the default Kodi repositiory. The Aeon Nox SiLVO repo is needed to use the click to install feature, without it this script must be installed manually."
 
 msgctxt "#31331"
 msgid "Installed"
@@ -1357,8 +1357,8 @@ msgid "NOT SUPPORTED"
 msgstr "NOT SUPPORTED"
 
 msgctxt "#31342"
-msgid "Display the status of some add-ons supported in PSMC's Super Mario Galaxy. Select an add-on to install or open its settings if already installed."
-msgstr "Display the status of some add-ons supported in PSMC's Super Mario Galaxy. Select an add-on to install or open its settings if already installed."
+msgid "Display the status of some add-ons supported in Aeon Nox SiLVO. Select an add-on to install or open its settings if already installed."
+msgstr "Display the status of some add-ons supported in Aeon Nox SiLVO. Select an add-on to install or open its settings if already installed."
 
 msgctxt "#31343"
 msgid "Display background name"
@@ -2285,8 +2285,8 @@ msgid "Use this setting to override the location of the Trailers button when usi
 msgstr "Use this setting to override the location of the Trailers button when using the Default setting for the CinemaVision button."
 
 msgctxt "#31855"
-msgid "Enable this setting to replace the Default info with online info provided by the ExtendedInfo script. You can use the PSMC's Super Mario Galaxy version or the Defaults provided by the script if you enable the option in the settings for ExtendedInfo."
-msgstr "Enable this setting to replace the Default info with online info provided by the ExtendedInfo script. You can use the PSMC's Super Mario Galaxy version or the Defaults provided by the script if you enable the option in the settings for ExtendedInfo."
+msgid "Enable this setting to replace the Default info with online info provided by the ExtendedInfo script. You can use the Aeon Nox SiLVO version or the Defaults provided by the script if you enable the option in the settings for ExtendedInfo."
+msgstr "Enable this setting to replace the Default info with online info provided by the ExtendedInfo script. You can use the Aeon Nox SiLVO version or the Defaults provided by the script if you enable the option in the settings for ExtendedInfo."
 
 msgctxt "#31856"
 msgid "Use this to select the multi-fanart cycle speed skin wide."

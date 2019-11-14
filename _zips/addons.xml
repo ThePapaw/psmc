@@ -302,7 +302,7 @@ Please give credit to all the devolopers that have and do contribute to this add
 		<summary>Movie Set Artwork Automator</summary>
 		<description>This addon will automatically set artwork for all movie sets in your library.
 
-			The addon can search for common parent folders of movies within a set or you can specify a single artwork folder containing artwork for all your movie sets (eg &lt;set name&gt;-poster.jpg).</description>
+			The addon can search for common parent folders of movies within a set or you can specify a single artwork folder containing artwork for all your movie sets (eg &amp;lt;set name&amp;gt;-poster.jpg).</description>
 		</extension>
 	</addon>
 
@@ -537,13 +537,12 @@ Please give credit to all the devolopers that have and do contribute to this add
 	</extension>
 </addon>
 
-<addon id="skin.psmc.super.mario.galaxy" version="2.0.0" name="PSMC Super Mario Galaxy Skin" provider-name="The Papaw">
+<addon id="skin.psmc.super.mario.galaxy" version="2.0.794" name="PSMC's Super Mario Skin" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
 		<import addon="plugin.program.autocompletion" version="1.0.1" />
 		<import addon="service.library.data.provider" version="0.3.2" />
-		<import addon="script.grab.fanart" version="0.14.1" />
 		<import addon="resource.images.studios.coloured" version="0.0.18" />
 		<import addon="resource.images.recordlabels.white" version="0.0.1" />
 		<import addon="resource.uisounds.psmc-mario" version="1.0.0" />
@@ -552,17 +551,17 @@ Please give credit to all the devolopers that have and do contribute to this add
 		<res width="1920" height="1080" aspect="16:9" default="true" folder="16x9" />
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Bringing The Super Mario Galaxy Skin to PSMC/Kodi 18.</summary>
-		<description lang="en">Bringing The Super Mario Galaxy skin to PSMC/Kodi 18. [B][COLOR red]IF YOU WISH TO USE THE MARIO GUI SOUNDS, YOU NEED TO ENABLE THEM IN THE SYSTEM SETTINGS![/COLOR][/B] Please give credit to Mike, The Papaw and all others that contributed. [B]Make sure to download the GUI sounds for the skin![/B]</description>
+		<summary lang="en">[COLOR FFFFFF00]COMPLETELEY[/COLOR] redesigned. Skin updated and modded. Added home screen animation [I][COLOR FFE67300]{can be disabled in settings}[/COLOR][/I], new features and views.</summary>
+		<description lang="en">[COLOR FFFFFF00]COMPLETELEY[/COLOR] redesigned. Skin updated and modded. Added home screen animation [COLOR FFE67300] which can be disabled in settings[/COLOR], new features and views. Created for use with PSMC [I]{a Kodi fork}[/I]. Please give credit to Mike, The Papaw and all others that have contributed.[I][COLOR FFE67300] You will need to enable the Super Mario GUI SOUNDS in the System Settings if you wish to use them.[/COLOR][/I] [I](themed from AeonNoxSilvo)[/I] </description>
 		<platform>all</platform>
-		<license></license>
+		<license>CC BY-NC-SA 4.0</license>
 		<forum></forum>
 		<website>https://github.com/ThePapaw/psmc</website>
 		<source>https://github.com/ThePapaw/psmc</source>
 		<video_guide></video_guide>
 		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
 			<screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
 			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
 			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
@@ -570,13 +569,13 @@ Please give credit to all the devolopers that have and do contribute to this add
 			<screenshot>resources/screenshots/screenshot-05.jpg</screenshot>
 			<screenshot>resources/screenshots/screenshot-06.jpg</screenshot>
 			<screenshot>resources/screenshots/screenshot-07.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-08.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-09.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-10.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-11.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-12.jpg</screenshot>
 		</assets>
-		<news>
-[COLOR blue]• [/COLOR]Added GUI Sounds (Disabled by default)
-[COLOR blue]• [/COLOR][B][COLOR red]IF YOU WISH TO USE THE MARIO GUI SOUNDS, YOU NEED TO ENABLE THEM IN THE SYSTEM SETTINGS![/COLOR][/B]
-
-Please give credit to all the devolopers that have and do contribute to this skin!
-        </news>
+		<news>[B][I][COLOR FFFFFF00]Skin updated, modded and Completely Redesigned[/COLOR][/I][/B][CR][COLOR FF00D5FF]- Added NEW Home Screen Animation[/COLOR][CR][COLOR FF00D5FF]- Additional Falling Seasons[/COLOR][CR][COLOR FFE67300]Included with v7.9.4 Silvo update by Mike[/COLOR][CR]- Fix Live TV OSD button focus when unable to pause[CR]- Fixes to DialogSelect[CR]- Fix no items in Ask Default Background selection on new installs[CR]- Drop Skin Helper Widgets for favorites and use favourites:// path instead[CR]- Update and add some missing icons[CR]- Fix Netherlands rating classification images[CR]- Update and re-design PVR Group Manager[CR]- Fix Menu resetting to defaults[CR]- Add TMDb search from DialogVideoInfo Extras on Home screen[CR]- Fix missing icon/poster in SlimList[CR]- PVR updates and additions[CR]- Updated language files from Transifex[CR]- Revert removal of bottom OSD button position[CR]- Add option to use Skin Info Service for Movie Set Plots in Video Info[CR]- Fix default letter jump appearing on side menu settings button focus[CR]- Add "fixed" option for video RightList[CR]- Tweak Vertical Menu fixed behaviour to match Horizontal[CR]- Rework Live TV guide with icons from Estuary and re-add channel logos[CR]- Add disable to submenu items in Main Menu Customizer[CR]- Add information setting to SlimList[CR]- Remove script.extendedinfo and add script.embuary.info support[CR]- Add DialogVideoInfo for sets[CR]- Add some v19 skin engine changes[CR]- Use script.embuary.helper for Similiar and Directer movies in DialogVideoInfo[CR]- Add missing PVR label to Widget info[CR]- Add Glow Bars and System Glow Bars to color customizer[CR]- Add Jump to Letter bar to Video library using script.embuary.helper[CR]- Fix playlist backgrounds for Main Menu not following user set rotation speed[CR]- Redesign DialogExtendedProgressBar and DialogVolumeBar[CR]- Make OSD buttons on top default and remove option[CR]- Redesign PlayerProcessInfo[CR]- Clean up Main Menu and Widget Customizers[CR]- Fill empty space with more info in some views[CR][CR][B]All updates may contain various changes and/or improvements[/B][CR][I][COLOR FFFF0202]Please give credit to all the devolopers (Especially Mike) that has shared most of these changes. Also all others that have and do contribute to this skin![/COLOR][/I]</news>
 	</extension>
 </addon>
 

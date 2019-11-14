@@ -1,5 +1,5 @@
-# Kodi Media Center language file
-# Addon Name: PSMC's  Super Mario Galaxy Skin
+# PSMC Media Center language file
+# Addon Name: PSMC's Super Mario Galaxy Skin
 # Addon id: skin.psmc.super.mario.galaxy
 # Addon Provider: The Papaw
 msgid ""
@@ -1265,20 +1265,20 @@ msgid "New InfoPanel"
 msgstr "New InfoPanel"
 
 msgctxt "#31312"
-msgid "SiLVO mod"
-msgstr "SiLVO mod"
+msgid "PSMC's mod"
+msgstr "PSMC's mod"
 
 msgctxt "#31313"
-msgid "Let It Snow! Let It Snow! Let It Snow!"
-msgstr "Let It Snow! Let It Snow! Let It Snow!"
+msgid "Snow Flakes"
+msgstr "Snow Flakes"
 
 msgctxt "#31314"
 msgid "Panel"
 msgstr "Panel"
 
 msgctxt "#31315"
-msgid "A required script is [B]NOT INSTALLED[/B]. Press INSTALL to download automatically. Press CANCEL if you would like to return to System Settings and switch skins. You may need to restart Kodi after installation completes."
-msgstr "A required script is [B]NOT INSTALLED[/B]. Press INSTALL to download automatically. Press CANCEL if you would like to return to System Settings and switch skins. You may need to restart Kodi after installation completes."
+msgid "A required script is [B]NOT INSTALLED[/B]. Press INSTALL to download automatically. Press CANCEL if you would like to return to System Settings and switch skins. You may need to restart PSMC after installation completes."
+msgstr "A required script is [B]NOT INSTALLED[/B]. Press INSTALL to download automatically. Press CANCEL if you would like to return to System Settings and switch skins. You may need to restart PSMC after installation completes."
 
 msgctxt "#31316"
 msgid "A skin reload is [B]REQUIRED[/B]. Press CANCEL to abort the requested changes."
@@ -1309,8 +1309,8 @@ msgid "This will disable the screensaver during music playback by hiding the vis
 msgstr "This will disable the screensaver during music playback by hiding the visualization. This may cause unwanted [B]IMAGE RETENTION[/B] if not used carefully. Do you accept the risks and want to enable this setting?"
 
 msgctxt "#31323"
-msgid "If you cannot locate the directory containing your background images, please add that location as a source in Kodi's File Manager. For more information visit http://kodi.wiki/view/File_manager"
-msgstr "If you cannot locate the directory containing your background images, please add that location as a source in Kodi's File Manager. For more information visit http://kodi.wiki/view/File_manager"
+msgid "If you cannot locate the directory containing your background images, please add that location as a source in PSMC's File Manager. For more information visit http://kodi.wiki/view/File_manager"
+msgstr "If you cannot locate the directory containing your background images, please add that location as a source in PSMC's File Manager. For more information visit http://kodi.wiki/view/File_manager"
 
 msgctxt "#31324"
 msgid "Aired"
@@ -1337,8 +1337,8 @@ msgid "Taking a Screenshot"
 msgstr "Taking a Screenshot"
 
 msgctxt "#31330"
-msgid "This script is not available in the default Kodi repositiory. The PSMC repo is needed to use the click to install feature, without it this script must be installed manually."
-msgstr "This script is not available in the default Kodi repositiory. The PSMC repo is needed to use the click to install feature, without it this script must be installed manually."
+msgid "This script is not available in the default Kodi repositiory. The PSMC Repo is needed to use the click to install feature, without it this script must be installed manually."
+msgstr "This script is not available in the default Kodi repositiory. The PSMC Repo is needed to use the click to install feature, without it this script must be installed manually."
 
 msgctxt "#31331"
 msgid "Installed"
@@ -1385,8 +1385,8 @@ msgid "NOT SUPPORTED"
 msgstr "NOT SUPPORTED"
 
 msgctxt "#31342"
-msgid "Display the status of some add-ons supported in PSMC's Super Mario Galaxy. Select an add-on to install or open its settings if already installed."
-msgstr "Display the status of some add-ons supported in PSMC's Super Mario Galaxy. Select an add-on to install or open its settings if already installed."
+msgid "Display the status of some add-ons supported in PSMC's Super Mario Galaxy Skin. Select an add-on to install or open its settings if already installed."
+msgstr "Display the status of some add-ons supported in PSMC's Super Mario Galaxy Skin. Select an add-on to install or open its settings if already installed."
 
 msgctxt "#31343"
 msgid "Display background name"
@@ -1553,8 +1553,12 @@ msgid "Resets the path to your music genre fanart folder."
 msgstr "Resets the path to your music genre fanart folder."
 
 msgctxt "#31384"
-msgid "This activates animated snow falling over all backgrounds.[CR]This may cause perfomance issues on low powered devices."
-msgstr "This activates animated snow falling over all backgrounds.[CR]This may cause perfomance issues on low powered devices."
+msgid "This activates animated falling objects over all backgrounds.[CR]This may cause perfomance issues on low powered devices."
+msgstr "This activates animated falling objects over all backgrounds.[CR]This may cause perfomance issues on low powered devices."
+
+msgctxt "#71000"
+msgid "This deactivates animations on the Home screen.[CR]Select if you experience perfomance issues on low powered devices."
+msgstr "This deactivates animations on the Home screen.[CR]Select if you experience perfomance issues on low powered devices."
 
 msgctxt "#31385"
 msgid "Use this to control the opacity of the widgets. [CR]100% has no transparency."
@@ -1637,8 +1641,8 @@ msgid "This will RESET ALL skin settings, selecting YES in the dialog that appea
 msgstr "This will RESET ALL skin settings, selecting YES in the dialog that appears is irreversible. This DOES NOT affect the Main Menu items you have set in the Main Menu Customizer."
 
 msgctxt "#31405"
-msgid "[B]MONITOR YOUR SYSTEM[/B][CR]Check out your hardware[CR]Check Kodi revision number · Monitor CPU usage"
-msgstr "[B]MONITOR YOUR SYSTEM[/B][CR]Check out your hardware[CR]Check Kodi revision number · Monitor CPU usage"
+msgid "[B]MONITOR YOUR SYSTEM[/B][CR]Check out your hardware[CR]Check PSMC revision number · Monitor CPU usage"
+msgstr "[B]MONITOR YOUR SYSTEM[/B][CR]Check out your hardware[CR]Check PSMC revision number · Monitor CPU usage"
 
 msgctxt "#31406"
 msgid "[B]CONFIGURE SYSTEM SETTINGS[/B][CR]Setup and calibrate displays · Configure audio output[CR]Set power saving options · Configure proxy settings · Enable debugging"
@@ -1657,8 +1661,8 @@ msgid "[B]CONFIGURE LIVE TV SETTINGS[/B][CR]Change full screen info[CR]Manage Gu
 msgstr "[B]CONFIGURE LIVE TV SETTINGS[/B][CR]Change full screen info[CR]Manage Guide data settings  •  Configure recording options"
 
 msgctxt "#31410"
-msgid "[B]CONFIGURE SERVICE SETTINGS[/B][CR]Setup control of Kodi via UPnP and HTTP · Configure file sharing[CR]Enable Zeroconf · Configure AirPlay"
-msgstr "[B]CONFIGURE SERVICE SETTINGS[/B][CR]Setup control of Kodi via UPnP and HTTP · Configure file sharing[CR]Enable Zeroconf · Configure AirPlay"
+msgid "[B]CONFIGURE SERVICE SETTINGS[/B][CR]Setup control of PSMC via UPnP and HTTP · Configure file sharing[CR]Enable Zeroconf · Configure AirPlay"
+msgstr "[B]CONFIGURE SERVICE SETTINGS[/B][CR]Setup control of PSMC via UPnP and HTTP · Configure file sharing[CR]Enable Zeroconf · Configure AirPlay"
 
 msgctxt "#31411"
 msgid "Will override the General Theme color."
@@ -1701,8 +1705,8 @@ msgid "Choose the color of the Progress bar displayed during fullscreen video pl
 msgstr "Choose the color of the Progress bar displayed during fullscreen video playback."
 
 msgctxt "#31421"
-msgid "Select your Kodi user profile[CR]to login and continue"
-msgstr "Select your Kodi user profile[CR]to login and continue"
+msgid "Select your PSMC user profile[CR]to login and continue"
+msgstr "Select your PSMC user profile[CR]to login and continue"
 
 msgctxt "#31422"
 msgid "Customize the Widget Highlight color on the home screen."
@@ -1773,8 +1777,8 @@ msgid "Click to install Artist Slideshow"
 msgstr "Click to install Artist Slideshow"
 
 msgctxt "#31439"
-msgid "There are no default backgrounds in this skin, would you like to choose one now?[CR]You can still select one in Skin settings > General if you choose No."
-msgstr "There are no default backgrounds in this skin, would you like to choose one now?[CR]You can still select one in Skin settings > General if you choose No."
+msgid "    [COLOR yellow]- Restart to apply remaining skin settings -[/COLOR][CR]You will need to enable the Super Mario GUI SOUNDS in the System Settings if you wish to use them. The default backgrounds are set, would you like to change them now?"
+msgstr "    [COLOR yellow]- Restart to apply remaining skin settings -[/COLOR][CR]You will need to enable the Super Mario GUI SOUNDS in the System Settings if you wish to use them. The default backgrounds are set, would you like to change them now?"
 
 msgctxt "#31440"
 msgid "Recently played channels"
@@ -1905,8 +1909,8 @@ msgid "Set Weather icons"
 msgstr "Set Weather icons"
 
 msgctxt "#31472"
-msgid "Library using Kodi"
-msgstr "Library using Kodi"
+msgid "Library using PSMC"
+msgstr "Library using PSMC"
 
 msgctxt "#31473"
 msgid "Artwork Beef is an Artwork Downloader and manager used to add or remove standard and extended artwork to your library."
@@ -2193,8 +2197,8 @@ msgid "Years old"
 msgstr "Years old"
 
 msgctxt "#31545"
-msgid "More tv shows featuring"
-msgstr "More tv shows featuring"
+msgid "More TV shows featuring"
+msgstr "More TV shows featuring"
 
 msgctxt "#31546"
 msgid "Known for"
@@ -2205,16 +2209,20 @@ msgid "Image gallery"
 msgstr "Image gallery"
 
 msgctxt "#31548"
-msgid "Kodi random movie fanart"
-msgstr "Kodi random movie fanart"
+msgid "PSMC's (Kodi) - Random Movie fanart"
+msgstr "PSMC's (Kodi) - Random Movie fanart"
 
 msgctxt "#31549"
-msgid "Kodi random TV show fanart"
-msgstr "Kodi random TV show fanart"
+msgid "PSMC's (Kodi) - Random TV Show fanart"
+msgstr "PSMC's (Kodi) - Random TV Show fanart"
 
 msgctxt "#31550"
-msgid "Kodi random music fanart"
-msgstr "Kodi random music fanart"
+msgid "PSMC's (Kodi) - Random Music fanart"
+msgstr "PSMC's (Kodi) - Random Music fanart"
+
+msgctxt "#31575"
+msgid "PSMC's (Kodi) - Random Music Video fanart"
+msgstr "PSMC's (Kodi) - Random Music Video fanart"
 
 msgctxt "#31551"
 msgid "Embuary Helper provides the Alphabet Jump Letter Bar, scraped ratings from Rotten Tomatoes and MetaCritic in fullscreen info. It also adds Similar and more from director when you Enable Extended Info integration in the settings for Video & Music information."
@@ -2229,8 +2237,8 @@ msgid "Show plot and cast when pressing info during video playback"
 msgstr "Show plot and cast when pressing info during video playback"
 
 msgctxt "#31603"
-msgid "Aeon Nox main menu navigation style"
-msgstr "Aeon Nox main menu navigation style"
+msgid "PSMC's Super Mario Galaxy Skin main menu navigation style"
+msgstr "PSMC's Super Mario Galaxy Skin main menu navigation style"
 
 msgctxt "#31604"
 msgid "Information"
@@ -2497,8 +2505,8 @@ msgid "Blu-Ray Case"
 msgstr "Blu-Ray Case"
 
 msgctxt "#31748"
-msgid "This setting enables more widget customization. Disable to use Aeon Nox default widgets."
-msgstr "This setting enables more widget customization. Disable to use Aeon Nox default widgets."
+msgid "This setting enables more widget customization. Disable to use PSMC's Super Mario Galaxy Skin default widgets."
+msgstr "This setting enables more widget customization. Disable to use PSMC's Super Mario Galaxy Skin default widgets."
 
 msgctxt "#31749"
 msgid "Change the transparency of the artwork and background."
@@ -2593,8 +2601,8 @@ msgid "Use this setting to override the location of the Trailers button when usi
 msgstr "Use this setting to override the location of the Trailers button when using the Default setting for the CinemaVision button."
 
 msgctxt "#31855"
-msgid "Enable this setting to replace the Default info with online info provided by the ExtendedInfo script. You can use the PSMC's Super Mario Galaxy version or the Defaults provided by the script if you enable the option in the settings for ExtendedInfo."
-msgstr "Enable this setting to replace the Default info with online info provided by the ExtendedInfo script. You can use the PSMC's Super Mario Galaxy version or the Defaults provided by the script if you enable the option in the settings for ExtendedInfo."
+msgid "Enable this setting to replace the Default info with online info provided by the ExtendedInfo script. You can use the PSMC's Super Mario Galaxy Skin version or the Defaults provided by the script if you enable the option in the settings for ExtendedInfo."
+msgstr "Enable this setting to replace the Default info with online info provided by the ExtendedInfo script. You can use the PSMC's Super Mario Galaxy Skin version or the Defaults provided by the script if you enable the option in the settings for ExtendedInfo."
 
 msgctxt "#31856"
 msgid "Use this to select the multi-fanart cycle speed skin wide."
@@ -2633,16 +2641,16 @@ msgid "Map & Alerts"
 msgstr "Map & Alerts"
 
 msgctxt "#31911"
-msgid "Setup the Aeon Nox main menu"
-msgstr "Setup the Aeon Nox main menu"
+msgid "Setup the PSMC's Super Mario Galaxy Skin main menu"
+msgstr "Setup the PSMC's Super Mario Galaxy Skin main menu"
 
 msgctxt "#31912"
 msgid "Customize the main menu with widgets, backgrounds, and statistics. Add your own custom main menu items."
 msgstr "Customize the main menu with widgets, backgrounds, and statistics. Add your own custom main menu items."
 
 msgctxt "#31913"
-msgid "Aeon Nox main menu horizontal position"
-msgstr "Aeon Nox main menu horizontal position"
+msgid "PSMC's Super Mario Galaxy Skin main menu horizontal position"
+msgstr "PSMC's Super Mario Galaxy Skin main menu horizontal position"
 
 msgctxt "#31914"
 msgid "Change the horizontal position of the main menu."
@@ -2653,8 +2661,8 @@ msgid "Navigation style for horizontal lists"
 msgstr "Navigation style for horizontal lists"
 
 msgctxt "#31916"
-msgid "Change the way horizontal lists scroll in Aeon Nox. Default will scroll lists in a cycle. \"Fixed\" are lists with a beginning and end."
-msgstr "Change the way horizontal lists scroll in Aeon Nox. Default will scroll lists in a cycle. \"Fixed\" are lists with a beginning and end."
+msgid "Change the way horizontal lists scroll in PSMC's Super Mario Galaxy Skin. Default will scroll lists in a cycle. \"Fixed\" are lists with a beginning and end."
+msgstr "Change the way horizontal lists scroll in PSMC's Super Mario Galaxy Skin. Default will scroll lists in a cycle. \"Fixed\" are lists with a beginning and end."
 
 msgctxt "#31917"
 msgid "When enabled text scrolls automatically. When disabled manual scrolling is required. Note that not every textbox has a manual button."
@@ -2689,8 +2697,8 @@ msgid "Resets all above values to their defaults."
 msgstr "Resets all above values to their defaults."
 
 msgctxt "#31928"
-msgid "Aeon Nox main menu layout"
-msgstr "Aeon Nox main menu layout"
+msgid "PSMC's Super Mario Galaxy Skin main menu layout"
+msgstr "PSMC's Super Mario Galaxy Skin main menu layout"
 
 msgctxt "#31929"
 msgid "This setting defines the main menu layout. Options are 5 items, 3 items, 1 items, or icons for the default horizontal menu. You can also choose a vertical menu layout."
@@ -2853,8 +2861,8 @@ msgid "Sliding set discart"
 msgstr "Sliding set discart"
 
 msgctxt "#31980"
-msgid "Change the way the home menu scrolls in Aeon Nox. Default will scroll in a cycle. \"Fixed\" has a beginning and end."
-msgstr "Change the way the home menu scrolls in Aeon Nox. Default will scroll in a cycle. \"Fixed\" has a beginning and end."
+msgid "Change the way the home menu scrolls in the PSMC's Super Mario Galaxy Skin. Default will scroll in a cycle. \"Fixed\" has a beginning and end."
+msgstr "Change the way the home menu scrolls in the PSMC's Super Mario Galaxy Skin. Default will scroll in a cycle. \"Fixed\" has a beginning and end."
 
 msgctxt "#31981"
 msgid "Show Plot and Cast information when pressing info button during video playback."

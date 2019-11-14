@@ -1,7 +1,7 @@
 # Kodi Media Center language file
-# Addon Name: PSMC's Super Mario Galaxy Skin
-# Addon id: skin.psmc.super.mario.galaxy
-# Addon Provider: The Papaw
+# Addon Name: Aeon Nox: SiLVO
+# Addon id: skin.aeon.nox.silvo
+# Addon Provider: SiLVO
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"

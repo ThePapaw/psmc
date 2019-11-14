@@ -1,46 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-	<!-- Horizontal -->
+	<!-- Horizontal Sub Menu Bar -->
 	<include name="HorizontalSubMenu">
 		<control type="fixedlist" id="9010">
-			<left>100</left>
-			<width>1720</width>
-			<height>50</height>
+			<left>210</left>
+			<width>1500</width>
+			<height>87</height>
 			<onup>9000</onup>
-			<onback>9000</onback>
-			<ondown condition="Control.IsVisible(90020) + Skin.HasSetting(centermainmenu)">90020</ondown>
-			<ondown condition="!Control.IsVisible(90020) | !Skin.HasSetting(centermainmenu)">9000</ondown>
+			<ondown condition="Control.IsVisible(90020) + !Skin.HasSetting(lowermainmenu)">90020</ondown>
+			<ondown condition="!Control.IsVisible(90020) | Skin.HasSetting(lowermainmenu)">9000</ondown>
 			<pagecontrol />
 			<scrolltime tween="quadratic" easing="out">300</scrolltime>
 			<focusposition>2</focusposition>
 			<movement>2</movement>
 			<orientation>horizontal</orientation>
-			<itemlayout height="87" width="344">
+			<itemlayout height="87" width="300">
 				<control type="label">
-					<top>2</top>
-					<width>344</width>
+					<width>300</width>
 					<height>41</height>
-					<font>font13_title</font>
+					<font>font_MainMenu1</font>
 					<textcolor>$VAR[UnfocusedSubMenuColor]</textcolor>
 					<shadowcolor>shadow</shadowcolor>
 					<align>center</align>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</itemlayout>
-			<focusedlayout height="87" width="344">
+			<focusedlayout height="87" width="300">
 				<control type="group">
 					<visible>Control.HasFocus(9010)</visible>
 					<control type="image">
-						<top>1</top>
-						<width>344</width>
-						<height>44</height>
-						<texture colordiffuse="$VAR[HighlightBarColor]">listselect_fo.png</texture>
+						<width>300</width>
+						<height>41</height>
+						<texture >listselect_fo.png</texture>
 					</control>
 					<control type="label">
-						<top>2</top>
-						<width>344</width>
+						<width>300</width>
 						<height>41</height>
-						<font>font13_title</font>
+						<font>font_MainMenu1</font>
 						<textcolor>$VAR[FocusedSubMenuColor]</textcolor>
 						<shadowcolor>shadow</shadowcolor>
 						<align>center</align>
@@ -50,10 +46,9 @@
 				<control type="group">
 					<visible>!Control.HasFocus(9010)</visible>
 					<control type="label">
-						<top>2</top>
-						<width>344</width>
+						<width>300</width>
 						<height>41</height>
-						<font>font13_title</font>
+						<font>font_MainMenu1</font>
 						<textcolor>$VAR[UnfocusedSubMenuColor]</textcolor>
 						<shadowcolor>shadow</shadowcolor>
 						<align>center</align>
@@ -66,8 +61,8 @@
 			</content>
 		</control>
 		<control type="button">
-			<left>50</left>
-			<top>10</top>
+			<left>85</left>
+			<top>6</top>
 			<width>30</width>
 			<height>30</height>
 			<texturefocus flipx="true" colordiffuse="white">arrowright.png</texturefocus>
@@ -76,8 +71,8 @@
 			<onclick>Control.Move(9010,-1)</onclick>
 		</control>
 		<control type="button">
-			<left>1840</left>
-			<top>10</top>
+			<left>1800</left>
+			<top>6</top>
 			<width>30</width>
 			<height>30</height>
 			<texturefocus colordiffuse="white">arrowright.png</texturefocus>
@@ -87,6 +82,7 @@
 		</control>
 	</include>
 	<include name="HorizontalMenuSystemBars">
+	<!-- System Menu Bar -->
 		<control type="group">
 			<top>427</top>
 			<control type="group">
@@ -225,12 +221,15 @@
 			</control>
 		</control>
 	</include>
+	
+	<!-- Menu Bar Text-->
 	<include name="HorizontalMenu">
 		<control type="group">
-			<top>453</top>
+			<top>538</top>
 			<animation effect="slide" end="0,338" time="320" tween="cubic" easing="inout" condition="!Skin.HasSetting(centermainmenu)">Conditional</animation>
 			<include>WindowOpenCloseAnimation</include>
 			<include condition="system.getbool(input.enablemouse)">SubmenuMouseButton</include>
+			<!-- Menu Bar -->
 			<control type="image">
 				<width>100%</width>
 				<height>229</height>
