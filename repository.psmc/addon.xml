@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.psmc" name="PSMC Repository" version="1.0.13" provider-name="The Papaw">
+<addon id="repository.psmc" name="PSMC Repository" version="1.0.14" provider-name="The Papaw">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
     </requires>
@@ -10,14 +10,15 @@
         <hashes>false</hashes>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary>The Official Repo for the PSMC (Papaw's Son Media Center), a Kodi Fork</summary>
-        <description>This is the repository for the "Official" PSMC (Papaw's Son Media Center). A Kodi fork.</description>
+        <summary>The Official Repo for the PSMC (Papaw's Son Media Center)</summary>
+        <description>This is the "Official" repository for PSMC (Papaw's Son Media Center). A Kodi fork.[CR]- [COLOR yellow]New Animated skins added![/COLOR]</description>
         <platform>all</platform>
         <genre>movies,usa</genre>
 		<assets>
-			<icon>icon.gif</icon>
 			<icon>icon.png</icon>
+			<icon>icon.gif</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
+		<news>[COLOR yellow]All Skins updated and completely redesigned[/COLOR][CR]- [COLOR yellow]NEW Animated skins added![/COLOR]</news>
     </extension>
 </addon>
