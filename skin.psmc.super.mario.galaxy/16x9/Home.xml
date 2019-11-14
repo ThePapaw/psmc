@@ -177,7 +177,7 @@
 				<width>200</width>
 				<height>200</height>
 				<texture flipx="false" border="0">mario_running_right.gif</texture>
-				<animation effect="slide" start="0,0" end="2800" time="7000" delay="1000" reversible="false" loop="false" condition="true">Conditional</animation>
+				<animation effect="slide" start="0,0" end="2800" time="7000" delay="13000" reversible="false" loop="false" condition="true">Conditional</animation>
 			</control>
 			
 			<!-- Mario Coin 1 Animation -->
@@ -187,7 +187,7 @@
 				<width>100</width>
 				<height>100</height>
 				<texture flipx="false" border="0">mario_coin.gif</texture>
-				<animation effect="slide" start="0,0" end="2800" time="7000" delay="1000" reversible="false" loop="false" condition="true">Conditional</animation>
+				<animation effect="slide" start="0,0" end="2800" time="7000" delay="13000" reversible="false" loop="false" condition="true">Conditional</animation>
 			</control>
 			
 			<!-- Mario Running Left 1 Animation -->
@@ -197,7 +197,7 @@
 				<width>200</width>
 				<height>200</height>
 				<texture flipx="false" border="0">mario_running_left.gif</texture>
-				<animation effect="slide" start="2800" end="0,0" time="7000" delay="8000" reversible="false" loop="false" condition="true">Conditional</animation>
+				<animation effect="slide" start="2800" end="0,0" time="7000" delay="20000" reversible="false" loop="false" condition="true">Conditional</animation>
 			</control>
 						
 			<!-- Bowser Running Left 1 Animation -->
@@ -207,7 +207,7 @@
 				<width>470</width>
 				<height>250</height>
 				<texture flipx="false" border="0">bowser_running_left.gif</texture>
-				<animation effect="slide" start="2800" end="0,0" time="7000" delay="8000" reversible="false" loop="false" condition="true">Conditional</animation>
+				<animation effect="slide" start="2800" end="0,0" time="7000" delay="20000" reversible="false" loop="false" condition="true">Conditional</animation>
 			</control>
 			
 			<!-- Mario Running Right 2 Animation -->
@@ -217,7 +217,7 @@
 				<width>200</width>
 				<height>200</height>
 				<texture flipx="false" border="0">mario_running_right.gif</texture>
-				<animation effect="slide" start="0,0" end="2800" time="7000" delay="15000" reversible="false" loop="false" condition="true">Conditional</animation>
+				<animation effect="slide" start="0,0" end="2800" time="7000" delay="27000" reversible="false" loop="false" condition="true">Conditional</animation>
 			</control>
 			
 			<!-- Mario Coin 2 Animation -->
@@ -227,7 +227,7 @@
 				<width>100</width>
 				<height>100</height>
 				<texture flipx="false" border="0">mario_coin.gif</texture>
-				<animation effect="slide" start="0,0" end="2800" time="7000" delay="15000" reversible="false" loop="false" condition="true">Conditional</animation>
+				<animation effect="slide" start="0,0" end="2800" time="7000" delay="27000" reversible="false" loop="false" condition="true">Conditional</animation>
 			</control>
 			
 			<!-- Mario Running Left 2 Animation -->
@@ -237,7 +237,7 @@
 				<width>200</width>
 				<height>200</height>
 				<texture flipx="false" border="0">mario_running_left.gif</texture>
-				<animation effect="slide" start="2800" end="0,0" time="7000" delay="20000" reversible="false" loop="false" condition="true">Conditional</animation>
+				<animation effect="slide" start="2800" end="0,0" time="7000" delay="32000" reversible="false" loop="false" condition="true">Conditional</animation>
 			</control>
 						
 			<!-- Bowser Running Left 2 Animation -->
@@ -247,7 +247,7 @@
 				<width>470</width>
 				<height>250</height>
 				<texture flipx="false" border="0">bowser_running_left.gif</texture>
-				<animation effect="slide" start="2800" end="0,0" time="7000" delay="20000" reversible="false" loop="false" condition="true">Conditional</animation>
+				<animation effect="slide" start="2800" end="0,0" time="7000" delay="32000" reversible="false" loop="false" condition="true">Conditional</animation>
 			</control>
 			
 			<!-- Turtle Sliding Right 1 Animation -->
@@ -257,7 +257,7 @@
 				<width>100</width>
 				<height>90</height>
 				<texture flipx="false" border="0">turtle_green.png</texture>
-				<animation effect="slide" start="0,0" end="2800,0" time="7000" delay="27000" reversible="false" loop="false" condition="true">Conditional</animation>
+				<animation effect="slide" start="0,0" end="2800,0" time="7000" delay="39000" reversible="false" loop="false" condition="true">Conditional</animation>
 			</control>
 			
 			<!-- Turtle Sliding Left 2 Animation -->
@@ -267,7 +267,7 @@
 				<width>110</width>
 				<height>100</height>
 				<texture flipx="false" border="0">turtle_red.png</texture>
-				<animation effect="slide" start="0,0" end="2800,0" time="7000" delay="27000" reversible="false" loop="false" condition="true">Conditional</animation>
+				<animation effect="slide" start="0,0" end="2800,0" time="7000" delay="39000" reversible="false" loop="false" condition="true">Conditional</animation>
 			</control>
 						
 			<!-- Bowser Running Right Animation -->
@@ -277,7 +277,7 @@
 				<width>470</width>
 				<height>250</height>
 				<texture flipx="false" border="0">bowser_running_right.gif</texture>
-				<animation effect="slide" start="0,0" end="2800,0" time="7000" delay="27000" reversible="false" loop="false" condition="true">Conditional</animation>
+				<animation effect="slide" start="0,0" end="2800,0" time="7000" delay="39000" reversible="false" loop="false" condition="true">Conditional</animation>
 			</control>
 			
 			<!-- Mario Running Right 3 Animation -->
@@ -287,7 +287,7 @@
 				<width>200</width>
 				<height>200</height>
 				<texture flipx="false" border="0">mario_running_right.gif</texture>
-				<animation effect="slide" start="0,0" end="2800" time="7000" delay="27000" reversible="false" loop="false" condition="true">Conditional</animation>
+				<animation effect="slide" start="0,0" end="2800" time="7000" delay="39000" reversible="false" loop="false" condition="true">Conditional</animation>
 			</control>
 			
 			<!-- Mario Plant Animation -->
@@ -298,7 +298,7 @@
 				<height>700</height>				
 				<aspectratio scalediffuse="false">keep</aspectratio>
 				<texture flipx="false" border="0">mario_plant_right.gif</texture>
-				<animation effect="fade" start="0%" end="100%" time="6000" delay="45000" reversible="false" loop="false" condition="true">Conditional</animation>
+				<animation effect="fade" start="0%" end="100%" time="6000" delay="57000" reversible="false" loop="false" condition="true">Conditional</animation>
 			</control>
 			
 			<!-- Mario Bottom Right Pipe -->
@@ -328,7 +328,7 @@
 				<width>150</width>
 				<height>200</height>
 				<texture flipx="false" border="0">mario_left_wall.gif</texture>
-				<animation effect="fade" start="0%" end="100%" time="6000" delay="40000" reversible="false" loop="false" condition="true">Conditional</animation>
+				<animation effect="fade" start="0%" end="100%" time="6000" delay="52000" reversible="false" loop="false" condition="true">Conditional</animation>
 			</control>
 			
 			<!-- Mario Top Right Wall Pipe -->
@@ -338,8 +338,8 @@
 				<width>150</width>
 				<height>200</height>
 				<texture flipx="false" border="0">mario_right_pipe.png</texture>
-				<animation effect="fade" start="0%" end="100%" time="8000" delay="14000" reversible="false" loop="false" condition="true">Conditional</animation>
-				<animation effect="slide" start="0,0" end="0,0" time="6000" delay="14000" reversible="false" loop="false" condition="true">Conditional</animation>
+				<animation effect="fade" start="0%" end="100%" time="8000" delay="26000" reversible="false" loop="false" condition="true">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,0" time="6000" delay="26000" reversible="false" loop="false" condition="true">Conditional</animation>
 			</control>
 			
 			<!-- Mario Top Left Wall Pipe -->
@@ -349,8 +349,8 @@
 				<width>150</width>
 				<height>200</height>
 				<texture flipx="false" border="0">mario_left_pipe.png</texture>
-				<animation effect="fade" start="0%" end="100%" time="8000" delay="10000" reversible="false" loop="false" condition="true">Conditional</animation>
-				<animation effect="slide" start="0,0" end="0,0" time="6000" delay="10000" reversible="false" loop="false" condition="true">Conditional</animation>
+				<animation effect="fade" start="0%" end="100%" time="8000" delay="22000" reversible="false" loop="false" condition="true">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,0" time="6000" delay="22000" reversible="false" loop="false" condition="true">Conditional</animation>
 			</control>
 			
 			<!-- Mario Ceiling Princess Animation -->
@@ -360,7 +360,7 @@
 				<width>165</width>
 				<height>210</height>
 				<texture flipx="false" border="0">mario_princess.gif</texture>
-				<animation effect="fade" start="0%" end="100%" time="6000" delay="34000" reversible="false" loop="false" condition="true">Conditional</animation>
+				<animation effect="fade" start="0%" end="100%" time="6000" delay="46000" reversible="false" loop="false" condition="true">Conditional</animation>
 			</control>
 			
 			<!-- Mario Ceiling Pipe -->
@@ -370,8 +370,8 @@
 				<width>230</width>
 				<height>150</height>
 				<texture flipx="false" border="0">mario_ceiling_pipe.png</texture>
-				<animation effect="fade" start="0%" end="100%" time="8000" delay="6000" reversible="false" loop="false" condition="true">Conditional</animation>
-				<animation effect="slide" start="0,0" end="0,0" time="6000" delay="100000" reversible="false" loop="false" condition="true">Conditional</animation>
+				<animation effect="fade" start="0%" end="100%" time="8000" delay="18000" reversible="false" loop="false" condition="true">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,0" time="6000" delay="112000" reversible="false" loop="false" condition="true">Conditional</animation>
 			</control>
 			
 							
@@ -383,7 +383,7 @@
 			<height>2000</height>
 			<texture>bbc4.</texture>
 			<aspectratio scalediffuse="false">keep</aspectratio>
-			<animation effect="slide" start="-2220,400" end="2200,0" time="26000" delay="6000" loop="true" easing="out" tween="quadratic" condition="true">Conditional</animation>
+			<animation effect="slide" start="-2220,400" end="2200,0" time="26000" delay="18000" loop="true" easing="out" tween="quadratic" condition="true">Conditional</animation>
 				</control>
 				
 			</control>	
