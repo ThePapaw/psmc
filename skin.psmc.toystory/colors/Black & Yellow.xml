@@ -1,0 +1,13 @@
+<colors>
+	<color name="white">FF000000</color>
+	<color name="white2">D0fed700</color>
+	<color name="grey">D0fed700</color>
+	<color name="grey2">D0fed700</color>
+	<color name="grey3">FF484848</color>
+	<color name="grey4">FF404040</color>
+	<color name="black">FF000000</color>
+	<color name="blue">FF4d4291</color>
+	<color name="invalid">FFFF0000</color>
+	<color name="dialogheader">FFfed700</color>
+	<color name="shadow">FF000000</color>
+</colors>
