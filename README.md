@@ -17,7 +17,9 @@ The ADDONS hosted here were created, modded and/or themed for using with PSMC. T
 • <B>PSMC Maintenance Tools</B> (Maintenance Program)<BR>
 Features include: Auto delete of cache at start up (optional), notifies when packages and thumbs reach a set amount of wasted storage space (you can set and change sizes), cuts down on your devices read/writes on the ROM. Also has many Backup/Restore Options, Speed test, IP check and other features. Again, please give credit to their respective developers.
 
-The SKINS have been themed and modded for use with PSMC. They will also work with Kodi and other Kodi forks. They were themed using the Aeon Nox SiLVO skin unless otherwise stated. All the PSMC skins have been COMPLETELY redesigned and updated using the current version of aeon.nox.silvo as of 11-14-2019. Most of them now include <B>NEW Home Screen Animation</B> (can be toggled off), additional Falling Seasons, GUI Sounds and other various changes.  (If you wish to use the included <B>GUI Sounds</B> for the particular skin, you will need to enable them in the system settings!) The skins include:
+• <B>The SKINS</B> have been themed and modded for use with PSMC using the AeonNox SiLVO skin unless otherwise stated. They will work with Kodi and other Kodi forks. All the PSMC skins have been COMPLETELY redesigned and updated using the AeonNox SiLVO (v7.9.4).
+
+Most of them now include <B>Home Screen Animation</B> (can be toggled off), additional Falling Seasons, GUI Sounds and other various changes.  (If you wish to use the included <B>GUI Sounds</B> for a particular skin, they will be downloaded automaticlly with the skin, but you will need to enable them in the system settings) The PSMC skins include:
 
 • <B>PSMC's Silvo Skin</B> - A general Aeon Nox SiLVO skin themed for PSMC. <BR>
 • <B>PSMC's Spiderman Skin</B> - Updated and redesigned (includes animations & GUI sounds). <BR>
