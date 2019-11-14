@@ -17,16 +17,16 @@ The ADDONS hosted here were created, modded and/or themed for using with PSMC. T
 • <B>PSMC Maintenance Tools</B> (Maintenance Program)<BR>
 Features include: Auto delete of cache at start up (optional), notifies when packages and thumbs reach a set amount of wasted storage space (you can set and change sizes), cuts down on your devices read/writes on the ROM. Also has many Backup/Restore Options, Speed test, IP check and other features. Again, please give credit to their respective developers.
 
-The SKINS have been themed and modded for use with PSMC. They will also work with Kodi and other Kodi forks. They were themed from Aeon Nox SiLVO skin unless otherwise stated. All the PSMC skins have been COMPLETELY redesigned and updated using the current version of aeon.nox.silvo as of 11-14-2019. Most of them now include NEW Home Screen Animation (can be toggled off), additional Falling Seasons, GUI Sounds and other various changes.  (If you wish to use the included <B>GUI SOUNDS</B> for the particular skin, you will need to enable them in the system settings!) The skins include:
+The SKINS have been themed and modded for use with PSMC. They will also work with Kodi and other Kodi forks. They were themed using the Aeon Nox SiLVO skin unless otherwise stated. All the PSMC skins have been COMPLETELY redesigned and updated using the current version of aeon.nox.silvo as of 11-14-2019. Most of them now include <B>NEW Home Screen Animation</B> (can be toggled off), additional Falling Seasons, GUI Sounds and other various changes.  (If you wish to use the included <B>GUI Sounds</B> for the particular skin, you will need to enable them in the system settings!) The skins include:
 
 • <B>PSMC's Silvo Skin</B> - A general Aeon Nox SiLVO skin themed for PSMC. <BR>
 • <B>PSMC's Spiderman Skin</B> - Spiderman Theme for PSMC. Updated and redesigned (includes animations & GUI sounds). <BR>
 • <B>PSMC's Man of Steel Skin</B> - Man of Steel Theme for PSMC. Updated and redesigned (includes animations & GUI sounds)<BR>
-• <B>PSMC's Super Mario Galaxy Skin</B> - Super Mario Galaxy Theme for PSMC. Updated and redesigned (includes animations & GUI sounds).
+• <B>PSMC's Super Mario Galaxy Skin</B> - Super Mario Galaxy Theme for PSMC. Updated and redesigned (includes animations & GUI sounds). <BR>
 
-• <B>PSMC's Batman Skin</B> - Batman Theme for PSMC. **NEW** (includes animations & GUI sounds).
-• <B>PSMC's Scooby-Doo Skin</B> - Scooby-Doo Theme for PSMC. **NEW** (includes animations & GUI sounds).
-• <B>PSMC's Toy Story Skin</B> - Toy Story for PSMC. **NEW** (includes animations & GUI sounds).
+• <B>PSMC's Batman Skin</B> - Batman Theme for PSMC. **NEW** (includes animations & GUI sounds). <BR>
+• <B>PSMC's Scooby-Doo Skin</B> - Scooby-Doo Theme for PSMC. **NEW** (includes animations & GUI sounds). <BR>
+• <B>PSMC's Toy Story Skin</B> - Toy Story for PSMC. **NEW** (includes animations & GUI sounds). <BR>
 
 PSMC, the add-ons & skins are considered 3rd party, so please do not seek help from Kodi, the Kodi forums, etc..
 
