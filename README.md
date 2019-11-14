@@ -20,13 +20,12 @@ Features include: Auto delete of cache at start up (optional), notifies when pac
 The SKINS have been themed and modded for use with PSMC. They will also work with Kodi and other Kodi forks. They were themed using the Aeon Nox SiLVO skin unless otherwise stated. All the PSMC skins have been COMPLETELY redesigned and updated using the current version of aeon.nox.silvo as of 11-14-2019. Most of them now include <B>NEW Home Screen Animation</B> (can be toggled off), additional Falling Seasons, GUI Sounds and other various changes.  (If you wish to use the included <B>GUI Sounds</B> for the particular skin, you will need to enable them in the system settings!) The skins include:
 
 • <B>PSMC's Silvo Skin</B> - A general Aeon Nox SiLVO skin themed for PSMC. <BR>
-• <B>PSMC's Spiderman Skin</B> - Spiderman Theme for PSMC. Updated and redesigned (includes animations & GUI sounds). <BR>
-• <B>PSMC's Man of Steel Skin</B> - Man of Steel Theme for PSMC. Updated and redesigned (includes animations & GUI sounds)<BR>
-• <B>PSMC's Super Mario Galaxy Skin</B> - Super Mario Galaxy Theme for PSMC. Updated and redesigned (includes animations & GUI sounds). <BR>
-
-• <B>PSMC's Batman Skin</B> - Batman Theme for PSMC. **NEW** (includes animations & GUI sounds). <BR>
-• <B>PSMC's Scooby-Doo Skin</B> - Scooby-Doo Theme for PSMC. **NEW** (includes animations & GUI sounds). <BR>
-• <B>PSMC's Toy Story Skin</B> - Toy Story for PSMC. **NEW** (includes animations & GUI sounds). <BR>
+• <B>PSMC's Spiderman Skin</B> - Spiderman Theme. Updated and redesigned (includes animations & GUI sounds). <BR>
+• <B>PSMC's Man of Steel Skin</B> - Man of Steel Theme. Updated and redesigned (includes animations & GUI sounds)<BR>
+• <B>PSMC's Super Mario Galaxy Skin</B> - Super Mario Galaxy Theme. Updated and redesigned (includes animations & GUI sounds). <BR>
+• <B>PSMC's Batman Skin</B> - Batman Theme. ***NEW** (includes animations & GUI sounds). <BR>
+• <B>PSMC's Scooby-Doo Skin</B> - Scooby-Doo Theme. ***NEW** (includes animations & GUI sounds). <BR>
+• <B>PSMC's Toy Story Skin</B> - Toy Story Theme. ***NEW** (includes animations & GUI sounds). <BR>
 
 PSMC, the add-ons & skins are considered 3rd party, so please do not seek help from Kodi, the Kodi forums, etc..
 
