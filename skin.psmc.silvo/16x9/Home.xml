@@ -169,104 +169,77 @@
 			<!-- Use this to space all the groups -->
 			<animation effect="" end="200" time="10000" delay="300" pulse="true" condition="true">Conditional</animation>
 			
-			<!-- Ghost Right Animation -->
+			<!-- Logo Top Right Animation -->
 			<control type="image">
-				<left>1750</left>
-				<top>-200</top>
-				<width>400</width>
-				<height>300</height>
-				<texture border="0">ghost_right.gif</texture>
-				<animation effect="fade" start="0%" end="100%" time="8300" delay="4000" reversible="false" loop="true"pulse="false" condition="true">Conditional</animation>
-				<animation effect="fade" start="100%" end="0%" time="8300" delay="4000" reversible="false" loop="true"pulse="false" condition="true">Conditional</animation>
+				<left>620</left>
+				<top>-220</top>
+				<width>1280</width>
+				<height>700</height>
+				<texture border="0">logo.gif</texture>
+				<animation effect="fade" start="0%" end="100%" time="10000" delay="4000" reversible="false" loop="true" pulse="false" condition="true">Conditional</animation>
+				<animation effect="fade" start="100%" end="0%" time="10000" delay="4000" reversible="false" loop="true" pulse="false" condition="true">Conditional</animation>
 			</control>
 			
-			<!-- Ghost Left Animation -->
-			<control type="image">
-				<left>300</left>
-				<top>400</top>
-				<width>275</width>
-				<height>225</height>
-				<texture border="0">ghost_left.gif</texture>
-				<animation effect="fade" start="0%" end="100%" time="4300" delay="10000" reversible="false" loop="true"pulse="false" condition="true">Conditional</animation>
-				<animation effect="fade" start="100%" end="0%" time="4300" delay="10000" reversible="false" loop="true"pulse="false" condition="true">Conditional</animation>
-			</control>
-			
-			<!-- Spider Web -->
-			<control type="image">
-				<right>1300</right>
-				<top>-275</top>
-				<width>221</width>
-				<height>207</height>
-				<texture flipx="false" border="1">spiderweb.png</texture>
-			</control>
-			
-			<!-- Spider Animation -->
-			<control type="image">
-				<right>1350</right>
-				<top>-250</top>
-				<width>180</width>
-				<height>180</height>
-				<texture flipx="false" border="1">spider.gif</texture>
-			</control>
-			
-				
-			<!-- Van Animation -->
-			<control type="image">
-				<left>-3600</left>
-				<top>350</top>
-				<width>5200</width>
-				<height>360</height>
-				<texture flipx="false" border="1">mystery_machine.png</texture>
-				<aspectratio scalediffuse="false">keep</aspectratio>
-				<animation effect="slide" start="0,0" end="3600" time="6000" delay="18000" reversible="false" loop="true" condition="true">Conditional</animation>
-				<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="1000" reversible="false" pulse="false" condition="true">Conditional</animation>
-			</control>
-			
-			<!-- Running Shaggy & Scooby Animation -->
-			<control type="image">
-				<left>-2900</left>
-				<top>414</top>
-				<width>5200</width>
-				<height>280</height>
-				<texture flipx="false" border="1">shaggy_scooby.gif</texture>
-				<aspectratio scalediffuse="false">keep</aspectratio>
-				<animation effect="slide" start="2800" end="0,0" time="15000" delay="8000" reversible="false" loop="true" condition="true">Conditional</animation>
-			</control>
-				
-			<!-- Cloud Animation -->
+			<!-- PS Moving Right 1 Animation -->
 				<control type="image">
-					<left>-2800</left>
-					<top>150</top>
-					<width>5200</width>
-					<height>320</height>
-					<texture flipx="false" border="1">clouds.gif</texture>
-					<aspectratio scalediffuse="false">keep</aspectratio>
-					<animation effect="slide" start="2800" end="0,0" time="15000" delay="8000" reversible="false" loop="true" condition="true">Conditional</animation>
-				</control>
-								
-				<!-- Bats Large Animation -->
+				<left>0</left>
+				<top>550</top>
+				<width>110</width>
+				<height>132</height>
+				<texture flipx="true" border="0">family.gif</texture>
+				<animation effect="slide" start="0,0" end="2800,0" time="26000" delay="1000" reversible="false" loop="false" pulse="false"  condition="true">Conditional</animation>
+			</control>
+			
+			<!-- Family Moving Left Animation -->
 				<control type="image">
-					<left>-2600</left>
-					<top>-260</top>
-					<width>5200</width>
-					<height>220</height>
-					<texture flipx="false" border="1">bats_large.gif</texture>
-					<aspectratio scalediffuse="false">keep</aspectratio>
-					<animation effect="slide" start="0,0" end="2800" time="3900" delay="20000" reversible="false" loop="true" condition="true">Conditional</animation>
-					<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="10000" reversible="false" pulse="true" condition="true">Conditional</animation>
-				</control>
-				
-				<!-- Bat Small Animation -->
+				<left>0</left>
+				<top>450</top>
+				<width>144</width>
+				<height>132</height>
+				<texture flipx="false" border="0">family1.gif</texture>
+				<animation effect="slide" start="2800" end="0,0" time="26000" delay="18000" reversible="false" loop="false" pulse="false"  condition="true">Conditional</animation>
+			</control>
+			
+			<!-- Family Moving Right Animation -->
 				<control type="image">
-					<left></left>
-					<top>-200</top>
-					<width>150</width>
-					<height>100</height>
-					<texture flipx="false" border="1">bats_small.gif</texture>
-					<animation effect="slide" start="0,0" end="2800" time="3900" delay="20000" reversible="false" loop="true" condition="true">Conditional</animation>
-					<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="10000" reversible="false" pulse="true" condition="true">Conditional</animation>
-				</control>
-				
+				<left>0</left>
+				<top>550</top>
+				<width>144</width>
+				<height>132</height>
+				<texture flipx="true" border="0">family1.gif</texture>
+				<animation effect="slide" start="0,0" end="2800,0" time="26000" delay="42000" reversible="false" loop="false" pulse="false"  condition="true">Conditional</animation>
+			</control>
+			
+			<!-- PS Moving Left Upside Down Animation -->
+				<control type="image">
+				<left>0</left>
+				<top>668</top>
+				<width>110</width>
+				<height>132</height>
+				<texture flipx="false" border="0">family_upsidedown.gif</texture>
+				<animation effect="slide" start="2800" end="0,0" time="26000" delay="57500" reversible="false" loop="false" pulse="false"  condition="true">Conditional</animation>
+			</control>
+			
+			<!-- PS Moving Right 2 Animation -->
+				<control type="image">
+				<left>0</left>
+				<top>550</top>
+				<width>110</width>
+				<height>132</height>
+				<texture flipx="true" border="0">family.gif</texture>
+				<animation effect="slide" start="0,0" end="2800,0" time="26000" delay="81000" reversible="false" loop="true" pulse="false"  condition="true">Conditional</animation>
+			</control>
+			
+			<!-- Barrel Moving Left Animation -->
+				<control type="image">
+				<left>0</left>
+				<top>548</top>
+				<width>110</width>
+				<height>132</height>
+				<texture flipx="false" border="0">barrel.gif</texture>
+				<animation effect="slide" start="2800" end="0,0" time="26000" delay="96000" reversible="false" loop="true" pulse="false"  condition="true">Conditional</animation>
+			</control>
+									
 				<control type="image">
 			<posx>1000</posx>
 			<posy>400</posy>
