@@ -30,7 +30,7 @@ Most of them now include <B>Home Screen Animation</B> (can be toggled off), addi
 • <B>PSMC's Batman Skin</B> - ***NEW Design** (includes animations & GUI sounds). <BR>
 • <B>PSMC's Scooby-Doo Skin</B> - ***NEW Design** (includes animations & GUI sounds). <BR>
 • <B>PSMC's Toy Story Skin</B> - ***NEW Design** (includes animations & GUI sounds). <BR>
-*(The PSMC Intro video is enabled in the Startup.xml file. To disable it, delete line #12 in the Startup.xml, then turn it of in the skin setting)*
+• • • *(The PSMC Intro video is enabled in the Startup.xml file. To disable it, delete line #12 in the Startup.xml, then turn it of in the skin settings)*• • • 
 
 PSMC, the Addons and Skins hosted here are considered 3rd party, so please do not seek help from Kodi, the Kodi forums, etc..
 
