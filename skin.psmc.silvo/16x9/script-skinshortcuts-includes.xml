@@ -88,6 +88,8 @@
 			<label2 />
 			<icon>special://skin/extras/icons/power.png</icon>
 			<thumb />
+			<property name="background">smb://ZIZZLEZAZZLE/NAS-1/Media/Backgrounds/Power/</property>
+			<property name="backgroundName">smb://ZIZZLEZAZZLE/NAS-1/Media/Backgrounds/Power/</property>
 			<onclick condition="String.IsEqual(ListItem.Property(path),ActivateWindow(1129))">SetProperty(CustomSelectSearch,True,Home)</onclick>
 			<onclick>ActivateWindow(shutdownmenu)</onclick>
 			<property name="path">ActivateWindow(shutdownmenu)</property>
@@ -798,6 +800,18 @@
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
 			<property name="mainmenuid">6</property>
+			<label>$LOCALIZE[744]</label>
+			<label2 />
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<onclick>ActivateWindow(Music,sources://music/,return)</onclick>
+			<property name="path">ActivateWindow(Music,sources://music/,return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="4">
+			<property name="id">$NUMBER[4]</property>
+			<property name="mainmenuid">6</property>
 			<label>Pandora</label>
 			<label2>Favourite</label2>
 			<icon>DefaultFolder.png</icon>
@@ -808,8 +822,8 @@
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="4">
-			<property name="id">$NUMBER[4]</property>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
 			<property name="mainmenuid">6</property>
 			<label>TuneIn Radio</label>
 			<label2>Favourite</label2>
@@ -821,8 +835,8 @@
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="5">
-			<property name="id">$NUMBER[5]</property>
+		<item id="6">
+			<property name="id">$NUMBER[6]</property>
 			<property name="mainmenuid">6</property>
 			<label>Amazon Music</label>
 			<label2>Favourite</label2>
@@ -834,8 +848,8 @@
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="6">
-			<property name="id">$NUMBER[6]</property>
+		<item id="7">
+			<property name="id">$NUMBER[7]</property>
 			<property name="mainmenuid">6</property>
 			<label>Google Music</label>
 			<label2>Favourite</label2>
@@ -847,46 +861,8 @@
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="7">
-			<property name="id">$NUMBER[7]</property>
-			<property name="mainmenuid">6</property>
-			<label>$LOCALIZE[744]</label>
-			<label2 />
-			<icon>DefaultShortcut.png</icon>
-			<thumb />
-			<onclick>ActivateWindow(Music,sources://music/,return)</onclick>
-			<property name="path">ActivateWindow(Music,sources://music/,return)</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
-			<property name="isSubmenu">True</property>
-		</item>
 		<item id="8">
 			<property name="id">$NUMBER[8]</property>
-			<property name="mainmenuid">6</property>
-			<label>Clean Audio Library</label>
-			<label2>Kodi Command</label2>
-			<icon>DefaultShortcut.png</icon>
-			<thumb />
-			<property name="translatedPath">CleanLibrary(music,true)</property>
-			<onclick>CleanLibrary(music,true)</onclick>
-			<property name="path">CleanLibrary(music,true)</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="9">
-			<property name="id">$NUMBER[9]</property>
-			<property name="mainmenuid">6</property>
-			<label>Music Playlists</label>
-			<label2>Favourite</label2>
-			<icon>DefaultFolder.png</icon>
-			<thumb>DefaultMusicPlaylists.png</thumb>
-			<property name="translatedPath">ActivateWindow(10502,"library://music/playlists.xml/",return)</property>
-			<onclick>ActivateWindow(10502,"library://music/playlists.xml/",return)</onclick>
-			<property name="path">ActivateWindow(10502,"library://music/playlists.xml/",return)</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="10">
-			<property name="id">$NUMBER[10]</property>
 			<property name="mainmenuid">6</property>
 			<label>$LOCALIZE[134]</label>
 			<label2 />
@@ -898,8 +874,8 @@
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="11">
-			<property name="id">$NUMBER[11]</property>
+		<item id="9">
+			<property name="id">$NUMBER[9]</property>
 			<property name="mainmenuid">6</property>
 			<label>$LOCALIZE[24001]</label>
 			<label2 />
@@ -909,8 +885,8 @@
 			<onclick>noop</onclick>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="12">
-			<property name="id">$NUMBER[12]</property>
+		<item id="10">
+			<property name="id">$NUMBER[10]</property>
 			<property name="mainmenuid">6</property>
 			<label>$LOCALIZE[14022]</label>
 			<label2 />
@@ -918,6 +894,32 @@
 			<thumb />
 			<onclick>ActivateWindow(Music,musicdb://)</onclick>
 			<property name="path">ActivateWindow(Music,musicdb://)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="11">
+			<property name="id">$NUMBER[11]</property>
+			<property name="mainmenuid">6</property>
+			<label>Music Playlists</label>
+			<label2>Favourite</label2>
+			<icon>DefaultFolder.png</icon>
+			<thumb>DefaultMusicPlaylists.png</thumb>
+			<property name="translatedPath">ActivateWindow(10502,"library://music/playlists.xml/",return)</property>
+			<onclick>ActivateWindow(10502,"library://music/playlists.xml/",return)</onclick>
+			<property name="path">ActivateWindow(10502,"library://music/playlists.xml/",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="12">
+			<property name="id">$NUMBER[12]</property>
+			<property name="mainmenuid">6</property>
+			<label>Clean Audio Library</label>
+			<label2>Kodi Command</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="translatedPath">CleanLibrary(music,true)</property>
+			<onclick>CleanLibrary(music,true)</onclick>
+			<property name="path">CleanLibrary(music,true)</property>
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1231,6 +1233,18 @@
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
 			<property name="mainmenuid">15</property>
+			<label>Recently Added</label>
+			<label2 />
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<onclick>ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-20342)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="3">
+			<property name="id">$NUMBER[3]</property>
+			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[1214]</label>
 			<label2>Videos</label2>
 			<icon>special://skin/extras/icons/DefaultVideo.png</icon>
@@ -1241,32 +1255,8 @@
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-20342)</visible>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="3">
-			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">15</property>
-			<label>$LOCALIZE[575]</label>
-			<label2 />
-			<icon>DefaultShortcut.png</icon>
-			<thumb />
-			<onclick>ActivateWindow(Videos,/storage/emulated/0/Android/data/org.xbmc.psmc/files/.kodi/addons/skin.aeon.nox.silvo/extras/InProgressMovies.xsp,return)</onclick>
-			<property name="path">ActivateWindow(Videos,/storage/emulated/0/Android/data/org.xbmc.psmc/files/.kodi/addons/skin.aeon.nox.silvo/extras/InProgressMovies.xsp,return)</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-20342)</visible>
-			<property name="isSubmenu">True</property>
-		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">15</property>
-			<label>Recently Added</label>
-			<label2 />
-			<icon>DefaultShortcut.png</icon>
-			<thumb />
-			<onclick>ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</onclick>
-			<property name="path">ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-20342)</visible>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="5">
-			<property name="id">$NUMBER[5]</property>
 			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[20434]</label>
 			<label2 />
@@ -1278,8 +1268,8 @@
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="6">
-			<property name="id">$NUMBER[6]</property>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
 			<property name="mainmenuid">15</property>
 			<label>[B][COLOR blue]• [/COLOR][/B][COLOR ghostwhite]Search Movies[/COLOR]</label>
 			<label2>Video Add-On</label2>
@@ -1291,8 +1281,8 @@
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-20342)</visible>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="7">
-			<property name="id">$NUMBER[7]</property>
+		<item id="6">
+			<property name="id">$NUMBER[6]</property>
 			<property name="mainmenuid">15</property>
 			<label>[B][COLOR blue]• [/COLOR][/B][COLOR ghostwhite]In Theaters[/COLOR][B][COLOR blue] •[/COLOR][/B]</label>
 			<label2>Video Add-On</label2>
@@ -1301,6 +1291,18 @@
 			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.fuzzybritches/?action=movies&amp;url=theaters",return)</property>
 			<onclick>ActivateWindow(Videos,"plugin://plugin.video.fuzzybritches/?action=movies&amp;url=theaters",return)</onclick>
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.fuzzybritches/?action=movies&amp;url=theaters",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-20342)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="7">
+			<property name="id">$NUMBER[7]</property>
+			<property name="mainmenuid">15</property>
+			<label>$LOCALIZE[575]</label>
+			<label2 />
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<onclick>ActivateWindow(Videos,/storage/emulated/0/Android/data/org.xbmc.psmc/files/.kodi/addons/skin.aeon.nox.silvo/extras/InProgressMovies.xsp,return)</onclick>
+			<property name="path">ActivateWindow(Videos,/storage/emulated/0/Android/data/org.xbmc.psmc/files/.kodi/addons/skin.aeon.nox.silvo/extras/InProgressMovies.xsp,return)</property>
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-20342)</visible>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1365,7 +1367,7 @@
 			<label>Fuzzy Britches</label>
 			<label2>Video Add-On</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb>image://%2fstorage%2femulated%2f0%2fAndroid%2fdata%2forg.xbmc.psmc%2ffiles%2f.kodi%2faddons%2fplugin.video.fuzzybritches%2ficon.gif/</thumb>
+			<thumb>image://D%3a%5cProgram%20Files%20(Portable)%5cKodi%5cKodi%2018.4-Skin%20Testing%5cKodi%5cportable_data%5caddons%5cplugin.video.fuzzybritches%5cicon.gif/</thumb>
 			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.fuzzybritches",return)</property>
 			<onclick>ActivateWindow(Videos,"plugin://plugin.video.fuzzybritches",return)</onclick>
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.fuzzybritches",return)</property>
@@ -1378,7 +1380,7 @@
 			<label>PSMC Maintenance</label>
 			<label2>Program</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb>image://%2fstorage%2femulated%2f0%2fAndroid%2fdata%2forg.xbmc.psmc%2ffiles%2f.kodi%2faddons%2fplugin.program.psmcmaintenance%2ficon.png/</thumb>
+			<thumb>image://D%3a%5cProgram%20Files%20(Portable)%5cKodi%5cKodi%2018.4-Skin%20Testing%5cKodi%5cportable_data%5caddons%5cplugin.program.psmcmaintenance%5cicon.png/</thumb>
 			<property name="translatedPath">ActivateWindow(Programs,"plugin://plugin.program.psmcmaintenance",return)</property>
 			<onclick>ActivateWindow(Programs,"plugin://plugin.program.psmcmaintenance",return)</onclick>
 			<property name="path">ActivateWindow(Programs,"plugin://plugin.program.psmcmaintenance",return)</property>
@@ -1390,8 +1392,8 @@
 			<property name="mainmenuid">3</property>
 			<label>Artwork Beef</label>
 			<label2>Program</label2>
-			<icon>special://skin/extras/icons/DefaultAddon.png</icon>
-			<thumb>image://%2fstorage%2femulated%2f0%2fAndroid%2fdata%2forg.xbmc.psmc%2ffiles%2f.kodi%2faddons%2fscript.artwork.beef%2ficon.png/</thumb>
+			<icon>DefaultAddon.png</icon>
+			<thumb>image://D%3a%5cProgram%20Files%20(Portable)%5cKodi%5cKodi%2018.4-Skin%20Testing%5cKodi%5cportable_data%5caddons%5cscript.artwork.beef%5cicon.png/</thumb>
 			<property name="translatedPath">RunAddOn(script.artwork.beef)</property>
 			<onclick>RunAddOn(script.artwork.beef)</onclick>
 			<property name="path">RunAddOn(script.artwork.beef)</property>
@@ -1403,8 +1405,8 @@
 			<property name="mainmenuid">3</property>
 			<label>Trakt</label>
 			<label2>Program</label2>
-			<icon>special://skin/extras/icons/DefaultAddon.png</icon>
-			<thumb>image://%2fstorage%2femulated%2f0%2fAndroid%2fdata%2forg.xbmc.psmc%2ffiles%2f.kodi%2faddons%2fscript.trakt%2ficon.png/</thumb>
+			<icon>DefaultAddon.png</icon>
+			<thumb>image://D%3a%5cProgram%20Files%20(Portable)%5cKodi%5cKodi%2018.4-Skin%20Testing%5cKodi%5cportable_data%5caddons%5cscript.trakt%5cicon.png/</thumb>
 			<property name="translatedPath">RunAddOn(script.trakt)</property>
 			<onclick>RunAddOn(script.trakt)</onclick>
 			<property name="path">RunAddOn(script.trakt)</property>
@@ -1427,10 +1429,10 @@
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
 			<property name="mainmenuid">3</property>
-			<label>Speed Test</label>
+			<label>Speed Tester</label>
 			<label2>Program</label2>
-			<icon>special://skin/extras/icons/DefaultAddon.png</icon>
-			<thumb>image://%2fstorage%2femulated%2f0%2fAndroid%2fdata%2forg.xbmc.psmc%2ffiles%2f.kodi%2faddons%2fscript.speedtester%2ficon.png/</thumb>
+			<icon>DefaultAddon.png</icon>
+			<thumb>image://D%3a%5cProgram%20Files%20(Portable)%5cKodi%5cKodi%2018.4-Skin%20Testing%5cKodi%5cportable_data%5caddons%5cscript.speedtester%5cicon.png/</thumb>
 			<property name="translatedPath">RunAddOn(script.speedtester)</property>
 			<onclick>RunAddOn(script.speedtester)</onclick>
 			<property name="path">RunAddOn(script.speedtester)</property>
