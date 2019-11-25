@@ -69,11 +69,6 @@
 			<label2 />
 			<icon>special://skin/extras/icons/DefaultAddonService.png</icon>
 			<thumb />
-			<property name="widgetName">[B][COLOR yellow]System Info[/COLOR][/B]</property>
-			<property name="widgetType">system</property>
-			<property name="widgetStyle">Compact Panel</property>
-			<property name="background">smb://ZIZZLEZAZZLE/NAS-1/Media/Backgrounds/System/</property>
-			<property name="backgroundName">smb://ZIZZLEZAZZLE/NAS-1/Media/Backgrounds/System/</property>
 			<property name="widgetPanelInfo">true</property>
 			<onclick condition="String.IsEqual(ListItem.Property(path),ActivateWindow(1129))">SetProperty(CustomSelectSearch,True,Home)</onclick>
 			<onclick>ActivateWindow(Settings)</onclick>
@@ -88,6 +83,8 @@
 			<label2 />
 			<icon>special://skin/extras/icons/power.png</icon>
 			<thumb />
+			<property name="background">smb://ZIZZLEZAZZLE/NAS-1/Media/Backgrounds/Power/</property>
+			<property name="backgroundName">smb://ZIZZLEZAZZLE/NAS-1/Media/Backgrounds/Power/</property>
 			<onclick condition="String.IsEqual(ListItem.Property(path),ActivateWindow(1129))">SetProperty(CustomSelectSearch,True,Home)</onclick>
 			<onclick>ActivateWindow(shutdownmenu)</onclick>
 			<property name="path">ActivateWindow(shutdownmenu)</property>
@@ -798,6 +795,18 @@
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
 			<property name="mainmenuid">6</property>
+			<label>$LOCALIZE[744]</label>
+			<label2 />
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<onclick>ActivateWindow(Music,sources://music/,return)</onclick>
+			<property name="path">ActivateWindow(Music,sources://music/,return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="4">
+			<property name="id">$NUMBER[4]</property>
+			<property name="mainmenuid">6</property>
 			<label>Pandora</label>
 			<label2>Favourite</label2>
 			<icon>DefaultFolder.png</icon>
@@ -808,8 +817,8 @@
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="4">
-			<property name="id">$NUMBER[4]</property>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
 			<property name="mainmenuid">6</property>
 			<label>TuneIn Radio</label>
 			<label2>Favourite</label2>
@@ -821,8 +830,8 @@
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="5">
-			<property name="id">$NUMBER[5]</property>
+		<item id="6">
+			<property name="id">$NUMBER[6]</property>
 			<property name="mainmenuid">6</property>
 			<label>Amazon Music</label>
 			<label2>Favourite</label2>
@@ -834,8 +843,8 @@
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="6">
-			<property name="id">$NUMBER[6]</property>
+		<item id="7">
+			<property name="id">$NUMBER[7]</property>
 			<property name="mainmenuid">6</property>
 			<label>Google Music</label>
 			<label2>Favourite</label2>
@@ -847,46 +856,8 @@
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="7">
-			<property name="id">$NUMBER[7]</property>
-			<property name="mainmenuid">6</property>
-			<label>$LOCALIZE[744]</label>
-			<label2 />
-			<icon>DefaultShortcut.png</icon>
-			<thumb />
-			<onclick>ActivateWindow(Music,sources://music/,return)</onclick>
-			<property name="path">ActivateWindow(Music,sources://music/,return)</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
-			<property name="isSubmenu">True</property>
-		</item>
 		<item id="8">
 			<property name="id">$NUMBER[8]</property>
-			<property name="mainmenuid">6</property>
-			<label>Clean Audio Library</label>
-			<label2>Kodi Command</label2>
-			<icon>DefaultShortcut.png</icon>
-			<thumb />
-			<property name="translatedPath">CleanLibrary(music,true)</property>
-			<onclick>CleanLibrary(music,true)</onclick>
-			<property name="path">CleanLibrary(music,true)</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="9">
-			<property name="id">$NUMBER[9]</property>
-			<property name="mainmenuid">6</property>
-			<label>Music Playlists</label>
-			<label2>Favourite</label2>
-			<icon>DefaultFolder.png</icon>
-			<thumb>DefaultMusicPlaylists.png</thumb>
-			<property name="translatedPath">ActivateWindow(10502,"library://music/playlists.xml/",return)</property>
-			<onclick>ActivateWindow(10502,"library://music/playlists.xml/",return)</onclick>
-			<property name="path">ActivateWindow(10502,"library://music/playlists.xml/",return)</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="10">
-			<property name="id">$NUMBER[10]</property>
 			<property name="mainmenuid">6</property>
 			<label>$LOCALIZE[134]</label>
 			<label2 />
@@ -898,8 +869,8 @@
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="11">
-			<property name="id">$NUMBER[11]</property>
+		<item id="9">
+			<property name="id">$NUMBER[9]</property>
 			<property name="mainmenuid">6</property>
 			<label>$LOCALIZE[24001]</label>
 			<label2 />
@@ -909,8 +880,8 @@
 			<onclick>noop</onclick>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="12">
-			<property name="id">$NUMBER[12]</property>
+		<item id="10">
+			<property name="id">$NUMBER[10]</property>
 			<property name="mainmenuid">6</property>
 			<label>$LOCALIZE[14022]</label>
 			<label2 />
@@ -918,6 +889,32 @@
 			<thumb />
 			<onclick>ActivateWindow(Music,musicdb://)</onclick>
 			<property name="path">ActivateWindow(Music,musicdb://)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="11">
+			<property name="id">$NUMBER[11]</property>
+			<property name="mainmenuid">6</property>
+			<label>Music Playlists</label>
+			<label2>Favourite</label2>
+			<icon>DefaultFolder.png</icon>
+			<thumb>DefaultMusicPlaylists.png</thumb>
+			<property name="translatedPath">ActivateWindow(10502,"library://music/playlists.xml/",return)</property>
+			<onclick>ActivateWindow(10502,"library://music/playlists.xml/",return)</onclick>
+			<property name="path">ActivateWindow(10502,"library://music/playlists.xml/",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="12">
+			<property name="id">$NUMBER[12]</property>
+			<property name="mainmenuid">6</property>
+			<label>Clean Audio Library</label>
+			<label2>Kodi Command</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="translatedPath">CleanLibrary(music,true)</property>
+			<onclick>CleanLibrary(music,true)</onclick>
+			<property name="path">CleanLibrary(music,true)</property>
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-2)</visible>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1231,6 +1228,18 @@
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
 			<property name="mainmenuid">15</property>
+			<label>Recently Added</label>
+			<label2 />
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<onclick>ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-20342)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="3">
+			<property name="id">$NUMBER[3]</property>
+			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[1214]</label>
 			<label2>Videos</label2>
 			<icon>special://skin/extras/icons/DefaultVideo.png</icon>
@@ -1241,32 +1250,8 @@
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-20342)</visible>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="3">
-			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">15</property>
-			<label>$LOCALIZE[575]</label>
-			<label2 />
-			<icon>DefaultShortcut.png</icon>
-			<thumb />
-			<onclick>ActivateWindow(Videos,/storage/emulated/0/Android/data/org.xbmc.psmc/files/.kodi/addons/skin.aeon.nox.silvo/extras/InProgressMovies.xsp,return)</onclick>
-			<property name="path">ActivateWindow(Videos,/storage/emulated/0/Android/data/org.xbmc.psmc/files/.kodi/addons/skin.aeon.nox.silvo/extras/InProgressMovies.xsp,return)</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-20342)</visible>
-			<property name="isSubmenu">True</property>
-		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">15</property>
-			<label>Recently Added</label>
-			<label2 />
-			<icon>DefaultShortcut.png</icon>
-			<thumb />
-			<onclick>ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</onclick>
-			<property name="path">ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-20342)</visible>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="5">
-			<property name="id">$NUMBER[5]</property>
 			<property name="mainmenuid">15</property>
 			<label>$LOCALIZE[20434]</label>
 			<label2 />
@@ -1278,8 +1263,8 @@
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="6">
-			<property name="id">$NUMBER[6]</property>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
 			<property name="mainmenuid">15</property>
 			<label>[B][COLOR blue]• [/COLOR][/B][COLOR ghostwhite]Search Movies[/COLOR]</label>
 			<label2>Video Add-On</label2>
@@ -1291,8 +1276,8 @@
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-20342)</visible>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="7">
-			<property name="id">$NUMBER[7]</property>
+		<item id="6">
+			<property name="id">$NUMBER[6]</property>
 			<property name="mainmenuid">15</property>
 			<label>[B][COLOR blue]• [/COLOR][/B][COLOR ghostwhite]In Theaters[/COLOR][B][COLOR blue] •[/COLOR][/B]</label>
 			<label2>Video Add-On</label2>
@@ -1301,6 +1286,18 @@
 			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.fuzzybritches/?action=movies&amp;url=theaters",return)</property>
 			<onclick>ActivateWindow(Videos,"plugin://plugin.video.fuzzybritches/?action=movies&amp;url=theaters",return)</onclick>
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.fuzzybritches/?action=movies&amp;url=theaters",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-20342)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="7">
+			<property name="id">$NUMBER[7]</property>
+			<property name="mainmenuid">15</property>
+			<label>$LOCALIZE[575]</label>
+			<label2 />
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<onclick>ActivateWindow(Videos,/storage/emulated/0/Android/data/org.xbmc.psmc/files/.kodi/addons/skin.aeon.nox.silvo/extras/InProgressMovies.xsp,return)</onclick>
+			<property name="path">ActivateWindow(Videos,/storage/emulated/0/Android/data/org.xbmc.psmc/files/.kodi/addons/skin.aeon.nox.silvo/extras/InProgressMovies.xsp,return)</property>
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-20342)</visible>
 			<property name="isSubmenu">True</property>
 		</item>
@@ -1365,7 +1362,7 @@
 			<label>Fuzzy Britches</label>
 			<label2>Video Add-On</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb>image://%2fstorage%2femulated%2f0%2fAndroid%2fdata%2forg.xbmc.psmc%2ffiles%2f.kodi%2faddons%2fplugin.video.fuzzybritches%2ficon.gif/</thumb>
+			<thumb>image://D%3a%5cProgram%20Files%20(Portable)%5cKodi%5cKodi%2018.4-Skin%20Testing%5cKodi%5cportable_data%5caddons%5cplugin.video.fuzzybritches%5cicon.gif/</thumb>
 			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.fuzzybritches",return)</property>
 			<onclick>ActivateWindow(Videos,"plugin://plugin.video.fuzzybritches",return)</onclick>
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.fuzzybritches",return)</property>
@@ -1378,7 +1375,7 @@
 			<label>PSMC Maintenance</label>
 			<label2>Program</label2>
 			<icon>DefaultShortcut.png</icon>
-			<thumb>image://%2fstorage%2femulated%2f0%2fAndroid%2fdata%2forg.xbmc.psmc%2ffiles%2f.kodi%2faddons%2fplugin.program.psmcmaintenance%2ficon.png/</thumb>
+			<thumb>image://D%3a%5cProgram%20Files%20(Portable)%5cKodi%5cKodi%2018.4-Skin%20Testing%5cKodi%5cportable_data%5caddons%5cplugin.program.psmcmaintenance%5cicon.png/</thumb>
 			<property name="translatedPath">ActivateWindow(Programs,"plugin://plugin.program.psmcmaintenance",return)</property>
 			<onclick>ActivateWindow(Programs,"plugin://plugin.program.psmcmaintenance",return)</onclick>
 			<property name="path">ActivateWindow(Programs,"plugin://plugin.program.psmcmaintenance",return)</property>
@@ -1390,8 +1387,8 @@
 			<property name="mainmenuid">3</property>
 			<label>Artwork Beef</label>
 			<label2>Program</label2>
-			<icon>special://skin/extras/icons/DefaultAddon.png</icon>
-			<thumb>image://%2fstorage%2femulated%2f0%2fAndroid%2fdata%2forg.xbmc.psmc%2ffiles%2f.kodi%2faddons%2fscript.artwork.beef%2ficon.png/</thumb>
+			<icon>DefaultAddon.png</icon>
+			<thumb>image://D%3a%5cProgram%20Files%20(Portable)%5cKodi%5cKodi%2018.4-Skin%20Testing%5cKodi%5cportable_data%5caddons%5cscript.artwork.beef%5cicon.png/</thumb>
 			<property name="translatedPath">RunAddOn(script.artwork.beef)</property>
 			<onclick>RunAddOn(script.artwork.beef)</onclick>
 			<property name="path">RunAddOn(script.artwork.beef)</property>
@@ -1403,8 +1400,8 @@
 			<property name="mainmenuid">3</property>
 			<label>Trakt</label>
 			<label2>Program</label2>
-			<icon>special://skin/extras/icons/DefaultAddon.png</icon>
-			<thumb>image://%2fstorage%2femulated%2f0%2fAndroid%2fdata%2forg.xbmc.psmc%2ffiles%2f.kodi%2faddons%2fscript.trakt%2ficon.png/</thumb>
+			<icon>DefaultAddon.png</icon>
+			<thumb>image://D%3a%5cProgram%20Files%20(Portable)%5cKodi%5cKodi%2018.4-Skin%20Testing%5cKodi%5cportable_data%5caddons%5cscript.trakt%5cicon.png/</thumb>
 			<property name="translatedPath">RunAddOn(script.trakt)</property>
 			<onclick>RunAddOn(script.trakt)</onclick>
 			<property name="path">RunAddOn(script.trakt)</property>
@@ -1427,10 +1424,10 @@
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
 			<property name="mainmenuid">3</property>
-			<label>Speed Test</label>
+			<label>Speed Tester</label>
 			<label2>Program</label2>
-			<icon>special://skin/extras/icons/DefaultAddon.png</icon>
-			<thumb>image://%2fstorage%2femulated%2f0%2fAndroid%2fdata%2forg.xbmc.psmc%2ffiles%2f.kodi%2faddons%2fscript.speedtester%2ficon.png/</thumb>
+			<icon>DefaultAddon.png</icon>
+			<thumb>image://D%3a%5cProgram%20Files%20(Portable)%5cKodi%5cKodi%2018.4-Skin%20Testing%5cKodi%5cportable_data%5caddons%5cscript.speedtester%5cicon.png/</thumb>
 			<property name="translatedPath">RunAddOn(script.speedtester)</property>
 			<onclick>RunAddOn(script.speedtester)</onclick>
 			<property name="path">RunAddOn(script.speedtester)</property>
@@ -2157,121 +2154,6 @@
 					</include>
 					<content limit="" sortby="" sortorder="" target="">
 						<include>skinshortcuts-submenu-1</include>
-					</content>
-				</control>
-			</control>
-		</control>
-		<control type="group">
-			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-13000)</visible>
-			<control type="group">
-				<visible>Integer.IsGreater(Container(80114).NumItems,0)</visible>
-				<control type="group">
-					<visible>Control.HasFocus(80114)</visible>
-					<animation condition="!String.IsEqual(Skin.String(MainMenu.Layout),vertical) + Skin.HasSetting(centermainmenu)" effect="slide" end="0,950">Conditional</animation>
-					<animation condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical)" effect="slide" end="0,677">Conditional</animation>
-					<top>90</top>
-					<left>245</left>
-					<control type="group">
-						<animation effect="fade" end="0">WindowClose</animation>
-						<control type="image">
-							<top>-40</top>
-							<width>1470</width>
-							<height>391</height>
-							<texture colordiffuse="BFFFFFFF">homewidgets/list_shadow.png</texture>
-						</control>
-						<control type="group">
-							<include condition="!true">InfoPosterContent</include>
-							<include condition="!true" content="InfoTextContent">
-								<param name="left">225</param>
-								<param name="width">1195</param>
-							</include>
-						</control>
-						<control type="group">
-							<include condition="true">InfoSquareContent</include>
-							<include condition="true" content="InfoTextContent">
-								<param name="left">330</param>
-								<param name="width">1090</param>
-							</include>
-						</control>
-					</control>
-				</control>
-				<control type="group">
-					<top>504</top>
-					<control type="group">
-						<include condition="!String.IsEmpty(Skin.String(Widget.Trans))">HomeWidgetFade</include>
-						<centerleft>50%</centerleft>
-						<top>-21</top>
-						<width>1472.5</width>
-						<height>242</height>
-						<control type="image">
-							<width>1472.5</width>
-							<height>242</height>
-							<texture border="40" colordiffuse="$VAR[HomeWidgetBackColor]">$VAR[HomeWidgetBackgroundVar]</texture>
-							<visible>Skin.HasSetting(Enable.GlobalWidgetBack)</visible>
-						</control>
-						<control type="image">
-							<width>1472.5</width>
-							<height>242</height>
-							<texture border="40" colordiffuse="FF0B0B0B">homewidgets/bg_default.png</texture>
-							<visible>!Skin.HasSetting(Enable.GlobalWidgetBack)</visible>
-						</control>
-					</control>
-					<include content="PanelLabel">
-						<param name="id">80114</param>
-						<param name="Label">[B][COLOR yellow]System Info[/COLOR][/B]</param>
-						<param name="Title">$VAR[HomeWidgetInfoTitleVar]</param>
-						<param name="labelFont">font13_title</param>
-						<param name="labelBottom">223</param>
-						<param name="labelWidth">710</param>
-						<param name="labelLeft">243</param>
-						<param name="labelRight">965.5</param>
-						<param name="labelTitle">false</param>
-					</include>
-				</control>
-			</control>
-			<control type="group">
-				<top>504</top>
-				<control id="80114" type="panel">
-					<left>242.5</left>
-					<width>1435</width>
-					<height>233</height>
-					<orientation>horizontal</orientation>
-					<preloaditems>2</preloaditems>
-					<scrolltime easing="out" tween="quadratic">300</scrolltime>
-					<include>skinshortcuts-template-HorizontalNavigation1</include>
-					<include content="SquareArt">
-						<param name="containerWidth">205</param>
-						<param name="containerHeight">200</param>
-						<param name="Texture">$VAR[PosterThumbVar]</param>
-						<param name="leftArt">2.5</param>
-						<param name="topArt">0</param>
-						<param name="widthArt">200</param>
-						<param name="heightArt">200</param>
-						<param name="topFakeDiscArt">0</param>
-						<param name="leftCase">2.5</param>
-						<param name="topCase">0</param>
-						<param name="widthCase">200</param>
-						<param name="heightCase">200</param>
-						<param name="labelHeight">-29</param>
-						<param name="labelFont">font11</param>
-						<param name="fallbackFont">fontCDalbum</param>
-						<param name="fallbackVisible">false</param>
-						<param name="Aspect">keep</param>
-						<param name="Aligny">top</param>
-						<param name="Diffuse" />
-						<param name="Case" />
-						<param name="labelVisible">false</param>
-						<param name="labelFocusVisible">true</param>
-						<param name="isWeather">true</param>
-						<param name="weatherTop">39</param>
-						<param name="weatherHeight">96</param>
-						<param name="weatherTop1">0</param>
-						<param name="weatherTop2">135</param>
-						<param name="weatherTop3">166</param>
-						<param name="weatherFont">font12</param>
-					</include>
-					<content limit="" sortby="" sortorder="" target="">
-						<include>skinshortcuts-template-SystemContent</include>
 					</content>
 				</control>
 			</control>
@@ -3375,349 +3257,6 @@
 			<visible>!String.IsEmpty(Window(Weather).Property(Day1.Title))</visible>
 		</item>
 	</include>
-	<include name="skinshortcuts-template-SystemContent">
-		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-SystemContent-Master user</include>
-	</include>
-	<include name="skinshortcuts-template-SystemContent-Master user">
-		<item>
-			<label>12395</label>
-			<label2>$INFO[System.BatteryLevel]</label2>
-			<icon>homewidgets/systeminfo/square/battery_100.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/battery_100.jpg</property>
-			<property name="Label3">Remaining</property>
-			<property name="isSystemInfo">true</property>
-			<visible>Integer.IsGreater(System.BatteryLevel,60)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>12395</label>
-			<label2>$INFO[System.BatteryLevel]</label2>
-			<icon>homewidgets/systeminfo/square/battery_50.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/battery_50.jpg</property>
-			<property name="Label3">Remaining</property>
-			<property name="isSystemInfo">true</property>
-			<visible>Integer.IsGreater(System.BatteryLevel,20) + !Integer.IsGreater(System.BatteryLevel,60)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>12395</label>
-			<label2>$INFO[System.BatteryLevel]</label2>
-			<icon>homewidgets/systeminfo/square/battery_10.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/battery_10.jpg</property>
-			<property name="Label3">Remaining</property>
-			<property name="isSystemInfo">true</property>
-			<visible>Integer.IsGreater(System.BatteryLevel,5) + !Integer.IsGreater(System.BatteryLevel,20)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>12395</label>
-			<label2>$INFO[System.BatteryLevel]</label2>
-			<icon>homewidgets/systeminfo/square/battery_critical.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/battery_critical.jpg</property>
-			<property name="Label3">Remaining</property>
-			<property name="isSystemInfo">true</property>
-			<visible>Integer.IsGreater(System.BatteryLevel,0) + !Integer.IsGreater(System.BatteryLevel,5)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>705</label>
-			<label2>$INFO[Network.LinkState]</label2>
-			<icon>homewidgets/systeminfo/square/connected.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/connected.jpg</property>
-			<property name="Label3">$INFO[Network.IPAddress,IP: ]</property>
-			<property name="isSystemInfo">true</property>
-			<visible>!String.IsEmpty(Network.IPAddress)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>705</label>
-			<label2>$INFO[Network.LinkState]</label2>
-			<icon>homewidgets/systeminfo/square/disconnected.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/disconnected.jpg</property>
-			<property name="Label3">$INFO[Network.IPAddress,IP: ]</property>
-			<property name="isSystemInfo">true</property>
-			<visible>String.IsEmpty(Network.IPAddress)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>13280</label>
-			<label2>$INFO[System.ScreenWidth]x$INFO[System.ScreenHeight]</label2>
-			<icon>homewidgets/systeminfo/square/video.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/video.jpg</property>
-			<property name="Label3">$INFO[System.fps,, FPS]</property>
-			<property name="isSystemInfo">true</property>
-			<visible>!Integer.IsGreater(System.GPUTemperature,0)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>13280</label>
-			<label2>$INFO[System.ScreenWidth]x$INFO[System.ScreenHeight]</label2>
-			<icon>homewidgets/systeminfo/square/video.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/video.jpg</property>
-			<property name="Label3">$INFO[System.fps] FPS $INFO[System.GPUTemperature]</property>
-			<property name="isSystemInfo">true</property>
-			<visible>Integer.IsGreater(System.GPUTemperature,0)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>CPU</label>
-			<label2>$INFO[System.CPUUsage(used.percent)]</label2>
-			<icon>homewidgets/systeminfo/square/cpu.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/cpu.jpg</property>
-			<property name="Label3">$INFO[System.CpuFrequency] $INFO[System.CPUTemperature]</property>
-			<property name="isSystemInfo">true</property>
-			<visible>Integer.IsGreater(System.CPUTemperature,0)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>CPU</label>
-			<label2>$INFO[System.CPUUsage(used.percent)]</label2>
-			<icon>homewidgets/systeminfo/square/cpu.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/cpu.jpg</property>
-			<property name="Label3">$INFO[System.CpuFrequency]</property>
-			<property name="isSystemInfo">true</property>
-			<visible>!Integer.IsGreater(System.CPUTemperature,0)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>$LOCALIZE[31309]</label>
-			<label2>$INFO[System.Memory(free.percent)] $LOCALIZE[156]</label2>
-			<icon>homewidgets/systeminfo/square/memory.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/memory.jpg</property>
-			<property name="Label3">$INFO[System.Memory(total)] $LOCALIZE[20161]</property>
-			<property name="isSystemInfo">true</property>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>154</label>
-			<label2>$INFO[System.FreeSpacePercent]</label2>
-			<icon>homewidgets/systeminfo/square/storage.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/storage.jpg</property>
-			<property name="Label3">$INFO[System.TotalSpace]</property>
-			<property name="isSystemInfo">true</property>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>19020</label>
-			<label2>$INFO[Pvr.BackendName]</label2>
-			<icon>homewidgets/systeminfo/square/pvr.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/pvr.jpg</property>
-			<property name="Label3">$INFO[Pvr.BackendChannels] $LOCALIZE[19019]</property>
-			<property name="isSystemInfo">true</property>
-			<visible>PVR.HasTVChannels</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>19114</label>
-			<label2>$INFO[System.BuildVersion]</label2>
-			<icon>homewidgets/systeminfo/square/system.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/system.jpg</property>
-			<property name="Label3">$INFO[System.BuildDate]</property>
-			<property name="isSystemInfo">true</property>
-			<visible>!PVR.HasTVChannels</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>12390</label>
-			<label2>$INFO[System.Uptime]</label2>
-			<icon>homewidgets/systeminfo/square/uptime.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/uptime.jpg</property>
-			<property name="Label3">$LOCALIZE[20161]: $INFO[System.TotalUptime]</property>
-			<property name="isSystemInfo">true</property>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-	</include>
-	<include name="skinshortcuts-template-SystemUptime">
-		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-SystemUptime-Master user</include>
-	</include>
-	<include name="skinshortcuts-template-SystemUptime-Master user">
-		<item>
-			<label>12390</label>
-			<label2>$INFO[System.Uptime]</label2>
-			<icon>homewidgets/systeminfo/square/uptime.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/uptime.jpg</property>
-			<property name="Label3">$LOCALIZE[20161]: $INFO[System.TotalUptime]</property>
-			<property name="isSystemInfo">true</property>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-	</include>
-	<include name="skinshortcuts-template-SystemBattery">
-		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-SystemBattery-Master user</include>
-	</include>
-	<include name="skinshortcuts-template-SystemBattery-Master user">
-		<item>
-			<label>12395</label>
-			<label2>$INFO[System.BatteryLevel]</label2>
-			<icon>homewidgets/systeminfo/square/battery_100.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/battery_100.jpg</property>
-			<property name="Label3">Remains</property>
-			<property name="isSystemInfo">true</property>
-			<visible>Integer.IsGreater(System.BatteryLevel,60)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>12395</label>
-			<label2>$INFO[System.BatteryLevel]</label2>
-			<icon>homewidgets/systeminfo/square/battery_50.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/battery_50.jpg</property>
-			<property name="Label3">Remains</property>
-			<property name="isSystemInfo">true</property>
-			<visible>Integer.IsGreater(System.BatteryLevel,20) + !Integer.IsGreater(System.BatteryLevel,60)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>12395</label>
-			<label2>$INFO[System.BatteryLevel]</label2>
-			<icon>homewidgets/systeminfo/square/battery_10.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/battery_10.jpg</property>
-			<property name="Label3">Remains</property>
-			<property name="isSystemInfo">true</property>
-			<visible>Integer.IsGreater(System.BatteryLevel,5) + !Integer.IsGreater(System.BatteryLevel,20)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>12395</label>
-			<label2>$INFO[System.BatteryLevel]</label2>
-			<icon>homewidgets/systeminfo/square/battery_critical.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/battery_critical.jpg</property>
-			<property name="Label3">Remains</property>
-			<property name="isSystemInfo">true</property>
-			<visible>Integer.IsGreater(System.BatteryLevel,0) + !Integer.IsGreater(System.BatteryLevel,5)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-	</include>
-	<include name="skinshortcuts-template-SystemNetwork">
-		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-SystemNetwork-Master user</include>
-	</include>
-	<include name="skinshortcuts-template-SystemNetwork-Master user">
-		<item>
-			<label>705</label>
-			<label2>$INFO[Network.LinkState]</label2>
-			<icon>homewidgets/systeminfo/square/connected.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/connected.jpg</property>
-			<property name="Label3">$INFO[Network.IPAddress,IP: ]</property>
-			<property name="isSystemInfo">true</property>
-			<visible>!String.IsEmpty(Network.IPAddress)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>705</label>
-			<label2>$INFO[Network.LinkState]</label2>
-			<icon>homewidgets/systeminfo/square/disconnected.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/disconnected.jpg</property>
-			<property name="Label3">$INFO[Network.IPAddress,IP: ]</property>
-			<property name="isSystemInfo">true</property>
-			<visible>String.IsEmpty(Network.IPAddress)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-	</include>
-	<include name="skinshortcuts-template-SystemVideo">
-		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-SystemVideo-Master user</include>
-	</include>
-	<include name="skinshortcuts-template-SystemVideo-Master user">
-		<item>
-			<label>13280</label>
-			<label2>$INFO[System.ScreenWidth]x$INFO[System.ScreenHeight]</label2>
-			<icon>homewidgets/systeminfo/square/video.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/video.jpg</property>
-			<property name="Label3">$INFO[System.fps] FPS</property>
-			<property name="isSystemInfo">true</property>
-			<visible>!Integer.IsGreater(System.GPUTemperature,0)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>13280</label>
-			<label2>$INFO[System.ScreenWidth]x$INFO[System.ScreenHeight]</label2>
-			<icon>homewidgets/systeminfo/square/video.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/video.jpg</property>
-			<property name="Label3">$INFO[System.fps] FPS $INFO[System.GPUTemperature]</property>
-			<property name="isSystemInfo">true</property>
-			<visible>Integer.IsGreater(System.GPUTemperature,0)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-	</include>
-	<include name="skinshortcuts-template-SystemCPU">
-		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-SystemCPU-Master user</include>
-	</include>
-	<include name="skinshortcuts-template-SystemCPU-Master user">
-		<item>
-			<label>$LOCALIZE[140]</label>
-			<label2>$INFO[System.CPUUsage(used.percent)]</label2>
-			<icon>homewidgets/systeminfo/square/cpu.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/cpu.jpg</property>
-			<property name="Label3">$INFO[System.CpuFrequency] $INFO[System.CPUTemperature]</property>
-			<property name="isSystemInfo">true</property>
-			<visible>Integer.IsGreater(System.CPUTemperature,0)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-		<item>
-			<label>$LOCALIZE[140]</label>
-			<label2>$INFO[System.CPUUsage(used.percent)]</label2>
-			<icon>homewidgets/systeminfo/square/cpu.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/cpu.jpg</property>
-			<property name="Label3">$INFO[System.CpuFrequency]</property>
-			<property name="isSystemInfo">true</property>
-			<visible>!Integer.IsGreater(System.CPUTemperature,0)</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-	</include>
-	<include name="skinshortcuts-template-SystemMemory">
-		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-SystemMemory-Master user</include>
-	</include>
-	<include name="skinshortcuts-template-SystemMemory-Master user">
-		<item>
-			<label>158</label>
-			<label2>$INFO[System.Memory(free.percent)] $LOCALIZE[156]</label2>
-			<icon>homewidgets/systeminfo/square/memory.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/memory.jpg</property>
-			<property name="Label3">$INFO[System.Memory(total)] $LOCALIZE[20161]</property>
-			<property name="isSystemInfo">true</property>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-	</include>
-	<include name="skinshortcuts-template-SystemStorage">
-		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-SystemStorage-Master user</include>
-	</include>
-	<include name="skinshortcuts-template-SystemStorage-Master user">
-		<item>
-			<label>154</label>
-			<label2>$INFO[System.FreeSpacePercent]</label2>
-			<icon>homewidgets/systeminfo/square/storage.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/storage.jpg</property>
-			<property name="Label3">$INFO[System.TotalSpace]</property>
-			<property name="isSystemInfo">true</property>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-	</include>
-	<include name="skinshortcuts-template-SystemPVR">
-		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-SystemPVR-Master user</include>
-	</include>
-	<include name="skinshortcuts-template-SystemPVR-Master user">
-		<item>
-			<label>19020</label>
-			<label2>$INFO[Pvr.BackendName]</label2>
-			<icon>homewidgets/systeminfo/square/pvr.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/pvr.jpg</property>
-			<property name="Label3">$INFO[Pvr.BackendChannels] $LOCALIZE[19019]</property>
-			<property name="isSystemInfo">true</property>
-			<visible>PVR.HasTVChannels</visible>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-	</include>
-	<include name="skinshortcuts-template-SystemVersion">
-		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-SystemVersion-Master user</include>
-	</include>
-	<include name="skinshortcuts-template-SystemVersion-Master user">
-		<item>
-			<label>19114</label>
-			<label2>$INFO[System.BuildVersion]</label2>
-			<icon>homewidgets/systeminfo/square/system.png</icon>
-			<property name="Fanart">special://skin/backgrounds/widgets/systeminfo/fanart/system.jpg</property>
-			<property name="Label3">$INFO[System.BuildDate]</property>
-			<property name="isSystemInfo">true</property>
-			<onclick>ActivateWindow(systeminfo)</onclick>
-		</item>
-	</include>
 	<include name="skinshortcuts-template-widget2">
 		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-widget2-Master user</include>
 	</include>
@@ -4449,6 +3988,36 @@
 		<description>This include was built automatically as the template didn't match any menu items</description>
 	</include>
 	<include name="skinshortcuts-template-WidgetTitle2.2">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-SystemContent">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-SystemUptime">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-SystemBattery">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-SystemNetwork">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-SystemVideo">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-SystemCPU">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-SystemMemory">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-SystemStorage">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-SystemPVR">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-SystemVersion">
 		<description>This include was built automatically as the template didn't match any menu items</description>
 	</include>
 	<include name="skinshortcuts-template-NextAiredWidgetContent">

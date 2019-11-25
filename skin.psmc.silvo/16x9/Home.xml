@@ -169,65 +169,26 @@
 			<!-- Use this to space all the groups -->
 			<animation effect="" end="200" time="10000" delay="300" pulse="true" condition="true">Conditional</animation>
 			
-			<!-- Logo Top Right Animation -->
+			<!-- Logo 1 Animation -->
 			<control type="image">
-				<left>620</left>
-				<top>-220</top>
+				<left>570</left>
+				<top>-300</top>
 				<width>1280</width>
-				<height>700</height>
+				<height>900</height>
 				<texture border="0">logo.gif</texture>
-				<animation effect="fade" start="0%" end="100%" time="10000" delay="4000" reversible="false" loop="true" pulse="false" condition="true">Conditional</animation>
-				<animation effect="fade" start="100%" end="0%" time="10000" delay="4000" reversible="false" loop="true" pulse="false" condition="true">Conditional</animation>
+				<animation effect="fade" start="0%" end="100%" time="10000" delay="155000" reversible="false" loop="true" pulse="false" condition="true">Conditional</animation>
+				<animation effect="fade" start="100%" end="0%" time="10000" delay="155000" reversible="false" loop="true" pulse="false" condition="true">Conditional</animation>
 			</control>
 			
-			<!-- PS Moving Right 1 Animation -->
-				<control type="image">
-				<left>0</left>
-				<top>550</top>
-				<width>110</width>
-				<height>132</height>
-				<texture flipx="true" border="0">family.gif</texture>
-				<animation effect="slide" start="0,0" end="2800,0" time="26000" delay="1000" reversible="false" loop="false" pulse="false"  condition="true">Conditional</animation>
-			</control>
-			
-			<!-- Family Moving Left Animation -->
-				<control type="image">
-				<left>0</left>
-				<top>450</top>
-				<width>144</width>
-				<height>132</height>
-				<texture flipx="false" border="0">family1.gif</texture>
-				<animation effect="slide" start="2800" end="0,0" time="26000" delay="18000" reversible="false" loop="false" pulse="false"  condition="true">Conditional</animation>
-			</control>
-			
-			<!-- Family Moving Right Animation -->
-				<control type="image">
-				<left>0</left>
-				<top>550</top>
-				<width>144</width>
-				<height>132</height>
-				<texture flipx="true" border="0">family1.gif</texture>
-				<animation effect="slide" start="0,0" end="2800,0" time="26000" delay="42000" reversible="false" loop="false" pulse="false"  condition="true">Conditional</animation>
-			</control>
-			
-			<!-- PS Moving Left Upside Down Animation -->
-				<control type="image">
-				<left>0</left>
-				<top>668</top>
-				<width>110</width>
-				<height>132</height>
-				<texture flipx="false" border="0">family_upsidedown.gif</texture>
-				<animation effect="slide" start="2800" end="0,0" time="26000" delay="57500" reversible="false" loop="false" pulse="false"  condition="true">Conditional</animation>
-			</control>
-			
-			<!-- PS Moving Right 2 Animation -->
-				<control type="image">
-				<left>0</left>
-				<top>550</top>
-				<width>110</width>
-				<height>132</height>
-				<texture flipx="true" border="0">family.gif</texture>
-				<animation effect="slide" start="0,0" end="2800,0" time="26000" delay="81000" reversible="false" loop="true" pulse="false"  condition="true">Conditional</animation>
+			<!-- Logo 2 Animation -->
+			<control type="image">
+				<left>610</left>
+				<top>0</top>
+				<width>1280</width>
+				<height>800</height>
+				<texture border="0">logo1.gif</texture>
+				<animation effect="fade" start="0%" end="100%" time="10000" delay="155000" reversible="false" loop="true" pulse="false" condition="true">Conditional</animation>
+				<animation effect="fade" start="100%" end="0%" time="10000" delay="155000" reversible="false" loop="true" pulse="false" condition="true">Conditional</animation>
 			</control>
 			
 			<!-- Barrel Moving Left Animation -->
@@ -237,7 +198,67 @@
 				<width>110</width>
 				<height>132</height>
 				<texture flipx="false" border="0">barrel.gif</texture>
-				<animation effect="slide" start="2800" end="0,0" time="26000" delay="96000" reversible="false" loop="true" pulse="false"  condition="true">Conditional</animation>
+				<animation effect="slide" start="2800" end="0,0" time="22000" delay="11000" reversible="false" loop="false" pulse="false"  condition="true">Conditional</animation>
+			</control>
+			
+			<!-- PS Moving Right 1 Animation -->
+				<control type="image">
+				<left>0</left>
+				<top>550</top>
+				<width>110</width>
+				<height>132</height>
+				<texture flipx="true" border="0">family.gif</texture>
+				<animation effect="slide" start="0,0" end="2800,0" time="30000" delay="32000" reversible="false" loop="false" pulse="false"  condition="true">Conditional</animation>
+			</control>
+			
+			<!-- PS Moving Left 1 Animation -->
+				<control type="image">
+				<left>0</left>
+				<top>450</top>
+				<width>110</width>
+				<height>132</height>
+				<texture flipx="false" border="0">family.gif</texture>
+				<animation effect="slide" start="2800" end="0,0" time="30000" delay="51000" reversible="false" loop="false" pulse="false"  condition="true">Conditional</animation>
+			</control>
+			
+			<!-- PS Moving Right 2 Animation -->
+				<control type="image">
+				<left>0</left>
+				<top>550</top>
+				<width>110</width>
+				<height>132</height>
+				<texture flipx="true" border="0">family.gif</texture>
+				<animation effect="slide" start="0,0" end="2800,0" time="30000" delay="79000" reversible="false" loop="false" pulse="false"  condition="true">Conditional</animation>
+			</control>
+			
+			<!-- PS Moving Left Upside Down Animation -->
+				<control type="image">
+				<left>0</left>
+				<top>668</top>
+				<width>110</width>
+				<height>132</height>
+				<texture flipx="false" border="0">family_upsidedown.gif</texture>
+				<animation effect="slide" start="2800" end="0,0" time="30000" delay="97000" reversible="false" loop="false" pulse="false"  condition="true">Conditional</animation>
+			</control>
+			
+			<!-- Barrel Moving Right Animation -->
+				<control type="image">
+				<left>0</left>
+				<top>548</top>
+				<width>110</width>
+				<height>132</height>
+				<texture flipx="true" border="0">barrel.gif</texture>
+				<animation effect="slide" start="0,0" end="2800,0" time="22000" delay="124000" reversible="false" loop="true" pulse="false"  condition="true">Conditional</animation>
+			</control>
+			
+			<!-- Barrel Moving Left 2 Animation -->
+				<control type="image">
+				<left>0</left>
+				<top>550</top>
+				<width>110</width>
+				<height>132</height>
+				<texture flipx="false" border="0">barrel.gif</texture>
+				<animation effect="slide" start="2800,0" end="0,0" time="22000" delay="121000" reversible="false" loop="true" pulse="false"  condition="true">Conditional</animation>
 			</control>
 									
 				<control type="image">
