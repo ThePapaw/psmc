@@ -176,8 +176,8 @@
 				<width>1280</width>
 				<height>900</height>
 				<texture border="0">logo.gif</texture>
-				<animation effect="fade" start="0%" end="100%" time="10000" delay="155000" reversible="false" loop="true" pulse="false" condition="true">Conditional</animation>
-				<animation effect="fade" start="100%" end="0%" time="10000" delay="155000" reversible="false" loop="true" pulse="false" condition="true">Conditional</animation>
+				<animation effect="fade" start="0%" end="100%" time="10000" delay="155000" reversible="false" loop="false" pulse="false" condition="true">Conditional</animation>
+				<animation effect="fade" start="100%" end="0%" time="10000" delay="155000" reversible="false" loop="false" pulse="false" condition="true">Conditional</animation>
 			</control>
 			
 			<!-- Logo 2 Animation -->
@@ -187,8 +187,8 @@
 				<width>1280</width>
 				<height>800</height>
 				<texture border="0">logo1.gif</texture>
-				<animation effect="fade" start="0%" end="100%" time="10000" delay="155000" reversible="false" loop="true" pulse="false" condition="true">Conditional</animation>
-				<animation effect="fade" start="100%" end="0%" time="10000" delay="155000" reversible="false" loop="true" pulse="false" condition="true">Conditional</animation>
+				<animation effect="fade" start="0%" end="100%" time="10000" delay="155000" reversible="false" loop="false" pulse="false" condition="true">Conditional</animation>
+				<animation effect="fade" start="100%" end="0%" time="10000" delay="155000" reversible="false" loop="false" pulse="false" condition="true">Conditional</animation>
 			</control>
 			
 			<!-- Barrel Moving Left Animation -->
