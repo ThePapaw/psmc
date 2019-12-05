@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-    <addon id="repository.fuzzybritches" name="Fuzzy Britches Repository" version="1.0.10" provider-name="The Papaw">
+    <addon id="repository.fuzzybritches" name="Fuzzy Britches Repository" version="1.0.15" provider-name="The Papaw">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
@@ -30,6 +30,6 @@
 			<icon>icon.gif</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[COLOR yellow]All Skins updated and completely redesigned[/COLOR][CR]- [COLOR yellow]NEW Animated skins added![/COLOR]</news>
+		<news>[COLOR yellow]All Skins updated and completely redesigned[/COLOR][CR]- [COLOR yellow]NEW Animated skins added![/COLOR][CR]- [COLOR yellow]Added Fuzzy Britches v2[/COLOR]</news>
         </extension>
     </addon>
