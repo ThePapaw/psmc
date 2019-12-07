@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.psmc.spiderman" version="2.0.794" name="PSMC's Spiderman Skin" provider-name="The Papaw">
+<addon id="skin.psmc.spiderman" version="2.1.794" name="PSMC's Spiderman Skin" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
