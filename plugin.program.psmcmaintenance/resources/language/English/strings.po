@@ -1,0 +1,65 @@
+# Addon Name: PSMC Maintenance
+# Addon id: plugin.program.psmcmaintenance
+# Addon Provider: The Papaw
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: PSMC Maintenance\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2019-03-10 12:00+0000\n"
+"Last-Translator: JewBMX\n"
+"Language-Team: English (http://www.google.com/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#32616"
+msgid "Debugging"
+msgstr ""
+
+msgctxt "#40001"
+msgid "Startup/Auto"
+msgstr ""
+
+msgctxt "#40002"
+msgid "Hide/Show"
+msgstr ""
+
+msgctxt "#40003"
+msgid "Backup/Restore"
+msgstr ""
+
+msgctxt "#40004"
+msgid "Wizard Creator"
+msgstr ""
+
+msgctxt "#40005"
+msgid "Show Stats at Startup"
+msgstr ""
+
+msgctxt "#40006"
+msgid "AutoClean Cache at Startup"
+msgstr ""
+
+msgctxt "#40007"
+msgid "Package Folder Limits"
+msgstr ""
+
+msgctxt "#40008"
+msgid "Max Total Files Size (MB)"
+msgstr ""
+
+msgctxt "#40009"
+msgid "Max Number of Zip Files"
+msgstr ""
+
+msgctxt "#40010"
+msgid "Thumbnails Folder Limits"
+msgstr ""
+
+msgctxt "#40011"
+msgid "Max Total Files Size (MB)"
+msgstr ""
+
