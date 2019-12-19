@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.program.psmcmaintenance" name="PSMC Maintenance" provider-name="The Papaw" version="1.0.7">
+<addon id="plugin.program.psmcmaintenance" name="PSMC Maintenance" provider-name="The Papaw" version="1.0.8">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.requests" />
