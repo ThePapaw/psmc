@@ -376,7 +376,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.psmc.batman" version="2.2.794" name="PSMC's Batman Skin" provider-name="The Papaw">
+<addon id="skin.psmc.batman" version="2.3.794" name="PSMC's Batman Skin" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
@@ -418,7 +418,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.psmc.man.of.steel" version="2.2.794" name="PSMC's Man of Steel Skin" provider-name="The Papaw">
+<addon id="skin.psmc.man.of.steel" version="2.3.794" name="PSMC's Man of Steel Skin" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.17" />
@@ -460,7 +460,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.psmc.scooby-doo" version="1.2.794" name="PSMC's Scooby-Doo Skin" provider-name="The Papaw">
+<addon id="skin.psmc.scooby-doo" version="1.3.794" name="PSMC's Scooby-Doo Skin" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
@@ -543,7 +543,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.psmc.spiderman" version="2.2.794" name="PSMC's Spiderman Skin" provider-name="The Papaw">
+<addon id="skin.psmc.spiderman" version="2.3.794" name="PSMC's Spiderman Skin" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
@@ -585,7 +585,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.psmc.super.mario.galaxy" version="2.2.794" name="PSMC's Super Mario Skin" provider-name="The Papaw">
+<addon id="skin.psmc.super.mario.galaxy" version="2.3.794" name="PSMC's Super Mario Skin" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
@@ -627,7 +627,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.psmc.toystory" version="1.2.794" name="PSMC's Toy Story" provider-name="The Papaw">
+<addon id="skin.psmc.toystory" version="1.3.794" name="PSMC's Toy Story" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.10" />
