@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.psmc.man.of.steel" version="2.3.794" name="PSMC's Man of Steel Skin" provider-name="The Papaw">
+<addon id="skin.psmc.man.of.steel" version="2.4.794" name="PSMC's Man of Steel Skin" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0" />
 		<import addon="script.skinshortcuts" version="1.0.17" />
