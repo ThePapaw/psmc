@@ -1,92 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
-
-    <category label="40002">
-        <setting type="lsep" label="Personalize It" />
-        <setting id="auto-view" type="bool" label="Enable Auto View" default="false"/>
-        <setting id="viewType" type="action" label="-ViewType by Name:" option="close" action="RunPlugin(plugin://plugin.program.psmcmaintenance/?action=viewTypes)" visible="eq(-1,true)" />
-        <setting id="viewType2" type="text" label="-ViewType by Number:" default="50" visible="eq(-2,true)" />
-        <setting id="my_ColorChoice" type="action" label="Custom Font Color:" option="close" action="RunPlugin(plugin://plugin.program.psmcmaintenance/?action=colorChoice)" default="none" />
-        <setting type="sep" />
-        <setting type="lsep" label="Main Menu" />
-        <setting id="navi.maintenance" type="bool" label="Maintenance" default="true" />
-        <setting id="navi.tools" type="bool" label="Tools" default="true" />
-        <setting id="navi.utils" type="bool" label="Utilities" default="true" />
-        <setting id="navi.logs" type="bool" label="Logs" default="false" />
-        <setting id="navi.settings" type="bool" label="Settings" default="true" />
-        <setting id="navi.changelog" type="bool" label="ChangeLog" default="true" />
-        <setting type="sep" />
-    </category>
-
-    <category label="40001">
-        <setting type="lsep" label="StartUp" />
-        <setting id="notify_mode" type="bool" label="40005" default="false" />
-        <setting id="auto_check4updates" type="bool" label="Auto Check for Updates (All Addons and Repos)" default="false" />
-        <setting type="text" label="Tip: Make sure your setup to only notify, not auto install." enable="false" />
-        <setting type="sep" />
-        <setting id="startup.cache" type="bool" label="40006" default="false" />
-        <setting type="sep" />
-        <setting type="lsep" label="40007" />
-        <setting id="service_package" type="bool" label="Enable" default="true" />
-        <setting id="filesize_alert" type="slider" label="40008" default="250" range="25,500" option="int" enable="!eq(-1,false)" />
-        <setting id="packagenumbers_alert" type="slider" label="40009" default="50" range="5,200" option="int" enable="!eq(-2,false)" />
-        <setting type="lsep" label="40010" />
-        <setting id="service_thumbnails" type="bool" label="Enable" default="true" />
-        <setting id="filesizethumb_alert" type="slider" label="40011" default="500" range="50,2000" option="int" enable="!eq(-1,false)" />
-        <setting type="sep" />
-    </category>
-
-    <category label="40003">
-        <setting type="lsep" label="Backup Location" />
-        <setting id="download.path" type="folder" label="(folder)" visible="True" />
-        <setting type="sep" />
-        <setting type="lsep" label="Restore Location" />
-        <setting id="restore.path" type="folder" label="(folder)" visible="True" />
-        <setting type="sep" />
-    </category>
-
-    <category label="40004">
-        <setting type="lsep" label="Wizard 1" />
-        <setting id="enable_wiz1" type="bool" label="Enable wizard" default="false"/>
-        <setting id="name1" type="text" label="Name" default="name" enable="!eq(-1,false)"/>
-        <setting id="url1" type="text" label="Zip Url" default="https://" enable="!eq(-2,false)"/>
-        <setting id="img1" type="text" label="Image" default="special://home/addons/plugin.program.psmcmaintenance/fanart.jpg" enable="!eq(-3,false)"/>
-        <setting type="sep" />
-        <setting type="lsep" label="Wizard 2" />
-        <setting id="enable_wiz2" type="bool" label="Enable wizard" default="false"/>
-        <setting id="name2" type="text" label="Name" default="name" enable="!eq(-1,false)"/>
-        <setting id="url2" type="text" label="Zip Url" default="https://" enable="!eq(-2,false)"/>
-        <setting id="img2" type="text" label="Image" default="special://home/addons/plugin.program.psmcmaintenance/fanart.jpg" enable="!eq(-3,false)"/>
-        <setting type="sep" />
-        <setting type="lsep" label="Wizard 3" />
-        <setting id="enable_wiz3" type="bool" label="Enable wizard" default="false"/>
-        <setting id="name3" type="text" label="Name" default="name" enable="!eq(-1,false)"/>
-        <setting id="url3" type="text" label="Zip Url" default="https://" enable="!eq(-2,false)"/>
-        <setting id="img3" type="text" label="Image" default="special://home/addons/plugin.program.psmcmaintenance/fanart.jpg" enable="!eq(-3,false)"/>
-        <setting type="sep" />
-    </category>
-
-    <category label="32616">
-        <setting type="lsep" label="Debugger of Errors" />
-        <setting id="addon_debug" type="bool" label="Enable Debug" default="false" />
-        <setting id="navi.dev" type="bool" label="Dev Menu (Used for Testing.)" default="false" />
-        <setting type="sep" />
-        <setting type="lsep" label="AdvancedClean (For Testing)" />
-        <setting id="devnote01" type="text" label="These Settings Might Cause Errors." enable="false" visible="true" />
-        <setting type="sep" />
-        <setting type="lsep" label="Clearing Cache" />
-        <setting id="tune.cachePath" type="bool" label="cachePath" default="true" />
-        <setting id="tune.tempPath" type="bool" label="tempPath" default="true" />
-        <setting id="tune.atv2_cache_a" type="bool" label="atv2_cache_a" default="true" />
-        <setting id="tune.atv2_cache_b" type="bool" label="atv2_cache_b" default="true" />
-        <setting id="tune.cacheEntries" type="bool" label="cacheEntries" default="true" />
-        <setting type="sep" />
-        <setting type="lsep" label="Clearing Thumbnails" />
-        <setting id="tune.thumbs1" type="bool" label="Thumbnails Path1" default="true" />
-        <setting id="tune.thumbs2" type="bool" label="Thumbnails Path2" default="true" />
-        <setting id="tune.thumbs3" type="bool" label="Textures13.db" default="true" />
-        <setting type="sep" />
-    </category>
-
+	<category label="Maintenance">
+		<setting id="clearcache" type="bool" label="Clear Cache at Startup" default="true" />
+		<setting type="lsep" label="Package Folder Limits" />
+		<setting id="filesize_alert" type="slider" label="Max Folder Size MB" default="150" range="25,25,500" option="int" />
+		<setting type="lsep" label="Thumbnails Folder Limits" />
+		<setting id="filesizethumb_alert" type="slider" label="Max Folder Size MB" default="500" range="100,50,1500" option="int" />
+	</category>
+	<category label="Backups">
+		<setting type="lsep" label="[COLOR=dodgerblue]Backup Location [COLOR=red] Dont change![/COLOR]"/>
+		<setting id="zip" type="folder"    label="Dont change unless you know what your doing!!!!"      default="special://home/backupdir"/>
+   	</category>
 </settings>
-

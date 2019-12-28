@@ -1,7 +1,0 @@
-[B] v1.0.7 [/B]
-- Replacing original PSMC Maintenance
- (forked from ezclean)
-
-[B] v1.0.0 [/B]
-- Initial Release.
-
