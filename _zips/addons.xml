@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
+<addon id="plugin.forceclose.psmc" name="[COLOR crimson]• [/COLOR]Force Close PSMC[COLOR crimson] •[/COLOR]" version="1.0.0" provider-name="The Papaw">
+  <requires>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Force Close PSMC</summary>
+        <description lang="en_GB">Part of the PSMC Collection</description>
+        <platform>all</platform>
+        <license>CC BY-NC-SA 4.0</license>
+        <forum />
+		<website>https://github.com/ThePapaw/fuzzybritches</website>
+		<source>https://github.com/ThePapaw/fuzzybritches</source>
+        <disclaimer lang="en_GB"></disclaimer>
+        <assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+        </assets>
+        <news>1.0.0[CR][COLOR crimson]• [/COLOR]Initial release</news>
+    </extension>
+</addon>
+
 <addon id="plugin.program.psmcmaintenance"
 	     name="PSMC Maintenance"
 	     version="1.0.9"
@@ -131,7 +154,7 @@
         </extension>
     </addon>
 
-<addon id="repository.psmc" name="PSMC Repository" version="1.0.15" provider-name="The Papaw">
+<addon id="repository.psmc" name="PSMC Repository" version="1.0.16" provider-name="The Papaw">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
     </requires>
@@ -327,19 +350,6 @@
 	</extension>
 </addon>
 
-<addon id="script.moviesetart" name="Movie Set Artwork Automator" version="0.2.2" provider-name="Trent Fitzgibbon">
-	<extension point="xbmc.python.script" library="default.py">
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<language />
-		<platform>all</platform>
-		<summary>Movie Set Artwork Automator</summary>
-		<description>This addon will automatically set artwork for all movie sets in your library.
-
-			The addon can search for common parent folders of movies within a set or you can specify a single artwork folder containing artwork for all your movie sets (eg &amp;lt;set name&amp;gt;-poster.jpg).</description>
-		</extension>
-	</addon>
-
 <addon id="script.realdebrid.mod" name="RealDebrid-Mod" version="1.1.2" provider-name="ptom">
 	<requires>
         <import addon="script.module.requests" version="2.3.0"/>
@@ -379,48 +389,6 @@
 		</assets>
 		<news>Add set details support for Home Window</news>
 	</extension>
-</addon>
-
-<addon id="script.speedtester" name="Speed Tester" version="1.1.2" provider-name="Dr0idGuy, dagwieers">
-  <requires>
-    <import addon="xbmc.python" version="2.26.0"/>
-  </requires>
-  <extension point="xbmc.python.script" library="resources/lib/addon_entry.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en_GB">Test your Internet bandwidth</summary>
-    <description lang="en_GB">This add-on tests your Internet bandwith and reports both download and upload speeds and latency from within Kodi.
-
-Use this if you are experiencing streaming issues and you suspect your network to be the cause.</description>
-    <disclaimer lang="en_GB">Speed Tester is powered by speedtest.net</disclaimer>
-    <language>en</language>
-    <license>Apache-2.0</license>
-    <email>dag@wieers.com</email>
-    <website>https://kodi.wiki/view/Add-on:Speed_Tester</website>
-    <source>https://github.com/add-ons/script.speedtester</source>
-    <news>
-v1.1.1 (2020-10-10)
-- Fix issues for Kodi repo review
-
-v1.1.1 (2020-10-10)
-- Add localization
-
-v1.1.0 (2020-09-26)
-- Move add-on to Add-ons project
-- Fix typos and structure of standard output
-
-v1.0.1 (2019-08-06)
-- Initial release
-    </news>
-    <assets>
-      <icon>resources/media/icon.png</icon>
-      <screenshot>resources/media/screenshot01.jpg</screenshot>
-      <screenshot>resources/media/screenshot02.jpg</screenshot>
-      <screenshot>resources/media/screenshot03.jpg</screenshot>
-    </assets>
-  </extension>
 </addon>
 
 <addon id="skin.psmc.batman" version="2.4.794" name="PSMC's Batman Skin" provider-name="The Papaw">

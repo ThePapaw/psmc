@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.forceclose.psmc" name="[COLOR crimson]• [/COLOR]Force Close PSMC[COLOR crimson] •[/COLOR]" version="1.0.0" provider-name="The Papaw">
+  <requires>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Force Close PSMC</summary>
+        <description lang="en_GB">Part of the PSMC Collection</description>
+        <platform>all</platform>
+        <license>CC BY-NC-SA 4.0</license>
+        <forum />
+		<website>https://github.com/ThePapaw/fuzzybritches</website>
+		<source>https://github.com/ThePapaw/fuzzybritches</source>
+        <disclaimer lang="en_GB"></disclaimer>
+        <assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+        </assets>
+        <news>1.0.0[CR][COLOR crimson]• [/COLOR]Initial release</news>
+    </extension>
+</addon>
