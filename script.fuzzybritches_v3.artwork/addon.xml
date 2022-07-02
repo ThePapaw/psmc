@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.fuzzybritches_v3.artwork" version="1.0.0" name="[COLOR crimson]•• [/COLOR]Fuzzy Britches v3 Artwork[COLOR crimson] ••[/COLOR]" provider-name="The Papaw">
+    <requires>
+        <!--<import addon="xbmc.python" version="2.19.0"/>-->
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Fuzzy Britches v3 Artwork</summary>
+        <description lang="en_GB">Part of the PSMC Collection</description>
+        <platform>all</platform>
+        <license>CC BY-NC-SA 4.0</license>
+        <forum />
+		<website>https://github.com/ThePapaw/fuzzybritches</website>
+		<source>https://github.com/ThePapaw/fuzzybritches</source>
+        <disclaimer lang="en_GB">The author of this add-on does not host any of the content which is found and has no affiliation with any of the content providers. This add-on simply searches websites for content. Use at your own risk![CR]This project uses API's from TMDb, Trakt, Fanart.tv, but is not affiliated nor endorsed by any of their respective ogranizations.[CR]Please support them accordingly.</disclaimer>
+        <assets>
+			<icon>icon.gif</icon>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+        </assets>
+        <news>
+- See Changelog on Tools menu
+        </news>
+    </extension>
+</addon>
