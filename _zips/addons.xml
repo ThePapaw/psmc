@@ -119,7 +119,7 @@
   </extension>
 </addon>
 
-    <addon id="repository.fuzzybritches" name="Fuzzy Britches Repository" version="1.0.15" provider-name="The Papaw">
+    <addon id="repository.fuzzybritches" name="Fuzzy Britches Repository" version="1.0.32" provider-name="The Papaw">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
@@ -128,16 +128,11 @@
             <checksum>https://raw.githubusercontent.com/thepapaw/fuzzybritches/master/_zips/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/thepapaw/fuzzybritches/master/_zips/</datadir>
             <hashes>false</hashes>
-		<dir>
-            <info compressed="false">https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/</datadir>
-            <hashes>false</hashes>
-        </dir>
+		<dir></dir>
         </extension>
         <extension point="xbmc.addon.metadata">
             <summary>The Official Fuzzy Britches Repository.</summary>
-            <description>This is the  "Official" repository for the Fuzzy Britches addon for Kodi.[CR]- [COLOR yellow]New Animated skins added![/COLOR]</description>
+            <description>This is the  "Official" repository for the Fuzzy Britches and other PSMC addons</description>
             <platform>all</platform>
             <genre>movies,usa</genre>
 			<license>CC BY-NC-SA 4.0</license>
@@ -146,11 +141,11 @@
 			<source>https://github.com/ThePapaw/fuzzybritches</source>
 			<video_guide></video_guide>
 		<assets>
-			<icon>icon.png</icon>
 			<icon>icon.gif</icon>
+			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>[COLOR yellow]All Skins updated and completely redesigned[/COLOR][CR]- [COLOR yellow]NEW Animated skins added![/COLOR][CR]- [COLOR yellow]Added Fuzzy Britches v2[/COLOR]</news>
+		<news></news>
         </extension>
     </addon>
 
