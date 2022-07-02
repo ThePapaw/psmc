@@ -363,6 +363,18 @@
   </extension>
 </addon>
 
+<addon id="resource.uisounds.psmc.max" version="1.0.0" name="PSMC Max Sounds" provider-name="The Papaw">
+  <requires>
+    <import addon="kodi.resource" version="1.0.0"/>
+  </requires>
+  <extension point="kodi.resource.uisounds"/>
+  <extension point="kodi.addon.metadata">
+    <summary lang="en">PSMC Max Sounds</summary>
+    <description lang="en">Designed to compliment the PSMC Max Skin</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="script.fuzzybritches_v3.artwork" version="1.0.0" name="[COLOR crimson]â€¢â€¢ [/COLOR]Fuzzy Britches v3 Artwork[COLOR crimson] â€¢â€¢[/COLOR]" provider-name="The Papaw">
     <requires>
         <!--<import addon="xbmc.python" version="2.19.0"/>-->
