@@ -185,7 +185,7 @@
         </extension>
     </addon>
 
-<addon id="repository.psmc" name="PSMC Repository" version="1.0.16" provider-name="The Papaw">
+<addon id="repository.psmc" name="PSMC Repository" version="1.0.17" provider-name="The Papaw">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
     </requires>
@@ -197,7 +197,7 @@
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>The Official Repo for the PSMC (Papaw's Son Media Center)</summary>
-        <description>This is the "Official" repository for PSMC (Papaw's Son Media Center). A Kodi fork.[CR]- [COLOR yellow]New Animated skins added![/COLOR]</description>
+        <description>This is the "Official" repository for PSMC (Papaw's Son Media Center). PSMC is a fork of Kodi.[CR]- [COLOR orange]Be sure to check out all the addons in the PSMC Collection![/COLOR]</description>
         <platform>all</platform>
 		<license>CC BY-NC-SA 4.0</license>
 		<forum></forum>
