@@ -21,17 +21,16 @@ Features include: Auto delete of cache at start up (optional), notifies when pac
 
 Most of them now include <B>Home Screen Animation</B> (can be toggled off), additional Falling Seasons, GUI Sounds and other various changes.  (If you wish to use the included <B>GUI Sounds</B> for a particular skin, they are installed with the skin, but you will need to Enable them in the media player's system settings) The PSMC skins include:
 
+• <B>PSMC Max Skin</B> - Modern skin with muliple themes to choose from, extremely configurable (GUI sounds available). <BR>
 • <B>PSMC's Silvo Skin</B> - A general Aeon Nox SiLVO skin themed for PSMC. <BR>
 • <B>PSMC's Spiderman Skin</B> - Updated and redesigned (includes animations & GUI sounds). <BR>
 • <B>PSMC's Man of Steel Skin</B> - Updated and redesigned (includes animations & GUI sounds)<BR>
 • <B>PSMC's Super Mario Galaxy Skin</B> - Updated and redesigned (includes animations & GUI sounds). <BR>
-
-*Newly Added Skins:* <BR>
 • <B>PSMC's Batman Skin</B> - ***NEW Design** (includes animations & GUI sounds). <BR>
 • <B>PSMC's Scooby-Doo Skin</B> - ***NEW Design** (includes animations & GUI sounds). <BR>
 • <B>PSMC's Toy Story Skin</B> - ***NEW Design** (includes animations & GUI sounds). <BR>
 
-•  •  • *(The PSMC Intro video is enabled in the Startup.xml file. To disable it, delete line #12 in the Startup.xml, then turn it Off in the skin settings Extras section)* •  •  • 
+•  •  • *(Older skins have The PSMC Intro video is enabled in the Startup.xml file. To disable it, delete line #12 in the Startup.xml, then turn it Off in the skin settings Extras section)* •  •  •  
 
 PSMC, the Addons and Skins hosted here are considered 3rd party, so please do not seek help from Kodi, the Kodi forums, etc..
 
@@ -39,7 +38,7 @@ If you have issues, please post them here. All items are still being developed a
 
   
 To Install this Repo:
-1. Download the repository. <a href="https://github.com/ThePapaw/psmc/blob/master/_zips/repository.psmc/repository.psmc-1.0.15.zip?raw=true"><B>CLICK HERE</B></a>
+1. Download the repository. <a href="https://github.com/ThePapaw/psmc/blob/master/_zips/repository.psmc/repository.psmc-1.0.17.zip?raw=true"><B>CLICK HERE</B></a>
 
 2. Install "from zip file" in PSMC (or Kodi) as you would any other downloaded add-on.
 
