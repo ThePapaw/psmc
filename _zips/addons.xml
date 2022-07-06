@@ -606,7 +606,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.psmc.max" version="1.0.2" name="[COLOR crimson]â€¢â€¢ [/COLOR]PSMC Max[COLOR crimson] â€¢â€¢[/COLOR]" provider-name="The Papaw">
+<addon id="skin.psmc.max" version="1.0.3" name="[COLOR crimson]â€¢â€¢ [/COLOR]PSMC Max[COLOR crimson] â€¢â€¢[/COLOR]" provider-name="The Papaw">
 	<requires>
 		<import version="5.14.0" addon="xbmc.gui"/>
 		<import addon="script.skinshortcuts" version="0.6.5"/>
