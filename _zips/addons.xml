@@ -81,7 +81,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.fuzzybritches_v3" version="1.0.0" name="[COLOR crimson]â€¢â€¢ [/COLOR]Fuzzy Britches v3[COLOR crimson] â€¢â€¢[/COLOR]" provider-name="The Papaw">
+<addon id="plugin.video.fuzzybritches_v3" version="1.0.3" name="[COLOR crimson]â€¢â€¢ [/COLOR]Fuzzy Britches v3[COLOR crimson] â€¢â€¢[/COLOR]" provider-name="The Papaw">
     <requires>
         <import addon="script.fuzzybritches_v3.artwork" />
         <import addon="script.module.resolveurl" />
@@ -107,8 +107,8 @@
 		<source>https://github.com/ThePapaw/fuzzybritches</source>
         <disclaimer lang="en_GB">The author of this add-on does not host any of the content which is found and has no affiliation with any of the content providers. This add-on simply searches websites for content. Use at your own risk![CR]This project uses API's from TMDb, Trakt, Fanart.tv, but is not affiliated nor endorsed by any of their respective ogranizations.[CR]Please support them accordingly.</disclaimer>
         <assets>
-			<icon>icon.gif</icon>
 			<icon>icon.png</icon>
+			<icon>icon.gif</icon>
 			<fanart>fanart.jpg</fanart>
         </assets>
         <news>
@@ -372,7 +372,7 @@
   </extension>
 </addon>
 
-<addon id="script.fuzzybritches_v3.artwork" version="1.0.0" name="[COLOR crimson]â€¢â€¢ [/COLOR]Fuzzy Britches v3 Artwork[COLOR crimson] â€¢â€¢[/COLOR]" provider-name="The Papaw">
+<addon id="script.fuzzybritches_v3.artwork" version="1.0.1" name="[COLOR crimson]â€¢â€¢ [/COLOR]Fuzzy Britches v3 Artwork[COLOR crimson] â€¢â€¢[/COLOR]" provider-name="The Papaw">
     <requires>
         <!--<import addon="xbmc.python" version="2.19.0"/>-->
     </requires>
@@ -387,8 +387,8 @@
 		<source>https://github.com/ThePapaw/fuzzybritches</source>
         <disclaimer lang="en_GB">The author of this add-on does not host any of the content which is found and has no affiliation with any of the content providers. This add-on simply searches websites for content. Use at your own risk![CR]This project uses API's from TMDb, Trakt, Fanart.tv, but is not affiliated nor endorsed by any of their respective ogranizations.[CR]Please support them accordingly.</disclaimer>
         <assets>
-			<icon>icon.gif</icon>
 			<icon>icon.png</icon>
+			<icon>icon.gif</icon>
 			<fanart>fanart.jpg</fanart>
         </assets>
         <news>
@@ -415,7 +415,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.fuzzybritchesv3scrapers" version="1.0.0" name="[COLOR crimson]â€¢â€¢ [/COLOR]Fuzzy Britches v3 Scrapers[COLOR crimson] â€¢â€¢[/COLOR]" provider-name="The Papaw">
+<addon id="script.module.fuzzybritchesv3scrapers" version="1.0.1" name="[COLOR crimson]â€¢â€¢ [/COLOR]Fuzzy Britches v3 Scrapers[COLOR crimson] â€¢â€¢[/COLOR]" provider-name="The Papaw">
     <requires>
         <!--<import addon="xbmc.python" version="2.20.0" />-->
         <import addon="script.module.beautifulsoup4" />
@@ -439,8 +439,8 @@
             <description>Scrape common video host for URL's to be playable in PSMC or Kodi, simplifying addon development of video plugins using multi video hosts.</description>
 			<disclaimer lang="en_GB">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
         <assets>
-			<icon>icon.gif</icon>
 			<icon>icon.png</icon>
+			<icon>icon.gif</icon>
 			<fanart>fanart.jpg</fanart>
         </assets>
         <news>
