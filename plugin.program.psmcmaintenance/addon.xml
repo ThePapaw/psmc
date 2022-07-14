@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.psmcmaintenance" 
-	     name="PSMC Maintenance" 
-	     version="1.0.9" 
-	     provider-name="The Papaw">
+<addon id="plugin.program.psmcmaintenance" name="PSMC Maintenance" version="1.0.14" provider-name="The Papaw">
   <requires>
-  	<import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.requests" version="1.0.0" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
+     <provides>executable</provides>
   </extension>
-  <extension point="xbmc.service" library="service.py" start="startup">
-  </extension> 
+  <extension point="xbmc.service" library="service.py" start="startup" />
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <summary lang="en">A simple all-around Maintenance Tool</summary>
-    <description lang="en">PSMC's Maintenance does many maintenance functions needed to help with a much smoother PSMC (Kodi) experience without all the fluff. Features include: Auto delete of cache at start up, notifies when packages and thumbs reach a set amount of wasted storage space (you can set and change sizes), cuts down on your devices read/writes on the ROM. Also has many Backup/Restore Options, Speed test, IP check and other features!!</description>
+    <description lang="en">PSMC's Maintenance does many maintenance functions needed to help with a much smoother PSMC (Kodi) experience without all the fluff. Features include: Auto delete of cache at start up, notifies when packages and thumbs reach a set amount of wasted storage space (you can set and change sizes), cuts down on your devices read/writes on the ROM. Also has Backup/Restore Options, Speed test, and other features!!</description>
     <disclaimer lang="en"></disclaimer>
     <language></language>
     <platform>all</platform>
@@ -24,9 +20,10 @@
 		<source>https://github.com/ThePapaw/psmc</source>
 		<video_guide></video_guide>
 	<assets>
+		<icon>icon.png</icon>
 		<icon>icon.gif</icon>
 		<fanart>fanart.jpg</fanart>
 	</assets>
-	<news>[B][COLOR FFFFFF00]Version 1.0.9[/COLOR][/B][CR]- License updated[CR]- Minor changes[CR]- Minor changes[CR]- Minor changes[CR]- Cosmetic Fixes[CR]- Initial release</news>
+	<news></news>
   </extension>
 </addon>

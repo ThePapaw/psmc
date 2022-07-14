@@ -1,364 +1,341 @@
+# -*- coding: utf-8 -*-
+###############################################################################
+#                           "A BEER-WARE LICENSE"                             #
+# ----------------------------------------------------------------------------#
+# Feel free to do whatever you wish with this file. Since we most likey will  #
+# never meet, buy a stranger a beer. Give credit to ALL named, unnamed, past, #
+# present and future dev's of this & files like this. -Share the Knowledge!   #
+###############################################################################
 
+# Addon Name: Fuzzy Britches
+# Addon id: script.module.fuzzybritches
+# Addon Provider: The Papaw
 
-#######################################################################
-#						    PSMC Maintenance						  #
-#######################################################################
-import xbmc, xbmcaddon, xbmcgui, xbmcplugin,os,base64,sys,xbmcvfs
-from urllib import FancyURLopener
-import platform
-import urllib2,urllib
+'''
+Included with the Fuzzy Britches Add-on
+'''
+
+import xbmc, xbmcaddon, xbmcgui, xbmcplugin, xbmcvfs,os,sys
+import urllib
 import re
-import glob
 import time
-import errno
-import socket
-import json
-import parameters
-import maintenance
-import plugintools
-import common as Common
-import backuprestore
-import maint
-import speedtest
-from net import Net
-net = Net()
+import requests
+from resources.lib.modules import control, tools
+from resources.lib.modules.backtothefuture import unicode, PY2
 
+if PY2:
+    quote_plus = urllib.quote_plus
+else:
+    quote_plus = urllib.parse.quote_plus
+
+AddonID ='plugin.program.psmcmaintenance'
+USER_AGENT = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3'
+selfAddon    = xbmcaddon.Addon(id=AddonID)
+
+# Code to map the old translatePath
+try:
+    translatePath = xbmcvfs.translatePath
+except AttributeError:
+    translatePath = xbmc.translatePath
+
+# ADDON SETTINGS
+wizard1      =  control.setting('enable_wiz1')
+wizard2      =  control.setting('enable_wiz2')
+wizard3      =  control.setting('enable_wiz3')
+wizard4      =  control.setting('enable_wiz4')
+wizard5      =  control.setting('enable_wiz5')
+backupfull   =  control.setting('backup_database')
+backupaddons =  control.setting('backup_addon_data')
+backupzip    =  control.setting("remote_backup")
+USB          =  translatePath(os.path.join(backupzip))
+
+# ICONS FANARTS
+ADDON_FANART  = control.addonFanart()
+ADDON_ICON    = control.addonIcon()
+
+# DIRECTORIES
+backupdir        =  translatePath(os.path.join('special://home/backupdir',''))
+packagesdir      =  translatePath(os.path.join('special://home/addons/packages',''))
+USERDATA         =  translatePath(os.path.join('special://home/userdata',''))
+ADDON_DATA       =  translatePath(os.path.join(USERDATA,'addon_data'))
+HOME             =  translatePath('special://home/')
+HOME_ADDONS      =  translatePath('special://home/addons')
+backup_zip       =  translatePath(os.path.join(backupdir,'backup_addon_data.zip'))
+
+# DIALOGS
+dialog = xbmcgui.Dialog()
+progressDialog = xbmcgui.DialogProgress()
 
 AddonTitle = "PSMC Maintenance"
-addon_id   = 'plugin.program.psmcmaintenance'
-AddonData  = xbmc.translatePath('special://userdata/addon_data')
-USERDATA   = xbmc.translatePath(os.path.join('special://home/userdata',''))
-icon            = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'icon.gif')) 
-favourites =  os.path.join(USERDATA,'favourites.xml')
-ADDON      = xbmcaddon.Addon(id=addon_id)
-CHANGELOG  = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id,'changelog.txt'))
-skin       = xbmc.getSkinDir()
-string     = ""
-dialog     = xbmcgui.Dialog()
-FANART     = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id , 'fanart.jpg'))
-ICON       = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'icon.gif'))
-backupdir    =  xbmc.translatePath(os.path.join('special://home/backupdir',''))
-backupzip    =  os.path.join(backupdir,'backup_fav.zip')
+EXCLUDES         = [AddonID, 'backupdir','backup.zip','script.module.requests','script.module.urllib3','script.module.chardet','script.module.idna','script.module.certifi']
+EXCLUDES_ADDONS  = ['notification','packages']
 
-def INDEX():
-	cachePath = os.path.join(xbmc.translatePath('special://home'), 'cache')
-	tempPath = os.path.join(xbmc.translatePath('special://home'), 'temp')
-	WindowsCache = xbmc.translatePath('special://home')
-	i = 0
+def SETTINGS():
+    xbmcaddon.Addon(id=AddonID).openSettings()
 
-	if os.path.exists(tempPath):
-		for root, dirs, files in os.walk(tempPath,topdown=True):
-			dirs[:] = [d for d in dirs]
-			for name in files:
-				if ".old.log" not in name.lower():
-					if ".log" in name.lower():
-						a=open((os.path.join(root, name))).read()	
-						b=a.replace('\n','NEW_L').replace('\r','NEW_R')
-						match = re.compile('EXCEPTION Thrown(.+?)End of Python script error report').findall(b)
-						for checker in match:
-							i = i + 1
+def ENABLE_WIZARD():
+    try:
+        query = '{"jsonrpc":"2.0", "method":"Addons.SetAddonEnabled","params":{"addonid":"%s","enabled":true}, "id":1}' % (AddonID)
+        xbmc.executeJSONRPC(query)
 
-	if os.path.exists(WindowsCache):
-		for root, dirs, files in os.walk(WindowsCache,topdown=True):
-			dirs[:] = [d for d in dirs]
-			for name in files:
-				if ".old.log" not in name.lower():
-					if ".log" in name.lower():
-						a=open((os.path.join(root, name))).read()	
-						b=a.replace('\n','NEW_L').replace('\r','NEW_R')
-						match = re.compile('EXCEPTION Thrown(.+?)End of Python script error report').findall(b)
-						for checker in match:
-							i = i + 1
-	
-	if i == 0:
-		ERRORS_IN_LOG = "[COLOR blue]0 [COLOR yellow]Errors found in the log[/COLOR]"
-	else:
-		ERRORS_IN_LOG = "[COLOR red]" + str(i) + " [COLOR yellow]Errors found in the log[/COLOR]"
-	HOME       =  xbmc.translatePath('special://home/')
-	CACHE      =  xbmc.translatePath(os.path.join('special://home/cache',''))
-	PACKAGES   =  xbmc.translatePath(os.path.join('special://home/addons','packages'))
-	THUMBS     =  xbmc.translatePath(os.path.join('special://home/userdata','Thumbnails'))
+    except:
+        pass
 
-	if not os.path.exists(CACHE):
-		CACHE     =  xbmc.translatePath(os.path.join('special://home/temp',''))
-	if not os.path.exists(PACKAGES):
-		os.makedirs(PACKAGES)
+# ######################### CATEGORIES ################################
+def CATEGORIES():
+    CreateDir('[COLOR red][B]FRESH START[/B][/COLOR]','url','fresh_start',ADDON_ICON,ADDON_FANART,'')
+    CreateDir('[COLOR lime][B]MY WIZARD[/B][/COLOR]','ur','builds',ADDON_ICON,ADDON_FANART,'', isFolder=True)
+    CreateDir('[COLOR white][B]BACKUP/RESTORE[/B][/COLOR]','ur','backup_restore',ADDON_ICON,ADDON_FANART,'')
+    # CreateDir('[COLOR white][B]TOOLS[/B][/COLOR]','ur','tools',ADDON_ICON,ADDON_FANART,'', isFolder=True)
 
-	try:
-		CACHE_SIZE_BYTE    = get_size(CACHE)#!f!T!G!#
-		PACKAGES_SIZE_BYTE = get_size(PACKAGES)
-		THUMB_SIZE_BYTE    = get_size(THUMBS)
-	except: pass
-	
-	try:
-		CACHE_SIZE    = convertSize(CACHE_SIZE_BYTE)
-		PACKAGES_SIZE = convertSize(PACKAGES_SIZE_BYTE)
-		THUMB_SIZE    = convertSize(THUMB_SIZE_BYTE)
-	except: pass
-	Common.addItem("[COLOR yellow][B]->             PSMC MAINTENANCE             <-[/B][/COLOR]",'url',0,ICON,FANART,'')
-	Common.addItem("[COLOR green][B]---------------------------------------------[/B][/COLOR]",'url',0,ICON,FANART,'')
-	Common.addItem("[COLOR green][B]                Select Option Below[CR]               (Showing Current Info)       [/B][/COLOR]",'url',0,ICON,FANART,'')
-	Common.addItem("[COLOR yellow]Cache Size = [/COLOR]" + str(CACHE_SIZE),'url',3,ICON,FANART,'')
-	Common.addItem("[COLOR yellow]Packages Size = [/COLOR]" + str(PACKAGES_SIZE),'url',6,ICON,FANART,'')
-	Common.addItem("[COLOR yellow]Thumbnails Size = [/COLOR]" + str(THUMB_SIZE),'url',5,ICON,FANART,'')
-	Common.addItem("[COLOR green][B]-------------------------------------------------[/B][/COLOR]",'url',0,ICON,FANART,'')
-	Common.addDir('[COLOR yellow]Back-Up Options[/COLOR]','url',11,ICON,FANART,'')
-	Common.addDir('[COLOR yellow]Internet Tools[/COLOR]','url',13,ICON,FANART,'')
-	Common.addDir('[COLOR yellow]Open Addon Settings[/COLOR]','url',1,ICON,FANART,'')
-	Common.addItem("[COLOR green][B]-------------------------------------------------[/B][/COLOR]",'url',0,ICON,FANART,'')
-	Common.addItem('[COLOR yellow]View Current or Old Log File[/COLOR]','url',8,ICON,FANART,'')
-	Common.addItem( ERRORS_IN_LOG,'url',17,ICON,FANART,'')
-	# Common.addItem('[COLOR yellow]Force Close Kodi[/COLOR]','url',10,ICON,FANART,'')
-	Common.addItem('[B][COLOR firebrick]* * Fresh Start * *[/B][/COLOR][CR][I]Please set skin back to Estuary first.[/I]','url',9,ICON,FANART,'')
-	Common.addItem("[COLOR green][B]-------------------------------------------------[/B][/COLOR]",'url',0,ICON,FANART,'')
-	Common.addItem('[COLOR yellow]Clear Cache[/COLOR]','url',3,ICON,FANART,'')
-	Common.addItem('[COLOR yellow]Delete Crash Logs[/COLOR]','url',4,ICON,FANART,'')
-	Common.addItem('[COLOR yellow]Delete Thumbnails[/COLOR]','url',5,ICON,FANART,'')
-	Common.addItem('[COLOR yellow]Purge Packages[/COLOR]','url',6,ICON,FANART,'')
+    CreateDir('[COLOR white][B]MAINTENANCE[/B][/COLOR]','ur', 'maintenance', ADDON_ICON,ADDON_FANART,'', isFolder=True)
+    CreateDir('[COLOR white][B]ADVANCED SETTINGS (BUFFER SIZE)[/B][/COLOR]','ur', 'adv_settings', ADDON_ICON,ADDON_FANART,'')
+    CreateDir('[COLOR white][B]LOG VIEWER/UPLOADER[/B][/COLOR]','ur', 'log_tools', ADDON_ICON,ADDON_FANART,'')
+    CreateDir('[COLOR white][B]SPEEDTEST[/B][/COLOR]','ur', 'speedtest', ADDON_ICON,ADDON_FANART,'')
 
-	
-def IP_TOOLS():
-	Common.addItem("[COLOR green][B]-------------------------------------------------[/B][/COLOR]",'url',79,ICON,FANART,'')
-	Common.addItem('[COLOR yellow] IP Checker[/COLOR]','fanart', 14, ICON,FANART,'')
-	Common.addItem('[COLOR yellow] Speed Test[/COLOR]','fanart', 15, ICON,FANART,'')
-	Common.addItem("[COLOR green][B]-------------------------------------------------[/B][/COLOR]",'url',79,ICON,FANART,'')
-	
-def BackupMenu():
-	if not os.path.exists(backupdir):os.makedirs(backupdir)
-##needs work and modules added ####
-	Common.addItem('[COLOR green][B]-----BACKUP OPTIONS-----[/B][/COLOR]','url',79,ICON,FANART,'')	
-	Common.addItem('[COLOR yellow] Full Backup (Everything)[/COLOR]','url',20,ICON,FANART,'')	
-	Common.addItem('[COLOR yellow] Backup Build ( No Thumbs or DBs)[/COLOR]','url',21,ICON,FANART,'')
-	Common.addItem('[COLOR yellow] Backup Favorites[/COLOR]','url',18,ICON,FANART,'')
-	Common.addItem('[COLOR yellow] Backup Super Favorites[/COLOR]','url',32,ICON,FANART,'')
-	Common.addItem('[COLOR yellow] Backup Addon Data[/COLOR]','url',22,ICON,FANART,'')
-	Common.addItem('[COLOR yellow] Backup RD & Trakt Settings[/COLOR]','url',23,ICON,FANART,'')
-	Common.addItem('[COLOR yellow] Backup Ivue TV Guide settings[/COLOR]','url',31,ICON,FANART,'')
-	Common.addItem('[COLOR green][B]-----RESTORE OPTIONS-----[/B][/COLOR]','url',79,ICON,FANART,'')	
-	Common.addDir('[COLOR yellow] Restore A Full Backup[/COLOR]','url',24,ICON,FANART,'')
-	Common.addItem('[COLOR yellow] Restore Favorites[/COLOR]','url',19,ICON,FANART,'')
-	Common.addDir('[COLOR yellow] Restore Super Favourites[/COLOR]','url',24,ICON,FANART,'')
-	Common.addDir('[COLOR yellow] Restore Addon Data[/COLOR]','url',24,ICON,FANART,'')
-	Common.addDir('[COLOR yellow] Restore Ivue TV Guide settings[/COLOR]','url',24,ICON,FANART,'')
-	Common.addDir('[COLOR yellow] Restore RD & Trakt Settings[/COLOR]','url',25,ICON,FANART,'')
-	Common.addItem('[COLOR green][B]-----OTHER OPTIONS-----[/B][/COLOR]','url',79,ICON,FANART,'')	
-	Common.addDir('[COLOR yellow] Delete A Backup[/COLOR]','url',26,ICON,FANART,'')
-	Common.addItem('[COLOR yellow] Delete All Backups[/COLOR]','url',27,ICON,FANART,'')
-	
-def RESTOREFAV():
-	dialog = xbmcgui.Dialog()
-	if not os.path.isfile(backupzip):
-			dialog.ok("[COLOR=red]FAVS BACKUP/RESTORE[/COLOR]", '', ' ', '                    You have no Favourites to Restore.')
-			return
-	else:
-		choice = xbmcgui.Dialog().yesno("[COLOR=red]FAVS BACKUP/RESTORE[/COLOR]", 'Do you want to Restore your Favourites?', '', '', yeslabel='[COLOR=red]Yes[/COLOR]',nolabel='[COLOR=green]No[/COLOR]')
-		if choice == 0:
-			return
-		elif choice == 1:
-			import time
-			dialog = xbmcgui.Dialog()
-			dp =  xbmcgui.DialogProgress()
-			lib=xbmc.translatePath(os.path.join(backupdir,'backup_fav.zip'))
-			addonfolder = xbmc.translatePath(os.path.join('special://','home/userdata'))
-			time.sleep(2)
-			dp.create("[B][COLOR yellow]PSMC Maintenance[/COLOR][/B]","Restoring",'', 'Please Wait')
-#(S)T(B)##(S)T(B)##(S)T(B)##(S)T(B)##(S)T(B)##(S)T(B)##(S)T(B)##(S)T(B)##(S)T(B)##(S)T(B)##(S)T(B)#
-			extract.all(lib,addonfolder,dp)
-			dp.close()
-			dialog.ok("[COLOR=red]COMPLETE[/COLOR]", '', 'Your Favourites are Restored.', '')
-			
-def BACKUPFAV():
-	if not os.path.exists(backupdir):os.makedirs(backupdir)
-	if not os.path.isfile(favourites):
-			dialog.ok("[COLOR=red]FAVS BACKUP/RESTORE[/COLOR]", '', ' ', '                    You have no Favourites to back-up.')
-			return
-	else:
-		choice = xbmcgui.Dialog().yesno("[B][COLOR yellow]PSMC Maintenance[/COLOR][/B]", 'Do you want to Back-up your Favourites?', '', '', yeslabel='[COLOR=red]Yes[/COLOR]',nolabel='[COLOR=green]No[/COLOR]')
-		if choice == 0:
-			return
-		elif choice == 1:
-			to_backup = xbmc.translatePath(os.path.join('special://','home/userdata'))	
-			rootlen = len(to_backup)
-			backup_ui_zip = xbmc.translatePath(os.path.join(backupdir,'backup_fav.zip'))
-			zipobj = zipfile.ZipFile(backup_ui_zip , 'w', zipfile.ZIP_DEFLATED)
-			fn = os.path.join(USERDATA, 'favourites.xml')
-			dp.create("PSMC BACKUP","Backing Up Favourites",'', 'Please Wait')
-			zipobj.write(fn, fn[rootlen:])
-			zipobj.close()
-			dp.close()
-			dialog.ok("[COLOR=red]COMPLETE[/COLOR]", '', 'Your Favourites are Backed up.', '')
+    CreateDir('[COLOR white][B]SETTINGS[/B][/COLOR]','ur','settings',ADDON_ICON,ADDON_FANART,'')
 
-##############################    Open addon settings    #########################################
-def OPEN_SETTINGS(params):
-	plugintools.open_settings_dialog()
+def CAT_TOOLS():
+    print ("NONE YET")
 
-##############################	Maint sizes   #########################################
-def get_size(start_path):
-	total_size = 0
-	for dirpath, dirnames, filenames in os.walk(start_path):
-		for f in filenames:
-			fp = os.path.join(dirpath, f)
-			total_size += os.path.getsize(fp)
-	return total_size
+def MAINTENANCE():
+    CreateDir('Clear Cache','url','clear_cache',ADDON_ICON,ADDON_FANART,'')
+    CreateDir('Clear Packages','url','clear_packages',ADDON_ICON,ADDON_FANART,'')
+    CreateDir('Clear Thumbnails','url','clear_thumbs',ADDON_ICON,ADDON_FANART,'')
 
-def convertSize(size):
-   import math
-   if (size == 0):
-	   return '[COLOR yellow]0 MB[/COLOR]'
-   size_name = ("B", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB")#!f!T!G!#
-   i = int(math.floor(math.log(size,1024)))
-   p = math.pow(1024,i)
-   s = round(size/p,2)
-   if size_name[i] == "B":
-		return '[COLOR lime]%s %s' % (s,size_name[i]) + '[/COLOR]'
-   if size_name[i] == "KB":##f#T#G##
-		return '[COLOR yellow]%s %s' % (s,size_name[i]) + '[/COLOR]'
-   if size_name[i] == "GB":
-		return '[COLOR lightskyblue]%s %s' % (s,size_name[i]) + '[/COLOR]'
-   if size_name[i] == "TB":
-		return '[COLOR lightskyblue]%s %s' % (s,size_name[i]) + '[/COLOR]'
-   if s < 50:
-		return '[COLOR yellow]%s %s' % (s,size_name[i]) + '[/COLOR]'
-   if s >= 50:
-		if s < 100:
-			return '[COLOR red]%s %s' % (s,size_name[i]) + '[/COLOR]'
-   if s >= 100:
-		return '[COLOR lightskyblue]%s %s' % (s,size_name[i]) + '[/COLOR]'
 
-def convertSizeInstall(size):
-   import math
-   if (size == 0):
-	   return '[COLOR blue]0 MB[/COLOR]'
-   size_name = ("B", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB")
-   i = int(math.floor(math.log(size,1024)))
-   p = math.pow(1024,i)
-   s = round(size/p,2)
-   if size_name[i] == "B":
-		return '[COLOR lime]%s %s' % (s,size_name[i]) + '[/COLOR]'
-   if size_name[i] == "KB":
-		return '[COLOR yellow]%s %s' % (s,size_name[i]) + '[/COLOR]'
-   if size_name[i] == "TB":
-		return '[COLOR lightskyblue]%s %s' % (s,size_name[i]) + '[/COLOR]'#!f!T!G!#
-   if s < 1000:
-		return '[COLOR yellow]%s %s' % (s,size_name[i]) + '[/COLOR]'
-   if s >= 1000:
-		if s < 1500:
-			return '[COLOR red]%s %s' % (s,size_name[i]) + '[/COLOR]'
-   if s >= 1500:
-		return '[COLOR lightskyblue]%s %s' % (s,size_name[i]) + '[/COLOR]'
-##################################################################################
+# ###########################################################################################
+# ###########################################################################################
 
-def addFolder(type,name,url,mode,iconimage = '',FanArt = '',video = '',description = ''):
-	if type != 'folder2' and type != 'addon':
-		if len(iconimage) > 0:
-			iconimage = Images + iconimage
-		else:##F#T#G##
-			iconimage = 'DefaultFolder.png'
-	if type == 'addon':
-		if len(iconimage) > 0:
-			iconimage = iconimage
-		else:
-			iconimage = 'none'
-	if FanArt == '':
-		FanArt = FanArt
-	u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&FanArt="+urllib.quote_plus(FanArt)+"&video="+urllib.quote_plus(video)+"&description="+urllib.quote_plus(description)
-	ok=True
-	liz=xbmcgui.ListItem(name, iconImage="DefaultFolder.png", thumbnailImage=iconimage)
-	liz.setInfo( type="Video", infoLabels={ "Title": name, "Plot": description } )
-	liz.setProperty( "FanArt_Image", FanArt )
-	liz.setProperty( "Build.Video", video )
-	if (type=='folder') or (type=='folder2') or (type=='tutorial_folder') or (type=='news_folder'):
-		ok=Add_Directory_Item(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
-	else:
-		ok=Add_Directory_Item(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=False)
-	return ok
-def Add_Directory_Item(handle, url, listitem, isFolder):
-	xbmcplugin.addDirectoryItem(handle, url, listitem, isFolder) 
-#######################################################################
-def SpeedTest():
-	choice = xbmcgui.Dialog().yesno("[B][COLOR yellow]PSMC Maintenance[/COLOR][/B]", 'Would you like to perform a speed test?', '', '', yeslabel='[COLOR=red]Yes[/COLOR]',nolabel='[COLOR=green]No[/COLOR]')
-	if choice == 0:
-		return
-	elif choice == 1:
-		xbmc.executebuiltin ( 'Runscript("special://home/addons/plugin.program.psmcmaintenance/speedtest.py")' )
-		xbmc.executebuiltin ( 'Runscript("special://home/addons/plugin.program.psmcmaintenance/speedtest.py")' )
-		
-def IP_Check(url='http://myipinfo.net/',inc=1):
-	mac = xbmc.getInfoLabel('Network.MacAddress')
-	inIP = xbmc.getInfoLabel('Network.IPAddress')
-	match=re.compile("<h2>(.+?)</h2>").findall(net.http_GET(url).content)
-	for ip in match:
-		if inc <2: dialog=xbmcgui.Dialog(); dialog.ok('[COLOR blue][B]What is My IP[/B][/COLOR]',"[B][COLOR yellow]Your External IP Address is: [B][COLOR lime]%s [/COLOR][/B] "  % ip, "[COLOR blue][B]Your Internal IP Address is: [COLOR lime]%s[/COLOR][/B]" % inIP, "[COLOR blue][B]Network MAC Address = [COLOR lime] %s [/B][/COLOR]" % mac)
-		inc=inc+1
-		
-params=parameters.get_params()
 
-url=None
-name=None
-mode=None
-iconimage=None
-fanart=None
-description=None
 
-try:
-		url=urllib.unquote_plus(params["url"])
-except:
-		pass
-try:
-		name=urllib.unquote_plus(params["name"])
-except:
-		pass
-try:
-		iconimage=urllib.unquote_plus(params["iconimage"])
-except:
-		pass
-try:		
-		mode=int(params["mode"])
-except:
-		pass
-try:		
-		fanart=urllib.unquote_plus(params["fanart"])
-except:
-		pass
-try:		
-		description=urllib.unquote_plus(params["description"])
-except:
-		pass
+def OPEN_URL(url):
+    r = requests.get(url).content
+    return r
 
-if mode==None or url==None or len(url)<1:
-		INDEX()
 
-elif mode==1:OPEN_SETTINGS(params)
-elif mode==2:maintenance.autocleanask()
-elif mode==3:maintenance.clearCache()
-elif mode==4:maintenance.DeleteCrashLogs()
-elif mode==5:maintenance.deleteThumbnails()
-elif mode==6:maintenance.purgePackages()
-elif mode==7:maintenance.deleteAddonDB()
-elif mode==8:maintenance.viewLogFile()
-elif mode==9:maintenance.freshstart()
-elif mode==10:
-		print "############   ATTEMPT TO KILL XBMC/KODI   #################"
-		Common.KillKodi()
-elif mode == 11: BackupMenu()
-elif mode == 13: IP_TOOLS()
-elif mode == 14: IP_Check()
-elif mode == 15: SpeedTest()
-elif mode == 17: maintenance.view_LastError()
-elif mode == 18: BACKUPFAV() #BackupMenu
-elif mode == 19: RESTOREFAV()#RestoreMenu
-elif mode == 20: backuprestore.FullBackup()
-elif mode == 21: backuprestore.Backup()
-elif mode == 22: backuprestore.ADDON_DATA_BACKUP()
-elif mode == 23: backuprestore.BACKUP_RD_TRAKT()
-elif mode == 24: backuprestore.Restore()
-elif mode == 25: backuprestore.RESTORE_RD_TRAKT()
-elif mode == 26: backuprestore.ListBackDel()
-elif mode == 27: backuprestore.DeleteAllBackups()
-elif mode == 28: backuprestore.READ_ZIP(url)
-elif mode == 29: backuprestore.DeleteBackup(url)
-elif mode == 30: backuprestore.READ_ZIP_TRAKT(url)
-elif mode == 31: backuprestore.TV_GUIDE_BACKUP()
-elif mode == 32: backuprestore.SUPERFAVS_BACKUP()
+def BUILDS():
+    if wizard1!='false':
+        try:
+            name   = unicode(control.setting('name1'))
+            url    = unicode(control.setting('url1'))
+            img    = unicode(control.setting('img1'))
+            fanart = unicode(control.setting('img1'))
+            CreateDir('[COLOR lime][B][Wizard][/B][/COLOR] ' + name, url, 'install_build' , img, fanart, 'My custom Build', isFolder=False)
+        except: pass
+    if wizard2!='false':
+        try:
+            name=unicode(selfAddon.getSetting('name2'))
+            url=unicode(selfAddon.getSetting('url2'))
+            img=unicode(selfAddon.getSetting('img2'))
+            fanart=unicode(selfAddon.getSetting('img2'))
+            CreateDir('[COLOR skyblue][B][Wizard][/B][/COLOR] ' +name, url, 'install_build' , img, fanart, 'My custom Build', isFolder=False)
+        except: pass
+    if wizard3!='false':
+        try:
+            name=unicode(selfAddon.getSetting('name3'))
+            url=unicode(selfAddon.getSetting('url3'))
+            img=unicode(selfAddon.getSetting('img3'))
+            fanart=unicode(selfAddon.getSetting('img3'))
+            CreateDir('[COLOR cyan][B][Wizard][/B][/COLOR] ' +name, url, 'install_build' , img, fanart, 'My custom Build', isFolder=False)
+        except: pass
+    if wizard4!='false':
+        try:
+            name=unicode(selfAddon.getSetting('name4'))
+            url=unicode(selfAddon.getSetting('url4'))
+            img=unicode(selfAddon.getSetting('img4'))
+            fanart=unicode(selfAddon.getSetting('img4'))
+            CreateDir('[COLOR yellow][B][Wizard][/B][/COLOR] ' +name, url, 'install_build' , img, fanart, 'My custom Build', isFolder=False)
+        except: pass
+    if wizard5!='false':
+        try:
+            name=unicode(selfAddon.getSetting('name5'))
+            url=unicode(selfAddon.getSetting('url5'))
+            img=unicode(selfAddon.getSetting('img5'))
+            fanart=unicode(selfAddon.getSetting('img5'))
+            CreateDir('[COLOR purple][B][Wizard][/B][/COLOR] ' +name, url, 'install_build' , img, fanart, 'My custom Build', isFolder=False)
+        except: pass
+
+def FRESHSTART(mode='verbose'):
+    if mode != 'silent': select = xbmcgui.Dialog().yesno("PSMC Maintenance", 'Are you absolutely certain you want to wipe this install?' + '\n' + 'All addons EXCLUDING THIS WIZARD will be completely wiped!', yeslabel='Yes',nolabel='No')
+    else: select = 1
+    if select == 0: return
+    elif select == 1:
+
+        progressDialog.create(AddonTitle,"Wiping Install" + '\n' + 'Please Wait')
+        try:
+            for root, dirs, files in os.walk(HOME,topdown=True):
+                dirs[:] = [d for d in dirs if d not in EXCLUDES]
+                for name in files:
+                    try:
+                        os.remove(os.path.join(root,name))
+                        os.rmdir(os.path.join(root,name))
+                    except: pass
+
+                for name in dirs:
+                    try: os.rmdir(os.path.join(root,name)); os.rmdir(root)
+                    except: pass
+        except: pass
+    REMOVE_EMPTY_FOLDERS()
+    REMOVE_EMPTY_FOLDERS()
+    REMOVE_EMPTY_FOLDERS()
+    REMOVE_EMPTY_FOLDERS()
+    REMOVE_EMPTY_FOLDERS()
+    REMOVE_EMPTY_FOLDERS()
+    REMOVE_EMPTY_FOLDERS()
+    # RESTOREFAV()
+    # ENABLE_WIZARD()
+    if mode != 'silent': dialog.ok(AddonTitle,'Wipe Successful, The interface will now be reset...')
+
+
+    # xbmc.executebuiltin('Mastermode')
+    if mode != 'silent': xbmc.executebuiltin('LoadProfile(Master user)')
+    # xbmc.executebuiltin('Mastermode')
+
+def REMOVE_EMPTY_FOLDERS():
+#initialize the counters
+    print('########### Start Removing Empty Folders #########')
+    empty_count = 0
+    used_count = 0
+    for curdir, subdirs, files in os.walk(HOME):
+        try:
+            if len(subdirs) == 0 and len(files) == 0: #check for empty directories. len(files) == 0 may be overkill
+                empty_count += 1 #increment empty_count
+                os.rmdir(curdir) #delete the directory
+                print('successfully removed: ' + curdir)
+            elif len(subdirs) > 0 and len(files) > 0: #check for used directories
+                used_count += 1 #increment used_count
+        except:pass
+
+
+def killxbmc():
+        dialog.ok("PROCESS COMPLETE", 'The skin will now be reset' + '\n' + 'To start using your new setup please switch the skin System > Appearance > Skin to the desired one... if images are not showing, just restart PSMC' + '\n' + 'Click OK to Continue')
+
+        # xbmc.executebuiltin('Mastermode')
+        xbmc.executebuiltin('LoadProfile(Master user)')
+        # xbmc.executebuiltin('Mastermode')
+
+
+
+
+def CreateDir(name, url, action, icon, fanart, description, isFolder=False):
+        if icon == None or icon == '': icon = ADDON_ICON
+        u=sys.argv[0]+"?url="+quote_plus(url)+"&action="+str(action)+"&name="+quote_plus(name)+"&icon="+quote_plus(icon)+"&fanart="+quote_plus(fanart)+"&description="+quote_plus(description)
+        ok=True
+        if PY2:
+            liz=xbmcgui.ListItem(name, iconImage="DefaultFolder.png", thumbnailImage=icon)
+        else:
+            liz=xbmcgui.ListItem(name)
+            liz.setArt({'icon':"DefaultFolder.png"})
+            liz.setArt({'thumbnailImage': icon})
+        liz.setInfo(type="Video", infoLabels={ "Title": name, "Plot": description } )
+        liz.setProperty( "Fanart_Image", fanart)
+        ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=isFolder)
+        return ok
+
+
+if PY2:
+    from urlparse import parse_qsl
+else:
+    from urllib.parse import parse_qsl
+
+params = dict(parse_qsl(sys.argv[2].replace('?','')))
+action = params.get('action')
+
+icon = params.get('icon')
+
+name = params.get('name')
+
+title = params.get('title')
+
+year = params.get('year')
+
+fanart = params.get('fanart')
+
+tvdb = params.get('tvdb')
+
+tmdb = params.get('tmdb')
+
+season = params.get('season')
+
+episode = params.get('episode')
+
+tvshowtitle = params.get('tvshowtitle')
+
+premiered = params.get('premiered')
+
+url = params.get('url')
+
+image = params.get('image')
+
+meta = params.get('meta')
+
+select = params.get('select')
+
+query = params.get('query')
+
+description = params.get('description')
+
+content = params.get('content')
+
+
+
+if action   == None: CATEGORIES()
+elif action == 'settings': control.openSettings()
+
+elif action == 'fresh_start':
+    dialog.ok(AddonTitle,'Before Proceeding please switch skin to the default PSMC... Confluence or Estuary...')
+    from resources.lib.modules import wiz
+    wiz.skinswap()
+    FRESHSTART()
+
+elif action == 'builds': BUILDS()
+elif action == 'tools': CAT_TOOLS()
+elif action == 'maintenance': MAINTENANCE()
+
+elif action == 'adv_settings':
+    from resources.lib.modules import tools
+    tools.advancedSettings()
+
+elif action == 'clear_cache':
+    from resources.lib.modules import maintenance
+    maintenance.clearCache()
+
+elif action == 'log_tools':
+    from resources.lib.modules import logviewer
+    logviewer.logView()
+
+
+elif action == 'clear_packages':
+    from resources.lib.modules import maintenance
+    maintenance.purgePackages()
+elif action == 'clear_thumbs':
+    from resources.lib.modules import maintenance
+    maintenance.deleteThumbnails()
+
+elif action == 'backup_restore':
+    from resources.lib.modules import wiz
+    typeOfBackup = ['BACKUP', 'RESTORE']
+    s_type = control.selectDialog(typeOfBackup)
+    if s_type == 0:
+        modes = ['Full Backup', 'Addons Settings']
+        select = control.selectDialog(modes)
+        if select == 0: wiz.backup(mode='full')
+        elif select == 1: wiz.backup(mode='userdata')
+    elif s_type == 1: wiz.restoreFolder()
+
+elif action == 'install_build':
+    from resources.lib.modules import wiz
+    wiz.skinswap()
+    yesDialog = dialog.yesno(AddonTitle, 'Do you want to perform a Fresh Start before Installing your Build?', yeslabel='Yes', nolabel='No')
+    if yesDialog: FRESHSTART(mode='silent')
+
+    wiz.buildInstaller(url)
+
+elif action == 'speedtest':
+    xbmc.executebuiltin('Runscript("special://home/addons/plugin.program.psmcmaintenance/resources/lib/modules/speedtest.py")')
+
+
 
 xbmcplugin.endOfDirectory(int(sys.argv[1]))
+
