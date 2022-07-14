@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="resource.uisounds.psmc.max" version="1.0.3" name="PSMC Max Sounds" provider-name="The Papaw">
+<addon id="resource.uisounds.psmc.max" version="1.0.4" name="PSMC Max Sounds" provider-name="The Papaw">
   <requires>
-    <import addon="kodi.resource" version="1.0.1"/>
+    <import addon="kodi.resource" version="1.0.0"/>
   </requires>
   <extension point="kodi.resource.uisounds"/>
   <extension point="kodi.addon.metadata">
     <summary lang="en">PSMC Max Sounds</summary>
     <description lang="en">Designed to compliment the PSMC Max Skin</description>
     <platform>all</platform>
-		<license>CC BY-NC-SA 4.0</license>
+	<license>CC BY-NC-SA 4.0</license>
 		<forum></forum>
 		<website>https://github.com/ThePapaw/psmc</website>
 		<source>https://github.com/ThePapaw/psmc</source>
 		<video_guide></video_guide>
-	<assets>
-		<icon>icon.png</icon>
-		<icon>icon.gif</icon>
-		<fanart>fanart.jpg</fanart>
-	</assets>
-	<news>Designed to compliment the PSMC Max Skin</news>
+		<assets>
+			<icon>icon.png</icon>
+			<icon>icon.gif</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>[COLOR FFFFFF00]Designed to compliment the PSMC Max Skin[/COLOR][COLOR FF00D5FF][CR]- Initial release[/COLOR]</news>
   </extension>
 </addon>
