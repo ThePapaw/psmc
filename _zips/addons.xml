@@ -360,7 +360,7 @@
   </extension>
 </addon>
 
-<addon id="resource.uisounds.psmc.max" version="1.0.2" name="PSMC Max Sounds" provider-name="The Papaw">
+<addon id="resource.uisounds.psmc.max" version="1.0.3" name="PSMC Max Sounds" provider-name="The Papaw">
   <requires>
     <import addon="kodi.resource" version="1.0.1"/>
   </requires>
@@ -379,7 +379,7 @@
 		<icon>icon.gif</icon>
 		<fanart>fanart.jpg</fanart>
 	</assets>
-	<news></news>
+	<news>Designed to compliment the PSMC Max Skin</news>
   </extension>
 </addon>
 
