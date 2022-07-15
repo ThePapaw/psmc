@@ -2,7 +2,7 @@
 
 This repository is primarily for the development of PSMC (Papaw's Son Media Center), a fork of XBMC/Kodi Media Center. All items hosted here are for learning and educational purposes only. They include:
 
-• <B>PSMC v18.2</B> - Initial Release 05-14-19 - replaced with v18.3<BR>
+• <B>PSMC v18.3</B> - Initial Release 05-14-19 <BR>
 • <B>PSMC v18.3</B> - Initial Release 07-01-19
 
 To Install PSMC:
@@ -21,7 +21,7 @@ Features include: Auto delete of cache at start up (optional), notifies when pac
 
 Most of them now include <B>Home Screen Animation</B> (can be toggled off), additional Falling Seasons, GUI Sounds and other various changes.  (If you wish to use the included <B>GUI Sounds</B> for a particular skin, they are installed with the skin, but you will need to Enable them in the media player's system settings) The PSMC skins include:
 
-• <B>PSMC Max Skin</B> - Modern skin with muliple themes to choose from, extremely configurable (GUI sounds available). <BR>
+• <B>PSMC Max Skin</B> - Modern skin, extremely configurable. Works with v18 & v19. (must add dependancies manually for v18). GUI sounds available. <BR>
 • <B>PSMC's Silvo Skin</B> - A general Aeon Nox SiLVO skin themed for PSMC. <BR>
 • <B>PSMC's Spiderman Skin</B> - Updated and redesigned (includes animations & GUI sounds). <BR>
 • <B>PSMC's Man of Steel Skin</B> - Updated and redesigned (includes animations & GUI sounds)<BR>
@@ -38,7 +38,7 @@ If you have issues, please post them here. All items are still being developed a
 
   
 To Install this Repo:
-1. Download the repository. <a href="https://github.com/ThePapaw/psmc/blob/master/_zips/repository.psmc/repository.psmc-1.0.17.zip?raw=true"><B>CLICK HERE</B></a>
+1. Download the repository. <a href="https://github.com/ThePapaw/psmc/blob/master/_zips/repository.psmc/repository.psmc-1.0.20.zip?raw=true"><B>CLICK HERE</B></a>
 
 2. Install "from zip file" in PSMC (or Kodi) as you would any other downloaded add-on.
 
