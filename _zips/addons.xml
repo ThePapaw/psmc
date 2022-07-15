@@ -182,7 +182,7 @@
         </extension>
     </addon>
 
-<addon id="repository.psmc" name="PSMC Repository" version="1.0.19" provider-name="The Papaw">
+<addon id="repository.psmc" name="PSMC Repository" version="1.0.20" provider-name="The Papaw">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
     </requires>
