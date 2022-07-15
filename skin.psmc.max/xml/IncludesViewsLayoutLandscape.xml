@@ -47,7 +47,7 @@
             <right>8</right>
             <top>8</top>
             <bottom>8</bottom>
-            <imagepath background="true" diffuse="home/home_matte2.png" fallback="home/titan.png">$INFO[ListItem.Icon]</imagepath>
+            <imagepath background="true" diffuse="home/home_matte2.png" fallback="home/psmc.png">$INFO[ListItem.Icon]</imagepath>
             <aspectratio scalediffuse="false" align="center" aligny="top">scale</aspectratio>
             <include>fanartSpeed</include>
             <fadetime>450</fadetime>
@@ -148,7 +148,7 @@
             <right>8</right>
             <top>8</top>
             <bottom>8</bottom>
-            <imagepath background="true" diffuse="home/home_matte2.png" fallback="home/titan.png">$INFO[ListItem.Icon]</imagepath>
+            <imagepath background="true" diffuse="home/home_matte2.png" fallback="home/psmc.png">$INFO[ListItem.Icon]</imagepath>
             <aspectratio scalediffuse="false" align="center" aligny="top">scale</aspectratio>
             <include>fanartSpeed</include>
             <fadetime>450</fadetime>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<!-- PSMC Max -->
+<!-- BINGIE -->
 <smartplaylist type="movies">
     <name>New Releases in Movies</name>
     <match>all</match>
     <rule field="year" operator="greaterthan">
-            <value>2017</value>
+            <value>2018</value>
     </rule>
     <rule field="playcount" operator="is">
         <value>0</value>
