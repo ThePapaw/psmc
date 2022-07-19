@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.psmc-19" name="PSMC-19 Repository" version="1.0.0" provider-name="The Papaw">
+    <requires>
+        <import addon="xbmc.addon" version="15.5.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="PSMC Repository">
+        <info compressed="false">https://raw.githubusercontent.com/thepapaw/psmc-19/master/_zips/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/thepapaw/psmc-19/master/_zips/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/thepapaw/psmc-19/master/_zips/</datadir>
+        <hashes>false</hashes>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>The Official Repo for PSMC-19 (Papaw's Son Media Center)</summary>
+        <description>This is the "Official" repository for PSMC-19 (Papaw's Son Media Center). PSMC-19 is a fork of Kodi.[CR]- [COLOR orange]Be sure to check out all the addons in the PSMC-19 Collection![/COLOR]</description>
+        <platform>all</platform>
+		<license>CC BY-NC-SA 4.0</license>
+		<forum></forum>
+		<website>https://github.com/ThePapaw/psmc-19</website>
+		<source>https://github.com/ThePapaw/psmc-19</source>
+		<video_guide></video_guide>
+        <genre>movies,usa</genre>
+		<assets>
+			<icon>icon.png</icon>
+			<icon>icon.gif</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>[COLOR yellow]Initial Release[/COLOR]</news>
+    </extension>
+</addon>
