@@ -211,7 +211,7 @@
     </extension>
 </addon>
 
-<addon id="repository.psmc-19" name="PSMC-19 Repository" version="1.0.0" provider-name="The Papaw">
+<addon id="repository.psmc-19" name="PSMC-19 Repository" version="1.0.1" provider-name="The Papaw">
     <requires>
         <import addon="xbmc.addon" version="15.5.0"/>
     </requires>
@@ -233,7 +233,6 @@
         <genre>movies,usa</genre>
 		<assets>
 			<icon>icon.png</icon>
-			<icon>icon.gif</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>[COLOR yellow]Initial Release[/COLOR]</news>
