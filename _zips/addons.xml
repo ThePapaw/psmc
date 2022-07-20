@@ -454,6 +454,28 @@
 	</extension>
 </addon>
 
+<addon id="script.max.helper" name="PSMC Max Helper" version="0.1.0" provider-name="The Papaw">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.simplejson" version="2.0.10"/>
+	</requires>
+	<extension point="xbmc.python.script" library="default.py" />
+	<extension point="xbmc.addon.metadata">
+		<language/>
+		<summary lang="en">Max Helper Script</summary>
+		<description lang="en">Helper for some of Max features</description>
+		<platform>all</platform>
+		<license>CC BY-NC-SA 4.0</license>
+		<forum></forum>
+		<website>https://github.com/ThePapaw/psmc</website>
+		<source>https://github.com/ThePapaw/psmc</source>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
 <addon id="script.module.fuzzybritchesv3scrapers" version="1.0.1" name="[COLOR crimson]â€¢â€¢ [/COLOR]Fuzzy Britches v3 Scrapers[COLOR crimson] â€¢â€¢[/COLOR]" provider-name="The Papaw">
     <requires>
         <!--<import addon="xbmc.python" version="2.20.0" />-->
@@ -488,139 +510,6 @@
     </extension>
 </addon>
 
-<addon id="script.module.metadatautils"
-       name="Metadata and Artwork module"
-       version="1.0.50"
-       provider-name="marcelveldt and others">
-    <requires>
-		<import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.requests" version="2.9.1"/>
-        <import addon="script.module.beautifulsoup4" version="4.9.3" />
-        <import addon="script.module.thetvdb" version="1.0.29" />
-        <import addon="script.module.musicbrainz" version="0.7.0"/>
-        <import addon="script.module.simplecache" version="2.0.2"/>
-        <import addon="script.module.arrow" version="0.15.5"/>
-    </requires>
-    <extension point="xbmc.python.module" library="lib" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Metadata and artwork from common sources like TMDB, IMDB, TADB, OMDB and fanart.tv </summary>
-		<summary lang="es">Metadatos e ilustraciones de fuentes comunes como TMDB, IMDB, TADB, OMDB y fanart.tv </summary>
-        <description lang="en">The metadata and artwork module for Kodi provides rich metadata, including artwork for various metatypes by scraping (and caching) this information from sites like TMDB, musicbrainz and fanart.tv. This product uses the TMDb API but is not endorsed or certified by TMDb.</description>
-		<description lang="es">El mÃ³dulo de metadatos e ilustraciones para Kodi proporciona metadatos enriquecidos, que incluyen ilustraciones paravarios metatipos al raspar (y almacenar en cachÃ©) esta informaciÃ³n se extrae de sitios como TMDB, musicbrainz and fanart.tv.[CR][CR]Este producto utiliza la API de TMDb pero no estÃ¡ avalado ni certificado por TMDb</description>
-        <news>
-v1.0.50
-- remove rt
-- add tunefind
-- add metacritic for movie
-v1.0.49
-- add landcapes
-- prepare metacritic for movie
-v1.0.48
-- Add rt ratings reviews and info
-- Add metacritic ratting for tvshow
-- fix wrong local variable 'adb_album'
-v1.0.47
-- Add Trakt for PVR
-v1.0.46
-- Add Trakt
-v1.0.45
-- Add button in settings "Delete simplecache.db"
-- Fix for movieset posters
-v1.0.43, v1.0.44
-- Fixed SUPPORTS_POOL for Android
-v1.0.42
-- Fixed stripchars PVR Title
-- Fixed ExtraPosters
-- Fix for "Resume" in dialog
-v1.0.41
-- Fixed ExtraPosters
-- Fix for "Resume" in dialog
-v1.0.40
-- Fix for missing TADB key
-v1.0.39
-- Remove unicode
-- Fix for break site Kyradb
-- Add support for TADB encoding Ascii key
-- Add new info for TMDB (number_of_seasons, number_of_episodes and Seasons)
-v1.0.38
-- fix for error 'sys' is not defined for extrafanart
-- fix for google
-- fix for colecting imdb.250 (movie and tv)
-- add new rotentomatoes info from omdb
-v1.0.37
-- Smal fix for theaudiodb scraper
-v1.0.36
-- Fix for theaudiodb scraper,Add some new Art thumb and label
-
-v1.0.35 (wuff)
-- Remove BeautifulSoup3 dependency and use BeautifulSoup4 on Kodi 18 and 19 instead
-
-v1.0.34 (wuff)
-- Set BeautifulSoup3 and MusicBrainz dependency as optional to allow install on Matrix
-
-v1.0.33 (wuff)
-- replace xbmc.LOGNOTICE with xbmc.LOGINFO as LOGNOTICE was removed
-
-v1.0.32 (wuff)
-- Remove python requirement for Kodi 18/19 compat
-- Change imdb Top250 parsing from lxml to html.parser
-- replace xbmc.translatePath with xmbcvfs.translatePath
-v1.0.31 (berkhornet)
-- Further fixes for PVR artwork
-v1.0.30 (berkhornet)
-- Kodi 19/Python 3
-- Fixes for PVR artwork
-- Fix display of artwork when manually selecting from TVDB
-- Fixes for animated art and google
-v1.0.29 (wuff)
-- Remove python requirement for Kodi 18/19 compat
-v1.0.28 (wuff)
-- Kodi 19/Python 3 fixes
-v1.0.27 (finkleandeinhorn)
-- update omdb api key
-v1.0.26 (finkleandeinhorn, cartmandos)
-- enable caching of omdb/tmdb data
-- remove duplicate "Title" parameter
-v1.0.25 (marcelveldt)
-- Last version 30 Mar 2018
-        </news>
-        <license>Apache 2.0</license>
-        <forum>https://forum.kodi.tv/showthread.php?tid=350315</forum>
-        <source>https://github.com/kodi-community-addons/script.module.metadatautils</source>
-        <platform>all</platform>
-		<assets>
-			<icon>resources/icon.png</icon>
-			<fanart>resources/fanart.jpg</fanart>
-			<screenshot>resources/screenshot-01.jpg</screenshot>
-			<screenshot>resources/screenshot-02.jpg</screenshot>
-			<screenshot>resources/screenshot-03.jpg</screenshot>
-			<screenshot>resources/screenshot-04.jpg</screenshot>
-			<screenshot>resources/screenshot-05.jpg</screenshot>
-		</assets>
-    </extension>
-</addon>
-
-<addon id="script.module.musicbrainz"
-       name="Musicbrainz NGS webservice python bindings"
-       version="0.7.0"
-       provider-name="marcelveldt and others">
-  <requires>
-	<import addon="xbmc.python" version="3.0.0"/>
-  </requires>
-  <extension point="xbmc.python.module"
-             library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <summary>Python bindings for Musicbrainz' NGS webservice</summary>
-    <description>Kodi module library for the Python bindings for Musicbrainz' NGS webservice developed by alastair.</description>
-		<assets>
-            <icon>icon.png</icon>
-        </assets>
-    <license>GNU GENERAL PUBLIC LICENSE V3</license>
-    <source>https://github.com/kodi-community-addons/script.module.musicbrainz</source>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 <addon id="script.module.resolveurl" name="ResolveURL" version="5.1.71" provider-name="gujal">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
@@ -650,30 +539,6 @@ v1.0.25 (marcelveldt)
     </extension>
 </addon>
 
-<addon id="script.module.thetvdb"
-       name="The TVDB API v2"
-       version="1.0.29"
-       provider-name="marcelveldt and others">
-    <requires>
-		<import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.requests" version="2.9.1"/>
-        <import addon="script.module.simplejson" version="3.17.0"/>
-        <import addon="script.module.simplecache" version="2.0.2"/>
-        <import addon="script.module.arrow" version="0.15.5"/>
-    </requires>
-    <extension point="xbmc.python.module" library="lib" />
-    <extension point="xbmc.addon.metadata">
-        <summary>TheTVDB API v2 python module for Kodi</summary>
-        <description>TheTVDB API v3 python module for Kodi</description>
-		<assets>
-            <icon>icon.png</icon>
-        </assets>
-        <license>Apache 2.0</license>
-        <source>https://github.com/kodi-community-addons/script.module.thetvdb</source>
-        <platform>all</platform>
-    </extension>
-</addon>
-
 <addon id="script.realdebrid.mod" name="RealDebrid-Mod" version="1.1.2" provider-name="ptom">
 	<requires>
         <import addon="script.module.requests" version="2.3.0"/>
@@ -691,206 +556,6 @@ v1.0.25 (marcelveldt)
 		<language>en</language>
 		<email>ptom98@gmail.com</email>
 	</extension>
-</addon>
-
-	<addon id="script.skin.helper.backgrounds" name="Skin Helper Service Backgrounds" version="1.0.36" provider-name="marcelveldt and others">
-	<requires>
-        <import addon="script.module.simplecache" version="1.0.0"/>
-        <import addon="script.module.metadatautils" version="1.0.31"/>
-	</requires>
-
-    <extension point="xbmc.python.library" library="default.py" />
-    <extension point="xbmc.service" library="service.py" start="login" />
-
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Helper service for Kodi skins providing rotating backgrounds</summary>
-        <description>Helper service for Kodi skins providing rotating backgrounds</description>
-		<assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-		<language></language>
-		<platform>all</platform>
-		<license>GPL v2.0</license>
-		<forum>http://forum.kodi.tv/showthread.php?tid=235676</forum>
-		<website></website>
-		<source>https://github.com/kodi-community-addons/script.skin.helper.backgrounds</source>
-	</extension>
-</addon>
-
-    <addon id="script.skin.helper.service" name="Skin Helper Service" version="1.1.43" provider-name="marcelveldt and others">
-    <requires>
-		<import addon="xbmc.python" version="3.0.0"/>
-        <import addon="xbmc.addon" version="12.0.0"/>
-        <import addon="script.module.simplejson" version="3.3.0"/>
-        <import addon="script.module.simplecache" version="1.0.0"/>
-        <import addon="script.module.metadatautils" version="1.0.31"/>
-    </requires>
-
-    <extension point="kodi.context.item">
-        <menu id="kodi.core.main">
-            <item library="resources\lib\context_animatedart.py">
-              <label>32024</label>
-              <visible>!String.IsEmpty(Window(Home).Property(SkinHelper.EnableAnimatedPosters)) + Container.Content(movies)</visible>
-            </item>
-            <item library="resources\lib\context_pvr.py">
-                <label>32023</label>
-                <description>PVR artwork Configuration</description>
-                <visible>
-                    !String.IsEmpty(Window(Home).Property(SkinHelper.EnablePvrThumbs)) +
-                    [Window.IsActive(MyPVRChannels.xml) |
-                    Window.IsActive(MyPVRGuide.xml) | Window.IsActive(MyPVRRecordings.xml) |
-                    Window.IsActive(MyPVRTimers.xml) | Window.IsActive(MyPVRSearch.xml)]
-                </visible>
-            </item>
-            <item library="resources\lib\context_music.py">
-                <label>32023</label>
-                <description>Music artwork Configuration</description>
-                <visible>
-                    !String.IsEmpty(Window(Home).Property(SkinHelper.EnableMusicArt)) +
-                    [Container.Content(albums) | Container.Content(artists) | Container.Content(songs)]
-                </visible>
-            </item>
-        </menu>
-    </extension>
-
-    <extension point="xbmc.python.library" library="default.py" />
-    <extension point="xbmc.python.pluginsource" library="plugin.py" />
-    <extension library="service.py" point="xbmc.service" start="login" />
-
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Helper service for Kodi skins</summary>
-        <description>Helper service for Kodi skins</description>
-        <news>
-v1.1.43
-- removed rt ratings
-- Add tunefind
-v1.1.42
-- fixed rt ratings for tvshow
-- fixed extrafanart (look first in folder path)
-v1.1.42
-- Add rt ratings reviews and info, add metacritic ratting for tvshow
-v1.1.41
-- Add Trakt
-v1.1.40
-- bump version
-v1.1.39
-- clean trace of webservice
-v1.1.38
-- removed webservice(removed dependency of module "script.module.cherrypy")
-v1.1.37
-- fix for saveskinimage
-- Update listitem_monitor.py
-v1.1.36
-- Hungarian lang created
-- remove get_repo_addoninfo
-- Fix for "Resume" in dialog
-v1.1.35
-- fix setskinconstant
-
-v1.1.34
-- fix correct skin settings
-- Fix for skinstring, selectimage, and overlayertexture
-- Fix for resourceaddons
-- Matrix Py3 changes
-v1.1.32
-- fix for search dialog
-- add TMDB for TVShow
-- fix for webservice (now use just TMDB Art-Poster and fanart)
-
-v1.1.31
-- fix urllib.parse vs urlparse in utils for Kodi 18
-- add commits from Angelinas1
-
-v1.1.30
-- fix module import of context menu items
-
-v1.1.29
-- compatibility change for CherryPy 17.4.2 and bump version requirement
-
-v1.1.28
-- replace xbmc.LOGNOTICE with xbmc.LOGINFO as LOGNOTICE was removed
-
-v1.1.27
-- Replace xbmc.translatePath with xbmcvfs.translatePath for Kodi 19 compat
-
-v1.1.26
-- Remove python dependency for Kodi18/19 compatibility
-- minor fix
-
-v1.1.25
-- Kodi 19/Python 3 compatibility
-- minor fixes
-        </news>
-		<assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-        <language></language>
-        <platform>all</platform>
-        <license>GPL v2.0</license>
-        <forum>http://forum.kodi.tv/showthread.php?tid=235676</forum>
-        <website></website>
-        <source>https://github.com/kodi-community-addons/script.skin.helper.service</source>
-    </extension>
-</addon>
-
-    <addon id="script.skin.helper.widgets" name="Skin Helper Service Widgets" version="1.0.45" provider-name="marcelveldt and others">
-    <requires>
-		<import addon="xbmc.python" version="3.0.0"/>
-        <import addon="xbmc.addon" version="12.0.0"/>
-        <import addon="script.module.metadatautils" version="1.0.31"/>
-        <import addon="script.module.simplecache" version="2.0.2"/>
-    </requires>
-
-    <extension point="xbmc.python.pluginsource" library="plugin.py">
-        <provides>video audio</provides>
-    </extension>
-    <extension library="service.py" point="xbmc.service" start="login" />
-
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Ready to use widgets for all kind of media types</summary>
-        <description></description>
-	<news>
-Version 1.0.45
-* Change settings.xml
-Version 1.0.44
-* fix for similar
-
-Version 1.0.43
-* back old code for "recommended movies"
-* more py3 changes
-
-Version 1.0.42 (2020-09-13 wuff)
-* replace xbmc.LOGNOTICE with xbmc.LOGINFO as LOGNOTICE was removed
-
-Version 1.0.41 (2020-09-07 wuff)
-* Fix icons
-
-Version 1.0.40 (2020-05-16 wuff)
-* Remove python requirement for Kodi 18/19 compat
-
-Version 1.0.39 (2019-12-24 wuff)
-* Python 3/Kodi 19 compatibility fixes
-
-Version 1.0.38 (2019-02-25 patrick-klein)
-* similar score weights tweaks
-* other fixes and updates
-
-Version 1.0.37
-* last update from marcelveldt
-</news>
-		<assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-        <language></language>
-        <platform>all</platform>
-        <license>GPL v2.0</license>
-        <forum>http://forum.kodi.tv/showthread.php?tid=235676</forum>
-        <website></website>
-        <source>https://github.com/kodi-community-addons/script.skin.helper.widgets</source>
-    </extension>
 </addon>
 
 <addon id="script.skin.info.service" name="Skin Info Service" version="1.0.6" provider-name="phil65, SiLVO">
@@ -996,51 +661,6 @@ Version 1.0.37
 			<screenshot>resources/screenshots/screenshot-12.jpg</screenshot>
 		</assets>
 		<news>[B][I][COLOR FFFFFF00]Skin updated, modded and Completely Redesigned[/COLOR][/I][/B][CR][COLOR FF00D5FF]- Added NEW Home Screen Animation[/COLOR][CR][COLOR FF00D5FF]- Additional Falling Seasons[/COLOR][CR][COLOR FFE67300]Included with v7.9.4 Silvo update by Mike[/COLOR][CR]- Fix Live TV OSD button focus when unable to pause[CR]- Fixes to DialogSelect[CR]- Fix no items in Ask Default Background selection on new installs[CR]- Drop Skin Helper Widgets for favorites and use favourites:// path instead[CR]- Update and add some missing icons[CR]- Fix Netherlands rating classification images[CR]- Update and re-design PVR Group Manager[CR]- Fix Menu resetting to defaults[CR]- Add TMDb search from DialogVideoInfo Extras on Home screen[CR]- Fix missing icon/poster in SlimList[CR]- PVR updates and additions[CR]- Updated language files from Transifex[CR]- Revert removal of bottom OSD button position[CR]- Add option to use Skin Info Service for Movie Set Plots in Video Info[CR]- Fix default letter jump appearing on side menu settings button focus[CR]- Add "fixed" option for video RightList[CR]- Tweak Vertical Menu fixed behaviour to match Horizontal[CR]- Rework Live TV guide with icons from Estuary and re-add channel logos[CR]- Add disable to submenu items in Main Menu Customizer[CR]- Add information setting to SlimList[CR]- Remove script.extendedinfo and add script.embuary.info support[CR]- Add DialogVideoInfo for sets[CR]- Add some v19 skin engine changes[CR]- Use script.embuary.helper for Similiar and Directer movies in DialogVideoInfo[CR]- Add missing PVR label to Widget info[CR]- Add Glow Bars and System Glow Bars to color customizer[CR]- Add Jump to Letter bar to Video library using script.embuary.helper[CR]- Fix playlist backgrounds for Main Menu not following user set rotation speed[CR]- Redesign DialogExtendedProgressBar and DialogVolumeBar[CR]- Make OSD buttons on top default and remove option[CR]- Redesign PlayerProcessInfo[CR]- Clean up Main Menu and Widget Customizers[CR]- Fill empty space with more info in some views[CR][CR][B]All updates may contain various changes and/or improvements[/B][CR][I][COLOR FFFF0202]Please give credit to all the devolopers (Especially Mike) that has shared most of these changes. Also all others that have and do contribute to this skin![/COLOR][/I]</news>
-	</extension>
-</addon>
-
-<addon id="skin.psmc.max" version="1.0.6" name="[COLOR crimson]â€¢â€¢ [/COLOR]PSMC Max[COLOR crimson] â€¢â€¢[/COLOR]" provider-name="The Papaw">
-	<requires>
-		<import addon="script.skinshortcuts" version="0.6.5"/>
-		<import addon="script.skin.helper.service" version="1.0.0"/>
-        <import addon="script.skin.helper.widgets" version="1.0.0"/>
-        <import addon="script.skin.helper.backgrounds" version="1.0.0"/>
-        <import addon="resource.images.skinbackgrounds.titanium" version="1.0.0"/>
-        <import addon="resource.images.skinicons.wide" version="1.0.0"/>
-        <import addon="resource.images.backgroundoverlays.basic" version="1.0.0"/>
-	</requires>
-	<extension point="xbmc.gui.skin" debugging="false">
-		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
-		<res width="1920" height="1200" aspect="16:10" default="false" folder="xml" />
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en_GB">PSMC Max... A new skin for PSMC or Kodi.</summary>
-		<description>Designed for PSMC or Kodi. Many design layouts to choose from including the PSMC Max layout! This skin was forked from the Bingie Mod. Please give credit to all those involved in making that mod!</description>
-		<platform>all</platform>
-		<license>CC BY-NC-SA 4.0</license>
-		<forum></forum>
-		<website>https://github.com/ThePapaw/psmc</website>
-		<source>https://github.com/ThePapaw/psmc</source>
-		<email></email>
-		<assets>
-			<icon>resources/icon.gif</icon>
-			<icon>resources/icon.png</icon>
-			<fanart>resources/fanart.jpg</fanart>
-			<screenshot>resources/screenshot000.jpg</screenshot>
-			<screenshot>resources/screenshot001.jpg</screenshot>
-			<screenshot>resources/screenshot002.jpg</screenshot>
-			<screenshot>resources/screenshot003.jpg</screenshot>
-			<screenshot>resources/screenshot004.jpg</screenshot>
-			<screenshot>resources/screenshot005.jpg</screenshot>
-			<screenshot>resources/screenshot006.jpg</screenshot>
-			<screenshot>resources/screenshot007.jpg</screenshot>
-			<screenshot>resources/screenshot008.jpg</screenshot>
-			<screenshot>resources/screenshot009.jpg</screenshot>
-            <screenshot>resources/screenshot010.jpg</screenshot>
-		</assets>
-		<news>
-			[B]PSMC Max[/B][CR]Designed for PSMC (or Kodi). For updates visit:[CR]https://github.com/ThePapaw/psmc
-		</news>
 	</extension>
 </addon>
 

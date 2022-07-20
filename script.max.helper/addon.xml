@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.max.helper" name="PSMC Max Helper" version="0.1.0" provider-name="The Papaw">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.simplejson" version="2.0.10"/>
+	</requires>
+	<extension point="xbmc.python.script" library="default.py" />
+	<extension point="xbmc.addon.metadata">
+		<language/>
+		<summary lang="en">Max Helper Script</summary>
+		<description lang="en">Helper for some of Max features</description>
+		<platform>all</platform>
+		<license>CC BY-NC-SA 4.0</license>
+		<forum></forum>
+		<website>https://github.com/ThePapaw/psmc</website>
+		<source>https://github.com/ThePapaw/psmc</source>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
