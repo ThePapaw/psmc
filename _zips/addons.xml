@@ -81,7 +81,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.fuzzybritches_v3" version="1.0.3" name="[COLOR crimson]â€¢â€¢ [/COLOR]Fuzzy Britches v3[COLOR crimson] â€¢â€¢[/COLOR]" provider-name="The Papaw">
+<addon id="plugin.video.fuzzybritches_v3" version="1.0.4" name="[COLOR crimson]â€¢ [/COLOR]Fuzzy Britches v3[COLOR crimson] â€¢[/COLOR]" provider-name="The Papaw">
     <requires>
         <import addon="script.fuzzybritches_v3.artwork" />
         <import addon="script.module.resolveurl" />
@@ -99,7 +99,7 @@
     <extension point="xbmc.addon.metadata">
         <reuselanguageinvoker>false</reuselanguageinvoker>
         <summary lang="en_GB">Fuzzy Britches v3</summary>
-        <description lang="en_GB">Part of the PSMC Collection</description>
+        <description lang="en_GB">[CR]See the Changelog in the Tools Menu for News. Fuzzy Britches v3 is part of the PSMC Collection[CR] - Enjoy!</description>
         <platform>all</platform>
         <license>CC BY-NC-SA 4.0</license>
         <forum />
@@ -495,14 +495,14 @@ v0.28.0 (2020-02-08)
 	</extension>
 </addon>
 
-<addon id="script.fuzzybritches_v3.artwork" version="1.0.1" name="[COLOR crimson]â€¢â€¢ [/COLOR]Fuzzy Britches v3 Artwork[COLOR crimson] â€¢â€¢[/COLOR]" provider-name="The Papaw">
+<addon id="script.fuzzybritches_v3.artwork" version="1.0.4" name="Fuzzy Britches v3 Artwork" provider-name="The Papaw">
     <requires>
         <!--<import addon="xbmc.python" version="2.19.0"/>-->
     </requires>
     <extension point="xbmc.python.module" library="lib" />
     <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">Fuzzy Britches v3 Artwork</summary>
-        <description lang="en_GB">Part of the PSMC Collection</description>
+        <summary lang="en_GB">Artwork for Fuzzy Britches v3</summary>
+        <description lang="en_GB">Fuzzy Britches v3 Artwork is part of Fuzzy Britches v3 and the PSMC Collection[CR] - Enjoy!</description>
         <platform>all</platform>
         <license>CC BY-NC-SA 4.0</license>
         <forum />
@@ -560,7 +560,7 @@ v0.28.0 (2020-02-08)
 	</extension>
 </addon>
 
-<addon id="script.module.fuzzybritchesv3scrapers" version="1.0.1" name="[COLOR crimson]â€¢â€¢ [/COLOR]Fuzzy Britches v3 Scrapers[COLOR crimson] â€¢â€¢[/COLOR]" provider-name="The Papaw">
+<addon id="script.module.fuzzybritchesv3scrapers" version="1.0.4" name="Fuzzy Britches v3 Scrapers" provider-name="The Papaw">
     <requires>
         <!--<import addon="xbmc.python" version="2.20.0" />-->
         <import addon="script.module.beautifulsoup4" />
@@ -580,8 +580,8 @@ v0.28.0 (2020-02-08)
         <forum />
 		<website>https://github.com/ThePapaw/fuzzybritches</website>
 		<source>https://github.com/ThePapaw/fuzzybritches</source>
-            <summary lang="en">Fuzzy Britches v3 Scrapers</summary>
-            <description>Scrape common video host for URL's to be playable in PSMC or Kodi, simplifying addon development of video plugins using multi video hosts.</description>
+            <summary lang="en">Scrapers for Fuzzy Britches v3</summary>
+            <description>Scrapes common video hosts for URL's to be playable in PSMC or Kodi, simplifying addon development of video plugins using multi video hosts.[CR]Fuzzy Britches v3 Scrapers is part of Fuzzy Britches v3 and the PSMC Collection[CR] - Enjoy!</description>
 			<disclaimer lang="en_GB">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
         <assets>
 			<icon>icon.png</icon>

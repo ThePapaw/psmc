@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.fuzzybritches_v3" version="1.0.3" name="[COLOR crimson]•• [/COLOR]Fuzzy Britches v3[COLOR crimson] ••[/COLOR]" provider-name="The Papaw">
+<addon id="plugin.video.fuzzybritches_v3" version="1.0.4" name="[COLOR crimson]• [/COLOR]Fuzzy Britches v3[COLOR crimson] •[/COLOR]" provider-name="The Papaw">
     <requires>
         <import addon="script.fuzzybritches_v3.artwork" />
         <import addon="script.module.resolveurl" />
@@ -17,7 +17,7 @@
     <extension point="xbmc.addon.metadata">
         <reuselanguageinvoker>false</reuselanguageinvoker>
         <summary lang="en_GB">Fuzzy Britches v3</summary>
-        <description lang="en_GB">Part of the PSMC Collection</description>
+        <description lang="en_GB">[CR]See the Changelog in the Tools Menu for News. Fuzzy Britches v3 is part of the PSMC Collection[CR] - Enjoy!</description>
         <platform>all</platform>
         <license>CC BY-NC-SA 4.0</license>
         <forum />
