@@ -1,10 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.fuzzybritches_v3" version="1.0.4" name="[COLOR crimson]• [/COLOR]Fuzzy Britches v3[COLOR crimson] •[/COLOR]" provider-name="The Papaw">
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.fuzzybritches_v3"
+       name="[COLORcrimson]••[/COLOR] Fuzzy Britches v3 [COLORcrimson]••[/COLOR]"
+       version="1.0.6"
+       provider-name="The Papaw">
     <requires>
         <import addon="script.fuzzybritches_v3.artwork" />
+        <import addon="script.module.fuzzybritchesv3scrapers" />
         <import addon="script.module.resolveurl" />
         <import addon="script.module.requests" />
-        <import addon="script.module.fuzzybritchesv3scrapers" />
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
         <import addon="script.module.simplejson" />
