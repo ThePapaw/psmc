@@ -410,7 +410,7 @@
   </extension>
 </addon>
 
-<addon id="resource.uisounds.psmc.max" version="1.0.4" name="PSMC Max Sounds" provider-name="The Papaw">
+<addon id="resource.uisounds.psmc.max" version="1.0.5" name="PSMC Max Sounds" provider-name="The Papaw">
   <requires>
     <import addon="kodi.resource" version="1.0.0"/>
   </requires>
