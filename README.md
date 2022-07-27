@@ -38,7 +38,7 @@ If you have issues, please post them here. All items are still being developed a
 
   
 To Install this Repo:
-1. Download the repository. <a href="https://github.com/ThePapaw/psmc/blob/master/_zips/repository.psmc/repository.psmc-1.0.20.zip?raw=true"><B>CLICK HERE</B></a>
+1. Download the repository. <a href="https://github.com/ThePapaw/psmc/blob/master/_zips/repository.psmc/repository.psmc-1.0.22.zip?raw=true"><B>CLICK HERE</B></a>
 
 2. Install "from zip file" in PSMC (or Kodi) as you would any other downloaded add-on.
 
