@@ -22,12 +22,12 @@ from resolveurl.lib import helpers
 
 class VidoResolver(ResolveGeneric):
     name = 'Vido'
-    domains = ['vido.lol']
-    pattern = r'(?://|\.)(vido\.lol)/(?:embed-|e/|d/)?([0-9a-zA-Z]+)'
+    domains = ['vido.lol', 'vido.cool']
+    pattern = r'(?://|\.)(vido\.(?:lol|cool))/(?:embed-|e/|d/)?([0-9a-zA-Z]+)'
 
     def get_media_url(self, host, media_id):
         return helpers.get_media_url(
             self.get_url(host, media_id),
-            patterns=[r'''sources:\s*\[["'](?P<url>[^"']+)'''],
+            patterns=[r'''sources:\s*\[(?:{file:)?\s*["'](?P<url>[^"']+)'''],
             generic_patterns=False
         )

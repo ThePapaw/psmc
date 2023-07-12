@@ -24,8 +24,8 @@ from resolveurl.resolver import ResolveUrl, ResolverError
 
 class UploadFlixResolver(ResolveUrl):
     name = 'UploadFlix'
-    domains = ['uploadflix.org']
-    pattern = r'(?://|\.)(uploadflix\.org)/([0-9a-zA-Z]+)'
+    domains = ['uploadflix.org', 'uploadflix.com']
+    pattern = r'(?://|\.)(uploadflix\.(?:org|com))/([0-9a-zA-Z]+)'
 
     def get_media_url(self, host, media_id):
         web_url = self.get_url(host, media_id)
@@ -45,6 +45,7 @@ class UploadFlixResolver(ResolveUrl):
         html = self.net.http_POST(url, form_data=payload, headers=headers).content
         source = re.search(r'href="([^"]+)"\s*class="downloadbtn', html)
         if source:
+            headers['verifypeer'] = 'false'
             return source.group(1).replace(' ', '%20') + helpers.append_headers(headers)
 
         raise ResolverError('File Not Found or Removed')

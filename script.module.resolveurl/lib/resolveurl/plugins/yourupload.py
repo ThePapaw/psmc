@@ -36,7 +36,7 @@ class YourUploadResolver(ResolveUrl):
 
         if r:
             url = urllib_parse.urljoin(web_url, r.group(1))
-            url = self.net.http_HEAD(url, headers=headers).get_url()
+            url = helpers.get_redirect_url(url, headers=headers)
             url = url + helpers.append_headers(headers)
             return url
 

@@ -122,7 +122,8 @@ class HostedMediaFile:
         regex = r"(?:www\.)?([\w\-]*\.[\w\-]{2,5}(?:\.[\w\-]{2,5})?)$"
         res = re.search(regex, domain)
         if res:
-            domain = res.group(1)
+            # domain = res.group(1)
+            domain = '.'.join(res.group(1).split('.')[-2:])
         domain = domain.lower()
         return domain
 
@@ -266,14 +267,15 @@ class HostedMediaFile:
         try:
             msg = ''
             request = urllib_request.Request(stream_url.split('|')[0], headers=headers)
-            # only do a HEAD request. gujal
-            request.get_method = lambda: 'HEAD'
+            # only do a HEAD request for non m3u8 streams
+            if '.m3u8' not in stream_url:
+                request.get_method = lambda: 'HEAD'
             #  set urlopen timeout to 15 seconds
             http_code = urllib_request.urlopen(request, timeout=15).getcode()
         except urllib_error.HTTPError as e:
             if isinstance(e, urllib_error.HTTPError):
                 http_code = e.code
-                if http_code == 405:
+                if http_code == 405 or http_code == 472:
                     http_code = 200
             else:
                 http_code = 600

@@ -17,6 +17,7 @@
 """
 
 import json
+from six.moves import urllib_parse
 from resolveurl.lib import helpers
 from resolveurl import common
 from resolveurl.resolver import ResolveUrl, ResolverError
@@ -25,13 +26,24 @@ from resolveurl.resolver import ResolveUrl, ResolverError
 class VimeoResolver(ResolveUrl):
     name = 'Vimeo'
     domains = ['vimeo.com', 'player.vimeo.com']
-    pattern = r'(?://|\.)(vimeo\.com)/(?:video/)?([0-9a-zA-Z]+)'
+    pattern = r'(?://|\.)(vimeo\.com)/(?:video/)?([^\n]+)'
 
     def get_media_url(self, host, media_id):
+        headers = {'User-Agent': common.FF_USER_AGENT}
+        if '$$' in media_id:
+            media_id, referer = media_id.split('$$')
+            referer = urllib_parse.urljoin(referer, '/')
+            headers.update({'Referer': referer})
+        else:
+            media_id = media_id.split('/')[0]
+            media_id = media_id.split('?')[0]
+            referer = False
+
         web_url = self.get_url(host, media_id)
-        headers = {'User-Agent': common.FF_USER_AGENT,
-                   'Referer': 'https://vimeo.com/',
-                   'Origin': 'https://vimeo.com'}
+        if not referer:
+            headers.update({'Referer': 'https://vimeo.com/',
+                            'Origin': 'https://vimeo.com'})
+
         html = self.net.http_GET(web_url, headers).content
         data = json.loads(html)
         sources = [(vid['height'], vid['url']) for vid in data.get('request', {}).get('files', {}).get('progressive', {})]
@@ -39,7 +51,8 @@ class VimeoResolver(ResolveUrl):
             sources.sort(key=lambda x: x[0], reverse=True)
             return helpers.pick_source(sources) + helpers.append_headers(headers)
 
-        raise ResolverError('File Not Found or removed')
+        # raise ResolverError('File Not Found or removed')
+        return 'plugin://plugin.video.vimeo/play/?video_id={0}'.format(media_id)
 
     def get_url(self, host, media_id):
         return self._default_get_url(host, media_id, template='https://player.vimeo.com/video/{media_id}/config')
