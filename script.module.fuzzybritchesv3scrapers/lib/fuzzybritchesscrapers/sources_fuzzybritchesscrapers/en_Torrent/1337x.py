@@ -29,7 +29,7 @@ class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
-        self.domains = ['1337x.to'] # cf: '1337x.st', '1337x.gd', 'x1337x.se', 'x1337x.eu', 'x1337x.ws'
+        self.domains = ['1337x.to'] # cf: '1337x.st', 'x1337x.se', 'x1337x.eu', 'x1337x.ws'
         self.base_link = custom_base or 'https://1337x.to'
         self.aliases = []
 

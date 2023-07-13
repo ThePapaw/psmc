@@ -155,5 +155,3 @@ class source:
 
     def resolve(self, url):
         return url
-
-

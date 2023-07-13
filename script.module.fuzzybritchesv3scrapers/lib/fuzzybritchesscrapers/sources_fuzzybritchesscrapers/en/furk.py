@@ -226,4 +226,3 @@ class source:
     def seasEpQueryList(self, season, episode):
         return ['s%02de%02d' % (int(season), int(episode)), '%dx%02d' % (int(season), int(episode)),
                 '%02dx%02d' % (int(season), int(episode))]
-

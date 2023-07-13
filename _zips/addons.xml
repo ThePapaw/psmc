@@ -582,7 +582,7 @@ v0.28.0 (2020-02-08)
 	</extension>
 </addon>
 
-<addon id="script.module.fuzzybritchesv3scrapers" version="1.0.6" name="[COLOR crimson]â€¢[/COLOR] Fuzzy Britches v3 Scrapers [COLOR crimson]â€¢[/COLOR]" provider-name="The Papaw">
+<addon id="script.module.fuzzybritchesv3scrapers" version="1.0.8" name="[COLOR crimson]â€¢ [/COLOR]Fuzzy Britches v3 Scrapers[COLOR crimson] â€¢[/COLOR]" provider-name="The Papaw">
     <requires>
         <!--<import addon="xbmc.python" version="2.20.0" />-->
         <import addon="script.module.beautifulsoup4" />

@@ -29,6 +29,11 @@ SEARCH_PARAMS = {'st': 'adv', 'sb': 1, 'fex': 'm4v,3gp,mov,divx,xvid,wmv,avi,mpg
 SEARCH_PARAMS.update(SORT)
 
 
+SORT = {'s1': 'relevance', 's1d': '-', 's2': 'dsize', 's2d': '-', 's3': 'dtime', 's3d': '-'}
+SEARCH_PARAMS = {'st': 'adv', 'sb': 1, 'fex': 'm4v,3gp,mov,divx,xvid,wmv,avi,mpg,mpeg,mp4,mkv,avc,flv,webm', 'fty[]': 'VIDEO', 'spamf': 1, 'u': '1', 'gx': 1, 'pno': 1, 'sS': 3}
+SEARCH_PARAMS.update(SORT)
+
+
 class source:
     def __init__(self):
         self.priority = 1
@@ -179,6 +184,3 @@ class source:
 
     def resolve(self, url):
         return url
-
-
-

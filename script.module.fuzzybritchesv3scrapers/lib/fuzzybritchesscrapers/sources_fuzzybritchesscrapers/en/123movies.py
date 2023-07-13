@@ -32,7 +32,7 @@ class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
-        self.domains = ['www11.123movie.movie', '123moviesfree.so']
+        self.domains = ['123moviesfree.so']
         self.base_link = custom_base or 'https://123moviesfree.so'
         self.search_link = '/movie/search/%s'
 

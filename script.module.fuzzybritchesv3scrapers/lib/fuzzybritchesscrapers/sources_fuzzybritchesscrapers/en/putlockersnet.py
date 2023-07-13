@@ -144,7 +144,7 @@ class source:
                     if 'gomo.to' in link:
                         link = ensure_text(requests.get(link, headers=self.headers, verify=False).url, errors='replace')
                         # if 'gomoplayer.com' in link: # gomoplayer added to resolveurl now
-                            # from fuzzybritchesscrapers.modules import jsunpack
+                            # from promisescrapers.modules import jsunpack
                             # sourcePage = ensure_text(requests.get(link, headers=self.headers, verify=False).content, errors='ignore')
                             # if jsunpack.detect(sourcePage):
                                 # unpacked = jsunpack.unpack(sourcePage)
@@ -167,5 +167,3 @@ class source:
 
     def resolve(self, url):
         return url
-
-
